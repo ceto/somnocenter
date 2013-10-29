@@ -1,0 +1,191 @@
+.page-template-page-felezett-php {
+
+  .container[role="document"]{
+    background: linear-gradient(to right, transparent, transparent 50%, $blue-120 50%, $blue-120);
+
+  }
+  
+  .main.wide {
+    //background: linear-gradient(to right, transparent, transparent 50%, $blue-120 50%, $blue-120);
+    //background: black;
+    padding:0 0;
+    width:auto;
+  }
+
+  .feles {
+    width:50%;
+    float:left;
+    padding:2em;
+  }
+  .feles2 {
+    color:$blue-70;
+    a{
+      color:$blue-30;
+    }
+  }
+
+  .page-header {
+    text-align: center;
+    background: white;
+    padding:0.5em 0.5em;
+    margin-top:3em;
+    //color:$blue-90;
+    //color:white;
+
+    h1 {
+      //border:1px solid $blue-120;
+      padding:0.5em 0.5em;
+      margin:0;
+    }
+
+  }
+
+  .feles {
+    h3 {
+      text-transform: none;
+      font-size: 1.25em;
+      margin-right: 2em;
+      &:after {
+        content:'+';
+        float:right;
+        display: block;
+      }
+    }
+  }
+}
+
+
+.page-template-page-vizsgalatok-php {
+  
+
+
+  .container[role="document"]{
+   .row {
+      max-width: 100%;
+      margin:0 auto;
+    }
+    
+    aside {
+      max-width: $maximum;
+      margin-left:auto;
+      margin-right:auto;
+    }  
+  }
+
+
+  .main.wide{
+    padding:5em 0 0;
+    width:auto;
+
+  }
+
+  .indent {
+    width:66.6666666%;
+    max-width: $maximum;
+    margin:0 auto;
+    font-size:24px;
+    line-height: 35px;
+  }
+
+  .vizsga-lista {
+    //font-size: 18px;
+    //line-height: 24px;
+    margin:5em 0 0;
+
+    .exam {
+      .inner {
+        max-width: $maximum;
+        margin:0 auto;
+        padding:6em;
+      }
+
+      &:first-child{
+        background: url('../img/hattter-05.png') no-repeat center bottom $blue-120 !important;
+        background-size: 100% 100% !important; 
+        color:$blue-90 !important;
+        a {
+          color:$red;
+        } 
+      }
+      // &:last-child{
+      //   background: $blue-70 !important; 
+      //   color:$blue-120;
+      //   a {
+      //     color:$orange;
+      //   } 
+      // }
+
+      &:nth-child(2n){
+        background:  $blue-30;
+      }
+
+      &:nth-child(2n+1){
+        background: $blue;
+        color:$blue-90;
+        a {
+          color:$red;
+        } 
+      }
+      &:nth-child(3n){
+        background: $blue-70;
+        color:$blue-120;
+        a {
+          color:$orange;
+        } 
+      }
+      // &:nth-child(3n+1){
+      //   background: $eggplant;
+      //   color:$blue-90;
+      //   a {
+      //     color:white;
+      //   } 
+      // }
+      &:nth-child(3n+1){
+        background: white;
+        color:$blue-120;
+        a {
+          //color:white;
+        } 
+      }
+
+      .read-more {
+        //display:block;
+        margin-top:1em;
+        color:white !important;
+        background: $red;
+        &:hover, &:focus {
+          background: $orange;
+        }
+      }
+
+
+      figure {
+        float:right;
+        //margin-left:2em;
+        padding:1em 1em 3em;
+        width:30%;
+        text-align: center;
+        img {
+          margin:0.25em 0.25em;
+          opacity:1;
+        }
+
+      }
+      &:nth-child(2n) {
+
+        figure {
+          float:left;
+          //margin-right:2em;
+          //margin-left:0;
+        }
+      }
+
+
+    }
+  }
+}
+
+
+.mitortenik {
+  background: $blue-30;
+}

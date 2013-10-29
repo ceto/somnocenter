@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+html * {
+  box-sizing:border-box;
+}
+
+body {
+  position: relative;
+  background: $blue-90;
+}
+
+
+.container {
+  position: relative;
+}
+
+.row {
+  max-width: $maximum;
+  margin:0 auto;
+}
+
+.container[role="document"]{
+  //position:relative;
+    background: url('../img/watermark.png') no-repeat center center transparent;
+}
+
+.main {
+  
+  &.wide {
+    width:66.66666%;
+    padding:4em 0;
+    margin:0 auto;
+  }
+  
+  &.narrow {
+    width:75%;
+    float:left;
+
+  }
+
+
+
+}
+
+

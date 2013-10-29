@@ -1,0 +1,133 @@
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+
+.page-header {
+  
+  .narrow & {
+    margin:0 0 0 25%;
+  }
+
+}
+
+.hentry {
+  .blog &, .archive & {
+    margin:0 0 5em;
+  }
+
+  .entry-figure {
+    position: relative;
+    margin:0 0 -1.5em 0;
+    img {
+      display: block;
+    }
+  }
+
+  .entry-mini-figure {
+    display: none;
+    position: relative;
+    margin:1.333333em 2% 0 0;
+    float:left;
+    width:23%;
+    img {
+      display: block;
+    }
+  }
+
+
+  header {
+    position: relative;
+
+    margin:0 0 0 25%;
+
+  }
+  .published {
+    position:relative;
+    padding:1em 1em;
+    line-height:1em;
+    display:inline-block;
+    font-variant: small-caps;
+    background: $blue;
+    color:white;
+    border-left: 6em solid $red; 
+    &:before {
+      content:"ÉLETMÓD";
+      position: absolute;
+      left:-5.3333em;
+    } 
+  }
+  
+  h2.entry-title{
+    margin:0 0;
+  }
+
+  .entry-rovat {
+    margin-top:0.125em;
+    a{
+      font-variant: small-caps;
+    }
+  }
+
+  .entry-meta-mini {
+
+    margin-bottom:0.125em;
+    .byline-mini{
+      display: inline;
+      a{
+        font-variant: small-caps;
+      }
+    }
+    .published-mini{
+      display: inline;
+      font-variant: small-caps;
+    }
+  }
+  .entry-sharing {
+    float:left;
+    margin-left:-33%;
+    ul {
+      margin:0;padding:0;
+    }
+    li {
+      list-style-type:none;
+    }
+  }
+
+
+  .author-block {
+    font-size: 0.875em;
+    background: white;
+    padding:1em;
+    background: $blue-70;
+    //color:$blue-90;
+    
+    p{
+      margin:0;
+    }
+    .byline {
+      font-variant: small-caps;
+      font-size: 1.25em;
+      margin:0 0 0em;
+    }
+    img {
+      float:left;
+      margin:0 0.75em 0 0;
+    }
+  }
+
+
+  .entry-content { }
+
+
+  .entry-content, .entry-summary {
+      margin:0 0 0 25%;
+  }
+
+  footer {
+    margin:0 0 0 25%;
+  }
+  #respond {
+    margin:0 0 0 25%;
+  }
+}

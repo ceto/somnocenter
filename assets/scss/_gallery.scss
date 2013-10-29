@@ -1,0 +1,112 @@
+.gallerywrap{
+    margin:2em 0 2em 0;
+    //height:81px;
+    overflow:hidden;
+    -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 1%,rgba(0,0,0,1) 10%,rgba(0,0,0,1) 90%,rgba(0,0,0,0) 99%);
+    mask-image: linear-gradient(left, rgba(0,0,0,0) 1%,rgba(0,0,0,1) 10%,rgba(0,0,0,1) 90%,rgba(0,0,0,0) 99%);
+}
+
+.gallery  {
+
+    width:9999px;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    
+
+    .row {
+    }
+
+    [class^="col-"]{
+        float:left;
+    }
+    .caption {
+        display:none;
+    }
+    a {
+        display: block;
+        float:left;
+        padding:3px;
+        border:1px solid transparent;
+        margin-right:1em;
+        transition: border-color 200ms ease-in;
+
+        &:hover, &:focus {
+            border-color: $blue-text;
+            text-decoration: none;
+        }
+    }
+}
+
+
+.gallery-great  {
+    margin:0 -1%;
+
+    a {
+        display: block;
+        background: $white;
+        width:48%;
+        float:left;
+        padding:1px;
+        margin:1%;
+        border:1px solid $white;
+        transition: all 200ms ease-in;
+        //text-align: center;
+        box-shadow: 0 0 5px 0 $blue;
+        
+        @include breakpoint($s0) {
+            margin:1%;
+            width:31.33333%;
+        }
+
+        @include breakpoint($s1) {
+            margin:1%;
+            width:23%;
+        }
+
+        @include breakpoint($s2) {
+            margin:1%;
+            width:18%;
+        }
+
+        @include breakpoint($s3) {
+            margin:1%;
+            width:14.5%;
+        }
+
+        img {
+            opacity:0.85;
+            transition: opacity 200ms ease-in;
+            display: block;
+        }
+    
+
+        h4 {
+            font-size:0.875em;
+            font-weight: 400;
+            text-transform: none;
+            //background-color: $blue-linea;
+            color:$blue-text;
+            margin:0;
+            padding:0.125em 0.5em;
+            //width:100%;
+            height:3em;
+            display: table-cell;
+            vertical-align: middle;
+
+        }
+
+
+        &:hover, &:focus {
+            border-color: $blue;
+            text-decoration: none;
+            box-shadow: 0 0 7px 0px $blue;
+            img {
+                opacity:1;
+            }
+        }
+        
+
+
+    }
+}

@@ -1,0 +1,54 @@
+/*============= color definition =================*/
+
+$white:#fefefe;
+$black:#181818;
+
+$gray:#858585;
+$gray-light:#cccccc;
+$gray-lighter:#f1f1f1;
+
+
+$blue:#5b7eb7;
+$blue-30:lighten($blue,30%);
+$blue-70:lighten($blue,40%);
+$blue-90:lighten($blue,43%);
+$blue-120:darken($blue,20);
+
+
+
+$blue-text:#14467c;
+
+
+$green:#77c04a;
+$green-30:lighten($green,30%);
+
+$orange:#f7941e;
+$orange-30: lighten($orange,30);
+
+$red:#e6533e;
+$red-30:lighten(red,30%);
+
+$eggplant:#7c0040;
+$eggplant-30:lighten($eggplant,30%);
+
+
+
+$sans-serif:'Titillium Web', sans-serif;
+$serif: 'Times New Roman', serif;
+
+/****************** breakpoints definition ***********/
+
+$s0:320px;
+$s1:480px;
+$s2:768px;
+$s3:1024px;
+
+$maximum:1140px;
+
+$experimental-support-for-svg: true;
+
+
+
+
+
+

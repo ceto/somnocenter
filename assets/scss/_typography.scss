@@ -1,0 +1,147 @@
+body {
+
+  font-family: $serif;
+  font-weight: 400;
+  color:$blue-text;
+  line-height: 1.5em;
+  font-size: 18px;
+  line-height: 24px;
+
+}
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  line-height: 1.125em;
+  text-transform:uppercase;
+  //font-variant: small-caps;
+  small {
+    font-size: 0.875em;
+    font-weight: normal;
+    line-height: 1;
+  }
+}
+
+em {
+}
+
+a {
+  color: $eggplant;
+  text-decoration: none;
+  
+  &:hover, &:focus {
+    color: $red;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+}
+
+
+blockquote {
+  font-style: italic;
+  font-weight: 700;
+  padding:0.125em 1em;
+  background: white;
+  border-left:6px solid $eggplant;
+  margin-left:0;margin-right:0;
+}
+
+
+.main {
+
+  p {
+  
+  }
+    
+}
+
+
+
+
+hr {
+  clear:both;
+  margin:2em auto 0;
+  position: relative;
+  height:2px;
+  width: 50%;
+  //@include background-image(linear-gradient(to right, transparent 0%, darken($gray-bg,8%) 25%,darken($gray-bg,8%) 75%, transparent 100%));
+  border:none;
+  &:before{
+    position: absolute;
+    content:'';
+    top: 0;
+    left:0;right:0;
+    height:1px;
+    background:linear-gradient(left, transparent 0%, darken($blue,8%) 20%,darken($blue,8%) 80%, transparent 100%);
+
+  }
+  &:after{
+    position: absolute;
+    content:'';
+    bottom: 0;
+    left:0;right:0;
+    height:1px;
+    background:linear-gradient(left, transparent 0%, lighten($blue,8%) 20%,lighten($blue,8%) 80%, transparent 100%);
+  }
+}
+
+
+.btn {
+  font-family: $sans-serif;
+  font-weight: 400; 
+  background: $blue;
+  color:$white;
+  display: inline-block;
+  padding:0.25em 1em;
+  border:none;
+  outline:0;
+  text-transform: uppercase;
+  &:hover, &:focus {
+    text-decoration: none;
+    color:$white;
+    background: $blue-text;
+
+  }
+}
+
+::-webkit-input-placeholder {
+   color: lighten($blue,15%);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: lighten($blue,15%); 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: lighten($blue,15%);
+}
+
+:-ms-input-placeholder {  
+    color: lighten($blue,15%);  
+}
+
+.main {
+  p {
+
+  } 
+  .single &, .page-template-page-vizsgalatok-php &, .page &  {
+    font-size:20px;
+    line-height: 30px;
+  }
+
+}
+
+
+
+
+
+
+

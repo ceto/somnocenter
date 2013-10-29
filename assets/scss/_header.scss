@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.banner {
+  background:$blue-30 ;
+  //$blue-90;
+  //border-top: 0.25em solid $blue-30;
+  //background: url('../img/pioca-eggplant-top.png') repeat-x left bottom, url('../img/watermark.png') no-repeat center -220px white;
+  background: url('../img/watermark.png') no-repeat center -220px $blue-30;
+}
+
+.brand {
+	max-width:285px;
+	display:block;
+	position: absolute;
+  top:0em;
+	z-index:1;
+  background: white;
+  border-top:0.25em solid $eggplant;
+  &:hover, &:focus {
+    //background: $blue-90;
+    border-top:0.25em solid $blue-120;
+  } 
+  img {    
+		margin:1.875em 0.75em 2.2em;
+    display: block;
+    max-width: 258px;
+
+    
+
+  }
+}
+
+.hs {
+  display:block;
+  width:32px;
+  height:32px;
+  background: $blue;
+  float:right;
+  //clear:right;
+}
+
+.info {
+  //width:75%;
+  display:inline-block;
+  //background: $green;
+  color:$blue-120;
+  float:right;
+  clear:right;
+  //font-size: 1.25em;
+  line-height: 1em;
+  font-weight: bold;
+  //color:white;
+  margin:0.333333em 0;
+  //padding:0 0.25em;
+  small {
+    font-size: 0.6666666em;
+    display:block;
+  }
+
+}
