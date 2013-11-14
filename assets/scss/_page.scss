@@ -1,36 +1,74 @@
-.page-template-page-felezett-php {
+.page-template-page-felezett-php, .page-template-page-tunetek-php {
 
   .container[role="document"]{
-    background: linear-gradient(to right, transparent, transparent 50%, $blue-120 50%, $blue-120);
+    
+    .row {
+      max-width:none;
+      padding:0 0;
+      @include breakpoint($s1) {
+        padding:0 0;
+      }
+      @include breakpoint($s2) {
+        padding:0 0;
+      }  
+
+    }
 
   }
+
+
   
   .main.wide {
     //background: linear-gradient(to right, transparent, transparent 50%, $blue-120 50%, $blue-120);
     //background: black;
-    padding:0 0;
+    //padding:0 0;
     width:auto;
+    background: linear-gradient(to right, $blue-70, $blue-70 50%, $blue-120 50%, $blue-120);
+  }
+
+
+  .felezett {
+    background: linear-gradient(to right, $blue-70, $blue-70 50%, $blue-120 50%, $blue-120);
   }
 
   .feles {
     width:50%;
     float:left;
     padding:2em;
+    font-size: 16px;
+    line-height:22px;
+
   }
   .feles2 {
-    color:$blue-70;
+
+    h2 {
+      color:$blue-70;
+    }
+    
     a{
-      color:$blue-30;
+      //color:$blue-30;
+    }
+  }
+
+  .fejecske {
+    //background: white;
+    //color:$blue-90;
+    max-width: $maximum;
+    margin:0 auto 0 auto;
+    font-size:1.125em;
+    line-height: 1.4em;
+    a {
+      //color:$red;
     }
   }
 
   .page-header {
     text-align: center;
-    background: white;
-    padding:0.5em 0.5em;
-    margin-top:3em;
-    //color:$blue-90;
-    //color:white;
+    margin:0 auto;
+    width: 50%;
+
+    float:left;
+    padding:0 1em;
 
     h1 {
       //border:1px solid $blue-120;
@@ -39,25 +77,80 @@
     }
 
   }
+  .fej-cont {
+    margin:0 auto;
+    width: 50%;
+    float:right;
+    padding:0 1em;
+    color:$blue-90;
+    font-size: 0.875em;
+  }
 
-  .feles {
+  
+  .tuncike {
+    width:50%;
+    float:left;
+    padding:0.25em;
+    //margin-right: 2%;
+    &:nth-child(2n) {
+      //margin-right:0;
+      float:right;
+    }
+
+
     h3 {
-      text-transform: none;
-      font-size: 1.25em;
-      margin-right: 2em;
-      &:after {
-        content:'+';
-        float:right;
+      //text-transform: none;
+      font-size: 1em;
+      margin: 0;
+      font-weight: 300;
+      font-family: $sans-serif;
+
+      a {
+        min-height: 5.25em;
         display: block;
+        padding:1em 0.75em 0.75em 0.75em;
+        background: $red;
+        color:white;        
+        &:hover, &:focus {
+            text-decoration: none;
+        }
+        &.collapsed {
+          background: white;
+          color:$blue-120;
+          &:hover, &:focus {
+            text-decoration: none;
+            background: $red;
+            color:white;
+          }
+        }
+        
+        
       }
+      
+    }
+    .conti {
+
+      background: white;
+      //border-top: 2px solid $red;
+      .belso {
+        padding:1em 1em;
+      }
+      
+      p {
+      }
+    
+    }
+
+    .read-more {
+      margin:0.75em 0 0 0;  
     }
   }
+
+
 }
 
 
-.page-template-page-vizsgalatok-php {
-  
-
+.page-template-page-vizsgalatok-php, .page-template-page-gyogyitasstart-php {
 
   .container[role="document"]{
    .row {
@@ -74,17 +167,17 @@
 
 
   .main.wide{
-    padding:5em 0 0;
+    //padding:0 0;
     width:auto;
 
   }
 
   .indent {
-    width:66.6666666%;
+    //width:66.6666666%;
     max-width: $maximum;
     margin:0 auto;
-    font-size:24px;
-    line-height: 35px;
+    font-size:1.125em;
+    line-height: 1.4em;
   }
 
   .vizsga-lista {
@@ -97,6 +190,15 @@
         max-width: $maximum;
         margin:0 auto;
         padding:6em;
+        .js &{
+          opacity:0;
+          transform: translate(-25%,0);
+          transition: all 500ms ease;
+          &.onScreen {
+            opacity: 1;
+            transform: translate(0,0);
+          }
+        } 
       }
 
       &:first-child{
@@ -186,6 +288,74 @@
 }
 
 
+
+.page-template-page-gyogyitasstart-php {
+
+  .gyogystartblokk {
+    margin-bottom: 4em;
+
+    .container {
+      border-top: 3px solid $red;
+      background: $blue-70;
+      max-width: $maximum;
+      margin:0 auto;
+      padding:4em 6em 4em 6em;
+
+      .row {
+      }
+
+
+    }
+  }
+}
+
+
+
 .mitortenik {
   background: $blue-30;
 }
+
+
+.page-template-page-kozpontok-php{
+  .container[role="document"]{
+   padding:0 1em;
+  }
+
+  .main.wide {
+    width:auto;
+  }
+
+  .page-header {
+    h1 {
+      margin-top: 0;
+    }
+  }
+
+  .felteke {
+    //margin:2em auto;
+
+  }
+
+ .balfel {
+  @include breakpoint($s2) {
+    width:48%;
+    float:left;
+    margin-right: 4%;
+  }
+
+ }
+
+ .jobbfel {  
+  @include breakpoint($s2) {
+    width:48%;
+    float:left;
+  }
+ }
+
+ .tab-content {
+  padding: 1em;
+  background: $blue-70;
+  border-top: 3px solid $red;
+ }
+
+} 

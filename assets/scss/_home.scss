@@ -102,13 +102,13 @@
     line-height: 1.4em;
     margin:0;
     float:left;
-    width:75%;
+    max-width:66.6666666%;
     small {
       display:block;
     }
   }
   .btn {
-    float:left;
-    width:25%;
+    max-width: 33.33333%;
+    float: right;
   }
 }

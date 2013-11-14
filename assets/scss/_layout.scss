@@ -6,6 +6,11 @@ html * {
 }
 
 body {
+
+  background: $blue;
+}
+
+.minden {
   position: relative;
   background: $blue-90;
 }
@@ -18,24 +23,52 @@ body {
 .row {
   max-width: $maximum;
   margin:0 auto;
+  padding:0 6px;
+  @include breakpoint($s1) {
+    padding:0 12px;
+  }
+  @include breakpoint($s2) {
+    padding:0 1em;
+  }  
+
 }
 
 .container[role="document"]{
   //position:relative;
-    background: url('../img/watermark.png') no-repeat center center transparent;
+  background: url('../img/watermark.png') no-repeat center center transparent;
+  //padding:0 2em;
 }
 
 .main {
   
   &.wide {
-    width:66.66666%;
-    padding:4em 0;
+
     margin:0 auto;
+
+    padding:2em 0;
+
+    @include breakpoint($s2) {
+      width:80%;
+    }
+
+    @include breakpoint($s3) {
+      width:66.66666%;
+    }
   }
+
+
   
   &.narrow {
-    width:75%;
-    float:left;
+        padding:2em 0;
+    @include breakpoint($s2) {
+      width:68%;
+      float:left;
+    }
+
+    @include breakpoint($s3) {
+      width:75%;
+      float:left;
+    }
 
   }
 

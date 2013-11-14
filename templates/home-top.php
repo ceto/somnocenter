@@ -26,8 +26,5 @@
       <h3>Van e önnek alvászavara? <small>Tünetei alapján kiderítheti</small></h3>
       <a href="#" class="btn">1 perces alvászavar teszt indítása</a>
   </aside>
-  <div class="main clearfix <?php echo roots_main_class(); ?>" role="main">
-    <?php include roots_template_path(); ?>
-  </div><!-- /.main -->
 </div><!-- /.content -->
 </div><!-- /.container .document -->

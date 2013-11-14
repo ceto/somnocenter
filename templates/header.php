@@ -1,7 +1,8 @@
 <header class="banner container" role="banner">
   <div class="row">
+    <a href="#" class="menu-button">M</a>
     <a href="#" class="hs">?</a>
-  	<nav class="nav-sub" role="navigation">
+  	<nav class="nav-sub desktop" role="navigation">
 	  <?php
 	    if (has_nav_menu('secondary_navigation')) :
 	      wp_nav_menu(array('theme_location' => 'secondary_navigation', 'menu_class' => 'nav nav-pills clearfix'));
@@ -18,7 +19,7 @@
 
   </div>
 </header>
-<nav class="nav-main clearfix" role="navigation">
+<nav class="nav-main desktop clearfix" role="navigation">
   <div class="row">
   <?php
     if (has_nav_menu('primary_navigation')) :
@@ -27,5 +28,7 @@
   ?>
   </div>
 </nav>
+
+
 
 

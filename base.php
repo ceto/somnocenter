@@ -3,6 +3,25 @@
 
   <!--[if lt IE 8]><div class="alert alert-warning"><?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?></div><![endif]-->
 
+
+<div class="mobilcol">
+  <nav class="nav-main mobile clearfix" role="navigation">
+      <?php
+        if (has_nav_menu('primary_navigation')) :
+          wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav nav-pills clearfix', 'depth' => 1));
+        endif;
+      ?>
+  </nav>
+  <nav class="nav-sub mobile clearfix" role="navigation">
+    <?php
+      if (has_nav_menu('secondary_navigation')) :
+        wp_nav_menu(array('theme_location' => 'secondary_navigation', 'menu_class' => 'nav nav-pills clearfix'));
+      endif;
+    ?>
+  </nav>
+</div>
+<div class="minden">
+
   <?php
     do_action('get_header');
     // Use Bootstrap's navbar if enabled in config.php
@@ -25,13 +44,13 @@
         <aside class="inner-side" role="complementary">
           <?php get_template_part( 'templates/sidebar', 'inner') ?>
         </aside><!-- /.inner-side -->
-
-        <aside class="ugyerzi clearfix">
-          <h3>Ha úgy érzi, bármiben sérül az egészséges alvása, forduljon bizalommal a SomnoCenter szakértőihez!</h3>
-          <a href="?page_id=70" class="btn">Az első konzultáció és a vizsgálat részletei</a>
-          <p class="discl">A központjainkban az alvászavarok teljes spektrumának diagnosztizálását és kezelését végezzük.</p>
-        </aside>
       <?php endif; ?>
+      <?php if ( $post->post_parent == '49' ) {
+        get_template_part('templates/gyogyithato');
+      } ?>
+      <?php if (is_single()) {
+        get_template_part('templates/ugyerzi');
+      }?>
 
     </div><!-- /.content -->
   </div><!-- /.container .document -->
@@ -83,5 +102,6 @@
 
   <?php get_template_part('templates/footer'); ?>
 
+</div><!-- /.minden -->
 </body>
 </html>

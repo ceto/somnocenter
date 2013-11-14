@@ -8,37 +8,63 @@
   //border-top: 0.25em solid $blue-30;
   //background: url('../img/pioca-eggplant-top.png') repeat-x left bottom, url('../img/watermark.png') no-repeat center -220px white;
   background: url('../img/watermark.png') no-repeat center -220px $blue-30;
+  
+
 }
 
 .brand {
-	max-width:285px;
-	display:block;
+  display:none;
 	position: absolute;
   top:0em;
 	z-index:1;
   background: white;
   border-top:0.25em solid $eggplant;
   &:hover, &:focus {
-    //background: $blue-90;
     border-top:0.25em solid $blue-120;
-  } 
-  img {    
-		margin:1.875em 0.75em 2.2em;
-    display: block;
-    max-width: 258px;
-
-    
-
   }
+  
+  @include breakpoint ($s2) {
+  }
+
+  @include breakpoint ($s3) {
+    width:285px;
+    display: block;
+  }
+
+
+
+
+  img {    
+    @include breakpoint ($s2) {
+    }
+
+
+    @include breakpoint ($s3) {
+      display: block;
+      margin:1.5em 0.75em 1.875em;
+      max-width: 258px;
+
+    }
+
+
+    //display: none;
+  }
+
+
 }
 
 .hs {
-  display:block;
+  display:none;
   width:32px;
   height:32px;
   background: $blue;
   float:right;
-  //clear:right;
+
+  @include breakpoint ($s2) {
+      display:block;
+  }
+
+
 }
 
 .info {
