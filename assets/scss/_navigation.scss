@@ -276,6 +276,7 @@
 
 // Give the tabs something to sit on
 .nav-tabs {
+  @include clearfix;
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
   list-style: none;
@@ -334,7 +335,7 @@
 .gyogyTab {
   counter-reset: my-awesome-counter;
   > li {
-    width:25%;
+    width:50%;
     counter-increment: my-awesome-counter;
     
 

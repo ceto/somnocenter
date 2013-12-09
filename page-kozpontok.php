@@ -4,7 +4,7 @@ Template Name: Központok Sablon
 */
 ?>
 <div class="clearfix felteke">
-<div class="balfel">
+<div class="jobbfel">
 <?php
   $the_center=new WP_Query(array(
     'post_type' => 'page;',
@@ -39,7 +39,7 @@ Template Name: Központok Sablon
 </div>
 </div><!-- /.balfel -->
 <?php wp_reset_query(); ?>
-<div class="jobbfel">
+<div class="balfel">
   <?php get_template_part('templates/page', 'header'); ?>
   <?php get_template_part('templates/content', 'page'); ?>
 </div><!-- /.jobbfel -->

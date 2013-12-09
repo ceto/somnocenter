@@ -48,7 +48,7 @@
       <?php if ( $post->post_parent == '49' ) {
         get_template_part('templates/gyogyithato');
       } ?>
-      <?php if (is_single()) {
+      <?php if (is_single() || is_front_page()) {
         get_template_part('templates/ugyerzi');
       }?>
 
@@ -63,26 +63,7 @@
 <?php if (is_single()): ?>
 <div class="container related">  
   <div class="row">
-    <h3>Kapcsolódó írások</h3>
-    <div class="related-item">
-      <h4>Lorem ipsum dolor sit amet</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, numquam, atque, porro, laborum illum unde recusandae magnam quas sapiente iste doloremque tempore expedita ipsam neque rem quam deleniti dolor enim.
-      </p>
-      <a href="#" class="btn">Folytatás</a>
-    </div>
-    <div class="related-item">
-      <h4>Ez is lorem ipsum dolor sit amet</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, numquam, atque, porro, laborum illum unde recusandae magnam quas sapiente iste doloremque tempore expedita ipsam neque rem quam deleniti dolor enim.
-      </p>
-      <a href="#" class="btn">Folytatás</a>
-    </div>
-    <div class="related-item">
-      <h4>Lorem ipsum dolor sit amet</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, numquam, atque, porro, laborum illum unde recusandae magnam quas sapiente iste doloremque tempore expedita ipsam neque rem quam deleniti dolor enim.
-      </p>
-      <a href="#" class="btn">Folytatás</a>
-    </div>
-
+    <?php related_posts();  ?>
   </div>
 </div>
 <?php endif; ?>

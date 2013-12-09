@@ -34,7 +34,7 @@
   }
 
   .entry-mini-figure {
-    display: none;
+    //display: none;
     position: relative;
     margin:1.333333em 2% 0 0;
     float:left;
@@ -57,7 +57,26 @@
     }
 
   }
-  
+
+  .entry-cat {
+    //display: block;
+    //float:left;
+    a {
+      background: $red;
+      color:white;
+      display: block;
+      float:left;
+      //font-variant: small-caps;
+      text-transform: uppercase;
+      padding:1em 1em;
+      line-height:1em;
+      &:hover, &:focus {
+        text-decoration: none;
+        background: $orange;
+      } 
+    }
+  }
+
   .published {
     position:relative;
     padding:1em 1em;
@@ -66,13 +85,8 @@
     font-variant: small-caps;
     background: $blue;
     color:white;
-    border-left: 6em solid $red; 
-    &:before {
-      content:"ÉLETMÓD";
-      position: absolute;
-      left:-5.3333em;
-    } 
   }
+
   
   h2.entry-title{
     margin:0 0;
@@ -165,12 +179,19 @@
 
 
   .entry-content, .entry-summary {
+    
+
     @include breakpoint($s2) {
 
     }  
 
     @include breakpoint($s3) {
       margin:0 0 0 25%;
+    }
+  
+
+    .read-more {
+      margin-top:1em;
     }
   }
 

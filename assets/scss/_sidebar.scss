@@ -442,14 +442,30 @@
 }
 
 .related {
-  background: $blue-30;
+  background: $blue-70;
   padding:4em 0;
+  ol {
+    padding:0;
+    margin:0;
+
+  }
   .related-item {
+    list-style: none;
     width:50%;
     float:left;
+    //margin-left: 10%;
     padding:2em;
-    &:nth-type-of(2n+1) {
+    &:nth-child(2n+1) {
       clear:left;
+      margin-left: 0;
+    }
+    
+    .conti {
+      //display: none;
+    }
+
+    .read-more{
+      margin-top:1em;
     }
   }
 

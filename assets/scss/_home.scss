@@ -112,3 +112,72 @@
     float: right;
   }
 }
+
+
+.page-template-page-home-php {
+
+  .main.wide {
+    font-size: 0.875em;
+    margin:0 auto;
+    padding:2em 0;
+    @include breakpoint($s2) {
+      width:auto;
+    }
+    @include breakpoint($s3) {
+    }
+  }
+
+  .balfel {
+    @include breakpoint($s2) {
+      width:50%;
+    }
+  }
+
+  .listazott {
+    margin-bottom:2em;
+    .entry-mini-figure {
+
+      @include breakpoint($s2) {
+        width:33%;
+        float:left;
+        margin-right:0.5em;
+      }
+      @include breakpoint($s3) {
+      }
+    }
+    .entry-cat {
+        font-size: 0.75em;
+        line-height:1em;
+      a {
+        background: $red;
+        color:white;
+        display: inline-block;
+        text-transform: uppercase;
+        padding:0.333em 0.333em;
+        
+        &:hover, &:focus {
+          text-decoration: none;
+          background: $orange;
+        } 
+      }
+    }
+    .entry-title {
+      font-size: 1.25em;
+      margin:0.333em 0 0.25em 0;
+    }
+    .entry-summary {
+      position:relative;
+      p{
+        margin:0;
+      }
+    }
+    .read-more {
+      position: absolute;
+      left:0;right:0;
+      top:0;bottom:0;
+      opacity:0;
+    }
+  }
+
+
+}

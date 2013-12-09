@@ -38,22 +38,13 @@ Template Name: Tünetek lista
       <?php while ($the_tunet->have_posts()) : $the_tunet->the_post(); ?>
         <div class="tuncike panel clearfix">
           <h3>
-            <a class="collapsed" data-toggle="collapse" data-parent="#faccordion<?php echo $i; ?>" href="#t<?php echo get_the_ID(); ?>">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion<?php echo $i; ?>" href="#t<?php echo get_the_ID(); ?>">
               <?php the_title(); ?>
             </a>
           </h3>
         	<div class="conti collapse clearfix" id="t<?php echo get_the_ID(); ?>">
         	 <div class="belso">
-             <?php // the_excerpt(); ?>
-             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, ex, voluptatem, sint laboriosam rerum cum a quod perferendis sequi aliquid ipsam illo quam architecto harum ad praesentium voluptas voluptate soluta.
-          	 </p>
-             <h4>Lehetséges alvászavar betegségek</h4>
-             <ul class="betik">
-              <li><a href="#">Inszomnia</a></li>
-              <li><a href="#">Paraszomnia</a></li>
-              <li><a href="#">Alvási apnoé</a></li>
-             </ul>
+             <?php the_content(); ?>
             </div><!-- /.belso -->
           </div>
 

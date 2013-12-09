@@ -4,6 +4,7 @@
       <img src="http://lorempixel.com/1024/512" alt="<?php the_title(); ?>">
     </figure>
    <header>
+      <?php get_template_part('templates/entry-cat'); ?>
       <?php get_template_part('templates/entry-time'); ?>
       <h1 class="entry-title"><?php the_title(); ?></h1>
       <?php get_template_part('templates/entry-author'); ?>

@@ -40,9 +40,9 @@
 
   }
   .feles2 {
-
+    color:$blue-70;
     h2 {
-      color:$blue-70;
+      
     }
     
     a{
@@ -88,35 +88,38 @@
 
   
   .tuncike {
-    width:50%;
-    float:left;
-    padding:0.25em;
+    //width:50%;
+    //float:left;
+    //padding:0.25em;
     //margin-right: 2%;
+    margin-bottom:0.5em;
     &:nth-child(2n) {
       //margin-right:0;
-      float:right;
+      //float:right;
     }
 
 
     h3 {
-      //text-transform: none;
-      font-size: 1em;
+      text-transform: none;
+      font-size: 1.5em;
+      line-height: 1.125em;
       margin: 0;
-      font-weight: 300;
+      font-weight: 700;
       font-family: $sans-serif;
 
       a {
-        min-height: 5.25em;
+        //min-height: 5.25em;
         display: block;
-        padding:1em 0.75em 0.75em 0.75em;
+        font-family: $serif;
+        padding:0.5em 0.75em 0.33333em 0.75em;
         background: $red;
         color:white;        
         &:hover, &:focus {
             text-decoration: none;
         }
         &.collapsed {
-          background: white;
-          color:$blue-120;
+          background: none;
+          color:$red;
           &:hover, &:focus {
             text-decoration: none;
             background: $red;
@@ -130,7 +133,7 @@
     }
     .conti {
 
-      background: white;
+      //background: white;
       //border-top: 2px solid $red;
       .belso {
         padding:1em 1em;
@@ -154,14 +157,14 @@
 
   .container[role="document"]{
    .row {
-      max-width: 100%;
-      margin:0 auto;
+      //max-width: 100%;
+      //margin:0 auto;
     }
     
     aside {
-      max-width: $maximum;
-      margin-left:auto;
-      margin-right:auto;
+      //max-width: $maximum;
+      //margin-left:auto;
+      //margin-right:auto;
     }  
   }
 
@@ -290,16 +293,42 @@
 
 
 .page-template-page-gyogyitasstart-php {
-
+  .fa {
+    @include clearfix;
+  }
+  .gyfej {
+    background: $eggplant;
+    color:$blue-90;
+    padding:1em;
+    @include breakpoint($s2) {
+      float:right;
+      width:36%;
+    }
+    a{
+      color:$orange;
+    }
+    .btn {
+      background: $red;
+      display: block;
+      color:$blue-90;
+      small {
+        display: block;
+      }
+    }
+  }
   .gyogystartblokk {
+  
+    @include clearfix;
+    margin-top:2em;
     margin-bottom: 4em;
 
+    
     .container {
       border-top: 3px solid $red;
       background: $blue-70;
       max-width: $maximum;
       margin:0 auto;
-      padding:4em 6em 4em 6em;
+      padding:2em 2em 2em 2em;
 
       .row {
       }
@@ -348,7 +377,7 @@
  .jobbfel {  
   @include breakpoint($s2) {
     width:48%;
-    float:left;
+    float:right;
   }
  }
 
