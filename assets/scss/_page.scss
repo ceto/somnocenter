@@ -22,13 +22,19 @@
     //background: linear-gradient(to right, transparent, transparent 50%, $blue-120 50%, $blue-120);
     //background: black;
     //padding:0 0;
+    padding:0 0;
     width:auto;
-    background: linear-gradient(to right, $blue-70, $blue-70 50%, $blue-120 50%, $blue-120);
+    //background: linear-gradient(to right, $blue-70, $blue-70 50%, $blue 50%, $blue);
   }
 
 
   .felezett {
-    background: linear-gradient(to right, $blue-70, $blue-70 50%, $blue-120 50%, $blue-120);
+    @include clearfix;
+    background: linear-gradient(to right, $blue-70, $blue-70 50%, $blue 50%, $blue);
+    .inner {
+      max-width: $maximum;
+      margin:0 auto;
+    }
   }
 
   .feles {
@@ -38,10 +44,17 @@
     font-size: 16px;
     line-height:22px;
 
+    h2 {
+      font-size:2em;
+      margin:2em 0;
+    }
   }
   .feles2 {
-    color:$blue-70;
+    //color:$blue-70;
     h2 {
+      text-align: right;
+      color:$blue-90;
+
       
     }
     
@@ -51,47 +64,50 @@
   }
 
   .fejecske {
-    //background: white;
-    //color:$blue-90;
-    max-width: $maximum;
-    margin:0 auto 0 auto;
-    font-size:1.125em;
-    line-height: 1.4em;
-    a {
-      //color:$red;
+    @include clearfix;
+    background-color: white;
+    padding:2em 0;
+
+
+
+
+
+
+
+
+    .fej-cont {
+      margin:0 auto 0 auto;
+      max-width: $maximum;
+      padding:0 1em;
+      h2 {
+        width:50%;
+        float:left;
+        margin-right: 0.75em;
+        margin-top:0;
+      }
+      p{
+      }
+
     }
-  }
 
-  .page-header {
-    text-align: center;
-    margin:0 auto;
-    width: 50%;
+    .page-header {
 
-    float:left;
-    padding:0 1em;
-
-    h1 {
-      //border:1px solid $blue-120;
-      padding:0.5em 0.5em;
-      margin:0;
+      h1 {
+        //border:1px solid $blue-120;
+        padding:0;
+        margin:1em 0;
+              text-align: center;
+      }
     }
 
+
+
   }
-  .fej-cont {
-    margin:0 auto;
-    width: 50%;
-    float:right;
-    padding:0 1em;
-    color:$blue-90;
-    font-size: 0.875em;
-  }
+
 
   
   .tuncike {
-    //width:50%;
-    //float:left;
-    //padding:0.25em;
-    //margin-right: 2%;
+    @include clearfix;
     margin-bottom:0.5em;
     &:nth-child(2n) {
       //margin-right:0;
@@ -100,56 +116,176 @@
 
 
     h3 {
-      text-transform: none;
-      font-size: 1.5em;
-      line-height: 1.125em;
       margin: 0;
-      font-weight: 700;
-      font-family: $sans-serif;
-
+      padding:0;
       a {
-        //min-height: 5.25em;
+        position: relative;
+        font-size: 1em;
+        line-height: 1.125em;
         display: block;
         font-family: $serif;
-        padding:0.5em 0.75em 0.33333em 0.75em;
-        background: $red;
-        color:white;        
+        padding:0.75em 2.5em 0.5em 0.75em;
+        color:$blue;
+        background-color: white;
+        //border-bottom: 1px solid $blue-90;
+
         &:hover, &:focus {
-            text-decoration: none;
-        }
-        &.collapsed {
-          background: none;
-          color:$red;
-          &:hover, &:focus {
-            text-decoration: none;
-            background: $red;
-            color:white;
+          text-decoration: none;
+          color:$eggplant;
+          .icon:before {
+            background-color: $eggplant;
           }
         }
-        
-        
-      }
-      
-    }
-    .conti {
+        &.collapsed {
+          .icon:before {
+            content: "\f1c9";
+            //content: "\f27e";
+          }
+          
 
-      //background: white;
-      //border-top: 2px solid $red;
-      .belso {
-        padding:1em 1em;
+        }
+      
+        .icon:before {
+          position:absolute;
+          right:0; top:0;bottom:0;
+          background-color: $blue;
+          color:white;
+          width:40px;
+          text-align:center;
+          content: "\f2bd";
+          font-size: 2em;
+          display: inline-block;
+          font-family: "Ionicons";
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          text-rendering: auto;
+          line-height: 1.25em;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+
+        }
+
+
+      }
+    }
+
+
+    .conti {
+     .belso {
+        @include clearfix;
+        padding:0 1em 1em 1em;
+        background-color: white;
       }
       
       p {
       }
-    
     }
 
     .read-more {
       margin:0.75em 0 0 0;  
     }
   }
+  
+  .feles2 .tuncike{
+    h3 {
+      a {
+        background-color:$blue-90;
+        &:hover, &:focus {
+          //color:$eggplant;
+          .icon:before {
+            background-color: $eggplant;
+            color:white;
+          }
+        }
+        .icon:before {
+          background-color: $blue-30;
+          color:$blue;
+        }
+      }
+    }
+    .conti {
+     .belso {
+        background-color: $blue-90;
+      }
+      
+    }
+
+    
+  }
+
+}
 
 
+.betegsegek {
+  //background: url('../img/watermark.png') no-repeat center center white;
+  background-color: white;
+  padding:2em 0;
+  .inner {
+    max-width: $maximum;
+    margin:0 auto;
+    padding: 0 1em;
+  }
+}
+
+.betegseg-list {
+  @include clearfix;
+  margin:0;
+  padding:0;
+  li {
+    list-style: none;
+    width:50%;
+    padding-right:0.5em;
+    padding-bottom:0.25em;
+    float:left;
+    &:nth-child(2n) {
+      float:right;
+      padding-right:0;
+      padding-left:0.5em;
+    }
+  }
+  a {
+    position: relative;
+    display: block;
+    background-color: $blue-70;
+    color:$gray;
+    font-weight: 700;
+    line-height:1.125em;
+    padding:0.5em 1em;
+    &:hover, &:focus {
+      text-decoration: none;
+      background-color: $blue;
+      color:$blue-90;
+      &:before {
+        background-color: $red;
+      }
+    }
+    &:before {
+      position: absolute;
+      top:0;right:0;bottom:0;
+      width:40px;
+      text-align: center;
+      background-color: $blue-30;
+      color:white;
+      display: block;
+      font-size: 2em;
+      content: "\f280";
+      display: inline-block;
+      font-family: "Ionicons";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      text-rendering: auto;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+  }
 }
 
 
@@ -321,21 +457,39 @@
     @include clearfix;
     margin-top:2em;
     margin-bottom: 4em;
-
-    
-    .container {
-      border-top: 3px solid $red;
-      background: $blue-70;
-      max-width: $maximum;
-      margin:0 auto;
-      padding:2em 2em 2em 2em;
-
-      .row {
-      }
-
-
-    }
   }
+  
+
+  .gyogyelem-block {
+    @include clearfix;
+
+    background: url('http://lorempixel.com/768/480') no-repeat right center white;
+    background-size: 50% 100%;
+    
+    &.paros {
+      background-color: $blue-90;
+      background-position: left center;
+      .szoveg{
+        float:right;
+      }
+    }
+    
+    .szoveg {
+      width:50%;
+      padding:1em 1em;
+    }
+    
+    .read-more {
+      margin-top:1em;
+    }
+
+  
+  }
+
+
+
+
+
 }
 
 

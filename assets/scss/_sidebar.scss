@@ -419,7 +419,9 @@
 .vizsgalatokhoz {
   .tab-content {
     //padding:4em 0;
-    background: $blue-70;
+    background: white;
+    border-top: 1px solid $blue;
+    margin-top:-1px;
   }
 
 }
