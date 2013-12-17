@@ -4,7 +4,7 @@ YARPP Template: Simple Somno Related Posts
 Author:Gábor Szabó
 Description: A simple YARPP template for Somnocenter.
 */
-?><h3><?php _e('Kapcsolódó írások','root') ?></h3>
+?>
 <?php if (have_posts()):?>
 <ol>
 	<?php while (have_posts()) : the_post(); ?>

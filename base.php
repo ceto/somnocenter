@@ -55,19 +55,8 @@
     </div><!-- /.content -->
   </div><!-- /.container .document -->
 
-
-
 <?php get_template_part( 'templates/vizsgalathoz'); ?>
-
-
-<?php if (is_single()): ?>
-<div class="container related">  
-  <div class="row">
-    <?php related_posts();  ?>
-  </div>
-</div>
-<?php endif; ?>
-
+<?php get_template_part( 'templates/related'); ?>
 <?php get_template_part( 'templates/searchblock'); ?>
 
 

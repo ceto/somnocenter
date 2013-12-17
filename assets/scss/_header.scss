@@ -17,32 +17,39 @@
 	position: absolute;
   top:0em;
 	z-index:1;
-  background: white;
-  border-top:0.25em solid $eggplant;
+  background: $blue;
+  border-top:5px solid $eggplant;
+  max-height:171px;
+  overflow: hidden;
+  display: block;
+  
+
   &:hover, &:focus {
-    border-top:0.25em solid $blue-120;
+    //border-top:0.25em solid $blue-120;
+    background-color: $blue-120;
   }
   
   @include breakpoint ($s2) {
   }
 
   @include breakpoint ($s3) {
-    width:285px;
-    display: block;
+    width:286px;
+
   }
 
 
 
 
-  img {    
+  img {
+    display: none;    
     @include breakpoint ($s2) {
     }
 
 
     @include breakpoint ($s3) {
       display: block;
-      margin:1.5em 0.75em 1.875em;
-      max-width: 258px;
+      //margin:1.5em 0.75em 1.875em;
+      //max-width: 285px;
 
     }
 

@@ -19,9 +19,9 @@
   
 
   .lifelogo {
-    margin:1em auto;
+    margin:1.75em auto 0 auto;
     display: block;
-    max-width: 220px;
+    //max-width: 220px;
   }
 
   .widget {
@@ -72,19 +72,9 @@
 }
 
 
-.rovatfej {
-  text-align: center;
-  margin:0;
-  padding:0.5em 0.5em 0.25em;
-  margin-bottom: 0.25em;
-  font-family: $sans-serif;
-  font-weight: 300;
-}
-
 .rovatlista {
-  margin:0 0 3em;
+  margin:1.5em 0 3em;
   padding:0;
-  text-align: center;
   //background: white;
   //border:1px solid $gray-lighter;
 
@@ -93,26 +83,52 @@
     //float:left;
     //display: inline;
   }
+  .current-cat a, .blog &.cat-sl a {
+    &:before{
+      background-color: $eggplant;
+    }
+  }
 
   a{
-    //font-family: $sans-serif;
-    //font-weight: 300;
-    //font-size: 1.125em;
-
-
-    //text-transform: uppercase;
+    position: relative;
     font-variant: small-caps;
     font-size:1.25em;
     line-height:1em;
-    padding:0.5em 0;
+    padding:0.5em 0 0.5em 2.5em;
     display:block;
-    border-bottom:1px solid $gray-lighter;
-    border-top:1px solid white;
+    margin:0.25em 0; 
+    //background-color: $blue-30;
     color:$blue;
-    &:hover {
+    &:hover, &:focus  {
       color:$blue-120;
-      background: $gray-lighter;
-    } 
+      text-decoration: none;
+      &:before{
+        background-color: $blue-120;
+      }
+    }
+
+    &:before{
+      position: absolute;
+      top:0;left:0;bottom:0;
+      width:40px;
+      text-align: center;
+      background-color: $blue-30;
+      color:white;
+      display: block;
+      font-size: 2em;
+      content: "\f280";
+      display: inline-block;
+      font-family: "Ionicons";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      text-rendering: auto;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
   }
 
 }
@@ -420,7 +436,7 @@
   .tab-content {
     //padding:4em 0;
     background: white;
-    border-top: 1px solid $blue;
+    border-top: 1px solid $blue-70;
     margin-top:-1px;
   }
 
@@ -446,29 +462,4 @@
 .related {
   background: $blue-70;
   padding:4em 0;
-  ol {
-    padding:0;
-    margin:0;
-
-  }
-  .related-item {
-    list-style: none;
-    width:50%;
-    float:left;
-    //margin-left: 10%;
-    padding:2em;
-    &:nth-child(2n+1) {
-      clear:left;
-      margin-left: 0;
-    }
-    
-    .conti {
-      //display: none;
-    }
-
-    .read-more{
-      margin-top:1em;
-    }
-  }
-
 }

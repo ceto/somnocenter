@@ -280,7 +280,7 @@
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
   list-style: none;
-  border-bottom: 1px solid $blue;
+  border-bottom: 1px solid $blue-70;
   max-width: $maximum;
   margin:0 auto;
   > li {
@@ -301,11 +301,12 @@
       font-family: $sans-serif;
       font-weight: 300;
       border: 1px solid transparent;
+      border-color:$blue-70 $blue-70 $blue-70 $blue-70;
       border-radius: 2px 2px 0 0;
-      background: $blue;
+      background-color: $blue;
       color:$blue-90;
       &:hover {
-        border-color: transparent transparent $blue-70 $blue-120 transparent;
+        border-color: $blue-70 $blue-70 $blue-70 $blue-70;
         text-decoration: none;
         background-color: $blue-120;
         color:white;
@@ -315,7 +316,7 @@
 
     // Active state, and it's :hover to override normal :hover
     &.active > a {
-      background: white;
+      background-color: white;
       color: $blue;
       &,&:hover,&:focus {
         //color: @nav-tabs-active-link-hover-color;
@@ -339,19 +340,43 @@
 
     > a {
       //font-weight: 600;
-      &:before {
-        content:'+';
-        display:block;
-        font-weight: 700;
-        font-size: 2em;
-        line-height: 1em;
+      padding-left: 4.5em;
+      background-position: 0.5em center;
+      background-repeat: no-repeat;
+      background-size: auto 80%;
+      strong {
+        display: block;
         font-family: $serif;
-        //color:$eggplant;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        line-height: 1em;
+
+      }
+      // &:before {
+      //   content:'+';
+      //   display:block;
+      //   font-weight: 700;
+      //   font-size: 2em;
+      //   line-height: 1em;
+      //   font-family: $serif;
+      // }
+    }
+    
+    &:first-child {
+      > a {
+        background-image: url(../img/symb_kozpont.png);
+
+      }
+    }
+    &:last-child {
+      > a{
+        background-image: url(../img/symb_otthon.png);
 
       }
     }
   
   }
+
 
 
 }

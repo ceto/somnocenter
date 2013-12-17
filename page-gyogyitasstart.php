@@ -3,7 +3,6 @@
 Template Name: Gyógyítás Start
 */
 ?>
-
 <div class="fa">
   <aside class="gyfej">
     <h3>Az alvászavar okainak feltárása az szakorvosi konzultációval kezdődik.</h3>
@@ -22,12 +21,11 @@ Template Name: Gyógyítás Start
 	$i=0;
 ?>
 <section class="gyogystartblokk">
-  <h2>A vizsgálatok bemutatása</h2>
   <ul class="nav nav-tabs gyogyTab" id="gyogyTab">
     <?php while ($the_cumo->have_posts()) : $the_cumo->the_post(); ?>
       <li <?php echo (++$i==1)?'class="active"':'' ?>>
         <a href="#gyogyelem-<?php echo $i; ?>" data-toggle="tab">
-          <?php the_title() ?>
+          <strong><?php the_title() ?></strong> végezhető alvásvizsgálatok
         </a>
       </li>
     <?php endwhile; ?>
@@ -51,12 +49,15 @@ Template Name: Gyógyítás Start
         <?php while ($the_service->have_posts()) : $the_service->the_post(); ?>
        		<div class="gyogyelem-block <?php echo ((++$j+$i)%2 ==0)?'paros':'paratlan'; ?>">
         		  <div class="szoveg">	
-              <h3><a href="<?php the_permalink();?>"><?php the_title() ?></a></h3>
+                <h3><a href="<?php the_permalink();?>"><?php the_title() ?></a></h3>
           			<div class="conti">
                   <?php the_excerpt(); ?>
           			</div>
               </div>
-		      	
+              <?php 
+                $biga = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ) , 'medium11');
+              ?>
+		          <div class="ill" style="background-image:url(<?php echo $biga[0]; ?>)"></div>
             </div>
         <?php endwhile; ?>
 

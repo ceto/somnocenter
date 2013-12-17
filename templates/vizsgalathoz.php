@@ -15,6 +15,11 @@ $i=0;
         </a>
       </li>
     <?php endwhile; ?>
+      <li>
+        <a href="#vizsgalathoz-<?php echo $i+1; ?>" data-toggle="tab">
+          Kapcsolódó írások
+        </a>
+      </li>
   </ul>
   <?php 
     rewind($the_mitort);
@@ -33,6 +38,15 @@ $i=0;
       	</div>
       </section><!-- /.vizsgalathoz-# -->
     <?php endwhile; ?>
+      <section id="vizsgalathoz-<?php echo ++$i; ?>" <?php post_class( 'fade tab-pane container vizsgalathoz-'.$i.' '.(($i==1)?'active in':'') ) ?>>
+        <div class="row clearfix">
+          <div class="vizsgalathoz-block clearfix">
+              <div class="conti">
+                <?php related_entries(); ?>
+              </div>
+          </div>
+        </div>
+      </section><!-- /.vizsgalathoz-# -->
   </div><!-- /.tab-content -->
 </aside>
 <?php wp_reset_query(); ?>

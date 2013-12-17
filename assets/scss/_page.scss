@@ -1,3 +1,31 @@
+.page {
+
+  .main{
+    padding-top:0em;
+    .page-content {
+      margin:0 auto;
+      
+      @include breakpoint($s1) {
+        margin:0 auto;
+   
+      }
+
+      @include breakpoint($s2) {
+        margin:0 4em;
+   
+      }
+
+      @include breakpoint($s3) {
+        margin:0 8em;
+   
+      }
+      
+   
+    }
+  }
+}
+
+
 .page-template-page-felezett-php, .page-template-page-tunetek-php {
 
   .container[role="document"]{
@@ -19,25 +47,31 @@
 
   
   .main.wide {
-    //background: linear-gradient(to right, transparent, transparent 50%, $blue-120 50%, $blue-120);
-    //background: black;
-    //padding:0 0;
     padding:0 0;
     width:auto;
-    //background: linear-gradient(to right, $blue-70, $blue-70 50%, $blue 50%, $blue);
   }
-
 
   .felezett {
     @include clearfix;
-    background: linear-gradient(to right, $blue-70, $blue-70 50%, $blue 50%, $blue);
+    background: linear-gradient(to right, $blue-70, $blue-70 50%, $blue-120 50%, $blue-120);
+    position:relative;
+
     .inner {
       max-width: $maximum;
       margin:0 auto;
+      &:after {
+        position: absolute;
+        content: '';
+        left:0;right:0;top:0;bottom:0;
+        background: url(../img/nap_hold.jpg) no-repeat 50% top transparent;
+        z-index:0;
+      }
     }
   }
 
   .feles {
+    position: relative;
+    z-index: 1;
     width:50%;
     float:left;
     padding:2em;
@@ -46,11 +80,15 @@
 
     h2 {
       font-size:2em;
-      margin:2em 0;
+      margin:3em 0 2em;
     }
+  }
+  .feles1 {
+    background: url(../img/clouds.jpg) no-repeat left top transparent;
   }
   .feles2 {
     //color:$blue-70;
+    background: url(../img/stars.jpg) no-repeat right top transparent;
     h2 {
       text-align: right;
       color:$blue-90;
@@ -125,7 +163,7 @@
         display: block;
         font-family: $serif;
         padding:0.75em 2.5em 0.5em 0.75em;
-        color:$blue;
+        color:$blue-120;
         background-color: white;
         //border-bottom: 1px solid $blue-90;
 
@@ -148,7 +186,7 @@
         .icon:before {
           position:absolute;
           right:0; top:0;bottom:0;
-          background-color: $blue;
+          background-color: $blue-120;
           color:white;
           width:40px;
           text-align:center;
@@ -202,7 +240,7 @@
         }
         .icon:before {
           background-color: $blue-30;
-          color:$blue;
+          color:$blue-120;
         }
       }
     }
@@ -256,7 +294,7 @@
     padding:0.5em 1em;
     &:hover, &:focus {
       text-decoration: none;
-      background-color: $blue;
+      background-color: $blue-120;
       color:$blue-90;
       &:before {
         background-color: $red;
@@ -307,6 +345,7 @@
 
   .main.wide{
     //padding:0 0;
+    padding-top:2em;
     width:auto;
 
   }
@@ -462,25 +501,51 @@
 
   .gyogyelem-block {
     @include clearfix;
-
-    background: url('http://lorempixel.com/768/480') no-repeat right center white;
-    background-size: 50% 100%;
+    position: relative;
+    background-color: white;
     
     &.paros {
       background-color: $blue-90;
-      background-position: left center;
+      .ill {
+        left:0;right:50%;
+      }
       .szoveg{
         float:right;
       }
     }
-    
+    .ill {
+      position: absolute;
+      top:0;bottom:0;
+      left:50%;right:0;
+      background-color: white;
+      background-size: cover;
+      background-position: center center;
+      -webkit-filter: grayscale(1) opacity(0.7) ;
+      filter:grayscale(1) opacity(0.7);
+      transition: all .4s ease-in;
+    }
+    &:hover,&:focus{
+      .ill {
+        -webkit-filter: grayscale(0) opacity(1) ;
+        filter:grayscale(0) opacity(1);
+      }
+    }
     .szoveg {
+      h3 {
+        position: relative;
+        z-index: 2;
+      }
       width:50%;
       padding:1em 1em;
     }
     
     .read-more {
-      margin-top:1em;
+      position: absolute;
+      left:0;right:0;
+      top:0;bottom:0;
+      background-color: transparent;
+      text-indent: -9999px;
+      z-index:1;
     }
 
   
@@ -506,6 +571,7 @@
 
   .main.wide {
     width:auto;
+    padding-top:2em;
   }
 
   .page-header {
@@ -537,8 +603,9 @@
 
  .tab-content {
   padding: 1em;
-  background: $blue-70;
-  border-top: 3px solid $red;
+  background: white;
+  border: 1px solid $blue-70;
+  margin-top:-1px;
  }
 
 } 

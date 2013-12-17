@@ -1,7 +1,12 @@
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
     <figure class="entry-figure">
-      <img src="http://lorempixel.com/1024/512" alt="<?php the_title(); ?>">
+      <?php if (has_post_thumbnail() ) : ?>
+        <?php the_post_thumbnail('medium21'); ?>
+      <?php else : ?>
+        <img src="http://lorempixel.com/1024/512" alt="<?php the_title(); ?>">
+      <?php endif; ?>
+
     </figure>
    <header>
       <?php get_template_part('templates/entry-cat'); ?>
