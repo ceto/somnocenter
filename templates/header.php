@@ -13,7 +13,7 @@
        <small>Budapest | Szeged | Pécs</small>+36 70 770 5653 
      </div>
     
-    <?php if ( (is_single() || is_archive() || is_home() ) && FALSE ) : ?>
+    <?php if ( (is_single() || is_archive() || is_home() ) && TRUE ) : ?>
      <a class="brand" href="<?php echo get_permalink(22); ?>" title="<?php bloginfo('name'); ?>">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo_life.png" alt="<?php bloginfo('name'); ?>">
       </a>

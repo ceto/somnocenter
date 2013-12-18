@@ -16,8 +16,13 @@ $i=0;
       </li>
     <?php endwhile; ?>
       <li>
-        <a href="#vizsgalathoz-<?php echo $i+1; ?>" data-toggle="tab">
+        <a href="#vizsgalathoz-<?php echo ++$i; ?>" data-toggle="tab">
           Kapcsolódó írások
+        </a>
+      </li>
+      <li>
+        <a href="#vizsgalathoz-<?php echo ++$i; ?>" data-toggle="tab">
+          Kérdezzen, szóljon hozzá
         </a>
       </li>
   </ul>
@@ -29,8 +34,7 @@ $i=0;
     <?php while ($the_mitort->have_posts()) : $the_mitort->the_post(); ?>
       <section id="vizsgalathoz-<?php echo ++$i; ?>" <?php post_class( 'fade tab-pane container vizsgalathoz-'.$i.' '.(($i==1)?'active in':'') ) ?>>
       	<div class="row clearfix">
-      		<div class="vizsgalathoz-block clearfix">
-        			<h3><?php the_title() ?></h3>
+      		<div class="vizsgalathoz-block">
         			<div class="conti">
         				<?php the_content(); ?>
         			</div>
@@ -38,11 +42,20 @@ $i=0;
       	</div>
       </section><!-- /.vizsgalathoz-# -->
     <?php endwhile; ?>
-      <section id="vizsgalathoz-<?php echo ++$i; ?>" <?php post_class( 'fade tab-pane container vizsgalathoz-'.$i.' '.(($i==1)?'active in':'') ) ?>>
+      <section id="vizsgalathoz-<?php echo ++$i; ?>" class="fade tab-pane container vizsgalathoz-<?php echo $i; ?>">
         <div class="row clearfix">
-          <div class="vizsgalathoz-block clearfix">
+          <div class="vizsgalathoz-block">
               <div class="conti">
                 <?php related_entries(); ?>
+              </div>
+          </div>
+        </div>
+      </section><!-- /.vizsgalathoz-# -->
+      <section id="vizsgalathoz-<?php echo ++$i; ?>" class="fade tab-pane container vizsgalathoz-<?php echo $i; ?>">
+        <div class="row clearfix">
+          <div class="vizsgalathoz-block">
+              <div class="conti">
+                <?php get_template_part('templates/comments','fb' ); ?>
               </div>
           </div>
         </div>

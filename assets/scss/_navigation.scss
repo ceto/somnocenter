@@ -298,8 +298,7 @@
       margin-right: 6px;
       //font-size: 1.25em;
       line-height: 1em;
-      font-family: $sans-serif;
-      font-weight: 300;
+      font-weight: 400;
       border: 1px solid transparent;
       border-color:$blue-70 $blue-70 $blue-70 $blue-70;
       border-radius: 2px 2px 0 0;
@@ -317,7 +316,7 @@
     // Active state, and it's :hover to override normal :hover
     &.active > a {
       background-color: white;
-      color: $blue;
+      color: $eggplant;
       &,&:hover,&:focus {
         //color: @nav-tabs-active-link-hover-color;
         //background-color: @nav-tabs-active-link-hover-bg;
