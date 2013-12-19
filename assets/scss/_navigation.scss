@@ -79,6 +79,9 @@
           background-color: $eggplant;
           color:$eggplant;
         }
+        @include breakpoint($s2){
+          text-indent: -9999px;
+        }
 
         @include breakpoint($s3){
           display:none;
@@ -410,7 +413,7 @@
   text-transform: uppercase;
   text-align: left;
   font-weight: 400;
-  background-color: $blue-30;
+  background-color: rgba($blue,0.3);
   color:$blue-text;
   span {
     color:white;

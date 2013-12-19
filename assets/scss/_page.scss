@@ -53,17 +53,29 @@
 
   .felezett {
     @include clearfix;
-    background: linear-gradient(to right, $blue-70, $blue-70 50%, $blue-120 50%, $blue-120);
     position:relative;
+    padding:0 0;
+    @include breakpoint($s1) {
+      padding:0 0;
+    }
+    @include breakpoint($s2) {
+      background: linear-gradient(to right, $blue-70, $blue-70 50%, $blue-120 50%, $blue-120);
+      
+
+
+    }  
 
     .inner {
       max-width: $maximum;
       margin:0 auto;
+      @include breakpoint($s2) {
+        padding:0 1em;
+      }  
       &:after {
         position: absolute;
         content: '';
         left:0;right:0;top:0;bottom:0;
-        background: url(../img/nap_hold.jpg) no-repeat 50% top transparent;
+        background: url(../img/hold.png) no-repeat 50% top, url(../img/nap.png) no-repeat 50% top transparent;
         z-index:0;
       }
     }
@@ -72,11 +84,15 @@
   .feles {
     position: relative;
     z-index: 1;
-    width:50%;
-    float:left;
-    padding:2em;
+    
+    
     font-size: 16px;
     line-height:22px;
+    
+    @include breakpoint($s2) {
+      width:50%;
+      float:left;
+    }
 
     h2 {
       font-size:2em;
@@ -84,11 +100,35 @@
     }
   }
   .feles1 {
-    background: url(../img/clouds.jpg) no-repeat left top transparent;
+    background: url(../img/clouds.png) no-repeat left top transparent;
+    padding: 2em 6px;
+    @include breakpoint($s1) {
+      padding:2em 12px;
+    }
+    @include breakpoint($s2) {
+      padding:2em 1em 2em 0;
+      background-color: transparent;
+    }
+    @include breakpoint($s3) {
+      padding:2em 2em 2em 0;
+    }
+
   }
   .feles2 {
     //color:$blue-70;
-    background: url(../img/stars.jpg) no-repeat right top transparent;
+    background: url(../img/stars.png) no-repeat right top $blue-120;
+    padding: 2em 6px;
+    @include breakpoint($s1) {
+      padding:2em 12px;
+    }
+
+    @include breakpoint($s2) {
+      padding:2em 0 2em 1em;
+      background-color: transparent;
+    }
+    @include breakpoint($s3) {
+      padding:2em 0 2em 2em;
+    }
     h2 {
       text-align: right;
       color:$blue-90;
@@ -264,7 +304,13 @@
   .inner {
     max-width: $maximum;
     margin:0 auto;
-    padding: 0 1em;
+    padding:0 6px;
+    @include breakpoint($s1) {
+      padding:0 12px;
+    } 
+    @include breakpoint($s2) {
+      padding:0 1em;
+    }  
   }
 }
 
@@ -274,14 +320,17 @@
   padding:0;
   li {
     list-style: none;
-    width:50%;
+
     padding-right:0.5em;
     padding-bottom:0.25em;
-    float:left;
-    &:nth-child(2n) {
-      float:right;
-      padding-right:0;
-      padding-left:0.5em;
+    @include breakpoint($s2) {  
+      float:left;
+      width:50%;
+      &:nth-child(2n) {
+        float:right;
+        padding-right:0;
+        padding-left:0.5em;
+      }
     }
   }
   a {

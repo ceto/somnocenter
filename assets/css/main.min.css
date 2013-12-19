@@ -3360,7 +3360,17 @@ body {
     bottom: 0;
     font-size: 2.5em;
     margin: 1em;
-    text-shadow: 0 0 3px #f3f6fa; }
+    text-shadow: 0 0 3px #f3f6fa;
+    text-align: center; }
+    .page-headerfigure h1:before {
+      position: absolute;
+      content: '';
+      background: url("../img/sztetoszkop.png") no-repeat center center transparent;
+      display: block;
+      top: -92px;
+      left: 0;
+      right: 0;
+      height: 84px; }
 
 .yarpp-related ol {
   *zoom: 1;
@@ -3418,6 +3428,8 @@ body {
           padding-right: 0;
           padding-left: 2em; } }
 
+.tab-pane.post-213 .vizsgalathoz-block {
+  background: url("../img/kerdojel.png") no-repeat left top transparent; }
 .tab-pane.post-213 .conti {
   max-width: 768px;
   margin: 0 auto; }
@@ -3533,6 +3545,9 @@ body {
         background-size: auto 66%;
         background-color: #7c0040;
         color: #7c0040; } }
+    @media only screen and (min-width: 768px) {
+      .nav-main li:first-child a {
+        text-indent: -9999px; } }
     @media only screen and (min-width: 1024px) {
       .nav-main li:first-child a {
         display: none; } }
@@ -3723,7 +3738,7 @@ body {
   text-transform: uppercase;
   text-align: left;
   font-weight: 400;
-  background-color: #c5d2e6;
+  background-color: rgba(91, 126, 183, 0.3);
   color: #14467c; }
   .breadcrumbs span {
     color: white; }
@@ -3817,8 +3832,16 @@ body {
       .inner-side .widget_test .btn:hover, .inner-side .widget_test .btn:focus {
         background: #f7941e; }
 
+.rovatfej {
+  text-transform: none;
+  color: #f3f6fa;
+  background: url("../img/menu_1_bg.png") no-repeat 95% center #5b7eb7;
+  background-size: auto 80%;
+  padding: 0.666em 0.5em;
+  margin: 1.33333em 0 0 0; }
+
 .rovatlista {
-  margin: 1.5em 0 3em;
+  margin: 0 0 3em;
   padding: 0; }
   .rovatlista li {
     list-style-type: none; }
@@ -3864,7 +3887,7 @@ body {
 
 /*********** Footer Sidebar **********/
 .sidebar-footer {
-  background: #4c6ba2;
+  background: url("../img/zzz.png") no-repeat 98% bottom #4c6ba2;
   border-bottom: 6px solid #c5d2e6; }
   .sidebar-footer .sidebar {
     margin: 2em auto; }
@@ -4049,6 +4072,13 @@ body {
     display: table; }
   .vizsgalathoz-block:after {
     clear: both; }
+  .vizsgalathoz-block .conti {
+    *zoom: 1; }
+    .vizsgalathoz-block .conti:before, .vizsgalathoz-block .conti:after {
+      content: " ";
+      display: table; }
+    .vizsgalathoz-block .conti:after {
+      clear: both; }
 
 .related {
   background: #e9eef5;
@@ -4212,16 +4242,25 @@ body {
   width: auto; }
 .page-template-page-felezett-php .felezett, .page-template-page-tunetek-php .felezett {
   *zoom: 1;
-  background: linear-gradient(to right, #e9eef5, #e9eef5 50%, #4c6ba2 50%, #4c6ba2);
-  position: relative; }
+  position: relative;
+  padding: 0 0; }
   .page-template-page-felezett-php .felezett:before, .page-template-page-felezett-php .felezett:after, .page-template-page-tunetek-php .felezett:before, .page-template-page-tunetek-php .felezett:after {
     content: " ";
     display: table; }
   .page-template-page-felezett-php .felezett:after, .page-template-page-tunetek-php .felezett:after {
     clear: both; }
+  @media only screen and (min-width: 480px) {
+    .page-template-page-felezett-php .felezett, .page-template-page-tunetek-php .felezett {
+      padding: 0 0; } }
+  @media only screen and (min-width: 768px) {
+    .page-template-page-felezett-php .felezett, .page-template-page-tunetek-php .felezett {
+      background: linear-gradient(to right, #e9eef5, #e9eef5 50%, #4c6ba2 50%, #4c6ba2); } }
   .page-template-page-felezett-php .felezett .inner, .page-template-page-tunetek-php .felezett .inner {
     max-width: 1140px;
     margin: 0 auto; }
+    @media only screen and (min-width: 768px) {
+      .page-template-page-felezett-php .felezett .inner, .page-template-page-tunetek-php .felezett .inner {
+        padding: 0 1em; } }
     .page-template-page-felezett-php .felezett .inner:after, .page-template-page-tunetek-php .felezett .inner:after {
       position: absolute;
       content: '';
@@ -4229,23 +4268,46 @@ body {
       right: 0;
       top: 0;
       bottom: 0;
-      background: url(../img/nap_hold.jpg) no-repeat 50% top transparent;
+      background: url(../img/hold.png) no-repeat 50% top, url(../img/nap.png) no-repeat 50% top transparent;
       z-index: 0; }
 .page-template-page-felezett-php .feles, .page-template-page-tunetek-php .feles {
   position: relative;
   z-index: 1;
-  width: 50%;
-  float: left;
-  padding: 2em;
   font-size: 16px;
   line-height: 22px; }
+  @media only screen and (min-width: 768px) {
+    .page-template-page-felezett-php .feles, .page-template-page-tunetek-php .feles {
+      width: 50%;
+      float: left; } }
   .page-template-page-felezett-php .feles h2, .page-template-page-tunetek-php .feles h2 {
     font-size: 2em;
     margin: 3em 0 2em; }
 .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1 {
-  background: url(../img/clouds.jpg) no-repeat left top transparent; }
+  background: url(../img/clouds.png) no-repeat left top transparent;
+  padding: 2em 6px; }
+  @media only screen and (min-width: 480px) {
+    .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1 {
+      padding: 2em 12px; } }
+  @media only screen and (min-width: 768px) {
+    .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1 {
+      padding: 2em 1em 2em 0;
+      background-color: transparent; } }
+  @media only screen and (min-width: 1024px) {
+    .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1 {
+      padding: 2em 2em 2em 0; } }
 .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2 {
-  background: url(../img/stars.jpg) no-repeat right top transparent; }
+  background: url(../img/stars.png) no-repeat right top #4c6ba2;
+  padding: 2em 6px; }
+  @media only screen and (min-width: 480px) {
+    .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2 {
+      padding: 2em 12px; } }
+  @media only screen and (min-width: 768px) {
+    .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2 {
+      padding: 2em 0 2em 1em;
+      background-color: transparent; } }
+  @media only screen and (min-width: 1024px) {
+    .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2 {
+      padding: 2em 0 2em 2em; } }
   .page-template-page-felezett-php .feles2 h2, .page-template-page-tunetek-php .feles2 h2 {
     text-align: right;
     color: #f3f6fa; }
@@ -4348,7 +4410,13 @@ body {
   .betegsegek .inner {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 0 1em; }
+    padding: 0 6px; }
+    @media only screen and (min-width: 480px) {
+      .betegsegek .inner {
+        padding: 0 12px; } }
+    @media only screen and (min-width: 768px) {
+      .betegsegek .inner {
+        padding: 0 1em; } }
 
 .betegseg-list {
   *zoom: 1;
@@ -4361,14 +4429,16 @@ body {
     clear: both; }
   .betegseg-list li {
     list-style: none;
-    width: 50%;
     padding-right: 0.5em;
-    padding-bottom: 0.25em;
-    float: left; }
-    .betegseg-list li:nth-child(2n) {
-      float: right;
-      padding-right: 0;
-      padding-left: 0.5em; }
+    padding-bottom: 0.25em; }
+    @media only screen and (min-width: 768px) {
+      .betegseg-list li {
+        float: left;
+        width: 50%; }
+        .betegseg-list li:nth-child(2n) {
+          float: right;
+          padding-right: 0;
+          padding-left: 0.5em; } }
   .betegseg-list a {
     position: relative;
     display: block;

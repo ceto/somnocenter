@@ -5,7 +5,7 @@ Template Name: Gyógyítás Start
 ?>
 <div class="fa">
   <aside class="gyfej">
-    <h3>Az alvászavar okainak feltárása az szakorvosi konzultációval kezdődik.</h3>
+    <h3>Az alvászavar okainak feltárása szakorvosi konzultációval kezdődik.</h3>
     <a href="?page_id=70" class="btn">Kezdje itt a gyógyulást<small>Az első konzultáció részletei</small></a>
   </aside>
 	<?php get_template_part('templates/page', 'header'); ?>

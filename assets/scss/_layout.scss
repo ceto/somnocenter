@@ -86,6 +86,17 @@ body {
     font-size: 2.5em;
     margin: 1em;
     text-shadow: 0 0 3px $blue-90;
+    text-align: center;
+    &:before {
+      position:absolute;
+      content: '';
+      background: url('../img/sztetoszkop.png') no-repeat center center transparent;
+      display: block;
+      top:-92px;
+      left:0;right:0;
+      height:84px;
+    }
+  
   }
 }
 
@@ -128,6 +139,7 @@ body {
 
 .tab-pane.post-158 .conti{
   //font-size: 0.875em;
+  //background: url('../img/vert_dots.png') repeat-y center top transparent;
   ol {
     counter-reset: my-counter;
     margin:0;
@@ -167,9 +179,13 @@ body {
   }
 }
   
-.tab-pane.post-213 .conti{
-  max-width: $s2;
-  margin: 0 auto;    
-
+.tab-pane.post-213 {
+  .vizsgalathoz-block{
+    background: url('../img/kerdojel.png') no-repeat left top transparent;
+  }
+  .conti {
+    max-width: $s2;
+    margin: 0 auto;
+  }
 }
 
