@@ -21,10 +21,12 @@ function roots_setup() {
   add_image_size('medium21', 840, 420, true);
   add_image_size('medium11', 768, 768, true);
   
-  add_image_size('small21', 320, 160, true);
+  add_image_size('small43', 480, 320, true);
+  add_image_size('small21', 480, 240, true);
   
   // Add post formats (http://codex.wordpress.org/Post_Formats)
   // add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
+  add_theme_support('post-formats', array('video'));
 
   // Tell the TinyMCE editor to use a custom stylesheet
   add_editor_style('/assets/css/editor-style.css');

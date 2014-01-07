@@ -189,3 +189,44 @@ body {
   }
 }
 
+.player {
+  display: block;
+  position: relative;
+  background-color: $blue-120;
+  &:before {
+        position: absolute;
+        z-index:3;
+        top:33%;
+        bottom:33%;
+        left:0;
+        right:0;
+        font-size: 70px;
+        line-height: 70px;
+        text-align: center;
+        color:white;
+        content: "\f24c";
+        text-shadow:0 0 2px black;
+        display: inline-block;
+        font-family: "Ionicons";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+  }
+  &:hover,&:focus {
+    img {
+      filter:brightness(0.5);
+    }
+    &:before {
+      color:$orange;
+    }
+  }
+  img {
+    filter:brightness(0.3);
+  }
+}
+

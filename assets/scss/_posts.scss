@@ -62,7 +62,7 @@
     //display: block;
     //float:left;
     a {
-      background: $red;
+      background: $orange;
       color:white;
       display: block;
       float:left;
@@ -72,7 +72,7 @@
       line-height:1em;
       &:hover, &:focus {
         text-decoration: none;
-        background: $orange;
+        background: $red;
       } 
     }
   }
