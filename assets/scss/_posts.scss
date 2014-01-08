@@ -1,53 +1,19 @@
 /* ==========================================================================
-   Posts
+   Single Posts
    ========================================================================== */
 
-
-.page-header {
-  
-  .narrow & {
-
-    
-    @include breakpoint($s2) {
-
-    }  
-
-    @include breakpoint($s3) {
-      margin:0 0 0 25%;
-    }
-
-  }
-
-}
-
-.hentry {
-  .blog &, .archive & {
-    margin:0 0 5em;
-  }
+.hentry.nagycikk {
 
   .entry-figure {
+    margin-bottom: -1.25em;
     position: relative;
-    margin:0 0 -1.5em 0;
     img {
       display: block;
     }
   }
-
-  .entry-mini-figure {
-    //display: none;
-    position: relative;
-    margin:1.333333em 2% 0 0;
-    float:left;
-    width:23%;
-    img {
-      display: block;
-    }
-  }
-
 
   header {
-    position: relative;
-    
+    position:relative;
     @include breakpoint($s2) {
 
     }  
@@ -55,21 +21,23 @@
     @include breakpoint($s3) {
       margin:0 0 0 25%;
     }
-
   }
 
   .entry-cat {
-    //display: block;
-    //float:left;
+    line-height:1em;
+    margin-right: -0.3333333em;
+    //margin-left: 1.5em;
+    @include breakpoint($s2) {
+      //font-size: 1.25em;
+      //margin-left:0;
+    }
     a {
       background: $orange;
       color:white;
-      display: block;
-      float:left;
-      //font-variant: small-caps;
+      display: inline-block;
       text-transform: uppercase;
-      padding:1em 1em;
-      line-height:1em;
+      padding:0.5em 0.75em;
+      
       &:hover, &:focus {
         text-decoration: none;
         background: $red;
@@ -78,18 +46,16 @@
   }
 
   .published {
-    position:relative;
-    padding:1em 1em;
-    line-height:1em;
-    display:inline-block;
-    font-variant: small-caps;
-    background: $blue;
     color:white;
-  }
-
-  
-  h2.entry-title{
-    margin:0 0;
+    background-color: $blue;
+    //font-size: 1.25em;
+    line-height:1em;
+    display: inline-block;
+    padding:0.5em 0.75em;
+    font-variant: small-caps;
+    @include breakpoint($s2) {
+      //font-size: 1.25em;
+    }
   }
 
   .entry-rovat {
@@ -99,20 +65,6 @@
     }
   }
 
-  .entry-meta-mini {
-
-    margin-bottom:0.125em;
-    .byline-mini{
-      display: inline;
-      a{
-        font-variant: small-caps;
-      }
-    }
-    .published-mini{
-      display: inline;
-      font-variant: small-caps;
-    }
-  }
   .entry-sharing {
     @include clearfix;
     position: relative;
@@ -126,30 +78,6 @@
     line-height: 1.125em;
     text-align: center;
     margin:1em auto;
-    // &:after {
-    //   position: absolute;
-    //   display: block;
-    //   z-index:-1;
-    //   content:'';
-    //   background-color: $blue-30;
-    //   border-radius: 50%;
-    //   width:12em;
-    //   height:12em;
-    //   left:0;
-    //   top:0;
-    // }
-    // &:before {
-    //   position: absolute;
-    //   display: block;
-    //   z-index:-2;
-    //   content:'';
-    //   background-color: $blue;
-    //   border-radius: 50%;
-    //   width:12em;
-    //   height:12em;
-    //   left:-0.25em;
-    //   top:-0.25em;
-    // }
     h3 {
       margin-top:2.5em;
       margin-bottom: 0.25em;
@@ -195,9 +123,8 @@
       }
  
     }
-
-
   }
+
 
 
   .author-block {
@@ -221,24 +148,14 @@
     }
   }
 
-
-  .entry-content { }
-
-
-  .entry-content, .entry-summary {
-    
-
+  
+  .entry-content {
     @include breakpoint($s2) {
 
     }  
 
     @include breakpoint($s3) {
       margin:0 0 0 25%;
-    }
-  
-
-    .read-more {
-      margin-top:1em;
     }
   }
 
@@ -251,8 +168,18 @@
       margin:0 0 0 25%;
     }
   }
+}
 
-  #respond {
+/* ==========================================================================
+   List of Posts
+   ========================================================================== */
+
+
+.page-header {
+  
+  .narrow & {
+
+    
     @include breakpoint($s2) {
 
     }  
@@ -260,5 +187,261 @@
     @include breakpoint($s3) {
       margin:0 0 0 25%;
     }
+
   }
+
+}
+.kockak {
+  @include clearfix;
+}
+.szimplasor{
+  margin-bottom:0.5em;
+  @include breakpoint($s2) {
+    width:99%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+}
+
+.duplasor {
+  margin-bottom:0.5em;
+  @include breakpoint($s1) {
+    width:49.5%;
+    float:left;
+    margin-bottom:1%;
+    &:nth-child(2n+1){
+      clear:left;
+    }
+    &:nth-child(2n){
+      float:right;
+      clear:right;
+    }
+  }
+}
+
+.triplasor {
+  margin-bottom:0.5em;
+  @include breakpoint($s1) {
+    width:49.5%;
+    float:left;
+    margin-bottom:1%;
+    margin-left: 1%;
+    &:nth-child(2n+1){
+      clear:left;
+      margin-left: 0;
+    }
+  }
+  
+  @include breakpoint($s2) {
+    width:32.6666666%;
+    margin-left: 1%;
+    margin-bottom:1%;
+    float:left;
+    &:nth-child(2n+1){
+      clear:none;
+      margin-left: 1%;
+    }
+    &:nth-child(3n+1){
+      clear:left;
+      margin-left:0;
+    }
+  }
+}
+
+.quatrosor {
+  margin-bottom:0.5em;
+  @include breakpoint($s1) {
+    width:49.5%;
+    float:left;
+    margin-bottom:1%;
+    margin-left: 1%;
+    &:nth-child(2n+1){
+      clear:left;
+      margin-left: 0;
+    }
+  }
+  
+  @include breakpoint($s2) {
+    width:32.6666666%;
+    margin-left: 1%;
+    margin-bottom:1%;
+    float:left;
+    &:nth-child(2n+1){
+      clear:none;
+      margin-left: 1%;
+    }
+    &:nth-child(3n+1){
+      clear:left;
+      margin-left:0;
+    }
+  }
+
+  @include breakpoint($s3) {
+    width:23.6666666%;
+    margin-left: 1%;
+    margin-bottom:1%;
+    float:left;
+    &:nth-child(2n+1){
+      clear:none;
+      margin-left: 1%;
+    }
+    &:nth-child(3n+1){
+      clear:none;
+      margin-left:1%;
+    }
+    &:nth-child(4n+1){
+      clear:left;
+      margin-left:0;
+    }
+  }
+}
+
+.hentry.kiskocka {
+  @include clearfix;
+  position: relative;
+  padding:1em;
+  background-color: $blue-70;
+  transition: all .3s linear;
+
+  &:hover, &:focus {
+    background-color: $blue;
+    color: $blue-90;
+    a, .published {
+      color:$blue-90;
+    }
+    .read-more:before {
+      background-color: $blue-120;
+      color:$blue-90;
+    }
+  }
+
+  a {
+    color:$blue;
+    z-index:2;
+    position: relative;
+    text-decoration: none;
+
+  }
+  header {
+    position: relative;
+  
+    @include breakpoint($s2) {
+
+    }  
+
+    @include breakpoint($s3) {
+    }
+
+  }
+  .entry-mini-figure {
+    margin:-1em -1em 1em -1em;
+    @include breakpoint($s2) {
+    }
+    @include breakpoint($s3) {
+    }
+  }
+
+  .entry-cat {
+    font-size: 0.875em;
+    line-height:1em;
+    margin-top: -2.125em;
+    a {
+      background: $orange;
+      color:white;
+      display: inline-block;
+      text-transform: uppercase;
+      padding:0.5em 0.5em;
+      
+      &:hover, &:focus {
+        text-decoration: none;
+        background: $red;
+      } 
+    }
+  }
+
+  .entry-author{
+    color:$gray;
+    font-size: 0.875em;
+    //font-weight: 700;
+    font-variant: small-caps;
+  }
+  .published {
+    color:$gray;
+    font-size: 0.875em;
+    //font-weight: 700;
+    font-variant: small-caps;
+  }
+  .entry-title {
+    font-size: 1.5em;
+    margin:0.333em 0 0.25em 0;
+    text-transform: none;
+    @include breakpoint($s1) {
+      min-height: 3em;
+    }
+  }
+  .entry-summary {
+    margin-bottom: 0.5em;
+    @include breakpoint($s1) {
+      min-height: 8em;
+    }
+    p{
+      margin:0;
+    }
+  }
+
+  .read-more {
+    position: absolute;
+    left:0;right:0;
+    top:0;bottom:0;
+    background-color:transparent;
+    color:transparent;
+    z-index: 1;
+    &:hover, &:focus {
+      color:transparent;
+    }
+    &:before {
+      position: absolute;
+      z-index:3;
+      right:0;bottom:0;
+      content:"->";
+      width:50px;
+      height:50px;
+      font-size: 50px;
+      line-height: 50px;
+      text-align: center;
+      background-color: $blue-30;
+      color:$blue;
+      content: "\f280";
+      display: inline-block;
+      font-family: "Ionicons";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+
+
+
+  .entry-meta-mini {
+
+    margin-bottom:0.125em;
+    .byline-mini{
+      display: inline;
+      a{
+        font-variant: small-caps;
+      }
+    }
+    .published-mini{
+      display: inline;
+      font-variant: small-caps;
+    }
+  }
+
+
+
 }

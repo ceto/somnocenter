@@ -12,34 +12,48 @@
 
   }
   @include breakpoint($s2) {
-    
+    min-height: 400px;
   }
   @include breakpoint($s3) {
     min-height: 500px;
   }
 }
 
-.home-blokk {
+.hero-block {
+  @include clearfix;
+  @include breakpoint($s2) {
+    position: absolute;
+    bottom:0;
+  }
+  @include breakpoint($s3) {
+    bottom:2em;
+  }
 }
 
-.slide-blokk {
-  width:66.6666666%;
-  margin:0 auto;
+.hero-text {
 
-  .description {
-    position: absolute;
-    background:rgba(white,0.75);
-    font-size:2.25em;
-    line-height: 1.125em;
-    color:$blue-120;
-    margin:0;
-    padding:0.75em 0.5em 0.5em;
-    bottom:0;
-    border-left:6px solid $eggplant;
+  max-width: $s2;
+  margin:2em auto 0 auto;
+  //text-align: center;
+  p{
+
+    display: inline;
+    color:white;
+    background:rgba($blue-120,0.5);
+    font-size:2.5em;
+    line-height: 1.25em;
     text-transform: uppercase;
   }
+}
 
-
+.hero-action {
+  margin:2em auto;
+  //text-align: center;
+  a{
+    margin-top: 0.25em;
+    font-size:1.25em;
+    padding:0.5em 0.5em;
+  }
 }
 
 
@@ -141,165 +155,5 @@
       float:left;
     }
   }
-
-  .jobbfel .listazott{
-    @include breakpoint($s2) {
-      width:99%;
-      float:none;
-      margin-left: 2%;
-      margin-bottom: 2%;
-      &:nth-child(2n+1){
-        float:none;
-      }
-      &:nth-child(2n){
-        float:none;
-      }
-    }
-    
-
-  }
-
-  .listazott.vidi {
-    .read-more{
-      //display: none;
-      top:33%;
-    }
-  }
-
-  .listazott {
-    position: relative;
-    margin:0 0 0.5em 0;
-    padding:1em;
-    background-color: $blue-70;
-    transition: all .3s linear;
-
-    &:hover, &:focus {
-      background-color: $blue;
-      color: $blue-90;
-      a, .published {
-        color:$blue-90;
-      }
-      .read-more:before {
-        background-color: $blue-120;
-        color:$blue-90;
-      }
-    }
-
-    @include breakpoint($s1) {
-      width:49.5%;
-      float:left;
-      margin-bottom:1%;
-      &:nth-child(2n+1){
-        clear:left;
-      }
-      &:nth-child(2n){
-        float:right;
-        clear:right;
-      }
-    }
-    
-    a {
-      color:$blue;
-      z-index:2;
-      position: relative;
-      text-decoration: none;
-
-    }
-    .entry-mini-figure {
-      margin:-1em -1em 1em -1em;
-      @include breakpoint($s2) {
-        // width:33%;
-        // float:left;
-        // margin-right:0.5em;
-      }
-      @include breakpoint($s3) {
-      }
-    }
-    .entry-cat {
-        //position: absolute;
-        top:0;left:0;
-        font-size: 0.875em;
-        line-height:1em;
-        margin-top: -2.125em;
-      a {
-        background: $orange;
-        color:white;
-        display: inline-block;
-        text-transform: uppercase;
-        padding:0.5em 0.5em;
-        
-        &:hover, &:focus {
-          text-decoration: none;
-          background: $red;
-        } 
-      }
-    }
-    .entry-author{
-      color:$gray;
-      font-size: 0.875em;
-      //font-weight: 700;
-      font-variant: small-caps;
-    }
-    .published {
-      color:$gray;
-      font-size: 0.875em;
-      //font-weight: 700;
-      font-variant: small-caps;
-    }
-    .entry-title {
-      
-      font-size: 1.5em;
-      margin:0.333em 0 0.25em 0;
-      text-transform: none;
-      @include breakpoint($s1) {
-        min-height: 3em;
-      }
-    }
-    .entry-summary {
-      margin-bottom: 0.5em;
-      @include breakpoint($s1) {
-        min-height: 8em;
-      }
-      p{
-        margin:0;
-      }
-    }
-    .read-more {
-      position: absolute;
-      left:0;right:0;
-      top:0;bottom:0;
-      background-color:transparent;
-      color:transparent;
-      z-index: 1;
-      &:hover, &:focus {
-        color:transparent;
-      }
-      &:before {
-        position: absolute;
-        z-index:3;
-        right:0;bottom:0;
-        content:"->";
-        width:50px;
-        height:50px;
-        font-size: 50px;
-        line-height: 50px;
-        text-align: center;
-        background-color: $blue-30;
-        color:$blue;
-        content: "\f280";
-        display: inline-block;
-        font-family: "Ionicons";
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-    }
-  }
-
 
 }

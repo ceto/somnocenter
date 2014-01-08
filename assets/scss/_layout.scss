@@ -168,7 +168,7 @@ body {
         &:nth-child(2n) {
           float:right;
           clear:right;
-          margin-top:10em;
+          //margin-top:10em;
           padding-right: 0;
           padding-left: 2em;
         }
@@ -205,7 +205,7 @@ body {
         text-align: center;
         color:white;
         content: "\f24c";
-        text-shadow:0 0 2px black;
+        text-shadow:0 0 2px $gray;
         display: inline-block;
         font-family: "Ionicons";
         speak: none;

@@ -1,12 +1,14 @@
 <?php while (have_posts()) : the_post(); ?>
-  <article <?php post_class(); ?>>
+  <article <?php post_class('nagycikk'); ?>>
+    
     <figure class="entry-figure">
-      <?php if (has_post_thumbnail() ) : ?>
-        <?php the_post_thumbnail('medium21'); ?>
-      <?php else : ?>
-        <img src="http://lorempixel.com/1024/512" alt="<?php the_title(); ?>">
-      <?php endif; ?>
-
+      <a <?php echo (get_post_format()=='video')?'class="player popup-video"':''; ?> href="<?php echo ( get_post_format()=='video' )?get_post_meta( $post->ID, '_cmb_video', true ):get_permalink(); ?>">
+        <?php if (has_post_thumbnail()) : ?>
+          <?php the_post_thumbnail('medium21'); ?>
+        <?php else: ?>
+          <img src="http://lorempixel.com/1024/512" alt="<?php the_title(); ?>">
+        <?php endif; ?>
+      </a>
     </figure>
    <header>
       <?php get_template_part('templates/entry-cat'); ?>

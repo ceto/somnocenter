@@ -14,11 +14,11 @@
      </div>
     
     <?php if ( (is_single() || is_archive() || is_home() ) && TRUE ) : ?>
-     <a class="brand" href="<?php echo get_permalink(22); ?>" title="<?php bloginfo('name'); ?>">
+     <a class="brand" href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo_life.png" alt="<?php bloginfo('name'); ?>">
       </a>
     <?php else : ?>
-      <a class="brand" href="<?php echo home_url(); ?>/" title="<?php bloginfo('name'); ?>">
+      <a class="brand" href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo_center.png" alt="<?php bloginfo('name'); ?>">
       </a>
     <?php endif ?>
