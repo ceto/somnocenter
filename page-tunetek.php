@@ -3,16 +3,14 @@
 Template Name: Tünetek lista
 */
 ?>
-<!-- nav class="nav-inner">
-	<ul class="clearfix">
-		<li><a href="?page_id=49">Betegségek</a></li>
-		<li class="active"><a href="?page_id=43">Tünetek</a></li>
-	</ul>
-</nav -->
 <div class="fejecske">
   <div class="fej-cont">
-    <?php get_template_part('templates/page', 'header'); ?>
-    <?php get_template_part('templates/content', 'page'); ?>
+    <aside class="hero-block" role="complementary">
+      <div class="hero-text">
+        <h3>Alvászavar tünetek és betegségek</h3>
+        <p>Tünetei alapján az alvászavarok felismerhetők</p>
+      </div>
+    </aside><!-- /.home-blokk -->
   </div>
 </div>
 <?php

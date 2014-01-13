@@ -3,13 +3,19 @@
 Template Name: Gyógyítás Start
 */
 ?>
-<div class="fa">
-  <aside class="gyfej">
-    <h3>Az alvászavar okainak feltárása szakorvosi konzultációval kezdődik.</h3>
-    <a href="?page_id=70" class="btn">Kezdje itt a gyógyulást<small>Az első konzultáció részletei</small></a>
-  </aside>
-	<?php get_template_part('templates/page', 'header'); ?>
-	<?php get_template_part('templates/content', 'page'); ?>
+<div class="fejecske">
+  <div class="fej-cont">
+    <aside class="hero-block" role="complementary">
+      <div class="hero-text">
+        <h3>Alvászavarok kezelése</h3>
+        <p>Vizsgálati és terápiás módszereink bemutatása</p>
+      </div>
+    </aside><!-- /.home-blokk -->
+    <aside class="gyfej">
+      <h3>Az alvászavar okainak feltárása szakorvosi konzultációval kezdődik.</h3>
+      <a href="?page_id=70" class="btn">Kezdje itt a gyógyulást<small>Az első konzultáció részletei</small></a>
+    </aside>
+  </div>
 </div>
 <?php
 	$the_cumo=new WP_Query(array(

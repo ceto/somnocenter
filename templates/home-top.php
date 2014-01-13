@@ -2,7 +2,8 @@
   <div class="row">
     <aside class="hero-block" role="complementary">
       <div class="hero-text">
-        <p>Az rossz minőségű alvás és az abból eredő betegségek, központunkban jól kezelhetőek.</p>
+        <h3>Napközben álmos és fáradt?</h3>
+        <p>A tünetek hátterében alvászavarok állhatnak</p>
       </div>
       <div class="hero-action">
         <a href="<?php echo get_permalink(43); ?>" class="btn">Ismerje meg a tüneteket</a> <a href="<?php echo get_permalink(70); ?>" class="btn">Jelentkezzen vizsgálatra</a>

@@ -1656,9 +1656,9 @@ img { /* Responsive images (ensure images don't scale beyond their parents) */ m
 /* ========================================================================== Layout ========================================================================== */
 html * { box-sizing: border-box; }
 
-body { background: #5b7eb7; }
+body { background-color: #5b7eb7; }
 
-.minden { position: relative; background: #f3f6fa; }
+.minden { position: relative; background-color: #f3f6fa; }
 
 .container { position: relative; }
 
@@ -1673,10 +1673,11 @@ body { background: #5b7eb7; }
 @media only screen and (min-width: 768px) { .main.narrow { width: 68%; float: left; } }
 @media only screen and (min-width: 1024px) { .main.narrow { width: 75%; float: left; } }
 
-.page-headerfigure { position: relative; text-align: center; background-color: white; }
-.page-headerfigure img { -webkit-filter: grayscale(1) opacity(0.3); filter: grayscale(1) opacity(0.3); }
-.page-headerfigure .breadcrumbs { position: absolute; right: 0; top: 0; left: 0; margin: 2em 1em; }
-.page-headerfigure h1 { position: absolute; left: 0; right: 0; bottom: 0; font-size: 2.5em; margin: 1em; text-shadow: 0 0 3px #f3f6fa; text-align: center; }
+.page-headerfigure { position: relative; text-align: center; background-color: #f1f1f1; background-size: cover; background-repeat: no-repeat; background-position: center center; background-image: url("../img/parocska.jpg"); border-bottom: 6px solid white; min-height: 320px; }
+@media only screen and (min-width: 768px) { .page-headerfigure { min-height: 400px; } }
+@media only screen and (min-width: 1024px) { .page-headerfigure { min-height: 500px; } }
+.page-headerfigure .breadcrumbs { position: absolute; right: 0; top: 0; left: 0; margin: 2em auto; max-width: 1024px; }
+.page-headerfigure h1 { position: absolute; left: 0; right: 0; bottom: 0; font-size: 2.5em; margin: 1em; text-shadow: 0 0 5px rgba(243, 246, 250, 0.5); text-align: center; }
 .page-headerfigure h1:before { position: absolute; content: ''; background: url("../img/sztetoszkop.png") no-repeat center center transparent; display: block; top: -92px; left: 0; right: 0; height: 84px; }
 
 .yarpp-related ol { *zoom: 1; padding: 0; margin: 0; }
@@ -1718,6 +1719,15 @@ body { background: #5b7eb7; }
 
 .info { display: inline-block; color: #4c6ba2; float: right; clear: right; line-height: 1em; font-weight: bold; margin: 0.333333em 0; }
 .info small { font-size: 0.6666666em; display: block; }
+
+.fejecske { *zoom: 1; background: url(../img/konzi.jpg) no-repeat center center white; background-size: cover; border-bottom: 6px solid white; position: relative; min-height: 320px; }
+.fejecske:before, .fejecske:after { content: " "; display: table; }
+.fejecske:after { clear: both; }
+.page-template-page-tunetek-php .fejecske { border-bottom: 0px solid white; background-image: url(../img/hero.jpg); }
+@media only screen and (min-width: 768px) { .fejecske { min-height: 400px; } }
+@media only screen and (min-width: 1024px) { .fejecske { min-height: 500px; } }
+.fejecske .fej-cont { margin: 0 auto 0 auto; max-width: 1140px; padding: 0 1em; }
+.fejecske .fej-cont h2 { width: 50%; float: left; margin-right: 0.75em; margin-top: 0; }
 
 /* ========================================================================== Footer ========================================================================== */
 .content-info { background: black; color: #f3f6fa; }
@@ -1899,7 +1909,8 @@ body { overflow-x: hidden; }
 .hentry.nagycikk .entry-cat { line-height: 1em; margin-right: -0.3333333em; }
 .hentry.nagycikk .entry-cat a { background: #f7941e; color: white; display: inline-block; text-transform: uppercase; padding: 0.5em 0.75em; }
 .hentry.nagycikk .entry-cat a:hover, .hentry.nagycikk .entry-cat a:focus { text-decoration: none; background: #e6533e; }
-.hentry.nagycikk .published { color: white; background-color: #5b7eb7; line-height: 1em; display: inline-block; padding: 0.5em 0.75em; font-variant: small-caps; }
+.hentry.nagycikk .published { color: white; background-color: #5b7eb7; display: inline-block; padding: 0.5em 0.75em; font-variant: small-caps; }
+@media only screen and (min-width: 768px) { .hentry.nagycikk .published { line-height: 1em; } }
 .hentry.nagycikk .entry-rovat { margin-top: 0.125em; }
 .hentry.nagycikk .entry-rovat a { font-variant: small-caps; }
 .hentry.nagycikk .entry-sharing { *zoom: 1; position: relative; z-index: 0; width: 12em; height: 12em; border-radius: 50%; background-color: #c5d2e6; color: white; font-size: 0.75em; line-height: 1.125em; text-align: center; margin: 1em auto; }
@@ -1980,59 +1991,53 @@ body { overflow-x: hidden; }
 .hentry.kiskocka .entry-meta-mini .byline-mini a { font-variant: small-caps; }
 .hentry.kiskocka .entry-meta-mini .published-mini { display: inline; font-variant: small-caps; }
 
+.page .container[role="document"] .row { max-width: none; padding: 0 0; }
+@media only screen and (min-width: 480px) { .page .container[role="document"] .row { padding: 0 0; } }
+@media only screen and (min-width: 768px) { .page .container[role="document"] .row { padding: 0 0; } }
 .page .main { padding-top: 0em; }
-.page .main .page-content { margin: 0 auto; }
-@media only screen and (min-width: 480px) { .page .main .page-content { margin: 0 auto; } }
-@media only screen and (min-width: 768px) { .page .main .page-content { margin: 0 4em; } }
-@media only screen and (min-width: 1024px) { .page .main .page-content { margin: 0 8em; } }
+.page .main .page-content { margin: 0 auto; max-width: 768px; padding: 0 6px; }
 
-.page-template-page-felezett-php .container[role="document"] .row, .page-template-page-tunetek-php .container[role="document"] .row { max-width: none; padding: 0 0; }
-@media only screen and (min-width: 480px) { .page-template-page-felezett-php .container[role="document"] .row, .page-template-page-tunetek-php .container[role="document"] .row { padding: 0 0; } }
-@media only screen and (min-width: 768px) { .page-template-page-felezett-php .container[role="document"] .row, .page-template-page-tunetek-php .container[role="document"] .row { padding: 0 0; } }
-.page-template-page-felezett-php .main.wide, .page-template-page-tunetek-php .main.wide { padding: 0 0; width: auto; }
-.page-template-page-felezett-php .felezett, .page-template-page-tunetek-php .felezett { *zoom: 1; position: relative; padding: 0 0; }
-.page-template-page-felezett-php .felezett:before, .page-template-page-felezett-php .felezett:after, .page-template-page-tunetek-php .felezett:before, .page-template-page-tunetek-php .felezett:after { content: " "; display: table; }
-.page-template-page-felezett-php .felezett:after, .page-template-page-tunetek-php .felezett:after { clear: both; }
-@media only screen and (min-width: 480px) { .page-template-page-felezett-php .felezett, .page-template-page-tunetek-php .felezett { padding: 0 0; } }
-@media only screen and (min-width: 768px) { .page-template-page-felezett-php .felezett, .page-template-page-tunetek-php .felezett { background: linear-gradient(to right, #e9eef5, #e9eef5 50%, #4c6ba2 50%, #4c6ba2); } }
-.page-template-page-felezett-php .felezett .inner, .page-template-page-tunetek-php .felezett .inner { max-width: 1140px; margin: 0 auto; }
-@media only screen and (min-width: 768px) { .page-template-page-felezett-php .felezett .inner, .page-template-page-tunetek-php .felezett .inner { padding: 0 1em; } }
-.page-template-page-felezett-php .felezett .inner:after, .page-template-page-tunetek-php .felezett .inner:after { position: absolute; content: ''; left: 0; right: 0; top: 0; bottom: 0; background: url(../img/hold.png) no-repeat 50% top, url(../img/nap.png) no-repeat 50% top transparent; z-index: 0; }
-.page-template-page-felezett-php .feles, .page-template-page-tunetek-php .feles { position: relative; z-index: 1; font-size: 16px; line-height: 22px; }
-@media only screen and (min-width: 768px) { .page-template-page-felezett-php .feles, .page-template-page-tunetek-php .feles { width: 50%; float: left; } }
-.page-template-page-felezett-php .feles h2, .page-template-page-tunetek-php .feles h2 { font-size: 2em; margin: 3em 0 2em; }
-.page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1 { background: url(../img/clouds.png) no-repeat left top transparent; padding: 2em 6px; }
-@media only screen and (min-width: 480px) { .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1 { padding: 2em 12px; } }
-@media only screen and (min-width: 768px) { .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1 { padding: 2em 1em 2em 0; background-color: transparent; } }
-@media only screen and (min-width: 1024px) { .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1 { padding: 2em 2em 2em 0; } }
-.page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2 { background: url(../img/stars.png) no-repeat right top #4c6ba2; padding: 2em 6px; }
-@media only screen and (min-width: 480px) { .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2 { padding: 2em 12px; } }
-@media only screen and (min-width: 768px) { .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2 { padding: 2em 0 2em 1em; background-color: transparent; } }
-@media only screen and (min-width: 1024px) { .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2 { padding: 2em 0 2em 2em; } }
-.page-template-page-felezett-php .feles2 h2, .page-template-page-tunetek-php .feles2 h2 { text-align: right; color: #f3f6fa; }
-.page-template-page-felezett-php .fejecske, .page-template-page-tunetek-php .fejecske { *zoom: 1; background-color: white; padding: 2em 0; }
-.page-template-page-felezett-php .fejecske:before, .page-template-page-felezett-php .fejecske:after, .page-template-page-tunetek-php .fejecske:before, .page-template-page-tunetek-php .fejecske:after { content: " "; display: table; }
-.page-template-page-felezett-php .fejecske:after, .page-template-page-tunetek-php .fejecske:after { clear: both; }
-.page-template-page-felezett-php .fejecske .fej-cont, .page-template-page-tunetek-php .fejecske .fej-cont { margin: 0 auto 0 auto; max-width: 1140px; padding: 0 1em; }
-.page-template-page-felezett-php .fejecske .fej-cont h2, .page-template-page-tunetek-php .fejecske .fej-cont h2 { width: 50%; float: left; margin-right: 0.75em; margin-top: 0; }
-.page-template-page-felezett-php .fejecske .page-header h1, .page-template-page-tunetek-php .fejecske .page-header h1 { padding: 0; margin: 1em 0; text-align: center; }
-.page-template-page-felezett-php .tuncike, .page-template-page-tunetek-php .tuncike { *zoom: 1; margin-bottom: 0.5em; }
-.page-template-page-felezett-php .tuncike:before, .page-template-page-felezett-php .tuncike:after, .page-template-page-tunetek-php .tuncike:before, .page-template-page-tunetek-php .tuncike:after { content: " "; display: table; }
-.page-template-page-felezett-php .tuncike:after, .page-template-page-tunetek-php .tuncike:after { clear: both; }
-.page-template-page-felezett-php .tuncike h3, .page-template-page-tunetek-php .tuncike h3 { margin: 0; padding: 0; }
-.page-template-page-felezett-php .tuncike h3 a, .page-template-page-tunetek-php .tuncike h3 a { position: relative; font-size: 1em; line-height: 1.125em; display: block; font-family: "Times New Roman", serif; padding: 0.75em 2.5em 0.5em 0.75em; color: #4c6ba2; background-color: white; }
-.page-template-page-felezett-php .tuncike h3 a:hover, .page-template-page-felezett-php .tuncike h3 a:focus, .page-template-page-tunetek-php .tuncike h3 a:hover, .page-template-page-tunetek-php .tuncike h3 a:focus { text-decoration: none; color: #7c0040; }
-.page-template-page-felezett-php .tuncike h3 a:hover .icon:before, .page-template-page-felezett-php .tuncike h3 a:focus .icon:before, .page-template-page-tunetek-php .tuncike h3 a:hover .icon:before, .page-template-page-tunetek-php .tuncike h3 a:focus .icon:before { background-color: #7c0040; }
-.page-template-page-felezett-php .tuncike h3 a.collapsed .icon:before, .page-template-page-tunetek-php .tuncike h3 a.collapsed .icon:before { content: "\f1c9"; }
-.page-template-page-felezett-php .tuncike h3 a .icon:before, .page-template-page-tunetek-php .tuncike h3 a .icon:before { position: absolute; right: 0; top: 0; bottom: 0; background-color: #4c6ba2; color: white; width: 40px; text-align: center; content: "\f2bd"; font-size: 2em; display: inline-block; font-family: "Ionicons"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; text-rendering: auto; line-height: 1.25em; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-.page-template-page-felezett-php .tuncike .conti .belso, .page-template-page-tunetek-php .tuncike .conti .belso { *zoom: 1; padding: 0 1em 1em 1em; background-color: white; }
-.page-template-page-felezett-php .tuncike .conti .belso:before, .page-template-page-felezett-php .tuncike .conti .belso:after, .page-template-page-tunetek-php .tuncike .conti .belso:before, .page-template-page-tunetek-php .tuncike .conti .belso:after { content: " "; display: table; }
-.page-template-page-felezett-php .tuncike .conti .belso:after, .page-template-page-tunetek-php .tuncike .conti .belso:after { clear: both; }
-.page-template-page-felezett-php .tuncike .read-more, .page-template-page-tunetek-php .tuncike .read-more { margin: 0.75em 0 0 0; }
-.page-template-page-felezett-php .feles2 .tuncike h3 a, .page-template-page-tunetek-php .feles2 .tuncike h3 a { background-color: #f3f6fa; }
-.page-template-page-felezett-php .feles2 .tuncike h3 a:hover .icon:before, .page-template-page-felezett-php .feles2 .tuncike h3 a:focus .icon:before, .page-template-page-tunetek-php .feles2 .tuncike h3 a:hover .icon:before, .page-template-page-tunetek-php .feles2 .tuncike h3 a:focus .icon:before { background-color: #7c0040; color: white; }
-.page-template-page-felezett-php .feles2 .tuncike h3 a .icon:before, .page-template-page-tunetek-php .feles2 .tuncike h3 a .icon:before { background-color: #c5d2e6; color: #4c6ba2; }
-.page-template-page-felezett-php .feles2 .tuncike .conti .belso, .page-template-page-tunetek-php .feles2 .tuncike .conti .belso { background-color: #f3f6fa; }
+.page-template-page-felezett-php .container[role="document"] .row, .page-template-page-tunetek-php .container[role="document"] .row, .page-template-page-gyogyitasstart-php .container[role="document"] .row { max-width: none; padding: 0 0; }
+@media only screen and (min-width: 480px) { .page-template-page-felezett-php .container[role="document"] .row, .page-template-page-tunetek-php .container[role="document"] .row, .page-template-page-gyogyitasstart-php .container[role="document"] .row { padding: 0 0; } }
+@media only screen and (min-width: 768px) { .page-template-page-felezett-php .container[role="document"] .row, .page-template-page-tunetek-php .container[role="document"] .row, .page-template-page-gyogyitasstart-php .container[role="document"] .row { padding: 0 0; } }
+.page-template-page-felezett-php .main.wide, .page-template-page-tunetek-php .main.wide, .page-template-page-gyogyitasstart-php .main.wide { padding: 0 0; width: auto; }
+.page-template-page-felezett-php .felezett, .page-template-page-tunetek-php .felezett, .page-template-page-gyogyitasstart-php .felezett { *zoom: 1; position: relative; padding: 0 0; }
+.page-template-page-felezett-php .felezett:before, .page-template-page-felezett-php .felezett:after, .page-template-page-tunetek-php .felezett:before, .page-template-page-tunetek-php .felezett:after, .page-template-page-gyogyitasstart-php .felezett:before, .page-template-page-gyogyitasstart-php .felezett:after { content: " "; display: table; }
+.page-template-page-felezett-php .felezett:after, .page-template-page-tunetek-php .felezett:after, .page-template-page-gyogyitasstart-php .felezett:after { clear: both; }
+@media only screen and (min-width: 480px) { .page-template-page-felezett-php .felezett, .page-template-page-tunetek-php .felezett, .page-template-page-gyogyitasstart-php .felezett { padding: 0 0; } }
+@media only screen and (min-width: 768px) { .page-template-page-felezett-php .felezett, .page-template-page-tunetek-php .felezett, .page-template-page-gyogyitasstart-php .felezett { background: linear-gradient(to right, #e9eef5, #e9eef5 50%, #4c6ba2 50%, #4c6ba2); } }
+.page-template-page-felezett-php .felezett .inner, .page-template-page-tunetek-php .felezett .inner, .page-template-page-gyogyitasstart-php .felezett .inner { max-width: 1140px; margin: 0 auto; }
+@media only screen and (min-width: 768px) { .page-template-page-felezett-php .felezett .inner, .page-template-page-tunetek-php .felezett .inner, .page-template-page-gyogyitasstart-php .felezett .inner { padding: 0 1em; } }
+.page-template-page-felezett-php .felezett .inner:after, .page-template-page-tunetek-php .felezett .inner:after, .page-template-page-gyogyitasstart-php .felezett .inner:after { position: absolute; content: ''; left: 0; right: 0; top: 0; bottom: 0; background: url(../img/hold.png) no-repeat 50% top, url(../img/nap.png) no-repeat 50% top transparent; z-index: 0; }
+.page-template-page-felezett-php .feles, .page-template-page-tunetek-php .feles, .page-template-page-gyogyitasstart-php .feles { position: relative; z-index: 1; font-size: 16px; line-height: 22px; }
+@media only screen and (min-width: 768px) { .page-template-page-felezett-php .feles, .page-template-page-tunetek-php .feles, .page-template-page-gyogyitasstart-php .feles { width: 50%; float: left; } }
+.page-template-page-felezett-php .feles h2, .page-template-page-tunetek-php .feles h2, .page-template-page-gyogyitasstart-php .feles h2 { font-size: 2em; margin: 3em 0 2em; }
+.page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 { background: url(../img/clouds.png) no-repeat left top transparent; padding: 2em 6px; }
+@media only screen and (min-width: 480px) { .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 { padding: 2em 12px; } }
+@media only screen and (min-width: 768px) { .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 { padding: 2em 1em 2em 0; background-color: transparent; } }
+@media only screen and (min-width: 1024px) { .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 { padding: 2em 2em 2em 0; } }
+.page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 { background: url(../img/stars.png) no-repeat right top #4c6ba2; padding: 2em 6px; }
+@media only screen and (min-width: 480px) { .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 { padding: 2em 12px; } }
+@media only screen and (min-width: 768px) { .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 { padding: 2em 0 2em 1em; background-color: transparent; } }
+@media only screen and (min-width: 1024px) { .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 { padding: 2em 0 2em 2em; } }
+.page-template-page-felezett-php .feles2 h2, .page-template-page-tunetek-php .feles2 h2, .page-template-page-gyogyitasstart-php .feles2 h2 { text-align: right; color: #f3f6fa; }
+.page-template-page-felezett-php .tuncike, .page-template-page-tunetek-php .tuncike, .page-template-page-gyogyitasstart-php .tuncike { *zoom: 1; margin-bottom: 0.5em; }
+.page-template-page-felezett-php .tuncike:before, .page-template-page-felezett-php .tuncike:after, .page-template-page-tunetek-php .tuncike:before, .page-template-page-tunetek-php .tuncike:after, .page-template-page-gyogyitasstart-php .tuncike:before, .page-template-page-gyogyitasstart-php .tuncike:after { content: " "; display: table; }
+.page-template-page-felezett-php .tuncike:after, .page-template-page-tunetek-php .tuncike:after, .page-template-page-gyogyitasstart-php .tuncike:after { clear: both; }
+.page-template-page-felezett-php .tuncike h3, .page-template-page-tunetek-php .tuncike h3, .page-template-page-gyogyitasstart-php .tuncike h3 { margin: 0; padding: 0; }
+.page-template-page-felezett-php .tuncike h3 a, .page-template-page-tunetek-php .tuncike h3 a, .page-template-page-gyogyitasstart-php .tuncike h3 a { position: relative; font-size: 1em; line-height: 1.125em; display: block; font-family: "Times New Roman", serif; padding: 0.75em 2.5em 0.5em 0.75em; color: #4c6ba2; background-color: white; }
+.page-template-page-felezett-php .tuncike h3 a:hover, .page-template-page-felezett-php .tuncike h3 a:focus, .page-template-page-tunetek-php .tuncike h3 a:hover, .page-template-page-tunetek-php .tuncike h3 a:focus, .page-template-page-gyogyitasstart-php .tuncike h3 a:hover, .page-template-page-gyogyitasstart-php .tuncike h3 a:focus { text-decoration: none; color: #7c0040; }
+.page-template-page-felezett-php .tuncike h3 a:hover .icon:before, .page-template-page-felezett-php .tuncike h3 a:focus .icon:before, .page-template-page-tunetek-php .tuncike h3 a:hover .icon:before, .page-template-page-tunetek-php .tuncike h3 a:focus .icon:before, .page-template-page-gyogyitasstart-php .tuncike h3 a:hover .icon:before, .page-template-page-gyogyitasstart-php .tuncike h3 a:focus .icon:before { background-color: #7c0040; }
+.page-template-page-felezett-php .tuncike h3 a.collapsed .icon:before, .page-template-page-tunetek-php .tuncike h3 a.collapsed .icon:before, .page-template-page-gyogyitasstart-php .tuncike h3 a.collapsed .icon:before { content: "\f1c9"; }
+.page-template-page-felezett-php .tuncike h3 a .icon:before, .page-template-page-tunetek-php .tuncike h3 a .icon:before, .page-template-page-gyogyitasstart-php .tuncike h3 a .icon:before { position: absolute; right: 0; top: 0; bottom: 0; background-color: #4c6ba2; color: white; width: 40px; text-align: center; content: "\f2bd"; font-size: 2em; display: inline-block; font-family: "Ionicons"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; text-rendering: auto; line-height: 1.25em; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.page-template-page-felezett-php .tuncike .conti .belso, .page-template-page-tunetek-php .tuncike .conti .belso, .page-template-page-gyogyitasstart-php .tuncike .conti .belso { *zoom: 1; padding: 0 1em 1em 1em; background-color: white; }
+.page-template-page-felezett-php .tuncike .conti .belso:before, .page-template-page-felezett-php .tuncike .conti .belso:after, .page-template-page-tunetek-php .tuncike .conti .belso:before, .page-template-page-tunetek-php .tuncike .conti .belso:after, .page-template-page-gyogyitasstart-php .tuncike .conti .belso:before, .page-template-page-gyogyitasstart-php .tuncike .conti .belso:after { content: " "; display: table; }
+.page-template-page-felezett-php .tuncike .conti .belso:after, .page-template-page-tunetek-php .tuncike .conti .belso:after, .page-template-page-gyogyitasstart-php .tuncike .conti .belso:after { clear: both; }
+.page-template-page-felezett-php .tuncike .read-more, .page-template-page-tunetek-php .tuncike .read-more, .page-template-page-gyogyitasstart-php .tuncike .read-more { margin: 0.75em 0 0 0; }
+.page-template-page-felezett-php .feles2 .tuncike h3 a, .page-template-page-tunetek-php .feles2 .tuncike h3 a, .page-template-page-gyogyitasstart-php .feles2 .tuncike h3 a { background-color: #f3f6fa; }
+.page-template-page-felezett-php .feles2 .tuncike h3 a:hover .icon:before, .page-template-page-felezett-php .feles2 .tuncike h3 a:focus .icon:before, .page-template-page-tunetek-php .feles2 .tuncike h3 a:hover .icon:before, .page-template-page-tunetek-php .feles2 .tuncike h3 a:focus .icon:before, .page-template-page-gyogyitasstart-php .feles2 .tuncike h3 a:hover .icon:before, .page-template-page-gyogyitasstart-php .feles2 .tuncike h3 a:focus .icon:before { background-color: #7c0040; color: white; }
+.page-template-page-felezett-php .feles2 .tuncike h3 a .icon:before, .page-template-page-tunetek-php .feles2 .tuncike h3 a .icon:before, .page-template-page-gyogyitasstart-php .feles2 .tuncike h3 a .icon:before { background-color: #c5d2e6; color: #4c6ba2; }
+.page-template-page-felezett-php .feles2 .tuncike .conti .belso, .page-template-page-tunetek-php .feles2 .tuncike .conti .belso, .page-template-page-gyogyitasstart-php .feles2 .tuncike .conti .belso { background-color: #f3f6fa; }
 
 .betegsegek { background-color: white; padding: 2em 0; }
 .betegsegek .inner { max-width: 1140px; margin: 0 auto; padding: 0 6px; }
@@ -2050,7 +2055,7 @@ body { overflow-x: hidden; }
 .betegseg-list a:hover:before, .betegseg-list a:focus:before { background-color: #e6533e; }
 .betegseg-list a:before { position: absolute; top: 0; right: 0; bottom: 0; width: 40px; text-align: center; background-color: #c5d2e6; color: white; font-size: 2em; content: "\f280"; display: inline-block; font-family: "Ionicons"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; text-rendering: auto; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-.page-template-page-vizsgalatok-php .main.wide, .page-template-page-gyogyitasstart-php .main.wide { padding-top: 2em; width: auto; }
+.page-template-page-vizsgalatok-php .main.wide, .page-template-page-gyogyitasstart-php .main.wide { width: auto; }
 .page-template-page-vizsgalatok-php .indent, .page-template-page-gyogyitasstart-php .indent { max-width: 1140px; margin: 0 auto; font-size: 1.125em; line-height: 1.4em; }
 .page-template-page-vizsgalatok-php .vizsga-lista, .page-template-page-gyogyitasstart-php .vizsga-lista { margin: 5em 0 0; }
 .page-template-page-vizsgalatok-php .vizsga-lista .exam .inner, .page-template-page-gyogyitasstart-php .vizsga-lista .exam .inner { max-width: 1140px; margin: 0 auto; padding: 6em; }
@@ -2073,18 +2078,18 @@ body { overflow-x: hidden; }
 .page-template-page-gyogyitasstart-php .fa { *zoom: 1; }
 .page-template-page-gyogyitasstart-php .fa:before, .page-template-page-gyogyitasstart-php .fa:after { content: " "; display: table; }
 .page-template-page-gyogyitasstart-php .fa:after { clear: both; }
-.page-template-page-gyogyitasstart-php .gyfej { background: #7c0040; color: #f3f6fa; padding: 1em; }
-@media only screen and (min-width: 768px) { .page-template-page-gyogyitasstart-php .gyfej { float: right; width: 36%; } }
+.page-template-page-gyogyitasstart-php .gyfej { background: #7c0040; color: #f3f6fa; padding: 1em; margin: 2em 0; }
+@media only screen and (min-width: 768px) { .page-template-page-gyogyitasstart-php .gyfej { float: right; width: 33%; } }
 .page-template-page-gyogyitasstart-php .gyfej a { color: #f7941e; }
 .page-template-page-gyogyitasstart-php .gyfej .btn { background: #e6533e; display: block; color: #f3f6fa; }
 .page-template-page-gyogyitasstart-php .gyfej .btn small { display: block; }
-.page-template-page-gyogyitasstart-php .gyogystartblokk { *zoom: 1; margin-top: 2em; margin-bottom: 4em; }
+.page-template-page-gyogyitasstart-php .gyogystartblokk { *zoom: 1; margin: 2em auto 4em auto; max-width: 1140px; }
 .page-template-page-gyogyitasstart-php .gyogystartblokk:before, .page-template-page-gyogyitasstart-php .gyogystartblokk:after { content: " "; display: table; }
 .page-template-page-gyogyitasstart-php .gyogystartblokk:after { clear: both; }
 .page-template-page-gyogyitasstart-php .gyogyelem-block { *zoom: 1; position: relative; background-color: white; }
 .page-template-page-gyogyitasstart-php .gyogyelem-block:before, .page-template-page-gyogyitasstart-php .gyogyelem-block:after { content: " "; display: table; }
 .page-template-page-gyogyitasstart-php .gyogyelem-block:after { clear: both; }
-.page-template-page-gyogyitasstart-php .gyogyelem-block.paros { background-color: #f3f6fa; }
+.page-template-page-gyogyitasstart-php .gyogyelem-block.paros { background-color: #e9eef5; }
 .page-template-page-gyogyitasstart-php .gyogyelem-block.paros .ill { left: 0; right: 50%; }
 .page-template-page-gyogyitasstart-php .gyogyelem-block.paros .szoveg { float: right; }
 .page-template-page-gyogyitasstart-php .gyogyelem-block .ill { position: absolute; top: 0; bottom: 0; left: 50%; right: 0; background-color: white; background-size: cover; background-position: center center; filter: grayscale(1) opacity(0.7); transition: all .4s ease-in; }
@@ -2095,26 +2100,28 @@ body { overflow-x: hidden; }
 
 .mitortenik { background: #c5d2e6; }
 
-.page-template-page-kozpontok-php .container[role="document"] { padding: 0 1em; }
+.page-template-page-kozpontok-php .container[role="document"] .row { max-width: 1140px; margin: 0 auto; padding: 0 6px; }
+@media only screen and (min-width: 480px) { .page-template-page-kozpontok-php .container[role="document"] .row { padding: 0 12px; } }
+@media only screen and (min-width: 768px) { .page-template-page-kozpontok-php .container[role="document"] .row { padding: 0 1em; } }
 .page-template-page-kozpontok-php .main.wide { width: auto; padding-top: 2em; }
 @media only screen and (min-width: 768px) { .page-template-page-kozpontok-php .balfel { width: 48%; float: left; margin-right: 4%; } }
 @media only screen and (min-width: 768px) { .page-template-page-kozpontok-php .jobbfel { width: 48%; float: right; } }
 .page-template-page-kozpontok-php .tab-content { padding: 1em; background: white; border: 1px solid #e9eef5; margin-top: -1px; }
 
-.home-top { background: #c5d2e6; border-bottom: 6px solid white; background: url(../img/hero.jpg) no-repeat center 5% #c5d2e6; background-size: cover; overflow: hidden; position: relative; min-height: 320px; }
+.home-top { background: #c5d2e6; border-bottom: 6px solid white; background: url(../img/parocska.jpg) no-repeat center bottom #c5d2e6; background-size: cover; overflow: hidden; position: relative; min-height: 320px; }
 @media only screen and (min-width: 768px) { .home-top { min-height: 400px; } }
 @media only screen and (min-width: 1024px) { .home-top { min-height: 500px; } }
 
-.hero-block { *zoom: 1; }
+.hero-block { *zoom: 1; margin-bottom: 2em; }
 .hero-block:before, .hero-block:after { content: " "; display: table; }
 .hero-block:after { clear: both; }
-@media only screen and (min-width: 768px) { .hero-block { position: absolute; bottom: 0; } }
+@media only screen and (min-width: 768px) { .hero-block { position: absolute; bottom: 2em; } }
 @media only screen and (min-width: 1024px) { .hero-block { bottom: 2em; } }
 
 .hero-text { max-width: 768px; margin: 2em auto 0 auto; }
-.hero-text p { display: inline; color: white; background: rgba(76, 107, 162, 0.5); font-size: 2.5em; line-height: 1.25em; text-transform: uppercase; }
+.hero-text p { display: inline; color: white; background: rgba(76, 107, 162, 0.5); box-shadow: 0.125em 0 0 rgba(76, 107, 162, 0.5), -0.125em 0 0 rgba(76, 107, 162, 0.5); font-size: 2.5em; line-height: 1.25em; text-transform: uppercase; }
 
-.hero-action { margin: 2em auto; }
+.hero-action { margin: 0.5em auto 0 auto; }
 .hero-action a { margin-top: 0.25em; font-size: 1.25em; padding: 0.5em 0.5em; }
 
 .home-banner { background: white; padding: 2em 4em; margin: 2em 0; }
@@ -2131,6 +2138,9 @@ body { overflow-x: hidden; }
 .disc-blokk li { list-style-type: none; }
 .disc-blokk li a { color: white; }
 
+.page-template-page-home-php .container[role="document"] .row { max-width: 1140px; margin: 0 auto; padding: 0 6px; }
+@media only screen and (min-width: 480px) { .page-template-page-home-php .container[role="document"] .row { padding: 0 12px; } }
+@media only screen and (min-width: 768px) { .page-template-page-home-php .container[role="document"] .row { padding: 0 1em; } }
 .page-template-page-home-php .main.wide { font-size: 0.875em; margin: 0 auto; padding: 2em 0; }
 @media only screen and (min-width: 768px) { .page-template-page-home-php .main.wide { width: auto; } }
 @media only screen and (min-width: 768px) { .page-template-page-home-php .jobbfel { *zoom: 1; width: 33.333333333%; float: right; }

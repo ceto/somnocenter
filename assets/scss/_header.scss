@@ -91,5 +91,44 @@
     font-size: 0.6666666em;
     display:block;
   }
+}
 
+.fejecske {
+  @include clearfix;
+  background:url(../img/konzi.jpg) no-repeat center center white;
+  background-size: cover;
+  border-bottom: 6px solid white;
+  
+  .page-template-page-tunetek-php & {
+    border-bottom: 0px solid white;
+	background-image:url(../img/hero.jpg);
+  }
+
+  position: relative;
+  min-height: 320px;
+
+  @include breakpoint($s1) {
+
+  }
+  @include breakpoint($s2) {
+    min-height: 400px;
+  }
+  @include breakpoint($s3) {
+    min-height: 500px;
+  }
+
+
+  .fej-cont {
+    margin:0 auto 0 auto;
+    max-width: $maximum;
+    padding:0 1em;
+    h2 {
+      width:50%;
+      float:left;
+      margin-right: 0.75em;
+      margin-top:0;
+    }
+    p{
+    }
+  }
 }
