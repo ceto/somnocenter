@@ -3,20 +3,7 @@
 Template Name: Gyógyítás Start
 */
 ?>
-<div class="fejecske">
-  <div class="fej-cont">
-    <aside class="hero-block" role="complementary">
-      <div class="hero-text">
-        <h3>Alvászavarok kezelése</h3>
-        <p>Vizsgálati és terápiás módszereink bemutatása</p>
-      </div>
-    </aside><!-- /.home-blokk -->
-    <aside class="gyfej">
-      <h3>Az alvászavar okainak feltárása szakorvosi konzultációval kezdődik.</h3>
-      <a href="?page_id=70" class="btn">Kezdje itt a gyógyulást<small>Az első konzultáció részletei</small></a>
-    </aside>
-  </div>
-</div>
+<?php get_template_part('templates/page', 'headerfigure'); ?>
 <?php
 	$the_cumo=new WP_Query(array(
 		'post_type' => 'page;',
@@ -31,7 +18,7 @@ Template Name: Gyógyítás Start
     <?php while ($the_cumo->have_posts()) : $the_cumo->the_post(); ?>
       <li <?php echo (++$i==1)?'class="active"':'' ?>>
         <a href="#gyogyelem-<?php echo $i; ?>" data-toggle="tab">
-          <strong><?php the_title() ?></strong> végezhető alvásvizsgálatok
+          <strong><?php the_title() ?></strong>
         </a>
       </li>
     <?php endwhile; ?>

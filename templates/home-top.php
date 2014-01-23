@@ -2,8 +2,8 @@
   <div class="row">
     <aside class="hero-block" role="complementary">
       <div class="hero-text">
-        <h3>Napközben álmos és fáradt?</h3>
-        <p>A tünetek hátterében alvászavarok állhatnak</p>
+        <h3 class="nagy"><span>Napközben<br/> álmos és fáradt?</span></h3>
+        <h4 class="kicsi"><span>A tünetek hátterében alvászavarok állhatnak</span></h4>
       </div>
       <div class="hero-action">
         <a href="<?php echo get_permalink(43); ?>" class="btn">Ismerje meg a tüneteket</a> <a href="<?php echo get_permalink(70); ?>" class="btn">Jelentkezzen vizsgálatra</a>

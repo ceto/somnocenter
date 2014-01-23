@@ -3,16 +3,7 @@
 Template Name: Tünetek lista
 */
 ?>
-<div class="fejecske">
-  <div class="fej-cont">
-    <aside class="hero-block" role="complementary">
-      <div class="hero-text">
-        <h3>Alvászavar tünetek és betegségek</h3>
-        <p>Tünetei alapján az alvászavarok felismerhetők</p>
-      </div>
-    </aside><!-- /.home-blokk -->
-  </div>
-</div>
+<?php get_template_part('templates/page', 'headerfigure'); ?>
 <?php
 	$the_subpage=new WP_Query(array(
 		'post_type' => 'page;',

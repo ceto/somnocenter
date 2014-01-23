@@ -1,0 +1,118 @@
+//
+// Panels
+// --------------------------------------------------
+
+
+// Base class
+.panel {
+  margin-bottom: 1.5em;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+// Panel contents
+.panel-body {
+  background-color: #fff;
+  padding: 1em;
+  @include clearfix();
+}
+
+
+// List groups in panels
+//
+// By default, space out list group content from panel headings to account for
+// any kind of custom content between the two.
+
+.panel {
+  > .list-group {
+    margin-bottom: 0;
+
+    .list-group-item {
+      border-width: 1px 0;
+
+      // Remove border radius for top one
+      &:first-child {
+        
+      }
+      // But keep it for the last one
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+// Collapse space between when there's no additional content.
+.panel-heading + .list-group {
+  .list-group-item:first-child {
+    border-top-width: 0;
+  }
+}
+
+
+// Optional heading
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid $blue;
+  
+  > .dropdown .dropdown-toggle {
+    color: inherit;
+  }
+}
+
+// Within heading, strip any `h*` tag of its default margins for spacing.
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.125em;
+  color: inherit;
+
+  > a {
+    color: inherit;
+     &:hover, &:focus{
+      text-decoration: none;
+     }
+  }
+}
+
+// Optional footer (stays gray in every modifier class)
+.panel-footer {
+  padding: 8px 15px;
+  background-color: $blue-70;
+  font-style:italic;
+  font-size:1.125em;
+  //text-align:right;
+  //border-top: 1px solid $blue;
+}
+
+
+// Collapsable panels (aka, accordion)
+//
+// Wrap a series of panels in `.panel-group` to turn them into an accordion with
+// the help of our collapse JavaScript plugin.
+
+.panel-group {
+  margin-bottom: 1.5em;
+
+  // Tighten up margin so it's only between panels
+  .panel {
+    margin-bottom: 0;
+    overflow: hidden; // crop contents when collapsed
+    + .panel {
+      margin-top: 2em;
+    }
+  }
+
+  .panel-heading {
+    //border-bottom: 0;
+    + .panel-collapse .panel-body {
+      border-bottom: 1px solid $blue;
+    }
+  }
+  .panel-footer {
+    //border-top: 0;
+    + .panel-collapse .panel-body {
+      //border-bottom: 1px solid $blue;
+    }
+  }
+}
+

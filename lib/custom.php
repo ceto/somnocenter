@@ -43,3 +43,40 @@ function cmb_initialize_cmb_meta_boxes() {
     require_once 'cmb/init.php';
 
 }
+
+/*--------------------------------------------------------------------------------------
+    *
+    * modified bs_collapse footer support
+    *
+    * @author Gabor Szabó
+    * @since 1.0
+    *
+    *-------------------------------------------------------------------------------------*/
+  function ceto_collapse( $atts, $content = null ) {
+
+    if( !isset($GLOBALS['current_collapse']) )
+      $GLOBALS['current_collapse'] = 0;
+    else
+      $GLOBALS['current_collapse']++;
+
+    extract(shortcode_atts(array(
+      "title" => '',
+      "footer" => '',
+      "type" => 'default',
+      "active" => false
+    ), $atts));
+
+    if ($active)
+      $active = 'in';
+    $mod_footer=($footer!='')?'<div class="panel-footer">'.$footer.'</div>':'';
+    $return = '<div class="panel panel-' . $type . '"><div class="panel-heading"><h3 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-' . $GLOBALS['collapsibles_count'] . '" href="#collapse_' . $GLOBALS['current_collapse'] . '_'. sanitize_title( $title ) .'">' . $title . '</a></h3></div><div id="collapse_' . $GLOBALS['current_collapse'] . '_'. sanitize_title( $title ) .'" class="panel-collapse collapse ' . $active . '"><div class="panel-body">' . do_shortcode($content) . ' </div></div>'.$mod_footer.'</div>';
+    return $return;
+  }
+
+  
+  add_action( 'init', 'somno_theme_setup' );
+  function somno_theme_setup() {
+    remove_shortcode( 'collapse' );
+    add_shortcode('collapse', 'ceto_collapse' );
+  }
+
