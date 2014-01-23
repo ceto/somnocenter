@@ -6,7 +6,7 @@
         <h4 class="kicsi"><span>A tünetek hátterében alvászavarok állhatnak</span></h4>
       </div>
       <div class="hero-action">
-        <a href="<?php echo get_permalink(43); ?>" class="btn">Ismerje meg a tüneteket</a> <a href="<?php echo get_permalink(70); ?>" class="btn">Jelentkezzen vizsgálatra</a>
+        <a href="<?php echo get_permalink(43); ?>" class="btn">Ismerje meg a tüneteket</a> <a href="<?php echo get_permalink(520);?>" class="btn">Jelentkezzen vizsgálatra</a>
       </div>
     </aside><!-- /.home-blokk -->
   </div>

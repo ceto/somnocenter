@@ -93,20 +93,144 @@
   }
 }
 
-.fejecske {
-  @include clearfix;
-  background:url(../img/konzi.jpg) no-repeat center center white;
-  background-size: cover;
-  border-bottom: 6px solid white;
+
+
+.hero-block {
+  @include clearfix();
+  margin-bottom: 1em;
+  @include breakpoint($s2) {
+    position:absolute;
+    bottom:0;
+    //width:75%;
+    //float:left;
+  }
+  @include breakpoint($s3) {
+    bottom:1em;
+    //width:66.666%;
+  }
+}
+
+.hero-text {
+  margin:2em auto 0 auto;
   
-  .page-template-page-tunetek-php & {
-    border-bottom: 0px solid white;
-	background-image:url(../img/hero.jpg);
+  .nagy{
+    font-size:3em;
+    line-height: 1.25em;
+    font-weight: 400;
+    margin:0 0;
+          text-transform: uppercase;
+    span{
+      display: inline;
+      color:white;
+      background:rgba($blue-120,0.75);
+      box-shadow: 0.125em 0 0 rgba($blue-120,0.75), -0.125em 0 0 rgba($blue-120,0.75);
+    }
+  }
+  .kicsi {
+    font-size:1em;
+    line-height: 1.25em;
+    margin:0 0 0 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    span{
+      display: inline;
+      color:$blue-120;
+      background-color:rgba($blue-90,0.75);
+      box-shadow: 0.125em 0 0 rgba($blue-90,0.75), -0.125em 0 0 rgba($blue-90,0.75);
+      font-size:1.5em;
+      line-height: 1.25em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.hero-action {
+  margin:2em auto 0 auto;
+  a{
+    margin-top: 0.25em;
+    font-size:1.25em;
+    padding:0.5em 0.5em;
+  }
+}
+
+
+.telfej {
+  @include clearfix();
+  background: rgba($blue,0.90);
+  color:#fff;
+ 
+  border-radius: 50%;
+  text-align: center;
+  //position: relative;
+  width:240px;
+  height:240px;
+  margin:2em auto 1em auto;
+  //margin-left: calc((100% - 240px) / 2);
+  //float:left; 
+   
+  @include breakpoint($s1) {
   }
 
-  position: relative;
-  min-height: 320px;
+  @include breakpoint($s2) {
+    margin-left: 0;
+    float:right;
+  }
+  @include breakpoint($s3) {
+  }
 
+  .tart {
+    @include clearfix();
+    position: relative;
+    padding:0 10px;
+    margin-top:55%;
+    transform:translateY(-50%);
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .head{
+    color:$orange;
+    display:block;
+    //text-transform: uppercase;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+
+  }
+  .telcsi {
+    margin:4px 0 12px;
+    display: block;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    color:#fff;
+  }
+  .click {
+    //display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    color:$blue-90;
+    text-transform: uppercase;
+    font-family: $sans-serif;
+    &:hover, &:focus {
+      //color: $orange;
+      //text-decoration:none;
+
+    }
+  }
+}
+
+.home-top {
+  background: $blue-30;
+  border-bottom: 6px solid white;
+  background: url(../img/parocska.jpg) no-repeat center bottom $blue-30;
+  background-size:cover;
+  overflow:hidden;
+  position: relative;
+  
+  min-height: 320px;
   @include breakpoint($s1) {
 
   }
@@ -117,22 +241,10 @@
     min-height: 500px;
   }
 
-
-  .fej-cont {
-    margin:0 auto 0 auto;
-    max-width: $maximum;
-    padding:0 1em;
-    h2 {
-      width:50%;
-      float:left;
-      margin-right: 0.75em;
-      margin-top:0;
-    }
-    p{
-    }
+  @include breakpoint($s4) {
+    min-height: 600px;
   }
 }
-
 
 .page-headerfigure {
   position:relative;
@@ -141,22 +253,33 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url('../img/parocska.jpg');
-
+  overflow:hidden;
   border-bottom: 6px solid white;
-
-
   min-height: 320px;
-    @include breakpoint($s1) {
+  @include breakpoint($s1) {
   }
+
   @include breakpoint($s2) {
     min-height: 400px;
   }
   @include breakpoint($s3) {
     min-height: 500px;
   }
-  
-  
+  @include breakpoint($s4) {
+    min-height: 600px;
+  }
+
   .hero-text {
+    //max-width: $s2;
+    
+    @include breakpoint($s2) {
+      max-width: 500px;
+    }
+    @include breakpoint($s3) {
+      max-width: $s2;
+    }
+
+
     .nagy {
       font-size:2.5em;
       line-height: 1.25em;
@@ -164,6 +287,11 @@
         background:rgba($eggplant,0.85);
         box-shadow: 0.125em 0 0 rgba($eggplant,0.85), -0.125em 0 0 rgba($eggplant,0.85);
       }
+    }
+    .kicsi{
+      font-size:0.875em;
+      line-height: 1.4em;
+
     }
   }
 
@@ -173,22 +301,5 @@
     margin:2em auto;
     max-width: $s3;
   }
-
-  // .nagy {
-  //   max-width: $s2;
-  //   position: absolute;
-  //   left:0;bottom:0;
-  //   margin: 1em;
-  //   font-size:2.5em;
-  //   line-height: 1.25em;
-  //   span{
-  //     display: inline;
-  //     color:white;
-  //     background:rgba($blue-120,0.5);
-  //     box-shadow: 0.125em 0 0 rgba($blue-120,0.5), -0.125em 0 0 rgba($blue-120,0.5);
-  //     text-transform: uppercase;
-  //   }
-  // }
-
 
 }

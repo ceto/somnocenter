@@ -191,7 +191,7 @@
           right:0; top:0;bottom:0;
           background-color: $blue-120;
           color:white;
-          width:40px;
+          width:44px;
           text-align:center;
           content: "\f2bd";
           font-size: 2em;
@@ -475,37 +475,6 @@
 }
 
 
-
-.page-template-page-gyogyitasstart-php {
-  .fa {
-    @include clearfix;
-  }
-  .gyfej {
-    background: $eggplant;
-    color:$blue-90;
-    padding:1em;
-    margin:2em 0;
-    @include breakpoint($s2) {
-      float:right;
-      width:33%;
-    }
-    a{
-      color:$orange;
-    }
-    .btn {
-      background: $red;
-      display: block;
-      color:$blue-90;
-      small {
-        display: block;
-      }
-    }
-  }
-
-}
-
-
-
 .mitortenik {
   background: $blue-30;
 }
@@ -538,26 +507,7 @@
     }
   }
 
-  .felteke {
 
-
-  }
-
- .balfel {
-  @include breakpoint($s2) {
-    width:48%;
-    float:left;
-    margin-right: 4%;
-  }
-
- }
-
- .jobbfel {  
-  @include breakpoint($s2) {
-    width:48%;
-    float:right;
-  }
- }
 
  .tab-content {
   padding: 1em;

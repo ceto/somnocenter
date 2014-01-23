@@ -19,7 +19,7 @@ body {
   position: relative;
 }
 
-.row {
+.row, .szigorow, .fosrow {
   max-width: $maximum;
   margin:0 auto;
   padding:0 6px;
@@ -30,17 +30,7 @@ body {
     padding:0 1em;
   }  
 }
-.szigorow{
-  max-width: $maximum;
-  margin:0 auto;
-  padding:0 6px;
-  @include breakpoint($s1) {
-    padding:0 12px;
-  }
-  @include breakpoint($s2) {
-    padding:0 1em;
-  }  
-}
+
 
 .container[role="document"]{
   //position:relative;
@@ -68,6 +58,26 @@ body {
 .col-md-offset-3{
   @include breakpoint($s2) {
     margin-left: 25%;
+  }
+}
+
+.felteke {
+
+
+}
+
+.balfel {
+  @include breakpoint($s2) {
+    width:48%;
+    float:left;
+    margin-right: 4%;
+  }
+}
+
+.jobbfel {  
+  @include breakpoint($s2) {
+    width:48%;
+    float:right;
   }
 }
 

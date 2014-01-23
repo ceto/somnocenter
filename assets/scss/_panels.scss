@@ -13,8 +13,15 @@
 // Panel contents
 .panel-body {
   background-color: #fff;
-  padding: 1em;
+  padding: 10px 15px 0 15px;
   @include clearfix();
+
+  p{
+    margin-top: 0;
+    + p {
+      margin-top:1em;
+    }
+  }
 }
 
 
@@ -51,8 +58,9 @@
 
 // Optional heading
 .panel-heading {
-  padding: 10px 15px;
+  padding: 10px 51px 10px 15px;
   border-bottom: 1px solid $blue;
+  position:relative;
   
   > .dropdown .dropdown-toggle {
     color: inherit;
@@ -69,10 +77,40 @@
   > a {
     color: inherit;
      &:hover, &:focus{
+      color:$eggplant;
       text-decoration: none;
      }
+    
+    .accordion-toggle-btn {
+      background-color:$blue;
+      color:#fff;
+      text-align:center;
+      position:absolute;
+      right:0;bottom:0;
+      top:0;
+      width:46px;
+      min-height:46px;
+      font-size: 46px;
+      line-height:46px;
+      &:hover, &:focus{
+       background:$eggplant;
+       color:#fff;
+       text-decoration: none;
+      }
+    }
+    &.collapsed .accordion-toggle-btn {
+       &:before {
+         content:"\f1c9";
+       }
+    } 
+  
   }
+  
+  
+
 }
+
+
 
 // Optional footer (stays gray in every modifier class)
 .panel-footer {
@@ -98,7 +136,7 @@
     margin-bottom: 0;
     overflow: hidden; // crop contents when collapsed
     + .panel {
-      margin-top: 2em;
+      margin-top: 3em;
     }
   }
 
