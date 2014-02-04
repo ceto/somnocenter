@@ -22,24 +22,40 @@
 }
 
 
-
+.home-bottom {
+  background-color: #fff;
+  .content {
+    @include clearfix();
+    background-image: url('../img/doki_korbevagva.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: auto 100%;
+  }
+  .ugyerzi {
+   margin:2em 0;
+   //display: none;
+  }
+}
 .disc-blokk {
-  font-family: $sans-serif;
-  padding:1em;
   color:$blue-120;
-  background: $blue-30;
-  min-height: 420px;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  padding:0 0 4em 0;
+  //min-height: 420px;
+
   @include breakpoint($s2){
-    width:99%;
-    margin-left:2%;
+    padding-left: 50%;
   }
  
 
-  h3 {
-    font-family: $sans-serif;
-    font-weight: 600;
 
-    font-size:1em;
+  h3 {
+
+    font-size:1.25em;
+    small {
+    }
+
+
     small{
       display:block;
       text-transform: none;
@@ -48,8 +64,9 @@
 
   h4 {
 
-    font-size: 1em;
+    //font-size: 1em;
     text-transform: none;
+    font-weight: 700;
 
   }
 
@@ -61,8 +78,10 @@
 
   li {
     list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 700;
     a {
-      color:white;
+      //color:white;
     }
 
   }
@@ -107,6 +126,7 @@
       @include clearfix;
       width:66.666666666%;
       float:left;
+      margin-right:0;
     }
   }
 

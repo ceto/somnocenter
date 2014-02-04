@@ -2158,14 +2158,19 @@ body { overflow-x: hidden; }
 .home-banner h3 small { display: block; }
 .home-banner .btn { max-width: 33.33333%; float: right; }
 
-.disc-blokk { font-family: "Titillium Web", sans-serif; padding: 1em; color: #4c6ba2; background: #c5d2e6; min-height: 420px; }
-@media only screen and (min-width: 768px) { .disc-blokk { width: 99%; margin-left: 2%; } }
-.disc-blokk h3 { font-family: "Titillium Web", sans-serif; font-weight: 600; font-size: 1em; }
+.home-bottom { background-color: #fff; }
+.home-bottom .content { *zoom: 1; background-image: url("../img/doki_korbevagva.png"); background-repeat: no-repeat; background-position: left bottom; background-size: auto 100%; }
+.home-bottom .content:before, .home-bottom .content:after { content: " "; display: table; }
+.home-bottom .content:after { clear: both; }
+.home-bottom .ugyerzi { margin: 2em 0; }
+
+.disc-blokk { color: #4c6ba2; font-size: 1.5em; line-height: 1.4em; padding: 0 0 4em 0; }
+@media only screen and (min-width: 768px) { .disc-blokk { padding-left: 50%; } }
+.disc-blokk h3 { font-size: 1.25em; }
 .disc-blokk h3 small { display: block; text-transform: none; }
-.disc-blokk h4 { font-size: 1em; text-transform: none; }
+.disc-blokk h4 { text-transform: none; font-weight: 700; }
 .disc-blokk ul { margin: 1em 0 2em; padding: 0 0 0 0; font-weight: 300; }
-.disc-blokk li { list-style-type: none; }
-.disc-blokk li a { color: white; }
+.disc-blokk li { list-style-type: none; text-transform: uppercase; font-weight: 700; }
 
 .page-template-page-home-php .container[role="document"] .row { max-width: 1140px; margin: 0 auto; padding: 0 6px; }
 @media only screen and (min-width: 480px) { .page-template-page-home-php .container[role="document"] .row { padding: 0 12px; } }
@@ -2175,7 +2180,7 @@ body { overflow-x: hidden; }
 @media only screen and (min-width: 768px) { .page-template-page-home-php .jobbfel { *zoom: 1; width: 33.333333333%; float: right; }
   .page-template-page-home-php .jobbfel:before, .page-template-page-home-php .jobbfel:after { content: " "; display: table; }
   .page-template-page-home-php .jobbfel:after { clear: both; } }
-@media only screen and (min-width: 768px) { .page-template-page-home-php .balfel { *zoom: 1; width: 66.666666666%; float: left; }
+@media only screen and (min-width: 768px) { .page-template-page-home-php .balfel { *zoom: 1; width: 66.666666666%; float: left; margin-right: 0; }
   .page-template-page-home-php .balfel:before, .page-template-page-home-php .balfel:after { content: " "; display: table; }
   .page-template-page-home-php .balfel:after { clear: both; } }
 
