@@ -43,7 +43,7 @@
       <?php if ( $post->post_parent == '49' ) {
         get_template_part('templates/gyogyithato');
       } ?>
-      <?php if (is_single() || !is_front_page()) {
+      <?php if (is_single() /*|| is_front_page()*/) {
         get_template_part('templates/ugyerzi');
       }?>
 

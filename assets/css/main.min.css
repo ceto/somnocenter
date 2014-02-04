@@ -2157,7 +2157,7 @@ body { overflow-x: hidden; }
 .home-bottom .content:after { clear: both; }
 .home-bottom .ugyerzi { margin: 2em 0; }
 
-.disc-blokk { color: #4c6ba2; font-size: 1.5em; line-height: 1.4em; padding: 0 0 4em 0; }
+.disc-blokk { color: #4c6ba2; font-size: 1.25em; line-height: 1.4em; padding: 2em 0 2em 0; }
 @media only screen and (min-width: 768px) { .disc-blokk { padding-left: 50%; } }
 .disc-blokk h3 { font-size: 1.25em; }
 .disc-blokk h3 small { display: block; text-transform: none; }
