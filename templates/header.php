@@ -10,7 +10,9 @@
 	  ?>
 	   </nav>
      <div class="info">
-       <small>Budapest | Szeged | Pécs</small>+36 70 770 5653 
+        <a href="#" class="smart"><span class="varos">Budapest</span><!--span class="tel">+36 1 483 6645</span--></a>
+        <a href="#" class="smart"><span class="varos">Szeged</span><!--span class="tel">+36 52 454 141</span--></a>
+        <a href="#" class="smart"><span class="varos">Pécs</span><!--span class="tel">+36 35 377 583</span--></a>
      </div>
     
     <?php if ( (is_single() || is_archive() || is_home() ) && TRUE ) : ?>

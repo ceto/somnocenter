@@ -3,11 +3,11 @@
     <div class="disc-blokk">
       <h3>Terápiás megoldás<small>valamennyi alvászavarra</small></h3>
       <h4>Központjainkban, alvászavarok diagnosztizálását és kezelését végezzük Magyarországon egyedülálló szakértelemmel.</h4>
-      <ul>
-        <li><a href="#">Alvásszakértő orvosok</a></li>
-        <li><a href="#">Országos hálózat</a></li>
-        <li><a href="#">Szűrés és teljeskörű kezelés</a></li>
-        <li><a href="#">Várakozási idő nélkül</a></li>
+      <ul class="pipas">
+        <li><a href="<?php echo get_permalink(55); ?>">Alvásszakértő orvosok</a></li>
+        <li><a href="<?php echo get_permalink(53); ?>">Országos hálózat</a></li>
+        <li><a href="<?php echo get_permalink(2); ?>">Szűrés és teljeskörű kezelés</a></li>
+        <li><a href="<?php echo get_permalink(520); ?>">Várakozási idő nélkül</a></li>
       </ul>
       <!--a href="?page_id=70" class="btn">Első konzultáció és vizsgálat részletei</a-->
     </div>

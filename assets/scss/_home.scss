@@ -28,8 +28,19 @@
     @include clearfix();
     background-image: url('../img/doki_korbevagva.png');
     background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: auto 100%;
+    background-position: 50% bottom;
+    background-size: auto 650px;
+    
+    @include breakpoint($s1){
+      background-position: -140px bottom;
+      background-size: auto 80%;
+    }
+
+    @include breakpoint($s2){
+      background-position: left bottom;
+      background-size: auto 100%;
+    }
+
   }
   .ugyerzi {
    margin:2em 0;
@@ -41,7 +52,12 @@
   font-size: 1.25em;
   line-height: 1.4em;
   padding:2em 0 2em 0;
-  //min-height: 420px;
+  margin-bottom: 15em;
+
+  @include breakpoint($s1){
+    padding-left: 25%;
+    margin-bottom:0;
+  }
 
   @include breakpoint($s2){
     padding-left: 50%;
@@ -64,7 +80,7 @@
 
   h4 {
 
-    //font-size: 1em;
+    font-size: 0.875em;
     text-transform: none;
     font-weight: 700;
 
@@ -73,7 +89,7 @@
   ul {
     margin:1em 0 2em;
     padding:0 0 0 0;
-    font-weight: 300; 
+    //font-weight: 300; 
   }
 
   li {
@@ -81,7 +97,7 @@
     text-transform: uppercase;
     font-weight: 700;
     a {
-      //color:white;
+            //color:white;
     }
 
   }
