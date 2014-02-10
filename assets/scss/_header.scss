@@ -1,11 +1,62 @@
+.toptel{
+  background-color: $eggplant;
+  color:$blue-90;
+  background-image: url('../img/hattter-05.png'), url('../img/hattter-01.png'), url('../img/hattter-04.png');
+  background-repeat: repeat;
+  background-position: right bottom, left top, center center;
+  //background-size: cover;
+
+  a{
+    color:$blue-90;
+    &:hover, &:focus{
+      color:$orange;
+      text-decoration: none;
+    }
+
+  }
+
+  .cell {
+    @include clearfix();
+    text-align: right;
+
+    
+
+    @include breakpoint ($s1) {
+      padding:1em;
+      width:50%;
+      float:left;
+    }
+    @include breakpoint ($s3) {
+      width:25%;
+    }
+
+  }
+  .cellcim {
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 1.333em;
+    margin:0.5em 0; 
+    small{
+      display: block;
+      font-size: 0.875em;
+      font-weight: 700;
+    }
+    a{
+
+    }
+  }
+}
+
 /* ==========================================================================
    Header
    ========================================================================== */
 
 .banner {
-  background:$blue-30 ;
+  background:$blue-30;
   //$blue-90;
-  //border-top: 0.25em solid $blue-30;
+  border-top: 3px solid $eggplant;
   //background: url('../img/pioca-eggplant-top.png') repeat-x left bottom, url('../img/watermark.png') no-repeat center -220px white;
   background: url('../img/watermark.png') no-repeat center -220px $blue-30;
   
@@ -18,7 +69,6 @@
   top:0em;
 	z-index:1;
   background: $blue;
-  border-top:5px solid $eggplant;
   max-height:171px;
   overflow: hidden;
   display: block;
@@ -61,12 +111,22 @@
 }
 
 .hs {
-  display:none;
-  width:32px;
-  height:32px;
-  background: $blue;
+  display:block;
+  width:72px;
+  height:72px;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  background-color: $eggplant;
+  //margin-top: -3px;
+  color:$blue-90;
   float:right;
-
+  &:hover, &:focus{
+    background-color: $blue;
+    color:$blue-90;
+    text-decoration: none;
+    
+  }
   @include breakpoint ($s2) {
       display:block;
   }
@@ -80,8 +140,9 @@
   color:$blue-120;
   //background-color: #fff;
   //padding:0 1em;
-  float:right;
-  clear:right;
+  float:left;
+  margin-left:320px;
+  //clear:right;
   font-weight: bold;
   height:2em;
   font-size: 1.25em;

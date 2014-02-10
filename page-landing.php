@@ -3,31 +3,39 @@
 Template Name: Landing Page Űrlappal 
 */
 ?>
-<div class="landinghead szigorow">
+<?php 
+  $imci = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'banner169');
+  $tn=has_post_thumbnail()?$imci[0]:get_stylesheet_directory_uri().'/assets/img/parocska.jpg';
+?>
+<style>
+  .main{
+    background-image:url('<?php echo $tn; ?>');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+</style>
+<div class="landinghead szigorow" >
   <div class="balfel">
     <div class="landcont-wrap">
-      <h2>Szeretne kipihenten ébredni?</h2>
-      <h2>Az alvászavarok jól kezelhetők</h2>
-      <br><br><br>
-      <h3>Mért fontos a pihentetős alvás</h3>
-      <p>A pihentető alvás a folyamatos testi-szellemi megújulás és az egészség egyik legfontosabb feltétele! Hiányában alvászavarokkal szembesülhetünk, melyek az életminőség jelentős romlása mellett további megbetegedésekkel, éjszakai szívinfarktussal és stroke-kal, munkahelyi vagy közúti balesettel járhatnak.</p>
+      <h1 class="landing-title"><?php the_title(); ?></h1>
+      <div class="landing-content">
+        <?php the_content(); ?>
+      </div>
     </div>
   </div>
   <div class="jobbfel">
-    <div class="contact-wrap">
       <?php get_template_part('templates/contact','form'); ?>
-    </div>
   </div>
 </div>
-<div class="landinghead szigorow">
+<div class="landingbott szigorow">
   <div class="balfel">
-    <div class="landcont-wrap">
+    <div class="vat-wrap">
       <h3>Somnocenter – Terápiás megoldás az alvászavarra.</h3>
       <p>A SomnoCenter Alvászavar Központokban valamennyi, mintegy 90 féle alvászavart diagnosztizáljuk és kezeljük. Tapasztalt alvásszakértő orvosainkkal, csúcsminőségű alvásvizsgálatainkkal és hatékony terápiás módszereinkkel Budapesten, Pécsen és Szegeden várjuk mindazokat, akik szeretnének újra kipihenten ébredni.</p>
     </div>
   </div>
   <div class="jobbfel">
-    <div class="contact-wrap">
+    <div class="vat-wrap">
       <h3>Miért a somnocenter?</h3>
       <ul>
         <li>Mert mit tudjuk, mi kell a pihentető alváshoz!</li>

@@ -160,11 +160,18 @@ hr {
 }
 
 ul.pipas {
+  position: relative;
+  padding-left: 2.25em;
+
   li {
-    margin:0.125em 0;
+    list-style-type: none;
+    margin:1.125em 0;
+    
+    
     &:before {
-      transform: translateY(0.2em);
-      margin-right: 0.25em;
+      transform: translateY(-0.25em);
+      position: absolute;
+      left:0;
       font-size: 2em;
       content: "\f16e";
       display: inline-block;

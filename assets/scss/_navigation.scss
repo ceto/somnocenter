@@ -2,11 +2,13 @@
   background: $blue;
 
 
+
   &.desktop {  
     display:none;
     @include breakpoint($s2) {
       display: block;
-      border-bottom:6px solid $blue-30; 
+      border-bottom:6px solid $blue-30;
+      border-top:6px solid $blue-30;
     }
   }
 

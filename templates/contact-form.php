@@ -67,7 +67,7 @@ if(!$human == 0){
 ?>
 <div id="respond" class="contact-wrap white-popup-block szaggat amfp-hide">
   <div id="infopan"></div>
-  <h2 class="block-title">Jelentkezzen alvásvizsgálatra</h2>
+  <h2 class="block-title">Jelentkezzen online</h2>
   <?php echo $response; ?>
   <?php wp_reset_query(); the_post(); ?>
   <form class="form-horizontal" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post">
