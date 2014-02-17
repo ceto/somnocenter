@@ -49,10 +49,10 @@
 
     </div><!-- /.content -->
   </div><!-- /.container .document -->
-  <?php if (is_front_page()) : ?>
+  <?php if (is_front_page() || is_page_template('page-orvosok.php') ) : ?>
     <?php get_template_part( 'templates/home', 'bottom' ) ?>
   <?php endif; ?> 
-
+<?php get_template_part( 'templates/landinghez'); ?>
 <?php get_template_part( 'templates/vizsgalathoz'); ?>
 <?php get_template_part( 'templates/related'); ?>
 <?php get_template_part( 'templates/searchblock'); ?>

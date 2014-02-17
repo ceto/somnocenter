@@ -1,3 +1,18 @@
+.page.page-template-page-landing-php{
+  .main.wide {
+    padding:2em 0 5em;
+  }
+  .vizsgalatokhoz {
+    margin-top:-3em;
+  }
+  .vizsgalathoz-block{
+    .conti {
+      max-width: $s2;
+      margin: 0 auto;
+    }
+  }
+}
+
 .landinghead{
   @include clearfix();
 }
@@ -9,7 +24,7 @@
   //background-color: rgba($eggplant,0.75);
 }
 .landcont-wrap{
-  padding:2em 0;
+  //padding:0 0 2em;
 }
 .landing-title{
   margin-bottom:2em;

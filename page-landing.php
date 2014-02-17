@@ -27,25 +27,3 @@ Template Name: Landing Page Űrlappal
       <?php get_template_part('templates/contact','form'); ?>
   </div>
 </div>
-<div class="landingbott szigorow">
-  <div class="balfel">
-    <div class="vat-wrap">
-      <h3>Somnocenter – Terápiás megoldás az alvászavarra.</h3>
-      <p>A SomnoCenter Alvászavar Központokban valamennyi, mintegy 90 féle alvászavart diagnosztizáljuk és kezeljük. Tapasztalt alvásszakértő orvosainkkal, csúcsminőségű alvásvizsgálatainkkal és hatékony terápiás módszereinkkel Budapesten, Pécsen és Szegeden várjuk mindazokat, akik szeretnének újra kipihenten ébredni.</p>
-    </div>
-  </div>
-  <div class="jobbfel">
-    <div class="vat-wrap">
-      <h3>Miért a somnocenter?</h3>
-      <ul>
-        <li>Mert mit tudjuk, mi kell a pihentető alváshoz!</li>
-        <li>Mert nálunk valamennyi alvászavar jól kezelhető!</li>
-        <li>Mert központjainkban az ország legjobb alvásszakértő orvosai várják!</li>
-        <li>Mert hozzánk ritka alvásbetegségeivel is fordulhat!</li>
-        <li>Mert centrumainkban hosszú várakozási idő nélkül juthat diagnózishoz és terápiához!</li>
-        <li>Mert hatékony módszereinkkel visszaállítjuk az egészségét és a munkaképességét!</li>
-        <li>Mert a SomnoCenter az egyetlen országos, az Európai és a Magyar Alvástársaság által akkreditált alvásdiagnosztikai és terápiás központ hálózat</li>
-      </ul>
-    </div>
-  </div>
-</div>

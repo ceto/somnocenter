@@ -23,6 +23,12 @@ function cmb_page_metaboxes( array $meta_boxes ) {
     //'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
     'fields'     => array(
       array(
+        'name' => __( 'Alcím', 'root' ),
+        'desc' => __( 'Ez jelenik meg a főcím alatt a fejben', 'root' ),
+        'id'   => $prefix . 'subtitle',
+        'type' => 'text',
+      ),
+      array(
         'name' => __( 'Video url', 'root' ),
         'desc' => __( 'Beágyazandó videó url-je', 'root' ),
         'id'   => $prefix . 'video',
@@ -30,12 +36,55 @@ function cmb_page_metaboxes( array $meta_boxes ) {
         // 'repeatable' => true,
         // 'on_front' => false, // Optionally designate a field to wp-admin only
       ),
+
     ),
+  );
+
+  /**
+   * Metabox for the user profile screen
+   */
+  $meta_boxes['user_edit'] = array(
+    'id'            => 'user_edit',
+    'title'         => __( 'User Profile Metabox', 'root' ),
+    'pages'         => array( 'user' ), // Tells CMB to use user_meta vs post_meta
+    'show_names'    => true,
+    // 'cmb_styles' => true, // Show cmb bundled styles.. not needed on user profile page
+    'fields'        => array(
+      array(
+        'name' => __( 'Megjelenik az orvosok listában', 'root' ),
+        'id'   => $prefix . 'orvose',
+        'type' => 'checkbox',
+      ),
+      array(
+        'name'    => __( 'Portré fotó', 'root' ),
+        'desc'    => __( 'Aspect ratio 3×4', 'root' ),
+        'id'      => $prefix . 'portre',
+        'type'    => 'file',
+        'save_id' => true,
+      ),
+      array(
+        'name' => __( 'Foglalkozás, titulus', 'root' ),
+        'id'   => $prefix . 'titulus',
+        'type' => 'textarea_small',
+      ),
+      array(
+        'name' => __( 'Város', 'root' ),
+        'id'   => $prefix . 'city',
+        'type' => 'text_small',
+      ),
+      array(
+        'name' => __( 'Orvos önéletrajz', 'root' ),
+        'id'   => $prefix . 'cv',
+        'type' => 'wysiwyg',
+      ),
+    )
   );
   // Add other metaboxes as needed
 
   return $meta_boxes;
 }
+
+
 
 add_action( 'init', 'cmb_initialize_cmb_meta_boxes', 9999 );
 function cmb_initialize_cmb_meta_boxes() {

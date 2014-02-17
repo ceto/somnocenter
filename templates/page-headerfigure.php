@@ -12,11 +12,9 @@
           <h1 class="nagy">
             <span><?php echo roots_title(); ?></span>
           </h1>
-          <?php if (is_page(43) ): ?>
-            <h4 class="kicsi"><span>Tünetei alapján az alvászavar betegségek felismerhetőek</span></h4>
-          <?php elseif (is_page(2) ): ?>
-            <h4 class="kicsi"><span>Szolgáltatásaink bemutatása</span></h4>
-          <?php endif ?>
+          <?php if (get_post_meta( $post->ID, '_cmb_subtitle', true )!='' ): ?>
+            <h4 class="kicsi"><span><?php echo get_post_meta( $post->ID, '_cmb_subtitle', true ); ?></span></h4>
+          <?php endif; ?>
           <?php if (is_page(116) ): ?>
             <h4 class="kicsi"><span>Frissítve: <time class="published" datetime="<?php echo get_the_time('c'); ?>"><?php echo get_the_date(); ?></time></span></h4>
           <?php endif ?>

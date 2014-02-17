@@ -1,7 +1,7 @@
-<?php if ( ($post->post_parent == '179' )  ) : ?>
+<?php if ( is_page_template('page-landing.php')  ) : ?>
 <?php $the_mitort=new WP_Query( array (
 		'post_type' => 'page',
-		'post_parent'=> '217',
+		'post_parent'=> '520',
 
 	));
 $i=0;
@@ -15,11 +15,6 @@ $i=0;
         </a>
       </li>
     <?php endwhile; ?>
-      <li>
-        <a href="#vizsgalathoz-<?php echo ++$i; ?>" data-toggle="tab">
-          Kapcsolódó írások
-        </a>
-      </li>
       <li>
         <a href="#vizsgalathoz-<?php echo ++$i; ?>" data-toggle="tab">
           Kérdezzen, szóljon hozzá
@@ -42,15 +37,6 @@ $i=0;
       	</div>
       </section><!-- /.vizsgalathoz-# -->
     <?php endwhile; ?>
-      <section id="vizsgalathoz-<?php echo ++$i; ?>" class="fade tab-pane container vizsgalathoz-<?php echo $i; ?>">
-        <div class="row clearfix">
-          <div class="vizsgalathoz-block">
-              <div class="conti">
-                <?php related_entries(); ?>
-              </div>
-          </div>
-        </div>
-      </section><!-- /.vizsgalathoz-# -->
       <section id="vizsgalathoz-<?php echo ++$i; ?>" class="fade tab-pane container vizsgalathoz-<?php echo $i; ?>">
         <div class="row clearfix">
           <div class="vizsgalathoz-block">

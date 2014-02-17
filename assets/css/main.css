@@ -1741,8 +1741,8 @@ body { background-color: #5b7eb7; }
 .brand img { display: none; }
 @media only screen and (min-width: 1024px) { .brand img { display: block; } }
 
-.hs { display: block; width: 72px; height: 72px; font-size: 48px; line-height: 72px; text-align: center; background-color: #7c0040; color: #f3f6fa; float: right; }
-.hs:hover, .hs:focus { background-color: #5b7eb7; color: #f3f6fa; text-decoration: none; }
+.hs { display: block; width: 72px; height: 72px; font-size: 48px; line-height: 72px; text-align: center; background-color: #5b7eb7; color: #f3f6fa; float: right; }
+.hs:hover, .hs:focus { background-color: #7c0040; color: #f3f6fa; text-decoration: none; }
 @media only screen and (min-width: 768px) { .hs { display: block; } }
 
 .info { *zoom: 1; display: inline-block; color: #4c6ba2; float: left; margin-left: 320px; font-weight: bold; height: 2em; font-size: 1.25em; line-height: 2em; }
@@ -2070,7 +2070,7 @@ body { overflow-x: hidden; }
 .hentry.kiskocka a { color: #5b7eb7; z-index: 2; position: relative; text-decoration: none; }
 .hentry.kiskocka header { position: relative; }
 .hentry.kiskocka .entry-mini-figure { margin: -1em -1em 1em -1em; }
-.hentry.kiskocka .entry-cat { font-size: 0.875em; line-height: 1em; margin-top: -2.125em; }
+.hentry.kiskocka .entry-cat { font-size: 0.875em; line-height: 1em; margin-top: -2.125em; min-height: 31px; }
 .hentry.kiskocka .entry-cat a { background: #f7941e; color: white; display: inline-block; text-transform: uppercase; padding: 0.5em 0.5em; }
 .hentry.kiskocka .entry-cat a:hover, .hentry.kiskocka .entry-cat a:focus { text-decoration: none; background: #e6533e; }
 .hentry.kiskocka .entry-author { color: #858585; font-size: 0.875em; font-variant: small-caps; }
@@ -2180,6 +2180,18 @@ body { overflow-x: hidden; }
 .page-template-page-kozpontok-php .main.wide { width: auto; padding-top: 2em; }
 .page-template-page-kozpontok-php .tab-content { padding: 1em; border: 1px solid #e9eef5; }
 
+.orvoslista-blokk .orvoskocka { text-align: center; padding: 1em; }
+@media only screen and (min-width: 480px) { .orvoslista-blokk .orvoskocka { width: 50%; float: left; } }
+@media only screen and (min-width: 768px) { .orvoslista-blokk .orvoskocka { width: 33.333%; float: left; } }
+@media only screen and (min-width: 1024px) { .orvoslista-blokk .orvoskocka { width: 25%; float: left; } }
+.orvoslista-blokk .orvoskocka .orvos-figure { position: relative; display: block; }
+.orvoslista-blokk .orvoskocka .orvos-figure:after { content: ''; position: relative; display: block; margin: -35px auto 0; z-index: 1; background-image: url(../img/logo_pajzs.png); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat; width: 70px; height: 70px; }
+.orvoslista-blokk .orvoskocka img { border: 2px solid #5b7eb7; }
+.orvoslista-blokk .orvoskocka h3 { margin: 0.5em 0 0; text-transform: none; }
+.orvoslista-blokk .orvoskocka h3 a { color: #5b7eb7; }
+.orvoslista-blokk .orvoskocka .titulus { margin: 0; }
+.orvoslista-blokk .orvoskocka .city { margin: 0; font-style: italic; font-size: 0.875em; }
+
 .home-banner { background: white; padding: 2em 4em; margin: 2em 0; }
 .home-banner h3 { font-size: 1.5em; line-height: 1.4em; margin: 0; float: left; max-width: 66.6666666%; }
 .home-banner h3 small { display: block; }
@@ -2225,6 +2237,7 @@ body { overflow-x: hidden; }
 #respond select { height: 2.25em; }
 #respond .btn { margin: 0.5em 0; float: right; border: none; background: #5b7eb7; color: #fefefe; font-weight: 700; display: inline-block; padding: 0.5em 1.5em; text-transform: uppercase; letter-spacing: 1px; }
 #respond .btn:hover, #respond .btn:focus { background: #14467c; }
+#respond .oki { clear: right; font-size: 0.875em; line-height: 1.25em; font-style: italic; }
 
 .gallerywrap { margin: 2em 0 2em 0; overflow: hidden; -webkit-mask-image: -webkit-linear-gradient(left, transparent 1%, black 10%, black 90%, transparent 99%); mask-image: linear-gradient(left, transparent 1%, black 10%, black 90%, transparent 99%); }
 
@@ -2384,6 +2397,10 @@ img.mfp-img { width: auto; max-width: 100%; height: auto; display: block; line-h
 .panel-group .panel + .panel { margin-top: 3em; }
 .panel-group .panel-heading + .panel-collapse .panel-body { border-bottom: 1px solid #5b7eb7; }
 
+.page.page-template-page-landing-php .main.wide { padding: 2em 0 5em; }
+.page.page-template-page-landing-php .vizsgalatokhoz { margin-top: -3em; }
+.page.page-template-page-landing-php .vizsgalathoz-block .conti { max-width: 768px; margin: 0 auto; }
+
 .landinghead { *zoom: 1; }
 .landinghead:before, .landinghead:after { content: " "; display: table; }
 .landinghead:after { clear: both; }
@@ -2392,12 +2409,37 @@ img.mfp-img { width: auto; max-width: 100%; height: auto; display: block; line-h
 .landingbott:before, .landingbott:after { content: " "; display: table; }
 .landingbott:after { clear: both; }
 
-.landcont-wrap { padding: 2em 0; }
-
 .landing-title { margin-bottom: 2em; }
 
 .landing-content { font-size: 1.25em; }
 .landing-content ul.pipas { text-transform: uppercase; font-weight: 700; }
 .landing-content ul.pipas li:before { color: #7c0040; }
+
+.modal-open { overflow: hidden; }
+
+.modal { display: none; overflow: auto; overflow-y: scroll; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 3; -webkit-overflow-scrolling: touch; outline: 0; }
+.modal.fade .modal-dialog { transform: translate(0, -25%); transition: transform 0.3s ease-out; }
+.modal.in .modal-dialog { transform: translate(0, 0); }
+
+.modal-dialog { position: relative; width: auto; margin: 10px; }
+
+.modal-content { position: relative; background-color: #fff; border: 1px solid #5b7eb7; border: 1px solid #e6533e; border-radius: 4px; box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); background-clip: padding-box; outline: none; }
+
+.modal-backdrop { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 2; background-color: #000; }
+.modal-backdrop.fade { opacity: 0; }
+.modal-backdrop.in { opacity: 0.5; }
+
+.modal-header { padding: 1em; border-bottom: 1px solid #7c0040; }
+
+.modal-header .close { margin-top: -2px; }
+
+.modal-title { margin: 0; }
+
+.modal-body { position: relative; padding: 1em; }
+
+@media (min-width: 768px) { .modal-dialog { width: 600px; margin: 30px auto; }
+  .modal-content { box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+  .modal-sm { width: 768px; }
+  .modal-lg { width: 1024px; } }
 
 /*# sourceMappingURL=main.css.map */

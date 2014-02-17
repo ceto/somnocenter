@@ -517,3 +517,66 @@
 }
 
 } 
+
+
+.orvoslista-blokk {
+  .orvoskocka{
+    text-align: center;
+    
+    padding:1em;
+
+    @include breakpoint($s1){
+      width:50%;
+      float:left;
+    }
+    
+    @include breakpoint($s2){
+      width:33.333%;
+      float:left;
+    }
+
+    @include breakpoint($s3){
+      width:25%;
+      float:left;
+    }
+    .orvos-figure {
+      position: relative;
+      display: block;
+      &:after {
+        content:'';
+        position: relative;
+        display: block;
+        margin:-35px auto 0;
+        z-index:1;
+
+        //position:absolute;
+        background-image: url(../img/logo_pajzs.png);
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width:70px;
+        height:70px;
+      }
+
+    }
+    img {
+      border:2px solid $blue;
+    }
+    h3{
+      margin:0.5em 0 0;
+      text-transform: none;
+      a {
+        color:$blue;
+      }
+    }
+    .titulus{
+      margin:0;
+    }
+    .city {
+      margin:0;
+      font-style: italic;
+      font-size: 0.875em;
+    }
+
+  }
+}
