@@ -24,7 +24,7 @@ Template Name: Gyógyítás Start
     <?php endwhile; ?>
   </ul>
   <?php 
-    rewind($the_cumo);
+    wp_reset_query();
     $i=0;
   ?>
   <div class="tab-content">

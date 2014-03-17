@@ -22,7 +22,7 @@ $i=0;
       </li>
   </ul>
   <?php 
-    rewind($the_mitort);
+    wp_reset_query();
     $i=0;
   ?>
   <div class="tab-content">

@@ -26,8 +26,14 @@ foreach($allUsers as $currentUser)
       ?>
       <div id="orvos-<?php echo $user->ID; ?>" class="orvoskocka">
         <div class="authorAvatar">
+          <?php // print_r($user); ?>
           <a class="orvos-figure" data-toggle="modal" data-target="#orvosmodal-<?php echo $user->ID; ?>">
-            <img src="http://placehold.it/300x400" alt="<?php echo $user->display_name; ?>">
+            <?php
+        $ima = get_post_meta( $user->ID, '_cmb_portre_id', true );
+        $imci = wp_get_attachment_image_src( $ima, 'petit11');
+      ?>
+    <img src="<?php echo $imci[0]; ?>" width="<?php echo $imci[1]; ?>" height="<?php echo $imci[2]; ?>" alt="<?php echo $user->display_name; ?>" class="orvos-thumb">
+            <!-- <img src="http://placehold.it/300x400" alt="<?php echo $user->display_name; ?>"> -->
           </a>
         </div>
         <div class="authorInfo">

@@ -23,7 +23,7 @@ Template Name: Központok Sablon
   <?php endwhile; ?>
 </ul>
 <?php 
-  rewind($the_center);
+  wp_reset_query();
   $i=0;
 ?>
 <div class="tab-content">

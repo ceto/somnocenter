@@ -1869,12 +1869,8 @@ body { background-color: #5b7eb7; }
 .gyogyelem-block { *zoom: 1; position: relative; background-color: white; }
 .gyogyelem-block:before, .gyogyelem-block:after { content: " "; display: table; }
 .gyogyelem-block:after { clear: both; }
-.gyogyelem-block.paros { background-color: #e9eef5; }
-.gyogyelem-block.paros .ill { left: 0; right: 50%; }
-.gyogyelem-block.paros .szoveg { float: right; }
-.gyogyelem-block .ill { position: absolute; top: 0; bottom: 0; left: 50%; right: 0; background-color: white; -webkit-background-size: cover; background-size: cover; background-position: center center; -webkit-filter: grayscale(1) opacity(0.7); filter: grayscale(1) opacity(0.7); -webkit-transition: all .4s ease-in; transition: all .4s ease-in; }
-.gyogyelem-block:hover .ill, .gyogyelem-block:focus .ill { -webkit-filter: grayscale(0) opacity(1); filter: grayscale(0) opacity(1); }
-.gyogyelem-block .szoveg { width: 50%; padding: 1em 1em; }
+.gyogyelem-block .ill { position: absolute; top: 2em; bottom: 2em; left: 1.5em; right: 60%; background-color: white; -webkit-background-size: cover; background-size: cover; background-position: center center; }
+.gyogyelem-block .szoveg { margin-left: 40%; width: 50%; padding: 1em 1em; }
 .gyogyelem-block .szoveg h3 { position: relative; z-index: 2; }
 .gyogyelem-block .read-more { position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: transparent; text-indent: -9999px; z-index: 1; }
 
@@ -2087,6 +2083,7 @@ body { overflow-x: hidden; }
 .page .main { padding-top: 0em; }
 .page .main .page-content { margin: 0 auto; max-width: 768px; padding: 0 6px; }
 
+.page-template-page-felezett-php .container[role="document"], .page-template-page-tunetek-php .container[role="document"], .page-template-page-gyogyitasstart-php .container[role="document"] { background-image: none; }
 .page-template-page-felezett-php .container[role="document"] .row, .page-template-page-tunetek-php .container[role="document"] .row, .page-template-page-gyogyitasstart-php .container[role="document"] .row { max-width: none; padding: 0 0; }
 @media only screen and (min-width: 480px) { .page-template-page-felezett-php .container[role="document"] .row, .page-template-page-tunetek-php .container[role="document"] .row, .page-template-page-gyogyitasstart-php .container[role="document"] .row { padding: 0 0; } }
 @media only screen and (min-width: 768px) { .page-template-page-felezett-php .container[role="document"] .row, .page-template-page-tunetek-php .container[role="document"] .row, .page-template-page-gyogyitasstart-php .container[role="document"] .row { padding: 0 0; } }
@@ -2095,22 +2092,21 @@ body { overflow-x: hidden; }
 .page-template-page-felezett-php .felezett:before, .page-template-page-felezett-php .felezett:after, .page-template-page-tunetek-php .felezett:before, .page-template-page-tunetek-php .felezett:after, .page-template-page-gyogyitasstart-php .felezett:before, .page-template-page-gyogyitasstart-php .felezett:after { content: " "; display: table; }
 .page-template-page-felezett-php .felezett:after, .page-template-page-tunetek-php .felezett:after, .page-template-page-gyogyitasstart-php .felezett:after { clear: both; }
 @media only screen and (min-width: 480px) { .page-template-page-felezett-php .felezett, .page-template-page-tunetek-php .felezett, .page-template-page-gyogyitasstart-php .felezett { padding: 0 0; } }
-@media only screen and (min-width: 768px) { .page-template-page-felezett-php .felezett, .page-template-page-tunetek-php .felezett, .page-template-page-gyogyitasstart-php .felezett { background: -webkit-gradient(linear, left top, right top, from(#e9eef5), color-stop(50%, #e9eef5), color-stop(50%, #4c6ba2), to(#4c6ba2)); background: -webkit-linear-gradient(left, #e9eef5, #e9eef5 50%, #4c6ba2 50%, #4c6ba2); background: linear-gradient(to right, #e9eef5, #e9eef5 50%, #4c6ba2 50%, #4c6ba2); } }
 .page-template-page-felezett-php .felezett .inner, .page-template-page-tunetek-php .felezett .inner, .page-template-page-gyogyitasstart-php .felezett .inner { max-width: 1140px; margin: 0 auto; }
 @media only screen and (min-width: 768px) { .page-template-page-felezett-php .felezett .inner, .page-template-page-tunetek-php .felezett .inner, .page-template-page-gyogyitasstart-php .felezett .inner { padding: 0 1em; } }
 .page-template-page-felezett-php .felezett .inner:after, .page-template-page-tunetek-php .felezett .inner:after, .page-template-page-gyogyitasstart-php .felezett .inner:after { position: absolute; content: ''; left: 0; right: 0; top: 0; bottom: 0; background: url(../img/hold.png) no-repeat 50% top, url(../img/nap.png) no-repeat 50% top transparent; z-index: 0; }
 .page-template-page-felezett-php .feles, .page-template-page-tunetek-php .feles, .page-template-page-gyogyitasstart-php .feles { position: relative; z-index: 1; font-size: 16px; line-height: 22px; }
 @media only screen and (min-width: 768px) { .page-template-page-felezett-php .feles, .page-template-page-tunetek-php .feles, .page-template-page-gyogyitasstart-php .feles { width: 50%; float: left; } }
 .page-template-page-felezett-php .feles h2, .page-template-page-tunetek-php .feles h2, .page-template-page-gyogyitasstart-php .feles h2 { font-size: 2em; margin: 3em 0 2em; }
-.page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 { background: url(../img/clouds.png) no-repeat left top transparent; padding: 2em 6px; }
+.page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 { background: url(../img/clouds.png) repeat-y left top transparent; padding: 2em 6px; }
 @media only screen and (min-width: 480px) { .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 { padding: 2em 12px; } }
 @media only screen and (min-width: 768px) { .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 { padding: 2em 1em 2em 0; background-color: transparent; } }
 @media only screen and (min-width: 1024px) { .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 { padding: 2em 2em 2em 0; } }
-.page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 { background: url(../img/stars.png) no-repeat right top #4c6ba2; padding: 2em 6px; }
+.page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 { background: url(../img/stars.png) repeat-y right top transparent; padding: 2em 6px; }
 @media only screen and (min-width: 480px) { .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 { padding: 2em 12px; } }
 @media only screen and (min-width: 768px) { .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 { padding: 2em 0 2em 1em; background-color: transparent; } }
 @media only screen and (min-width: 1024px) { .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 { padding: 2em 0 2em 2em; } }
-.page-template-page-felezett-php .feles2 h2, .page-template-page-tunetek-php .feles2 h2, .page-template-page-gyogyitasstart-php .feles2 h2 { text-align: right; color: #f3f6fa; }
+.page-template-page-felezett-php .feles2 h2, .page-template-page-tunetek-php .feles2 h2, .page-template-page-gyogyitasstart-php .feles2 h2 { text-align: right; }
 .page-template-page-felezett-php .tuncike, .page-template-page-tunetek-php .tuncike, .page-template-page-gyogyitasstart-php .tuncike { *zoom: 1; margin-bottom: 0.5em; }
 .page-template-page-felezett-php .tuncike:before, .page-template-page-felezett-php .tuncike:after, .page-template-page-tunetek-php .tuncike:before, .page-template-page-tunetek-php .tuncike:after, .page-template-page-gyogyitasstart-php .tuncike:before, .page-template-page-gyogyitasstart-php .tuncike:after { content: " "; display: table; }
 .page-template-page-felezett-php .tuncike:after, .page-template-page-tunetek-php .tuncike:after, .page-template-page-gyogyitasstart-php .tuncike:after { clear: both; }
@@ -2124,10 +2120,6 @@ body { overflow-x: hidden; }
 .page-template-page-felezett-php .tuncike .conti .belso:before, .page-template-page-felezett-php .tuncike .conti .belso:after, .page-template-page-tunetek-php .tuncike .conti .belso:before, .page-template-page-tunetek-php .tuncike .conti .belso:after, .page-template-page-gyogyitasstart-php .tuncike .conti .belso:before, .page-template-page-gyogyitasstart-php .tuncike .conti .belso:after { content: " "; display: table; }
 .page-template-page-felezett-php .tuncike .conti .belso:after, .page-template-page-tunetek-php .tuncike .conti .belso:after, .page-template-page-gyogyitasstart-php .tuncike .conti .belso:after { clear: both; }
 .page-template-page-felezett-php .tuncike .read-more, .page-template-page-tunetek-php .tuncike .read-more, .page-template-page-gyogyitasstart-php .tuncike .read-more { margin: 0.75em 0 0 0; }
-.page-template-page-felezett-php .feles2 .tuncike h3 a, .page-template-page-tunetek-php .feles2 .tuncike h3 a, .page-template-page-gyogyitasstart-php .feles2 .tuncike h3 a { background-color: #f3f6fa; }
-.page-template-page-felezett-php .feles2 .tuncike h3 a:hover .icon:before, .page-template-page-felezett-php .feles2 .tuncike h3 a:focus .icon:before, .page-template-page-tunetek-php .feles2 .tuncike h3 a:hover .icon:before, .page-template-page-tunetek-php .feles2 .tuncike h3 a:focus .icon:before, .page-template-page-gyogyitasstart-php .feles2 .tuncike h3 a:hover .icon:before, .page-template-page-gyogyitasstart-php .feles2 .tuncike h3 a:focus .icon:before { background-color: #7c0040; color: white; }
-.page-template-page-felezett-php .feles2 .tuncike h3 a .icon:before, .page-template-page-tunetek-php .feles2 .tuncike h3 a .icon:before, .page-template-page-gyogyitasstart-php .feles2 .tuncike h3 a .icon:before { background-color: #c5d2e6; color: #4c6ba2; }
-.page-template-page-felezett-php .feles2 .tuncike .conti .belso, .page-template-page-tunetek-php .feles2 .tuncike .conti .belso, .page-template-page-gyogyitasstart-php .feles2 .tuncike .conti .belso { background-color: #f3f6fa; }
 
 .betegsegek { background-color: white; padding: 2em 0; }
 .betegsegek .inner { max-width: 1140px; margin: 0 auto; padding: 0 6px; }

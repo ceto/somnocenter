@@ -31,6 +31,7 @@
 .page-template-page-felezett-php, .page-template-page-tunetek-php, .page-template-page-gyogyitasstart-php {
 
   .container[role="document"]{
+    background-image:none;
     
     .row {
       max-width:none;
@@ -61,10 +62,7 @@
       padding:0 0;
     }
     @include breakpoint($s2) {
-      background: linear-gradient(to right, $blue-70, $blue-70 50%, $blue-120 50%, $blue-120);
-      
-
-
+      //background: linear-gradient(to right, $blue-70, $blue-70 50%, $blue-120 50%, $blue-120);
     }  
 
     .inner {
@@ -102,7 +100,7 @@
     }
   }
   .feles1 {
-    background: url(../img/clouds.png) no-repeat left top transparent;
+    background: url(../img/clouds.png) repeat-y left top transparent;
     padding: 2em 6px;
     @include breakpoint($s1) {
       padding:2em 12px;
@@ -118,7 +116,7 @@
   }
   .feles2 {
     //color:$blue-70;
-    background: url(../img/stars.png) no-repeat right top $blue-120;
+    background: url(../img/stars.png) repeat-y right top transparent;
     padding: 2em 6px;
     @include breakpoint($s1) {
       padding:2em 12px;
@@ -133,7 +131,7 @@
     }
     h2 {
       text-align: right;
-      color:$blue-90;
+      //color:$blue-90;
 
       
     }
@@ -232,32 +230,32 @@
     }
   }
   
-  .feles2 .tuncike{
-    h3 {
-      a {
-        background-color:$blue-90;
-        &:hover, &:focus {
-          //color:$eggplant;
-          .icon:before {
-            background-color: $eggplant;
-            color:white;
-          }
-        }
-        .icon:before {
-          background-color: $blue-30;
-          color:$blue-120;
-        }
-      }
-    }
-    .conti {
-     .belso {
-        background-color: $blue-90;
-      }
+  // .feles2 .tuncike{
+  //   h3 {
+  //     a {
+  //       background-color:$blue-90;
+  //       &:hover, &:focus {
+  //         //color:$eggplant;
+  //         .icon:before {
+  //           background-color: $eggplant;
+  //           color:white;
+  //         }
+  //       }
+  //       .icon:before {
+  //         background-color: $blue-30;
+  //         color:$blue-120;
+  //       }
+  //     }
+  //   }
+  //   .conti {
+  //    .belso {
+  //       background-color: $blue-90;
+  //     }
       
-    }
+  //   }
 
     
-  }
+  // }
 
 }
 
