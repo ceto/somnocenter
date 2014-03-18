@@ -4,15 +4,38 @@ Template Name: Központok Sablon
 */
 ?>
 <script>
-  var map;
+  var map1, map2, map3;
+  var myLatlng1 = new google.maps.LatLng(-25.363882,131.044922);
+  var myLatlng2 = new google.maps.LatLng(-25.363882,131.044922);
+  var myLatlng3 = new google.maps.LatLng(-25.363882,131.044922);
+  
   function initialize() {
-      var mapOptions = {
+      var mapOptions1 = {
         zoom: 8,
-        center: new google.maps.LatLng(-34.397, 150.644)
+        center: myLatlng1
       };
-      map = new google.maps.Map(document.getElementById('map-canvas-1'), mapOptions);
+      var mapOptions2 = {
+        zoom: 8,
+        center: myLatlng2
+      };
+      var mapOptions3 = {
+        zoom: 8,
+        center: myLatlng3
+      };
+      map1 = new google.maps.Map(document.getElementById('map-canvas-1'), mapOptions1);
+      map2 = new google.maps.Map(document.getElementById('map-canvas-2'), mapOptions2);
+      map3 = new google.maps.Map(document.getElementById('map-canvas-3'), mapOptions3);
+
+      //var image = 'images/beachflag.png';
+      //var myLatLng = new google.maps.LatLng(-33.890542, 151.274856);
+      var beachMarker = new google.maps.Marker({
+          position: myLatLng1,
+          map: map1,
+          //icon: image
+      });
+       
     }
-  google.maps.event.addDomListener(window, 'load', initialize);
+    google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 <div class="clearfix felteke">
 <div class="jobbfel">
@@ -41,7 +64,6 @@ Template Name: Központok Sablon
   <?php while ($the_center->have_posts()) : $the_center->the_post(); ?>
     <section id="center-<?php echo ++$i; ?>" <?php post_class('tab-pane fade center-'.$i.' '.(($i==1)?'active in':'') ); ?> >
       <figure>
-        <img src="http://placehold.it/480x320" alt="<?php the_title(); ?>">
         <div class="map-canvas" id="map-canvas-<?php echo $i; ?>"></div>
       </figure>
       <h2><a href="<?php  the_permalink(); ?>">Somnocenter <?php the_title(); ?></a></h2>
