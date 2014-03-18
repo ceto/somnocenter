@@ -2096,15 +2096,15 @@ body { overflow-x: hidden; }
 @media only screen and (min-width: 480px) { .page-template-page-felezett-php .felezett, .page-template-page-tunetek-php .felezett, .page-template-page-gyogyitasstart-php .felezett { padding: 0 0; } }
 .page-template-page-felezett-php .felezett .inner, .page-template-page-tunetek-php .felezett .inner, .page-template-page-gyogyitasstart-php .felezett .inner { max-width: 1140px; margin: 0 auto; }
 @media only screen and (min-width: 768px) { .page-template-page-felezett-php .felezett .inner, .page-template-page-tunetek-php .felezett .inner, .page-template-page-gyogyitasstart-php .felezett .inner { padding: 0 1em; } }
-.page-template-page-felezett-php .felezett .inner:after, .page-template-page-tunetek-php .felezett .inner:after, .page-template-page-gyogyitasstart-php .felezett .inner:after { position: absolute; content: ''; left: 0; right: 0; top: 0; bottom: 0; background: url(../img/hold.png) no-repeat 50% top, url(../img/nap.png) no-repeat 50% top transparent; z-index: 0; }
+.page-template-page-felezett-php .felezett .inner:after, .page-template-page-tunetek-php .felezett .inner:after, .page-template-page-gyogyitasstart-php .felezett .inner:after { position: absolute; content: ''; left: 0; right: 0; top: 0; bottom: 0; background: url(../img/hold.png) no-repeat 50% 30px, url(../img/nap.png) no-repeat 50% 30px transparent; -webkit-background-size: 130px auto; background-size: 130px auto; z-index: 0; }
 .page-template-page-felezett-php .feles, .page-template-page-tunetek-php .feles, .page-template-page-gyogyitasstart-php .feles { position: relative; z-index: 1; font-size: 16px; line-height: 22px; }
 @media only screen and (min-width: 768px) { .page-template-page-felezett-php .feles, .page-template-page-tunetek-php .feles, .page-template-page-gyogyitasstart-php .feles { width: 50%; float: left; } }
 .page-template-page-felezett-php .feles h2, .page-template-page-tunetek-php .feles h2, .page-template-page-gyogyitasstart-php .feles h2 { font-size: 2em; margin: 3em 0 2em; }
-.page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 { background: url(../img/clouds.png) repeat-y left top transparent; padding: 2em 6px; }
+.page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 { background: url(../img/clouds.png) no-repeat left -200px transparent; padding: 2em 6px; }
 @media only screen and (min-width: 480px) { .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 { padding: 2em 12px; } }
 @media only screen and (min-width: 768px) { .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 { padding: 2em 1em 2em 0; background-color: transparent; } }
 @media only screen and (min-width: 1024px) { .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 { padding: 2em 2em 2em 0; } }
-.page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 { background: url(../img/stars.png) repeat-y right top transparent; padding: 2em 6px; }
+.page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 { background: url(../img/stars.png) no-repeat right -200px transparent; padding: 2em 6px; }
 @media only screen and (min-width: 480px) { .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 { padding: 2em 12px; } }
 @media only screen and (min-width: 768px) { .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 { padding: 2em 0 2em 1em; background-color: transparent; } }
 @media only screen and (min-width: 1024px) { .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 { padding: 2em 0 2em 2em; } }
@@ -2225,6 +2225,8 @@ body { overflow-x: hidden; }
 #respond .btn { margin: 0.5em 0; float: right; border: none; background: #5b7eb7; color: #fefefe; font-weight: 700; display: inline-block; padding: 0.5em 1.5em; text-transform: uppercase; letter-spacing: 1px; }
 #respond .btn:hover, #respond .btn:focus { background: #14467c; }
 #respond .oki { clear: right; font-size: 0.875em; line-height: 1.25em; font-style: italic; }
+
+.map-canvas { height: 320px; width: 100%; }
 
 .gallerywrap { margin: 2em 0 2em 0; overflow: hidden; -webkit-mask-image: -webkit-linear-gradient(left, transparent 1%, black 10%, black 90%, transparent 99%); mask-image: linear-gradient(left, transparent 1%, black 10%, black 90%, transparent 99%); }
 

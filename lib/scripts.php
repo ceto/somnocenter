@@ -11,7 +11,7 @@
  * 3. /theme/assets/js/main.min.js (in footer)
  */
 function roots_scripts() {
-  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '6cae2e803141d63ec6cb635bab81d67e');
+  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '143ceb41b1ce42c642368bf15b8e6973');
 
   // jQuery is loaded using the same method from HTML5 Boilerplate:
   // Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline
@@ -26,8 +26,15 @@ function roots_scripts() {
     wp_enqueue_script('comment-reply');
   }
 
+  if (is_page_template('page-kozpontok.php') ) {
+     wp_register_script('gmap_v3', 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false', false, 'null', false);
+     wp_enqueue_script('gmap_v3');
+  }
+
+
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.min.js', false, null, false);
   wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', false, 'fcc567ced5b611fec95211559bf10bb1', true);
+  
   wp_enqueue_script('modernizr');
   wp_enqueue_script('jquery');
   wp_enqueue_script('roots_scripts');

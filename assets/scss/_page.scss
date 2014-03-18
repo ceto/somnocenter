@@ -75,7 +75,8 @@
         position: absolute;
         content: '';
         left:0;right:0;top:0;bottom:0;
-        background: url(../img/hold.png) no-repeat 50% top, url(../img/nap.png) no-repeat 50% top transparent;
+        background: url(../img/hold.png) no-repeat 50% 30px, url(../img/nap.png) no-repeat 50% 30px transparent;
+        background-size: 130px auto;
         z-index:0;
       }
     }
@@ -100,7 +101,7 @@
     }
   }
   .feles1 {
-    background: url(../img/clouds.png) repeat-y left top transparent;
+    background: url(../img/clouds.png) no-repeat left -200px transparent;
     padding: 2em 6px;
     @include breakpoint($s1) {
       padding:2em 12px;
@@ -116,7 +117,7 @@
   }
   .feles2 {
     //color:$blue-70;
-    background: url(../img/stars.png) repeat-y right top transparent;
+    background: url(../img/stars.png) no-repeat right -200px transparent;
     padding: 2em 6px;
     @include breakpoint($s1) {
       padding:2em 12px;

@@ -3,6 +3,17 @@
 Template Name: Központok Sablon
 */
 ?>
+<script>
+  var map;
+  function initialize() {
+      var mapOptions = {
+        zoom: 8,
+        center: new google.maps.LatLng(-34.397, 150.644)
+      };
+      map = new google.maps.Map(document.getElementById('map-canvas-1'), mapOptions);
+    }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 <div class="clearfix felteke">
 <div class="jobbfel">
 <?php
@@ -31,6 +42,7 @@ Template Name: Központok Sablon
     <section id="center-<?php echo ++$i; ?>" <?php post_class('tab-pane fade center-'.$i.' '.(($i==1)?'active in':'') ); ?> >
       <figure>
         <img src="http://placehold.it/480x320" alt="<?php the_title(); ?>">
+        <div class="map-canvas" id="map-canvas-<?php echo $i; ?>"></div>
       </figure>
       <h2><a href="<?php  the_permalink(); ?>">Somnocenter <?php the_title(); ?></a></h2>
       <p class="excerpt"><?php the_content(); ?></p>
