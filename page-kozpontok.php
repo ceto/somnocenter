@@ -27,10 +27,10 @@ Template Name: Központok Sablon
       map3 = new google.maps.Map(document.getElementById('map-canvas-3'), mapOptions3);
 
       //var image = 'images/beachflag.png';
-      //var myLatLng = new google.maps.LatLng(-33.890542, 151.274856);
       var beachMarker = new google.maps.Marker({
-          position: myLatLng1,
+          position: myLatlng1,
           map: map1,
+          title: 'Hello World!'
           //icon: image
       });
        
