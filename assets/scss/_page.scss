@@ -101,7 +101,7 @@
     }
   }
   .feles1 {
-    background: url(../img/clouds.png) no-repeat left -200px transparent;
+    background: url(../img/clouds.png) no-repeat left 1em transparent;
     padding: 2em 6px;
     @include breakpoint($s1) {
       padding:2em 12px;
@@ -117,7 +117,7 @@
   }
   .feles2 {
     //color:$blue-70;
-    background: url(../img/stars.png) no-repeat right -200px transparent;
+    background: url(../img/stars.png) no-repeat right 1em transparent;
     padding: 2em 6px;
     @include breakpoint($s1) {
       padding:2em 12px;
