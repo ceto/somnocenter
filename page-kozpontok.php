@@ -11,15 +11,15 @@ Template Name: Központok Sablon
   
   function initialize() {
       var mapOptions1 = {
-        zoom: 8,
+        zoom: 14,
         center: myLatlng1
       };
       var mapOptions2 = {
-        zoom: 8,
+        zoom: 14,
         center: myLatlng2
       };
       var mapOptions3 = {
-        zoom: 8,
+        zoom: 14,
         center: myLatlng3
       };
       map1 = new google.maps.Map(document.getElementById('map-canvas-1'), mapOptions1);
