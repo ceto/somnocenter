@@ -35,7 +35,7 @@ Template Name: Központok Sablon
         zoom: 1
       }; 
       var myPano1 = new google.maps.StreetViewPanorama(document.getElementById('map-canvas-1'),panoramaOptions1);
-      myPano.setVisible(true);
+      myPano1.setVisible(true);
 
       //var image = 'images/beachflag.png';
       // var cMarker1 = new google.maps.Marker({
