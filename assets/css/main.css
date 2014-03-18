@@ -1876,8 +1876,10 @@ body { background-color: #5b7eb7; }
 .gyogyelem-block { *zoom: 1; position: relative; background-color: white; }
 .gyogyelem-block:before, .gyogyelem-block:after { content: " "; display: table; }
 .gyogyelem-block:after { clear: both; }
-.gyogyelem-block .ill { position: absolute; top: 2em; bottom: 2em; left: 1.5em; right: 60%; background-color: white; background-size: cover; background-position: center center; }
-.gyogyelem-block .szoveg { margin-left: 40%; width: 50%; padding: 1em 1em; }
+.gyogyelem-block .ill { background-color: white; background-size: cover; background-position: center center; height: 60px; }
+@media only screen and (min-width: 768px) { .gyogyelem-block .ill { height: auto; position: absolute; top: 2em; bottom: 2em; left: 1.5em; right: 60%; } }
+.gyogyelem-block .szoveg { padding: 1em 1em; }
+@media only screen and (min-width: 768px) { .gyogyelem-block .szoveg { margin-left: 40%; width: 50%; } }
 .gyogyelem-block .szoveg h3 { position: relative; z-index: 2; }
 .gyogyelem-block .read-more { position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: transparent; text-indent: -9999px; z-index: 1; }
 
