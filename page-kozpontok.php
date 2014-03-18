@@ -5,9 +5,9 @@ Template Name: Központok Sablon
 ?>
 <script>
   var map1, map2, map3;
-  var myLatlng1 = new google.maps.LatLng(-25.363882,131.044922);
-  var myLatlng2 = new google.maps.LatLng(-25.363882,131.044922);
-  var myLatlng3 = new google.maps.LatLng(-25.363882,131.044922);
+  var myLatlng1 = new google.maps.LatLng(47.494550, 19.021211);
+  var myLatlng2 = new google.maps.LatLng(46.253847, 20.126910);
+  var myLatlng3 = new google.maps.LatLng(46.080191, 18.250496);
   
   function initialize() {
       var mapOptions1 = {
@@ -27,10 +27,22 @@ Template Name: Központok Sablon
       map3 = new google.maps.Map(document.getElementById('map-canvas-3'), mapOptions3);
 
       //var image = 'images/beachflag.png';
-      var beachMarker = new google.maps.Marker({
+      var cMarker1 = new google.maps.Marker({
           position: myLatlng1,
           map: map1,
-          title: 'Hello World!'
+          title: 'Somnocenter'
+          //icon: image
+      });
+      var cMarker2 = new google.maps.Marker({
+          position: myLatlng2,
+          map: map2,
+          title: 'Somnocenter'
+          //icon: image
+      });
+      var cMarker3 = new google.maps.Marker({
+          position: myLatlng3,
+          map: map3,
+          title: 'Somnocenter'
           //icon: image
       });
        
