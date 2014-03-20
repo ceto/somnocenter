@@ -30,7 +30,7 @@ Template Name: Gyógyítás Start
   <div class="tab-content">
     <?php while ($the_cumo->have_posts()) : $the_cumo->the_post(); ?>
       <section id="gyogyelem-<?php echo ++$i; ?>" <?php post_class( 'fade tab-pane container gyogyelem-'.$i.' '.(($i==1)?'active in':'') ) ?>>
-        
+        <?php the_content(); ?>
         <?php
           $the_service=new WP_Query(array(
             'post_type' => 'page;',
