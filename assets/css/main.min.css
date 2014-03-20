@@ -1881,6 +1881,8 @@ body { background-color: #5b7eb7; }
 .gyogyelem-block .szoveg h3 { position: relative; z-index: 2; }
 .gyogyelem-block .read-more { position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: transparent; text-indent: -9999px; z-index: 1; }
 
+.page-text { padding-top: 4em; padding-bottom: 4em; margin: 0 auto; max-width: 768px; }
+
 .arstartblokk { *zoom: 1; margin: 2em auto 4em auto; }
 .arstartblokk:before, .arstartblokk:after { content: " "; display: table; }
 .arstartblokk:after { clear: both; }
@@ -2089,6 +2091,7 @@ body { overflow-x: hidden; }
 @media only screen and (min-width: 768px) { .page .container[role="document"] .row { padding: 0 0; } }
 .page .main { padding-top: 0em; }
 .page .main .page-content { margin: 0 auto; max-width: 768px; padding: 0 6px; }
+.page .main .page-content p:first-child { font-size: 1.125em; line-height: 1.4em; font-weight: 700; color: #5b7eb7; border-bottom: 1px solid #c5d2e6; padding: 1em 0; }
 
 .page-template-page-felezett-php .container[role="document"], .page-template-page-tunetek-php .container[role="document"], .page-template-page-gyogyitasstart-php .container[role="document"] { background-image: none; }
 .page-template-page-felezett-php .container[role="document"] .row, .page-template-page-tunetek-php .container[role="document"] .row, .page-template-page-gyogyitasstart-php .container[role="document"] .row { max-width: none; padding: 0 0; }
@@ -2172,10 +2175,18 @@ body { overflow-x: hidden; }
 .page-template-page-kozpontok-php .main.wide { width: auto; padding-top: 2em; }
 .page-template-page-kozpontok-php .tab-content { padding: 1em; border: 1px solid #e9eef5; }
 
+.orvoslista-blokk { *zoom: 1; margin: 0 auto; max-width: 1280px; }
+.orvoslista-blokk:before, .orvoslista-blokk:after { content: " "; display: table; }
+.orvoslista-blokk:after { clear: both; }
 .orvoslista-blokk .orvoskocka { text-align: center; padding: 1em; }
-@media only screen and (min-width: 480px) { .orvoslista-blokk .orvoskocka { width: 50%; float: left; } }
-@media only screen and (min-width: 768px) { .orvoslista-blokk .orvoskocka { width: 33.333%; float: left; } }
-@media only screen and (min-width: 1024px) { .orvoslista-blokk .orvoskocka { width: 25%; float: left; } }
+@media only screen and (min-width: 480px) { .orvoslista-blokk .orvoskocka { width: 50%; float: left; }
+  .orvoslista-blokk .orvoskocka:nth-child(2n+1) { clear: left; } }
+@media only screen and (min-width: 768px) { .orvoslista-blokk .orvoskocka { width: 33.333%; float: left; }
+  .orvoslista-blokk .orvoskocka:nth-child(2n+1) { clear: none; }
+  .orvoslista-blokk .orvoskocka:nth-child(3n+1) { clear: left; } }
+@media only screen and (min-width: 1024px) { .orvoslista-blokk .orvoskocka { width: 25%; float: left; }
+  .orvoslista-blokk .orvoskocka:nth-child(3n+1) { clear: none; }
+  .orvoslista-blokk .orvoskocka:nth-child(4n+1) { clear: left; } }
 .orvoslista-blokk .orvoskocka .orvos-figure { position: relative; display: block; }
 .orvoslista-blokk .orvoskocka .orvos-figure:after { content: ''; position: relative; display: block; margin: -35px auto 0; z-index: 1; background-image: url(../img/logo_pajzs.png); background-position: 50% 50%; -webkit-background-size: cover; background-size: cover; background-repeat: no-repeat; width: 70px; height: 70px; }
 .orvoslista-blokk .orvoskocka img { border: 2px solid #5b7eb7; }

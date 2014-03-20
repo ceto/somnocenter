@@ -446,6 +446,13 @@
 
 
 }
+  .page-text{
+    padding-top: 4em;
+    padding-bottom: 4em;
+    margin:0 auto;
+    max-width: $s2;
+  }
+
 
 .arstartblokk {
   @include clearfix();

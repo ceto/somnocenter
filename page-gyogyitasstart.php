@@ -30,8 +30,8 @@ Template Name: Gyógyítás Start
   <div class="tab-content">
     <?php while ($the_cumo->have_posts()) : $the_cumo->the_post(); ?>
       <section id="gyogyelem-<?php echo ++$i; ?>" <?php post_class( 'fade tab-pane container gyogyelem-'.$i.' '.(($i==1)?'active in':'') ) ?>>
-        <?php the_content(); ?>
         <?php
+          $coco=wpautop( do_shortcode( get_the_content() ) );
           $the_service=new WP_Query(array(
             'post_type' => 'page;',
             'posts_per_page' => -1,
@@ -55,7 +55,10 @@ Template Name: Gyógyítás Start
 		          <div class="ill" style="background-image:url(<?php echo $biga[0]; ?>)"></div>
             </div>
         <?php endwhile; ?>
-
+        
+        <div class="page-text">
+          <?php echo $coco; ?>
+        </div>
 
       </section><!-- /.gyogyelem-# -->
     <?php endwhile; ?>

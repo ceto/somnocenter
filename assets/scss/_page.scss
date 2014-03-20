@@ -23,6 +23,15 @@
       margin:0 auto;
       max-width: $s2;
       padding:0 6px;
+      p:first-child{
+        font-size:1.125em;
+        line-height:1.4em;
+        font-weight: 700;
+        //font-style:italic;
+        color:$blue;
+        border-bottom:1px solid $blue-30;
+        padding:1em 0;
+      }
     }
   }
 }
@@ -519,6 +528,9 @@
 
 
 .orvoslista-blokk {
+  @include clearfix();
+  margin:0 auto;
+  max-width: $s4;
   .orvoskocka{
     text-align: center;
     
@@ -527,16 +539,32 @@
     @include breakpoint($s1){
       width:50%;
       float:left;
+      &:nth-child(2n+1) {
+        clear:left;
+      }
+
     }
     
     @include breakpoint($s2){
       width:33.333%;
       float:left;
+      &:nth-child(2n+1) {
+        clear:none;
+      }
+      &:nth-child(3n+1) {
+        clear:left;
+      }
     }
 
     @include breakpoint($s3){
       width:25%;
       float:left;
+      &:nth-child(3n+1) {
+        clear:none;
+      }
+      &:nth-child(4n+1) {
+        clear:left;
+      }
     }
     .orvos-figure {
       position: relative;
