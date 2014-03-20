@@ -1628,6 +1628,11 @@ ul.pipas { position: relative; padding-left: 2.25em; }
 ul.pipas li { list-style-type: none; margin: 1.125em 0; }
 ul.pipas li:before { -webkit-transform: translateY(-0.25em); -ms-transform: translateY(-0.25em); transform: translateY(-0.25em); position: absolute; left: 0; font-size: 2em; content: "\f16e"; display: inline-block; font-family: "Ionicons"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; text-rendering: auto; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
+.entry-content ul, .entry-content ol, .page-content ul, .page-content ol { padding: 0 0 0 2em; }
+.entry-content ul li, .entry-content ol li, .page-content ul li, .page-content ol li { margin: 0.75em 0; }
+.entry-content h2, .page-content h2 { margin: 2em 0 0; font-size: 1.25em; line-height: 1.125em; }
+.entry-content h3, .page-content h3 { margin: 2em 0 0; font-size: 1.125em; line-height: 1.125em; }
+
 /* ========================================================================== WordPress Generated Classes See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes ========================================================================== */
 .aligncenter { display: block; margin: 0 auto; }
 

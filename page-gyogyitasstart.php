@@ -35,7 +35,9 @@ Template Name: Gyógyítás Start
           $the_service=new WP_Query(array(
             'post_type' => 'page;',
             'posts_per_page' => -1,
-            'post_parent' => get_the_ID()
+            'post_parent' => get_the_ID(),
+            'orderby' => 'menu_order',
+            'order' => 'ASC'
           ));
           $j=0;
         ?>

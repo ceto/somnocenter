@@ -22,8 +22,12 @@ function roots_setup() {
   add_image_size('medium11', 768, 768, true);
   
   add_image_size('small43', 480, 320, true);
+  add_image_size('small34', 390, 520, true);
   add_image_size('small21', 480, 240, true);
   
+  add_image_size('petit34', 120, 160, true);
+
+
   // Add post formats (http://codex.wordpress.org/Post_Formats)
   // add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
   add_theme_support('post-formats', array('video'));
