@@ -68,6 +68,10 @@
 
 
 
+
+<?php get_template_part( 'templates/footer','light'); ?>
+<?php get_template_part( 'templates/footer','dark'); ?>
+
   <?php get_template_part('templates/footer'); ?>
 
 </div><!-- /.minden -->

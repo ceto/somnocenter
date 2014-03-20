@@ -5,3 +5,15 @@
 	background: black;
 	color:$blue-90;
 }
+
+
+.footer-dark{
+  @include clearfix();
+  background-color: $blue-30;
+  min-height: 10em;
+}
+
+.footer-light{
+  @include clearfix();
+  min-height: 10em;
+}

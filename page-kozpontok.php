@@ -22,28 +22,28 @@ Template Name: Központok Sablon
         zoom: 14,
         center: myLatlng3
       };
-      //map1 = new google.maps.Map(document.getElementById('map-canvas-1'), mapOptions1);
+      map1 = new google.maps.Map(document.getElementById('map-canvas-1'), mapOptions1);
       map2 = new google.maps.Map(document.getElementById('map-canvas-2'), mapOptions2);
       map3 = new google.maps.Map(document.getElementById('map-canvas-3'), mapOptions3);
 
-      var panoramaOptions1 = {
-        position: myLatlng1,
-        pov: {
-          heading: 165,
-          pitch: 0
-        },
-        zoom: 1
-      }; 
-      var myPano1 = new google.maps.StreetViewPanorama(document.getElementById('map-canvas-1'),panoramaOptions1);
-      myPano1.setVisible(true);
+      // var panoramaOptions1 = {
+      //   position: myLatlng1,
+      //   pov: {
+      //     heading: 165,
+      //     pitch: 0
+      //   },
+      //   zoom: 1
+      // }; 
+      // var myPano1 = new google.maps.StreetViewPanorama(document.getElementById('map-canvas-1'),panoramaOptions1);
+      // myPano1.setVisible(true);
 
       //var image = 'images/beachflag.png';
-      // var cMarker1 = new google.maps.Marker({
-      //     position: myLatlng1,
-      //     map: map1,
-      //     title: 'Somnocenter'
-      //     //icon: image
-      // });
+      var cMarker1 = new google.maps.Marker({
+          position: myLatlng1,
+          map: map1,
+          title: 'Somnocenter'
+          //icon: image
+      });
       var cMarker2 = new google.maps.Marker({
           position: myLatlng2,
           map: map2,

@@ -1808,6 +1808,14 @@ body { background-color: #5b7eb7; }
 /* ========================================================================== Footer ========================================================================== */
 .content-info { background: black; color: #f3f6fa; }
 
+.footer-dark { *zoom: 1; background-color: #c5d2e6; min-height: 10em; }
+.footer-dark:before, .footer-dark:after { content: " "; display: table; }
+.footer-dark:after { clear: both; }
+
+.footer-light { *zoom: 1; min-height: 10em; }
+.footer-light:before, .footer-light:after { content: " "; display: table; }
+.footer-light:after { clear: both; }
+
 .nav-main { background: #5b7eb7; }
 .nav-main.desktop { display: none; }
 @media only screen and (min-width: 768px) { .nav-main.desktop { display: block; border-bottom: 6px solid #c5d2e6; border-top: 6px solid #c5d2e6; } }
@@ -2179,6 +2187,7 @@ body { overflow-x: hidden; }
 .page-template-page-kozpontok-php .container[role="document"] .row { max-width: 1140px; margin: 0 auto; padding: 0 6px; }
 @media only screen and (min-width: 480px) { .page-template-page-kozpontok-php .container[role="document"] .row { padding: 0 12px; } }
 @media only screen and (min-width: 768px) { .page-template-page-kozpontok-php .container[role="document"] .row { padding: 0 1em; } }
+.page-template-page-kozpontok-php .vizsgalathoz-block .conti { max-width: 768px; margin: 0 auto; }
 .page-template-page-kozpontok-php .main.wide { width: auto; padding-top: 2em; }
 .page-template-page-kozpontok-php .tab-content { padding: 1em; border: 1px solid #e9eef5; }
 

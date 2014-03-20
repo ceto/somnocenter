@@ -1,4 +1,4 @@
-<?php if ( is_page_template('page-landing.php')  ) : ?>
+<?php if ( is_page_template('page-landing.php') || is_page_template('page-kozpontok.php') ) : ?>
 <?php $the_mitort=new WP_Query( array (
 		'post_type' => 'page',
 		'post_parent'=> '520',

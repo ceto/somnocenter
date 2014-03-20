@@ -492,18 +492,27 @@
 
 .page-template-page-kozpontok-php{
   .container[role="document"]{
-   .row {
-    max-width: $maximum;
-    margin:0 auto;
-    padding:0 6px;
-    @include breakpoint($s1) {
-    padding:0 12px;
+    .row {
+      max-width: $maximum;
+      margin:0 auto;
+      padding:0 6px;
+      @include breakpoint($s1) {
+        padding:0 12px;
+      }
+      @include breakpoint($s2) {
+        padding:0 1em;
+      }  
+    }
   }
-  @include breakpoint($s2) {
-    padding:0 1em;
-  }  
 
-}
+
+  .vizsgalatokhoz {
+  }
+  .vizsgalathoz-block{
+    .conti {
+      max-width: $s2;
+      margin: 0 auto;
+    }
   }
 
   .main.wide {
@@ -519,10 +528,10 @@
 
 
 
- .tab-content {
-  padding: 1em;
-  border: 1px solid $blue-70;
-}
+  .tab-content {
+    padding: 1em;
+    border: 1px solid $blue-70;
+  }
 
 } 
 
