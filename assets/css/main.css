@@ -1616,7 +1616,7 @@ hr { clear: both; margin: 2em auto 0; position: relative; height: 2px; width: 50
 hr:before { position: absolute; content: ''; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(left, transparent 0%, #476aa2 20%, #476aa2 80%, transparent 100%); }
 hr:after { position: absolute; content: ''; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(left, transparent 0%, #7794c3 20%, #7794c3 80%, transparent 100%); }
 
-.btn { font-family: "Titillium Web", sans-serif; font-weight: 400; background: #5b7eb7; color: #fefefe; display: inline-block; padding: 0.25em 1em; border: none; outline: 0; text-transform: uppercase; }
+.btn { font-family: "Titillium Web", sans-serif; font-weight: 400; background: #5b7eb7; color: #fefefe; display: inline-block; padding: 0.25em 1em; border: none; outline: 0; text-transform: uppercase; border: 0; }
 .btn:hover, .btn:focus { text-decoration: none; color: #fefefe; background: #14467c; }
 
 ::-webkit-input-placeholder { color: #90a8ce; }
@@ -1808,13 +1808,34 @@ body { background-color: #5b7eb7; }
 /* ========================================================================== Footer ========================================================================== */
 .content-info { background: black; color: #f3f6fa; }
 
-.footer-dark { *zoom: 1; background-color: #c5d2e6; min-height: 10em; }
+.footer-dark { *zoom: 1; background-color: #c5d2e6; }
 .footer-dark:before, .footer-dark:after { content: " "; display: table; }
 .footer-dark:after { clear: both; }
 
-.footer-light { *zoom: 1; min-height: 10em; }
+.footer-light { *zoom: 1; }
 .footer-light:before, .footer-light:after { content: " "; display: table; }
 .footer-light:after { clear: both; }
+
+.ernyomarkak { padding: 1em; }
+@media only screen and (min-width: 768px) { .ernyomarkak { width: 33.333%; float: left; } }
+.ernyomarkak h3 { text-align: center; }
+.ernyomarkak ul { *zoom: 1; margin: 0; padding: 0; }
+.ernyomarkak ul:before, .ernyomarkak ul:after { content: " "; display: table; }
+.ernyomarkak ul:after { clear: both; }
+.ernyomarkak ul li { list-style-type: none; padding: 1em 0.5em; width: 50%; float: left; text-align: center; }
+
+.partnerek { padding: 1em; }
+@media only screen and (min-width: 768px) { .partnerek { width: 33.333%; float: left; } }
+.partnerek h3 { text-align: center; }
+.partnerek a { display: block; text-align: center; margin: 2em auto; width: 80%; }
+
+.penztar { padding: 1em; }
+@media only screen and (min-width: 768px) { .penztar { width: 33.333%; float: left; } }
+
+.aboutus { padding: 1em; }
+@media only screen and (min-width: 768px) { .aboutus { width: 66.666%; float: left; } }
+
+@media only screen and (min-width: 768px) { .newsletter-block { width: 33.333%; float: left; padding: 1em; } }
 
 .nav-main { background: #5b7eb7; }
 .nav-main.desktop { display: none; }
@@ -1963,7 +1984,9 @@ body { overflow-x: hidden; }
 @media only screen and (min-width: 768px) { .sidebar-footer .widget { float: left; width: 33.33333%; padding: 1em; } }
 @media only screen and (min-width: 768px) { .sidebar-footer .widget.dupla { width: 66.66666666%; } }
 .sidebar-footer .widget .widget-title { color: white; border-bottom: 1px solid white; padding: 0 0.75em 0.5em 0.75em; margin: 0 0 0.75em; font-size: 1.5em; font-weight: 400; text-transform: none; font-variant: small-caps; }
-.sidebar-footer .widget.widget_recent_entries ul, .sidebar-footer .widget.widget_categories ul, .sidebar-footer .widget.widget_archive ul, .sidebar-footer .widget.widget_illness ul { margin: 0; padding: 0; }
+.sidebar-footer .widget.widget_recent_entries ul, .sidebar-footer .widget.widget_categories ul, .sidebar-footer .widget.widget_archive ul, .sidebar-footer .widget.widget_illness ul { *zoom: 1; margin: 0; padding: 0; }
+.sidebar-footer .widget.widget_recent_entries ul:before, .sidebar-footer .widget.widget_recent_entries ul:after, .sidebar-footer .widget.widget_categories ul:before, .sidebar-footer .widget.widget_categories ul:after, .sidebar-footer .widget.widget_archive ul:before, .sidebar-footer .widget.widget_archive ul:after, .sidebar-footer .widget.widget_illness ul:before, .sidebar-footer .widget.widget_illness ul:after { content: " "; display: table; }
+.sidebar-footer .widget.widget_recent_entries ul:after, .sidebar-footer .widget.widget_categories ul:after, .sidebar-footer .widget.widget_archive ul:after, .sidebar-footer .widget.widget_illness ul:after { clear: both; }
 .sidebar-footer .widget.widget_recent_entries li, .sidebar-footer .widget.widget_categories li, .sidebar-footer .widget.widget_archive li, .sidebar-footer .widget.widget_illness li { list-style-type: none; }
 .sidebar-footer .widget.widget_recent_entries li a, .sidebar-footer .widget.widget_categories li a, .sidebar-footer .widget.widget_archive li a, .sidebar-footer .widget.widget_illness li a { display: block; line-height: 1.25em; color: #fefefe; padding: 0.3333333em 1em; }
 .sidebar-footer .widget.widget_recent_entries.dupla li, .sidebar-footer .widget.widget_categories.dupla li, .sidebar-footer .widget.widget_archive.dupla li, .sidebar-footer .widget.widget_illness.dupla li { width: 50%; float: left; }
@@ -2462,5 +2485,38 @@ img.mfp-img { width: auto; max-width: 100%; height: auto; display: block; line-h
   .modal-content { box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
   .modal-sm { width: 768px; }
   .modal-lg { width: 1024px; } }
+/* MailChimp Form Embed Code - Classic - 08/17/2011 */
+#mc_embed_signup form { display: block; position: relative; text-align: left; }
+#mc_embed_signup input { border: 1px solid #999; -webkit-appearance: none; }
+#mc_embed_signup input[type=checkbox] { -webkit-appearance: checkbox; }
+#mc_embed_signup input[type=radio] { -webkit-appearance: radio; }
+#mc_embed_signup input:focus { border-color: #333; }
+#mc_embed_signup .small-meta { font-size: 11px; }
+#mc_embed_signup .nowrap { white-space: nowrap; }
+#mc_embed_signup .mc-field-group { clear: left; position: relative; margin-bottom: 1em; }
+#mc_embed_signup .size1of2 { clear: none; float: left; display: inline-block; width: 46%; margin-right: 4%; }
+* html #mc_embed_signup .size1of2 { margin-right: 2%; /* Fix for IE6 double margins. */ }
+#mc_embed_signup .mc-field-group input[type="submit"] { position: absolute; height: 48px; top: 6px; right: 6px; }
+#mc_embed_signup .mc-field-group label { display: none; }
+#mc_embed_signup .mc-field-group input[type="email"] { font-size: 1em; line-height: 1em; border: 0; background: #e9eef5; color: #14467c; display: block; border: 6px solid white; padding: 0.33333333em 0.333333em 0.125em; outline: 0; width: 100%; height: 60px; }
+#mc_embed_signup .mc-field-group input[type="email"]:hover, #mc_embed_signup .mc-field-group input[type="email"]:focus { box-shadow: inset 0 0 6px 0 #5b7eb7; }
+#mc_embed_signup input.mce_inline_error { border-color: #e6533e; }
+#mc_embed_signup div.mce_inline_error { margin: 0 0 1em 0; padding: 5px 10px; background-color: #e6533e; font-style: italic; z-index: 1; color: #f3f6fa; }
+#mc_embed_signup .mc-field-group select { display: inline-block; width: 99%; padding: 5px 0; margin-bottom: 2px; }
+#mc_embed_signup .indicates-required { text-align: right; font-size: 11px; margin-right: 4%; }
+#mc_embed_signup .asterisk { color: #c60; font-size: 200%; }
+#mc_embed_signup .mc-field-group .asterisk { position: absolute; top: 25px; right: 10px; }
+#mc_embed_signup .clear { clear: both; }
+#mc_embed_signup .mc-field-group.input-group ul { margin: 0; padding: 5px 0; list-style: none; }
+#mc_embed_signup .mc-field-group.input-group ul li { display: block; padding: 3px 0; margin: 0; }
+#mc_embed_signup .mc-field-group.input-group label { display: inline; }
+#mc_embed_signup .mc-field-group.input-group input { display: inline; width: auto; border: none; }
+#mc_embed_signup div#mce-responses { float: left; top: -1.4em; padding: 0em .5em 0em .5em; overflow: hidden; width: 90%; margin: 0 5%; clear: both; }
+#mc_embed_signup div.response { margin: 1em 0; padding: 1em .5em .5em 0; font-weight: bold; float: left; top: -1.5em; z-index: 1; width: 80%; }
+#mc_embed_signup #mce-error-response { display: none; }
+#mc_embed_signup #mce-success-response { color: #529214; display: none; }
+#mc_embed_signup label.error { display: block; float: none; width: auto; margin-left: 1.05em; text-align: left; padding: .5em 0; }
+#mc_embed_signup #num-subscribers { font-size: 1.1em; }
+#mc_embed_signup #num-subscribers span { padding: .5em; border: 1px solid #ccc; margin-right: .5em; font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */

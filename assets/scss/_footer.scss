@@ -10,10 +10,75 @@
 .footer-dark{
   @include clearfix();
   background-color: $blue-30;
-  min-height: 10em;
 }
 
 .footer-light{
   @include clearfix();
-  min-height: 10em;
+}
+
+.ernyomarkak{
+  padding:1em;
+  @include breakpoint($s2){
+    width:33.333%;
+    float:left;
+
+  }
+  h3{
+    text-align: center;
+  }
+  ul {
+    @include clearfix();
+    margin:0;
+    padding:0;
+    li {
+      list-style-type: none;
+      padding:1em 0.5em;
+      width:50%;
+      float:left;
+      text-align: center;
+    }
+  }
+
+}
+.partnerek{
+  padding:1em;
+  @include breakpoint($s2){
+    width:33.333%;
+    float:left;
+
+  }
+  h3{
+    text-align: center;
+  }
+  a{
+    display: block;
+    text-align: center;
+    margin:2em auto;
+    width:80%;
+  }
+}
+.penztar{
+  padding:1em;
+  @include breakpoint($s2){
+    width:33.333%;
+    float:left;
+
+  }
+}
+
+.aboutus {
+  padding:1em;
+  @include breakpoint($s2){
+    width:66.666%;
+    float:left;
+
+  }
+}
+.newsletter-block{
+  padding:1em;
+  @include breakpoint($s2){
+    width:33.333%;
+    float:left;
+
+  }
 }

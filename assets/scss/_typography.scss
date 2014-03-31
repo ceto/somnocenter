@@ -120,6 +120,7 @@ hr {
   border:none;
   outline:0;
   text-transform: uppercase;
+  border:0;
   &:hover, &:focus {
     text-decoration: none;
     color:$white;
