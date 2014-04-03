@@ -339,6 +339,13 @@
     @include breakpoint($s3) {
     }
   }
+  
+  &.format-aside{
+    margin-top:2em;
+    .entry-mini-figure {
+      display:none;
+    }
+  }
 
   .entry-cat {
     font-size: 0.875em;

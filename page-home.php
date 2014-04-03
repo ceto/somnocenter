@@ -29,14 +29,19 @@ Template Name: Homepage Template
 <?php 
   $arti=new WP_Query(array(
     'post_type' => 'post',
-    'posts_per_page' => 3,
+    'posts_per_page' => 4,
     'tax_query' => array(
         array(                
             'taxonomy' => 'post_format',
             'field' => 'slug',
-            'terms' => array( 
-                'post-format-video'
-            ),
+            'terms' => array('post-format-video'),
+            'operator' => 'NOT IN'
+        )
+        ,
+        array(                
+            'taxonomy' => 'post_format',
+            'field' => 'slug',
+            'terms' => array('post-format-aside'),
             'operator' => 'NOT IN'
         )
     )

@@ -12,9 +12,12 @@
     </figure>
     <div class="entry-cat">
       <?php 
-      $category = get_the_category(); 
-      if($category[0]){
-      echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
+      $category = get_the_category();
+      //print_r($category); 
+      if($category[0]->term_id!==7){
+        echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
+      } else {
+        echo '<a href="'.get_category_link($category[1]->term_id ).'">'.$category[1]->cat_name.'</a>';
       }
     ?>
     </div>

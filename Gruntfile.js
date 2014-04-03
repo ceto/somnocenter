@@ -9,12 +9,16 @@ module.exports = function(grunt) {
       all: [
         'Gruntfile.js',
         'assets/js/*.js',
-        //'assets/js/plugins/*.js',
         '!assets/js/scripts.min.js'
       ]
     },
     uglify: {
       dist: {
+        options: {
+          beautify: true,
+          mangle: false,
+          compress: false
+        },
         files: {
           'assets/js/scripts.min.js': [
             'assets/js/plugins/*.js',
@@ -32,12 +36,22 @@ module.exports = function(grunt) {
         jsHandle: 'roots_scripts'
       }
     },
+    // sass: {
+    //   dist: {
+    //     options: {
+    //      style: 'nested',
+    //      sourcemap: true
+    //     },
+    //     files: {
+    //       'assets/css/main.css': 'assets/scss/styles.scss'
+    //     }
+    //   }
+    // },
     sass: {
       dist: {
         options: {
-         style: 'compact',
-         /*noCache: true,*/
-         sourcemap: true
+         outputStyle: 'nested',
+         sourceComments: 'map'
         },
         files: {
           'assets/css/main.css': 'assets/scss/styles.scss'
@@ -95,7 +109,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-wp-version');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-autoprefixer');
 
 
