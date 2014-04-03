@@ -17,7 +17,9 @@
     <section class="penztar">
       <h3>Egészségpénztár</h3>
       <p>Magyarország legtöbb egészségpénztárával együttműködési megállapodással rendelkezünk a pénztártagok ellátására!</p>
-        <a href="#" class="btn">Bővebben</a>
+        <a href="<?php echo get_permalink(849); ?>" class="btn">Bővebben</a>
+      <h3>Letölthető alvásnapló</h3>
+        <a href="<?php echo get_permalink(1182); ?>" class="btn">Bővebben</a>
     </section>
   </div>
 </aside>

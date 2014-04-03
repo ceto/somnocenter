@@ -9,6 +9,6 @@
 </ul>
 <section class="widget widget_test">
     <h3>Van e önnek alvászavara? <small>Tünetei alapján kiderítheti</small></h3>
-    <a href="?page_id=43" class="btn">1 perces alvásteszt</a>
+    <a href="<?php echo get_permalink(1197); ?>" class="btn">1 perces alvásteszt</a>
 </section>
 <?php dynamic_sidebar('sidebar-inner'); ?>

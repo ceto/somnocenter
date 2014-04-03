@@ -2891,8 +2891,15 @@ body {
     margin: 1em 0; }
     .tab-pane.post-158 .conti ol li:before {
       display: block;
+      margin: 0 auto;
+      text-align: center;
       font-size: 2em;
-      line-height: 1em;
+      line-height: 1.5em;
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 50%;
+      background-color: #7c0040;
+      color: #f3f6fa;
       text-align: center;
       font-weight: 700;
       margin-bottom: 0.25em;
@@ -3038,10 +3045,8 @@ body {
 
 .info {
   *zoom: 1;
-  display: inline-block;
+  display: none;
   color: #4c6ba2;
-  float: left;
-  margin-left: 320px;
   font-weight: bold;
   height: 2em;
   font-size: 1.25em;
@@ -3051,6 +3056,18 @@ body {
     display: table; }
   .info:after {
     clear: both; }
+  @media only screen and (min-width: 768px) {
+    .info {
+      display: block;
+      position: absolute;
+      left: 1.25em;
+      top: 40px; } }
+  @media only screen and (min-width: 1024px) {
+    .info {
+      left: 30%; } }
+  @media only screen and (min-width: 1280px) {
+    .info {
+      left: 38%; } }
   .info .smart {
     *zoom: 1;
     position: relative;
@@ -3227,9 +3244,7 @@ body {
   @media only screen and (min-height: 768px) {
     .page-headerfigure {
       min-height: 400px; } }
-  @media only screen and (min-height: 768px) {
-    .page-headerfigure {
-      min-height: 500px; } }
+  @media only screen and (min-height: 768px) { }
   @media only screen and (min-height: 1024px) {
     .page-headerfigure {
       min-height: 600px; } }
@@ -4374,7 +4389,7 @@ body {
     margin: 0 auto;
     max-width: 768px;
     padding: 0 6px; }
-    .page .main .page-content p:first-child {
+    .page .main .page-content > p:first-child {
       font-size: 1.125em;
       line-height: 1.4em;
       font-weight: 700;

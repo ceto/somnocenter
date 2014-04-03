@@ -50,7 +50,7 @@ Template Name: Gyógyítás Start
           			</div>
               </div>
               <?php 
-                $biga = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ) , 'medium11');
+                $biga = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ) , 'small31');
               ?>
 		          <div class="ill" style="background-image:url(<?php echo $biga[0]; ?>)"></div>
             </div>

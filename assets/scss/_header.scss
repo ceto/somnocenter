@@ -136,17 +136,25 @@
 
 .info {
   @include clearfix();
-  display:inline-block;
+
+  display:none;
   color:$blue-120;
-  //background-color: #fff;
-  //padding:0 1em;
-  float:left;
-  margin-left:320px;
-  //clear:right;
   font-weight: bold;
   height:2em;
   font-size: 1.25em;
   line-height: 2em;
+  @include breakpoint($s2) {
+    display:block;
+    position:absolute;
+    left:1.25em;
+    top:40px;
+  }
+  @include breakpoint ($s3) {
+    left:30%;
+  }
+  @include breakpoint ($s4) {
+    left:38%;
+  }
 
   .smart {
     @include clearfix();
@@ -167,7 +175,6 @@
       padding:0 0;
     }
     &:hover, &:focus{
-      //background-color: $blue-120;
       color:$blue-120;
       text-decoration: none;
       .varos {
@@ -360,7 +367,7 @@
     min-height: 400px;
   }
   @include vbreakpoint($s2) {
-    min-height: 500px;
+    //min-height: 500px;
   }
   @include vbreakpoint($s3) {
     min-height: 600px;

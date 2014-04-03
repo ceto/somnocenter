@@ -23,7 +23,7 @@
       margin:0 auto;
       max-width: $s2;
       padding:0 6px;
-      p:first-child{
+      > p:first-child{
         font-size:1.125em;
         line-height:1.4em;
         font-weight: 700;
