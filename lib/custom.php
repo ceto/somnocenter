@@ -36,6 +36,14 @@ function cmb_page_metaboxes( array $meta_boxes ) {
         // 'repeatable' => true,
         // 'on_front' => false, // Optionally designate a field to wp-admin only
       ),
+      array(
+        'name' => __( 'Kiegészítő tartalom', 'root' ),
+        'desc' => __( 'Pl. Galléria vagy Kérdő0v shortcode', 'root' ),
+        'id'   => $prefix . 'addcont',
+        'type' => 'text',
+        // 'repeatable' => true,
+        // 'on_front' => false, // Optionally designate a field to wp-admin only
+      ),
 
     ),
   );
@@ -133,3 +141,49 @@ function cmb_initialize_cmb_meta_boxes() {
     add_shortcode('collapse', 'ceto_collapse' );
   }
 
+
+
+/*------------------------------------------------*/
+/* Register JS and CSS                            */
+/*------------------------------------------------*/
+// function wpss_register_javascripts(){
+//   if(!is_admin()){ 
+//     $util = new WPSS_Util();
+  
+//     wp_enqueue_script('jquery-wp-simple-survey', $util->get_js('jquery.wp-simple-survey.js'), array('jquery'), '3.0.0');
+//     wp_enqueue_script('wpss', $util->get_js('wpss.js'), array('jquery-wp-simple-survey'), '3.0.0');
+//   }
+// }add_action('wp_print_scripts', 'wpss_register_javascripts');
+
+
+// function wpss_register_stylesheets() {
+//   if(!is_admin()){
+//     $util = new WPSS_Util();
+//     wp_enqueue_style('wpss-style', $util->get_css('wpss.css'));
+//     wp_enqueue_style('wpss-custom-db-style', get_bloginfo('url').'/?wpss-routing=custom-css');
+//   } 
+// }add_action('wp_print_styles', 'wpss_register_stylesheets');
+
+
+// function wpss_register_admin_stylesheets(){
+//   wp_enqueue_style('wpss-admin-style', WPSS_URL.'assets/css/wpss-admin.css');
+// }add_action('admin_init', 'wpss_register_admin_stylesheets');
+
+
+# Deregister style file
+function somno_remove_wpss_styles() {
+  if(!is_admin()){ 
+    wp_deregister_style( 'wpss-style' );
+    wp_deregister_style( 'wpss-custom-db-style' );
+  }
+}
+add_action( 'wp_print_styles', 'somno_remove_wpss_styles', 100 );
+
+# Deregister scripts file
+function somno_remove_wpss_scripts () {
+  if(!is_admin()){ 
+    wp_deregister_script('jquery-wp-simple-survey');
+    wp_deregister_script('wpss');
+  }
+}
+add_action('wp_print_scripts', 'somno_remove_wpss_scripts', 11);

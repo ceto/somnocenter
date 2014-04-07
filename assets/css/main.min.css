@@ -5707,4 +5707,153 @@ img.mfp-img {
   margin-right: 0.5em;
   font-weight: bold; }
 
+
+/*------------------------------------------------*/
+/* Minimal Quiz Style                             */
+/*------------------------------------------------*/
+.wpss {
+  padding: 1em;
+  border: 1px solid #5b7eb7;
+  margin: 2em 0;
+  /* Hide questions on load, show first question. */
+  /* Next and Previous Buttons */ }
+  .wpss .wpss-hidden {
+    display: none; }
+  .wpss .wpss_panel_1 {
+    display: block; }
+  .wpss .wpss_prev_next {
+    text-align: center;
+    margin-top: 0; }
+    .wpss .wpss_prev_next a {
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 600;
+      background-color: #e6533e;
+      padding: 0.25em 0.75em;
+      display: inline-block;
+      color: #f3f6fa;
+      border: 1px solid #e6533e; }
+      .wpss .wpss_prev_next a:hover, .wpss .wpss_prev_next a:focus {
+        background-color: #f7941e;
+        text-decoration: none; }
+      .wpss .wpss_prev_next a.wpss_disabled, .wpss .wpss_prev_next a.wpss_disabled:hover {
+        cursor: default;
+        text-decoration: none;
+        color: #c5d2e6;
+        border: 1px solid #c5d2e6;
+        background-color: transparent; }
+
+.wpss-clear {
+  float: none;
+  clear: both; }
+
+.wpss fieldset {
+  *zoom: 1;
+  border: 0 solid #c0c0c0;
+  margin: 0 0;
+  padding: 0 0 1em; }
+  .wpss fieldset:before, .wpss fieldset:after {
+    content: " ";
+    display: table; }
+  .wpss fieldset:after {
+    clear: both; }
+
+.wpss_prev_next a {
+  margin: 0 15px; }
+
+/*------------------------------------------------*/
+/* Question Field Styling                         */
+/*------------------------------------------------*/
+.wpss .wpss-question img {
+  margin: 5px 0; }
+.wpss .wpss-question img.alignright {
+  margin: 5px 0; }
+.wpss .wpss-question img.aligncenter {
+  margin: 5px auto; }
+.wpss .wpss-question img.alignnone {
+  display: block; }
+.wpss .wpss-question .wp-caption.alignright {
+  margin: 5px 0; }
+
+/*------------------------------------------------*/
+/* Answer Field Styling                           */
+/*------------------------------------------------*/
+.wpss textarea {
+  width: 100%;
+  min-height: 120px; }
+.wpss .answers label img {
+  margin: 5px 0; }
+.wpss .answers label img.aligncenter {
+  margin: 5px auto; }
+.wpss .answers label img.alignnone {
+  display: block; }
+
+/*------------------------------------------------*/
+/* Custom Field Styling                           */
+/*------------------------------------------------*/
+.wpss .wpss-submit-message {
+  margin-bottom: 10px; }
+.wpss .wpss-fields {
+  margin-bottom: 15px;
+  /* Uncomment to float fields to the right of their labels. */
+  /*
+      label{ display: inline; }
+      
+    */ }
+  .wpss .wpss-fields .wpss-field {
+    margin-bottom: 5px; }
+  .wpss .wpss-fields label {
+    display: none; }
+  .wpss .wpss-fields input[type='text'], .wpss .wpss-fields input[type='email'] {
+    width: 100%;
+    display: block;
+    border: 1px solid #5b7eb7;
+    background: #fefefe;
+    margin: 0.5em 0;
+    padding: 0.5em 0.5em;
+    color: #14467c; }
+    .wpss .wpss-fields input[type='text']:hover, .wpss .wpss-fields input[type='text']:focus, .wpss .wpss-fields input[type='email']:hover, .wpss .wpss-fields input[type='email']:focus {
+      outline: 1px solid white; }
+  .wpss .wpss-fields select {
+    float: right; }
+.wpss input[type='submit'] {
+  display: block;
+  background-color: #5b7eb7;
+  color: #f3f6fa;
+  border: 0;
+  padding: 0.5em 1em;
+  width: 100%;
+  font-size: 1.5em;
+  line-height: 1em;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase; }
+  .wpss input[type='submit']:hover, .wpss input[type='submit']:focus {
+    background-color: #14467c; }
+
+/*------------------------------------------------*/
+/* Progress Bar                                   */
+/*------------------------------------------------*/
+.wpss .wpss-progress-bar {
+  display: block;
+  border: 1px solid #c5d2e6;
+  margin: 0 0;
+  padding: 0.25em;
+  height: 1.5em; }
+.wpss .wpss-progress-bar span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background-color: #77c04a; }
+
+/*------------------------------------------------*/
+/* Routed to page styling for results             */
+/*------------------------------------------------*/
+/* Score */
+.wpss_results_score {
+  margin-bottom: 15px; }
+
+/* Full Results */
+.wpss_results_qa .wpss_results_answer {
+  margin-bottom: 15px; }
+
 /*# sourceMappingURL=main.min.css.map */

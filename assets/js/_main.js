@@ -118,5 +118,11 @@ jQuery(document).ready(function($) {
       fixedContentPos: false
     });
 
+    $('.wpss-field input').prop({
+      placeholder: function(){
+        return $(this).prev().text();
+        //return 'picsa';
+      }
+    });
 
 });
