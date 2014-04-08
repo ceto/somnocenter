@@ -54,11 +54,14 @@
    ========================================================================== */
 
 .banner {
-  background:$blue-30;
-  //$blue-90;
+  
   border-top: 3px solid $eggplant;
-  //background: url('../img/pioca-eggplant-top.png') repeat-x left bottom, url('../img/watermark.png') no-repeat center -220px white;
-  background: url('../img/watermark.png') no-repeat center -220px $blue-30;
+  
+  background-color: $blue;
+  
+  @include breakpoint ($s2) {
+    background: url('../img/watermark.png') no-repeat center -220px $blue-30;
+  }
   
 
 }
@@ -111,16 +114,17 @@
 }
 
 .hs {
-  display:block;
-  width:72px;
-  height:72px;
-  font-size: 48px;
-  line-height: 72px;
+  display:inline-block;
+  width:50px;
+  height:50px;
+  font-size: 33px;
+  line-height: 50px;
   text-align: center;
   background-color: $blue;
-  //margin-top: -3px;
-  color:$blue-90;
+  margin: 0 -6px 0 0;
   float:right;
+  color:$blue-90;
+  
   &:hover, &:focus{
     background-color: $eggplant;
     color:$blue-90;
@@ -128,7 +132,13 @@
     
   }
   @include breakpoint ($s2) {
-      display:block;
+    display:block;
+    margin:0;
+    //float:right;
+    width:72px;
+    height:72px;
+    font-size: 48px;
+    line-height: 72px;
   }
 
 

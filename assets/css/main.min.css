@@ -2999,9 +2999,11 @@ body {
    Header
    ========================================================================== */
 .banner {
-  background: #c5d2e6;
   border-top: 3px solid #7c0040;
-  background: url('../img/watermark.png') no-repeat center -220px #c5d2e6; }
+  background-color: #5b7eb7; }
+  @media only screen and (min-width: 768px) {
+    .banner {
+      background: url('../img/watermark.png') no-repeat center -220px #c5d2e6; } }
 
 .brand {
   display: none;
@@ -3026,22 +3028,28 @@ body {
         display: block; } }
 
 .hs {
-  display: block;
-  width: 72px;
-  height: 72px;
-  font-size: 48px;
-  line-height: 72px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 33px;
+  line-height: 50px;
   text-align: center;
   background-color: #5b7eb7;
-  color: #f3f6fa;
-  float: right; }
+  margin: 0 -6px 0 0;
+  float: right;
+  color: #f3f6fa; }
   .hs:hover, .hs:focus {
     background-color: #7c0040;
     color: #f3f6fa;
     text-decoration: none; }
   @media only screen and (min-width: 768px) {
     .hs {
-      display: block; } }
+      display: block;
+      margin: 0;
+      width: 72px;
+      height: 72px;
+      font-size: 48px;
+      line-height: 72px; } }
 
 .info {
   *zoom: 1;
@@ -3278,6 +3286,8 @@ body {
 .content-info {
   background: black;
   color: #f3f6fa; }
+  .content-info a {
+    color: #f7941e; }
 
 .footer-dark {
   *zoom: 1;
@@ -3708,16 +3718,15 @@ body {
       color: #14467c; }
 
 .menu-button {
-  display: block;
+  display: inline-block;
   width: 50px;
   height: 50px;
   background: #5b7eb7;
   color: white;
   text-align: center;
-  font-size: 2em;
+  font-size: 33px;
   line-height: 50px;
-  margin: 6px 0;
-  float: left; }
+  margin: 0 0 0 -6px; }
   @media only screen and (min-width: 768px) {
     .menu-button {
       display: none; } }
@@ -4115,31 +4124,37 @@ body {
   .hentry.nagycikk .entry-sharing:after {
     clear: both; }
   .hentry.nagycikk .entry-sharing h3 {
-    margin-top: 2.5em;
+    margin-top: 3em;
     margin-bottom: 0.25em; }
     .hentry.nagycikk .entry-sharing h3 small {
       display: block;
       text-transform: none; }
   .hentry.nagycikk .entry-sharing ul {
-    margin: 0;
-    padding: 0; }
+    margin: 1em 0 0;
+    padding: 0;
+    text-align: center; }
   .hentry.nagycikk .entry-sharing li {
     list-style-type: none;
     display: inline-block;
     padding: 0 0.25em; }
+    .hentry.nagycikk .entry-sharing li a {
+      color: #4c6ba2;
+      font-size: 1.333em;
+      line-height: 1em; }
+      .hentry.nagycikk .entry-sharing li a:hover, .hentry.nagycikk .entry-sharing li a:focus {
+        color: #f7941e; }
   @media only screen and (min-width: 480px) {
     .hentry.nagycikk .entry-sharing {
       float: left;
       margin: 1em 1em 1em 0; }
       .hentry.nagycikk .entry-sharing li {
-        display: block;
-        padding: 0; } }
+        display: inline-block; } }
   @media only screen and (min-width: 1024px) {
     .hentry.nagycikk .entry-sharing {
       float: left;
       margin-left: -33%; }
       .hentry.nagycikk .entry-sharing li {
-        display: block; } }
+        display: inline-block; } }
 .hentry.nagycikk .author-block {
   font-size: 0.875em;
   background: white;
@@ -4280,6 +4295,8 @@ body {
     color: #f3f6fa; }
     .hentry.kiskocka:hover a, .hentry.kiskocka:hover .published, .hentry.kiskocka:focus a, .hentry.kiskocka:focus .published {
       color: #f3f6fa; }
+    .hentry.kiskocka:hover .read-more, .hentry.kiskocka:focus .read-more {
+      color: transparent; }
     .hentry.kiskocka:hover .read-more:before, .hentry.kiskocka:focus .read-more:before {
       background-color: #4c6ba2;
       color: #f3f6fa; }
@@ -5714,6 +5731,10 @@ img.mfp-img {
   margin-right: 0.5em;
   font-weight: bold; }
 
+.page.page-template-page-survey-php .main.wide {
+  padding: 2em 0 5em; }
+.page.page-template-page-survey-php .vizsgalatokhoz {
+  margin-top: -3em; }
 
 /*------------------------------------------------*/
 /* Minimal Quiz Style                             */

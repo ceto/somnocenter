@@ -4,6 +4,9 @@
 .content-info {
 	background: black;
 	color:$blue-90;
+  a {
+    color:$orange;
+  }
 }
 
 
@@ -14,6 +17,7 @@
 
 .footer-light{
   @include clearfix();
+  //background-color: $blue-90;
 }
 
 .ernyomarkak{

@@ -78,7 +78,7 @@
     text-align: center;
     margin:1em auto;
     h3 {
-      margin-top:2.5em;
+      margin-top:3em;
       margin-bottom: 0.25em;
       //font-size: 1em;
       small {
@@ -90,7 +90,9 @@
 
     ul {
 
-      margin:0;padding:0;
+      margin:1em 0 0;
+      padding:0;
+      text-align: center;
     }
     li {
       //text-align: right;
@@ -98,7 +100,12 @@
       display:inline-block;
       padding:0 0.25em; 
       a {
-        //color:$orange;
+        color:$blue-120;
+        font-size: 1.333em;
+        line-height: 1em;
+        &:hover, &:focus {
+          color:$orange;
+        }
       }
     }
     
@@ -107,8 +114,8 @@
       margin: 1em 1em 1em 0;
       //padding:0 1em 1em 0;
       li {
-       display:block;
-       padding:0;
+       display:inline-block;
+       //padding:0;
       }
  
     }
@@ -118,7 +125,7 @@
       margin-left:-33%;
 
       li {
-        display:block;
+        display:inline-block;
       }
  
     }
@@ -307,6 +314,9 @@
     color: $blue-90;
     a, .published {
       color:$blue-90;
+    }
+    .read-more {
+      color:transparent;
     }
     .read-more:before {
       background-color: $blue-120;

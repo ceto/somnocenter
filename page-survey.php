@@ -4,14 +4,18 @@ Template Name: Kérdőív Sablon
 */
 ?>
 <?php 
-  $imci = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'banner169');
-  $tn=has_post_thumbnail()?$imci[0]:get_stylesheet_directory_uri().'/assets/img/parocska.jpg';
+  //$imci = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'banner169');
+  //$tn=has_post_thumbnail()?$imci[0]:get_stylesheet_directory_uri().'/assets/img/parocska.jpg';
 ?>
 <style>
   .main{
+    /*
     background-image:url('<?php echo $tn; ?>');
     background-size: cover;
     background-attachment: fixed;
+    */
+    background-color: #f3f6fa;
+    background-image: none;
   }
 </style>
 <div class="surveyhead szigorow" >

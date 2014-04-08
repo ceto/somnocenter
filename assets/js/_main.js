@@ -45,6 +45,30 @@ var UTIL = {
 
 $(document).ready(UTIL.loadEvents);
 
+
+function share_click(mi, width, height) {
+  var leftPosition, topPosition;
+  //Allow for borders.
+  leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
+  //Allow for title and status bars.
+  topPosition = (window.screen.height / 2) - ((height / 2) + 50);
+  var windowFeatures = "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
+  var u=location.href;
+  var t=document.title;
+  switch (mi) {
+    case 'fb':
+      window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer', windowFeatures);
+    break;
+    case 'g':
+      window.open('https://plus.google.com/share?url='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer', windowFeatures);
+    break;
+    case 'tw':
+      window.open('https://twitter.com/share?url='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer', windowFeatures);
+    break;
+  }
+  return false;
+}
+
 jQuery(document).ready(function() {
 
   // var top = $('.nav-main').offset().top - parseFloat($('.nav-main').css('marginTop').replace(/auto/, 0));

@@ -1,7 +1,9 @@
 <footer class="content-info container" role="contentinfo">
   <div class="row">
     <?php // dynamic_sidebar('sidebar-footer'); ?>
-    <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+    <p>
+      &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> |
+      Honlap és Arculat <a href="http://hydrogene.hu" target="_blank">Hydrogene</a></p>
   </div>
 </footer>
 
