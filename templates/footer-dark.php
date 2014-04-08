@@ -25,5 +25,12 @@
     </form>
     </div>
     </section>
+    <section class="naplo-block">
+      <h3>Vezessen alvásnaplót</h3>
+      <p>
+        Az alvásnapló adatainak elemzésével állapítható meg, hogy okozhatják-e alvászavarok a kellemetlen tüneteket.
+      </p>
+      <a href="<?php echo get_permalink(1182); ?>" class="btn">Hogyan juthat hozzá</a>
+    </section>
   </div>
 </aside>

@@ -3345,13 +3345,20 @@ body {
   padding: 1em; }
   @media only screen and (min-width: 768px) {
     .aboutus {
-      width: 66.666%;
+      width: 33.333%;
       float: left; } }
 
 .newsletter-block {
   padding: 1em; }
   @media only screen and (min-width: 768px) {
     .newsletter-block {
+      width: 33.333%;
+      float: left; } }
+
+.naplo-block {
+  padding: 1em; }
+  @media only screen and (min-width: 768px) {
+    .naplo-block {
       width: 33.333%;
       float: left; } }
 

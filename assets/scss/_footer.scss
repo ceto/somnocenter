@@ -69,12 +69,20 @@
 .aboutus {
   padding:1em;
   @include breakpoint($s2){
-    width:66.666%;
+    width:33.333%;
     float:left;
 
   }
 }
 .newsletter-block{
+  padding:1em;
+  @include breakpoint($s2){
+    width:33.333%;
+    float:left;
+
+  }
+}
+.naplo-block{
   padding:1em;
   @include breakpoint($s2){
     width:33.333%;

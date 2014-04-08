@@ -1,7 +1,7 @@
 <aside class="footer-light container">
   <div class="row">
     <section class="ernyomarkak">
-      <h3>Egrnyőmárkák</h3>
+      <h3>Találkozhat velünk még</h3>
       <ul>
         <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ernyo/somnocare-logo.png" alt=""></a></li>
         <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ernyo/somnolife-logo.png" alt=""></a></li>
@@ -18,8 +18,6 @@
       <h3>Egészségpénztár</h3>
       <p>Magyarország legtöbb egészségpénztárával együttműködési megállapodással rendelkezünk a pénztártagok ellátására!</p>
         <a href="<?php echo get_permalink(849); ?>" class="btn">Bővebben</a>
-      <h3>Letölthető alvásnapló</h3>
-        <a href="<?php echo get_permalink(1182); ?>" class="btn">Bővebben</a>
     </section>
   </div>
 </aside>
