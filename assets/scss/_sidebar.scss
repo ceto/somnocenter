@@ -151,11 +151,30 @@
 /*********** Footer Sidebar **********/
 
 .sidebar-footer {
-  //background: $blue-120;
-  //background: url('../img/hattter-01.png') no-repeat left bottom, url('../img/hattter-03.png') no-repeat right top $blue-120;
-  //background-size: cover;
-  background: url('../img/zzz.png') no-repeat 98% bottom $blue-120;
+  background-color: $blue-120;
+  background-image: url('../img/zzz.png');
+  background-position: 100% bottom;
+  background-repeat: no-repeat;
+  background-size: 33% auto;
+  @include breakpoint($s2){
+    background-position: 0 bottom;
+    background-size: auto auto;
+  }
+  @include breakpoint($s3){
+    background-position: 1em bottom;
+    background-size: auto auto;
+  }
+  @include breakpoint($s4){
+   
+  }
+  @include breakpoint(1600px){
+    background-position: 10% bottom;
+  }
+
   border-bottom: 6px solid $blue-30;
+  .row {
+
+  }
 
   .sidebar {
     margin:2em auto;
@@ -242,8 +261,32 @@
 /************** Search Block ***************/
 
 .searchcont {
-  background: url('../img/hattter-05.png') no-repeat right bottom, url('../img/hattter-01.png') no-repeat left top $blue;
-  background-size: cover;
+  background-color: $blue;
+  background-image: url('../img/bagoly.png');
+  background-position: 100% bottom;
+  background-repeat: no-repeat;
+  background-size: auto 95%;
+  @include breakpoint($s1){
+    background-size: auto 100%;
+    background-position: 150% bottom;
+  }
+  @include breakpoint($s2){
+    background-position: 115% bottom;
+  }
+  @include breakpoint($s3){
+    background-position: 105% bottom;
+  }
+  @include breakpoint($s4){
+    background-position: 100% bottom;
+  }
+  @include breakpoint(1600px){
+    background-position: 90% bottom;
+  }
+  //background: 
+    //url('../img/hattter-05.png') no-repeat right bottom,
+    //url('../img/hattter-05.png') no-repeat left top,
+  //  url('../img/bagoly.png') no-repeat 98% bottom $blue;
+  //background-size:  auto 100%;
   // &:before{
   //   content:'';
   //   position:absolute;
@@ -259,6 +302,7 @@
     //background: $blue;
     //margin:4em auto;
     //width:50%;
+    
   }
 }
 

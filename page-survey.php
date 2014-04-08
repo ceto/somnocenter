@@ -14,8 +14,6 @@ Template Name: Kérdőív Sablon
     background-size: cover;
     background-attachment: fixed;
     */
-    background-color: #f3f6fa;
-    background-image: none;
   }
 </style>
 <div class="surveyhead szigorow" >

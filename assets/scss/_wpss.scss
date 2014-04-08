@@ -1,6 +1,14 @@
 .page.page-template-page-survey-php{
   .main.wide {
     padding:2em 0 5em;
+    background-color: #f3f6fa;
+    
+  }
+  .surveyhead {
+    background-image: url('../img/barany_light.png');
+    background-repeat: no-repeat;
+    background-position: 90% 100%;
+    background-size: 33% auto;
   }
   .vizsgalatokhoz {
     margin-top:-3em;
@@ -102,18 +110,25 @@
     width: 100%;  
     min-height: 120px;
   }
+  .answers {
+    
+    .answer_text {
+      margin:0.5em 0;
+    }
+    label img{
+      margin: 5px 0;  
+    }
 
-  .answers label img{
-    margin: 5px 0;  
-  }
+    label img.aligncenter{
+      margin: 5px auto;  
+    }
 
-  .answers label img.aligncenter{
-    margin: 5px auto;  
-  }
+    label img.alignnone{
+      display: block;
+    }
 
-  .answers label img.alignnone{
-    display: block;
   }
+  
 }
 
 /*------------------------------------------------*/

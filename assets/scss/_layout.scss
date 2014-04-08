@@ -20,6 +20,7 @@ body {
 }
 
 .row, .szigorow, .fosrow {
+  @include clearfix();
   max-width: $maximum;
   margin:0 auto;
   padding:0 6px;

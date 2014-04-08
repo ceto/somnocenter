@@ -13,6 +13,16 @@
 .footer-dark{
   @include clearfix();
   background-color: $blue-30;
+  .row{
+    background-image: url('../img/alvasnaplo.png');
+    background-position: 90% bottom;
+    background-repeat: no-repeat;
+    background-size: 33.333% auto;
+    @include breakpoint($s2){
+      background-size: 25% auto;
+      background-position: 95% bottom;
+    }
+  }
 }
 
 .footer-light{
