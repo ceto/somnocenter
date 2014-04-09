@@ -200,7 +200,7 @@
 .kockak {
   @include clearfix;
 }
-.szimplasor{
+.szimplasor, .noimage{
   margin-bottom:0.5em;
   @include breakpoint($s2) {
     width:99%;
@@ -323,6 +323,10 @@
       color:$blue-90;
     }
   }
+  
+  &.noimage{
+    padding:0.5em 1em;
+  }
 
   a {
     color:$blue;
@@ -350,7 +354,7 @@
     }
   }
   
-  &.format-aside{
+  .category-5 &.format-aside{
     margin-top:2em;
     .entry-mini-figure {
       display:none;
@@ -396,6 +400,16 @@
       min-height: 3em;
     }
   }
+  
+  &.noimage .entry-title{
+    font-size:1em;
+    line-height:1.4em;
+    //font-weight: 400;
+    //text-transform: uppercase;
+    //font-style: italic;
+  }
+
+    
   .entry-summary {
     margin-bottom: 0.5em;
     @include breakpoint($s1) {

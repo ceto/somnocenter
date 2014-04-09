@@ -1,6 +1,7 @@
 <?php global $kockastyle; ?>
 <article <?php post_class($kockastyle.' kiskocka'); ?> >
   <header>
+    <?php if ($kockastyle!=='noimage') : ?>
     <figure class="entry-mini-figure">
       <a <?php echo (get_post_format()=='video')?'class="player popup-video"':''; ?> href="<?php echo ( get_post_format()=='video' )?get_post_meta( $post->ID, '_cmb_video', true ):get_permalink(); ?>">
         <?php if (has_post_thumbnail()) : ?>
@@ -21,11 +22,19 @@
       }
     ?>
     </div>
+    <?php endif; ?>
+
     <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
   </header>
-  <div class="entry-summary">
-    <?php the_excerpt(); ?>
-  </div>
-  <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn entry-author"><?php echo get_the_author(); ?></a>
-  — <?php get_template_part('templates/entry','time'); ?>
+  <?php if ($kockastyle!=='noimage') : ?>
+     
+     <?php if ($kockastyle!=='szimplasor') : ?>
+      <div class="entry-summary">
+        <?php the_excerpt(); ?>
+      </div>
+    <?php endif;  ?>
+
+    <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn entry-author"><?php echo get_the_author(); ?></a>
+    — <?php get_template_part('templates/entry','time'); ?>
+  <?php endif; ?>
 </article>

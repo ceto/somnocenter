@@ -3829,6 +3829,14 @@ body {
   background-size: auto 80%;
   padding: 0.666em 0.5em;
   margin: 1.33333em 0 0 0; }
+  .jobbfel .rovatfej {
+    margin-bottom: 0.5em;
+    margin-top: 0; }
+    @media only screen and (min-width: 768px) {
+      .jobbfel .rovatfej {
+        width: 99%;
+        margin-left: 2%;
+        margin-bottom: 2%; } }
 
 .rovatlista {
   margin: 0 0 3em;
@@ -4250,10 +4258,10 @@ body {
   .kockak:after {
     clear: both; }
 
-.szimplasor {
+.szimplasor, .noimage {
   margin-bottom: 0.5em; }
   @media only screen and (min-width: 768px) {
-    .szimplasor {
+    .szimplasor, .noimage {
       width: 99%;
       margin-left: 2%;
       margin-bottom: 2%; } }
@@ -4356,6 +4364,8 @@ body {
     .hentry.kiskocka:hover .read-more:before, .hentry.kiskocka:focus .read-more:before {
       background-color: #4c6ba2;
       color: #f3f6fa; }
+  .hentry.kiskocka.noimage {
+    padding: 0.5em 1em; }
   .hentry.kiskocka a {
     color: #5b7eb7;
     z-index: 2;
@@ -4369,9 +4379,9 @@ body {
     margin: -1em -1em 1em -1em; }
     @media only screen and (min-width: 768px) { }
     @media only screen and (min-width: 1024px) { }
-  .hentry.kiskocka.format-aside {
+  .category-5 .hentry.kiskocka.format-aside {
     margin-top: 2em; }
-    .hentry.kiskocka.format-aside .entry-mini-figure {
+    .category-5 .hentry.kiskocka.format-aside .entry-mini-figure {
       display: none; }
   .hentry.kiskocka .entry-cat {
     font-size: 0.875em;
@@ -4402,6 +4412,9 @@ body {
     @media only screen and (min-width: 480px) {
       .hentry.kiskocka .entry-title {
         min-height: 3em; } }
+  .hentry.kiskocka.noimage .entry-title {
+    font-size: 1em;
+    line-height: 1.4em; }
   .hentry.kiskocka .entry-summary {
     margin-bottom: 0.5em; }
     @media only screen and (min-width: 480px) {

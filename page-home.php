@@ -4,6 +4,7 @@ Template Name: Homepage Template
 */
 ?>
 <section class="jobbfel">
+  <h3 class="rovatfej">Videódoktor</h3>
   <?php 
   $vidi=new WP_Query(array(
     'post_type' => 'post',
@@ -24,6 +25,30 @@ Template Name: Homepage Template
 <?php while ($vidi->have_posts()) : $vidi->the_post(); ?>
   <?php get_template_part('templates/content', get_post_format()); ?>
 <?php endwhile; ?>
+
+<h3 class="rovatfej">Orvos válaszol</h3>
+<?php 
+  $qa=new WP_Query(array(
+    'post_type' => 'post',
+    'posts_per_page' => 8,
+    'tax_query' => array(
+        array(                
+            'taxonomy' => 'post_format',
+            'field' => 'slug',
+            'terms' => array( 
+                'post-format-aside'
+            ),
+            //'operator' => 'NOT IN'
+        )
+    )    
+  ));
+?>
+<?php $kockastyle='noimage'; ?>
+<?php while ($qa->have_posts()) : $qa->the_post(); ?>
+  <?php get_template_part('templates/content', get_post_format()); ?>
+<?php endwhile; ?>
+
+
 </section>
 <section class="balfel">
 <?php 
