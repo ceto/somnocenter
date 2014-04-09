@@ -17,11 +17,11 @@
 	    endif;
 	  ?>
 	   </nav>
-     <div class="info">
-        <a href="#" class="smart"><span class="varos">Budapest</span><!--span class="tel">+36 1 483 6645</span--></a>
-        <a href="#" class="smart"><span class="varos">Szeged</span><!--span class="tel">+36 52 454 141</span--></a>
-        <a href="#" class="smart"><span class="varos">Pécs</span><!--span class="tel">+36 35 377 583</span--></a>
-     </div>
+     <!--div class="info">
+        <a href="#" class="smart"><span class="varos">Budapest</span></a>
+        <a href="#" class="smart"><span class="varos">Szeged</span></a>
+        <a href="#" class="smart"><span class="varos">Pécs</span></a>
+     </div-->
     
     <?php if ( (is_single() || is_archive() || is_home() ) && TRUE ) : ?>
      <a class="brand" href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>">

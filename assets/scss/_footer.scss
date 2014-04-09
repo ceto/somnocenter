@@ -14,20 +14,13 @@
   @include clearfix();
   background-color: $blue-30;
   .row{
-    background-image: url('../img/alvasnaplo.png');
-    background-position: 90% bottom;
-    background-repeat: no-repeat;
-    background-size: 33.333% auto;
-    @include breakpoint($s2){
-      background-size: 25% auto;
-      background-position: 95% bottom;
-    }
+    
   }
 }
 
 .footer-light{
   @include clearfix();
-  //background-color: $blue-90;
+  background-color: $blue-90;
 }
 
 .ernyomarkak{
@@ -81,26 +74,47 @@
 }
 
 .aboutus {
-  padding:1em;
+  padding:80px 1em 1em;
+  background-image: url('../img/ikon-sc.png');
+  background-position: 50% 20px;
+  background-repeat: no-repeat;
+  background-size: 60px auto;
   @include breakpoint($s2){
     width:33.333%;
     float:left;
 
+  }
+  h3{
+    text-align: center;
   }
 }
 .newsletter-block{
-  padding:1em;
+  padding:80px 1em 1em;
+  background-image: url('../img/ikon-hirlevel.png');
+  background-position: 50% 20px;
+  background-repeat: no-repeat;
+  background-size: 60px auto;
+
   @include breakpoint($s2){
     width:33.333%;
     float:left;
 
   }
+  h3{
+    text-align: center;
+  }
 }
 .naplo-block{
-  padding:1em;
+  padding:80px 1em 1em;
+  background-image: url('../img/ikon-naplo.png');
+  background-position: 50% 20px;
+  background-repeat: no-repeat;
+  background-size: 60px auto;
   @include breakpoint($s2){
     width:33.333%;
     float:left;
-
+  }
+  h3{
+    text-align: center;
   }
 }

@@ -3298,18 +3298,10 @@ body {
     display: table; }
   .footer-dark:after {
     clear: both; }
-  .footer-dark .row {
-    background-image: url('../img/alvasnaplo.png');
-    background-position: 90% bottom;
-    background-repeat: no-repeat;
-    background-size: 33.333% auto; }
-    @media only screen and (min-width: 768px) {
-      .footer-dark .row {
-        background-size: 25% auto;
-        background-position: 95% bottom; } }
 
 .footer-light {
-  *zoom: 1; }
+  *zoom: 1;
+  background-color: #f3f6fa; }
   .footer-light:before, .footer-light:after {
     content: " ";
     display: table; }
@@ -3362,25 +3354,43 @@ body {
       float: left; } }
 
 .aboutus {
-  padding: 1em; }
+  padding: 80px 1em 1em;
+  background-image: url('../img/ikon-sc.png');
+  background-position: 50% 20px;
+  background-repeat: no-repeat;
+  background-size: 60px auto; }
   @media only screen and (min-width: 768px) {
     .aboutus {
       width: 33.333%;
       float: left; } }
+  .aboutus h3 {
+    text-align: center; }
 
 .newsletter-block {
-  padding: 1em; }
+  padding: 80px 1em 1em;
+  background-image: url('../img/ikon-hirlevel.png');
+  background-position: 50% 20px;
+  background-repeat: no-repeat;
+  background-size: 60px auto; }
   @media only screen and (min-width: 768px) {
     .newsletter-block {
       width: 33.333%;
       float: left; } }
+  .newsletter-block h3 {
+    text-align: center; }
 
 .naplo-block {
-  padding: 1em; }
+  padding: 80px 1em 1em;
+  background-image: url('../img/ikon-naplo.png');
+  background-position: 50% 20px;
+  background-repeat: no-repeat;
+  background-size: 60px auto; }
   @media only screen and (min-width: 768px) {
     .naplo-block {
       width: 33.333%;
       float: left; } }
+  .naplo-block h3 {
+    text-align: center; }
 
 .nav-main {
   background: #5b7eb7; }
@@ -3473,7 +3483,7 @@ body {
       .nav-main a {
         min-height: 5.75em; } }
     .nav-main a small {
-      text-transform: lowercase;
+      text-transform: none;
       display: block;
       font-family: 'Times New Roman', serif;
       font-size: 1em;

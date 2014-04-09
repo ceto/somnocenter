@@ -2,9 +2,15 @@
   <div class="row">
     <section class="aboutus">
       <h3>Kik vagyunk</h3>
-        <p>A SomnoCenter Alvászavar Központokban valamennyi, mintegy 90 féle alvászavart diagnosztizáljuk és kezeljük.</p>
-        <p>Tapasztalt alvásszakértő orvosainkkal, csúcsminőségű alvásvizsgálatainkkal és hatékony terápiás módszereinkkel
-          Budapesten, Pécsen és Szegeden várjuk mindazokat, akik szeretnének újra kipihenten ébredni.</p>
+        <p>A SomnoCenter Alvászavar Központokban valamennyi, mintegy 90 féle alvászavart diagnosztizáljuk és kezeljük.
+        Budapesten, Pécsen és Szegeden várjuk mindazokat, akik szeretnének újra kipihenten ébredni.</p>
+    </section>
+    <section class="naplo-block">
+      <h3>Vezessen alvásnaplót</h3>
+      <p>
+        Az alvásnapló adatainak elemzésével állapítható meg, hogy okozhatják-e alvászavarok a kellemetlen tüneteket.
+      </p>
+      <a href="<?php echo get_permalink(1182); ?>" class="btn">Hogyan juthat hozzá</a>
     </section>
     <section class="newsletter-block">
       <!-- Begin MailChimp Signup Form -->
@@ -24,13 +30,6 @@
           <div style="position: absolute; left: -5000px;"><input type="text" name="b_777cff0d0124c922c39447d01_98f01fad7f" value=""></div>
         </form>
         </div>
-    </section>
-    <section class="naplo-block">
-      <h3>Vezessen alvásnaplót</h3>
-      <p>
-        Az alvásnapló adatainak elemzésével állapítható meg, hogy okozhatják-e alvászavarok a kellemetlen tüneteket.
-      </p>
-      <a href="<?php echo get_permalink(1182); ?>" class="btn">Hogyan juthat hozzá</a>
     </section>
   </div>
 </aside>
