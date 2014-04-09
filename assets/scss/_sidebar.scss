@@ -185,7 +185,14 @@
   .row {
 
   }
-
+  
+  .catmore{
+    color:$orange;
+    font-style:italic;
+    display:block;
+    text-align:right;
+    margin-top:1em;
+  }
   .sidebar {
     margin:2em auto;
   }
@@ -228,7 +235,7 @@
 
     }
 
-    &.widget_recent_entries, &.widget_categories, &.widget_archive, &.widget_illness {
+    &.widget_recent_entries, &.widget_categories, &.widget_qa, &.widget_archive, &.widget_illness {
       
 
       ul{

@@ -8,7 +8,7 @@
 			<h3>Népszerű témák a látogatók körében</h3>
 			<ul>
 				<?php
-					$tags = get_tags( array('number' => 15, 'orderby' => 'count', 'order' => 'DESC') );
+					$tags = get_tags( array('number' => 12, 'orderby' => 'count', 'order' => 'DESC') );
 					foreach ( (array) $tags as $tag ) {
 						echo '<li><a href="' . get_tag_link ($tag->term_id) . '" rel="tag">' . $tag->name . '</a></li>';
 					}

@@ -3907,6 +3907,12 @@ body {
   @media only screen and (min-width: 1600px) {
     .sidebar-footer {
       background-position: 10% bottom; } }
+  .sidebar-footer .catmore {
+    color: #f7941e;
+    font-style: italic;
+    display: block;
+    text-align: right;
+    margin-top: 1em; }
   .sidebar-footer .sidebar {
     margin: 2em auto; }
   .sidebar-footer .widget {
@@ -3930,26 +3936,26 @@ body {
       font-weight: 400;
       text-transform: none;
       font-variant: small-caps; }
-    .sidebar-footer .widget.widget_recent_entries ul, .sidebar-footer .widget.widget_categories ul, .sidebar-footer .widget.widget_archive ul, .sidebar-footer .widget.widget_illness ul {
+    .sidebar-footer .widget.widget_recent_entries ul, .sidebar-footer .widget.widget_categories ul, .sidebar-footer .widget.widget_qa ul, .sidebar-footer .widget.widget_archive ul, .sidebar-footer .widget.widget_illness ul {
       *zoom: 1;
       margin: 0;
       padding: 0; }
-      .sidebar-footer .widget.widget_recent_entries ul:before, .sidebar-footer .widget.widget_recent_entries ul:after, .sidebar-footer .widget.widget_categories ul:before, .sidebar-footer .widget.widget_categories ul:after, .sidebar-footer .widget.widget_archive ul:before, .sidebar-footer .widget.widget_archive ul:after, .sidebar-footer .widget.widget_illness ul:before, .sidebar-footer .widget.widget_illness ul:after {
+      .sidebar-footer .widget.widget_recent_entries ul:before, .sidebar-footer .widget.widget_recent_entries ul:after, .sidebar-footer .widget.widget_categories ul:before, .sidebar-footer .widget.widget_categories ul:after, .sidebar-footer .widget.widget_qa ul:before, .sidebar-footer .widget.widget_qa ul:after, .sidebar-footer .widget.widget_archive ul:before, .sidebar-footer .widget.widget_archive ul:after, .sidebar-footer .widget.widget_illness ul:before, .sidebar-footer .widget.widget_illness ul:after {
         content: " ";
         display: table; }
-      .sidebar-footer .widget.widget_recent_entries ul:after, .sidebar-footer .widget.widget_categories ul:after, .sidebar-footer .widget.widget_archive ul:after, .sidebar-footer .widget.widget_illness ul:after {
+      .sidebar-footer .widget.widget_recent_entries ul:after, .sidebar-footer .widget.widget_categories ul:after, .sidebar-footer .widget.widget_qa ul:after, .sidebar-footer .widget.widget_archive ul:after, .sidebar-footer .widget.widget_illness ul:after {
         clear: both; }
-    .sidebar-footer .widget.widget_recent_entries li, .sidebar-footer .widget.widget_categories li, .sidebar-footer .widget.widget_archive li, .sidebar-footer .widget.widget_illness li {
+    .sidebar-footer .widget.widget_recent_entries li, .sidebar-footer .widget.widget_categories li, .sidebar-footer .widget.widget_qa li, .sidebar-footer .widget.widget_archive li, .sidebar-footer .widget.widget_illness li {
       list-style-type: none; }
-      .sidebar-footer .widget.widget_recent_entries li a, .sidebar-footer .widget.widget_categories li a, .sidebar-footer .widget.widget_archive li a, .sidebar-footer .widget.widget_illness li a {
+      .sidebar-footer .widget.widget_recent_entries li a, .sidebar-footer .widget.widget_categories li a, .sidebar-footer .widget.widget_qa li a, .sidebar-footer .widget.widget_archive li a, .sidebar-footer .widget.widget_illness li a {
         display: block;
         line-height: 1.25em;
         color: #fefefe;
         padding: 0.33333em 1em; }
-    .sidebar-footer .widget.widget_recent_entries.dupla li, .sidebar-footer .widget.widget_categories.dupla li, .sidebar-footer .widget.widget_archive.dupla li, .sidebar-footer .widget.widget_illness.dupla li {
+    .sidebar-footer .widget.widget_recent_entries.dupla li, .sidebar-footer .widget.widget_categories.dupla li, .sidebar-footer .widget.widget_qa.dupla li, .sidebar-footer .widget.widget_archive.dupla li, .sidebar-footer .widget.widget_illness.dupla li {
       width: 50%;
       float: left; }
-      .sidebar-footer .widget.widget_recent_entries.dupla li:nth-child(2n+1), .sidebar-footer .widget.widget_categories.dupla li:nth-child(2n+1), .sidebar-footer .widget.widget_archive.dupla li:nth-child(2n+1), .sidebar-footer .widget.widget_illness.dupla li:nth-child(2n+1) {
+      .sidebar-footer .widget.widget_recent_entries.dupla li:nth-child(2n+1), .sidebar-footer .widget.widget_categories.dupla li:nth-child(2n+1), .sidebar-footer .widget.widget_qa.dupla li:nth-child(2n+1), .sidebar-footer .widget.widget_archive.dupla li:nth-child(2n+1), .sidebar-footer .widget.widget_illness.dupla li:nth-child(2n+1) {
         clear: left; }
 
 /************** Search Block ***************/

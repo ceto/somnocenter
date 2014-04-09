@@ -26,7 +26,7 @@ Template Name: Homepage Template
   <?php get_template_part('templates/content', get_post_format()); ?>
 <?php endwhile; ?>
 
-<h3 class="rovatfej">Orvos válaszol</h3>
+<h3 class="rovatfej">Páciensek kérdezik</h3>
 <?php 
   $qa=new WP_Query(array(
     'post_type' => 'post',
