@@ -4,7 +4,7 @@ Template Name: Homepage Template
 */
 ?>
 <section class="jobbfel">
-  <h3 class="rovatfej">Videódoktor</h3>
+  <h3 class="rovatfej">Somno TV</h3>
   <?php 
   $vidi=new WP_Query(array(
     'post_type' => 'post',

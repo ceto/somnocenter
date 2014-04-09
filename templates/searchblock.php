@@ -7,15 +7,12 @@
 		<div class="past">
 			<h3>Népszerű témák a látogatók körében</h3>
 			<ul>
-				<li><a href="#">magas vérnyomás</a></li>
-				<li><a href="#">impotencia</a></li>
-				<li><a href="#">horkolás</a></li>
-				<li><a href="#">dolor sit amet</a></li>
-				<li><a href="#">aluszékonyság</a></li>
-				<li><a href="#">rémálom</a></li>
-				<li><a href="#">ipsum dolor</a></li>
-				<li><a href="#">nyugtalan alvás</a></li>
-				<li><a href="#">lorem ipsum</a></li>
+				<?php
+					$tags = get_tags( array('number' => 15, 'orderby' => 'count', 'order' => 'DESC') );
+					foreach ( (array) $tags as $tag ) {
+						echo '<li><a href="' . get_tag_link ($tag->term_id) . '" rel="tag">' . $tag->name . '</a></li>';
+					}
+				?>
 			</ul>
 		</div>		
 	</div>

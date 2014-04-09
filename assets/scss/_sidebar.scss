@@ -84,6 +84,7 @@
   .jobbfel & {
     margin-bottom:0.5em;
     margin-top:0;
+    clear:both;
     @include breakpoint($s2) {
       width:99%;
       margin-left: 2%;

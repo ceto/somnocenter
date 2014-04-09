@@ -3819,7 +3819,8 @@ body {
   margin: 1.33333em 0 0 0; }
   .jobbfel .rovatfej {
     margin-bottom: 0.5em;
-    margin-top: 0; }
+    margin-top: 0;
+    clear: both; }
     @media only screen and (min-width: 768px) {
       .jobbfel .rovatfej {
         width: 99%;
@@ -4240,11 +4241,27 @@ body {
 
 .szimplasor, .noimage {
   margin-bottom: 0.5em; }
+  @media only screen and (min-width: 480px) {
+    .szimplasor, .noimage {
+      width: 49.5%;
+      float: left;
+      margin-bottom: 1%; }
+      .szimplasor:nth-child(2n+1), .noimage:nth-child(2n+1) {
+        clear: left; }
+      .szimplasor:nth-child(2n), .noimage:nth-child(2n) {
+        float: right;
+        clear: right; } }
   @media only screen and (min-width: 768px) {
     .szimplasor, .noimage {
+      float: none;
       width: 99%;
       margin-left: 2%;
-      margin-bottom: 2%; } }
+      margin-bottom: 2%; }
+      .szimplasor:nth-child(2n+1), .noimage:nth-child(2n+1) {
+        clear: none; }
+      .szimplasor:nth-child(2n), .noimage:nth-child(2n) {
+        float: none;
+        clear: none; } }
 
 .duplasor {
   margin-bottom: 0.5em; }
