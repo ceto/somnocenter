@@ -27,7 +27,7 @@ $i=0;
       </li>
   </ul>
   <?php 
-    rewind($the_mitort);
+    $the_mitort->rewind_posts();
     $i=0;
   ?>
   <div class="tab-content">
