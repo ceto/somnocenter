@@ -6,7 +6,7 @@
         <?php if (has_post_thumbnail()) : ?>
           <?php the_post_thumbnail('medium21'); ?>
         <?php else: ?>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/dummy-life.jpg" alt="<?php the_title(); ?>">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/dummy-life-nagy.jpg" alt="<?php the_title(); ?>">
         <?php endif; ?>
       </a>
     </figure>
