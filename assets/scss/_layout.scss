@@ -35,7 +35,9 @@ body {
 
 .container[role="document"]{
   //position:relative;
-  background: url('../img/watermark.png') no-repeat center center transparent;
+  background: url('../img/watermark.png') no-repeat 97% 97% transparent;
+  background-attachment:fixed;
+  background-size: 120px auto;
   
   //padding:0 2em;
 }

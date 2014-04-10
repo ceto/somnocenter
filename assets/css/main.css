@@ -2811,7 +2811,9 @@ body {
       padding: 0 1em; } }
 
 .container[role="document"] {
-  background: url('../img/watermark.png') no-repeat center center transparent; }
+  background: url('../img/watermark.png') no-repeat 97% 97% transparent;
+  background-attachment: fixed;
+  background-size: 120px auto; }
 
 [class^="col-"] {
   *zoom: 1; }
@@ -3204,10 +3206,10 @@ body {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 22px;
-    line-height: 28px;
-    margin-bottom: 8px; }
+    line-height: 24px;
+    margin-bottom: 10px; }
   .telfej .telcsi {
-    margin: 4px 0 12px;
+    margin: 4px 0 8px;
     display: block;
     font-weight: 700;
     font-size: 25px;
@@ -3297,9 +3299,11 @@ body {
    ========================================================================== */
 .content-info {
   background: black;
-  color: #f3f6fa; }
+  color: #f3f6fa;
+  font-size: 0.875em;
+  line-height: 1.4em; }
   .content-info a {
-    color: #f7941e; }
+    color: #e6533e; }
 
 .footer-dark {
   *zoom: 1;
@@ -3314,6 +3318,8 @@ body {
 
 .footer-light {
   *zoom: 1;
+  font-size: 0.875em;
+  line-height: 1.4em;
   background-color: #f3f6fa; }
   .footer-light:before, .footer-light:after {
     content: " ";
@@ -3360,15 +3366,30 @@ body {
     width: 80%; }
 
 .penztar {
+  text-align: center;
   padding: 1em; }
   @media only screen and (min-width: 768px) {
     .penztar {
       width: 33.333%;
       float: left; } }
+  .penztar .socials {
+    *zoom: 1; }
+    .penztar .socials:before, .penztar .socials:after {
+      content: " ";
+      display: table; }
+    .penztar .socials:after {
+      clear: both; }
+    .penztar .socials a {
+      display: inline-block;
+      margin: 0 0.5em;
+      color: #4c6ba2; }
+      .penztar .socials a i {
+        font-size: 3em; }
 
 .aboutus {
   text-align: center;
   padding: 80px 1em 1em;
+  margin: 1em 0;
   background-image: url('../img/ikon-sc.png');
   background-position: 50% 20px;
   background-repeat: no-repeat;
@@ -3378,27 +3399,29 @@ body {
       width: 33.333%;
       float: left; } }
 
-.newsletter-block {
-  text-align: center;
-  padding: 80px 1em 1em;
-  background-image: url('../img/ikon-hirlevel.png');
-  background-position: 50% 20px;
-  background-repeat: no-repeat;
-  background-size: 60px auto; }
-  @media only screen and (min-width: 768px) {
-    .newsletter-block {
-      width: 33.333%;
-      float: left; } }
-
 .naplo-block {
   text-align: center;
   padding: 80px 1em 1em;
+  margin: 1em 0;
   background-image: url('../img/ikon-naplo.png');
   background-position: 50% 20px;
   background-repeat: no-repeat;
   background-size: 60px auto; }
   @media only screen and (min-width: 768px) {
     .naplo-block {
+      width: 33.333%;
+      float: left; } }
+
+.newsletter-block {
+  text-align: center;
+  padding: 80px 1em 1em;
+  margin: 1em 0;
+  background-image: url('../img/ikon-hirlevel.png');
+  background-position: 50% 20px;
+  background-repeat: no-repeat;
+  background-size: 60px auto; }
+  @media only screen and (min-width: 768px) {
+    .newsletter-block {
       width: 33.333%;
       float: left; } }
 
@@ -4186,10 +4209,7 @@ body {
   position: relative;
   z-index: 0;
   width: 12em;
-  height: 12em;
-  border-radius: 50%;
-  background-color: #c5d2e6;
-  color: white;
+  color: #5b7eb7;
   font-size: 0.75em;
   line-height: 1.125em;
   text-align: center;
@@ -4200,16 +4220,18 @@ body {
   .hentry.nagycikk .entry-sharing:after {
     clear: both; }
   .hentry.nagycikk .entry-sharing h3 {
-    margin-top: 3em;
+    margin-top: 0.75em;
     margin-bottom: 0.25em; }
     .hentry.nagycikk .entry-sharing h3 small {
       display: block;
+      margin-top: 10px;
       text-transform: none; }
   .hentry.nagycikk .entry-sharing ul {
     margin: 1em 0 0;
     padding: 0;
     text-align: center; }
   .hentry.nagycikk .entry-sharing li {
+    text-align: center;
     list-style-type: none;
     display: inline-block;
     padding: 0 0.25em; }

@@ -2,7 +2,8 @@
   <div class="row">
     <?php // dynamic_sidebar('sidebar-footer'); ?>
     <p>
-      &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> |
+      &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> | 
+      Bejelentkezés: <a href="tel:+36707705653" class="telcsi">+36 1 789 6532</a> | 
       Honlap és Arculat <a href="http://hydrogene.hu" target="_blank">Hydrogene</a></p>
   </div>
 </footer>

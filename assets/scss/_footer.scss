@@ -4,8 +4,13 @@
 .content-info {
 	background: black;
 	color:$blue-90;
+  font-size:0.875em;
+  line-height:1.4em;
+  //font-family: $sans-serif;
+  //font-weight: 300;
+
   a {
-    color:$orange;
+    color:$red;
   }
 }
 
@@ -22,6 +27,8 @@
 
 .footer-light{
   @include clearfix();
+  font-size:0.875em;
+  line-height:1.4em;
   background-color: $blue-90;
 }
 
@@ -67,17 +74,33 @@
   }
 }
 .penztar{
+	text-align:center;
   padding:1em;
   @include breakpoint($s2){
     width:33.333%;
     float:left;
 
   }
+  .socials{
+    @include clearfix();
+    //margin:1em auto;
+    a {
+      //float:left;
+      display: inline-block;
+      margin:0 0.5em;
+      color:$blue-120;
+      i{
+        font-size: 3em;
+        //display: block;
+      }
+    }
+  }
 }
 
 .aboutus {
   text-align:center;
   padding:80px 1em 1em;
+  margin:1em 0;
   background-image: url('../img/ikon-sc.png');
   background-position: 50% 20px;
   background-repeat: no-repeat;
@@ -91,9 +114,28 @@
     //text-align: center;
   }
 }
-.newsletter-block{
+
+.naplo-block{
 	text-align:center;
   padding:80px 1em 1em;
+  margin:1em 0;
+  background-image: url('../img/ikon-naplo.png');
+  background-position: 50% 20px;
+  background-repeat: no-repeat;
+  background-size: 60px auto;
+  @include breakpoint($s2){
+    width:33.333%;
+    float:left;
+  }
+  h3{
+    //text-align: center;
+  }
+}
+
+.newsletter-block{
+  text-align:center;
+  padding:80px 1em 1em;
+  margin:1em 0;
   background-image: url('../img/ikon-hirlevel.png');
   background-position: 50% 20px;
   background-repeat: no-repeat;
@@ -103,21 +145,6 @@
     width:33.333%;
     float:left;
 
-  }
-  h3{
-    //text-align: center;
-  }
-}
-.naplo-block{
-	text-align:center;
-  padding:80px 1em 1em;
-  background-image: url('../img/ikon-naplo.png');
-  background-position: 50% 20px;
-  background-repeat: no-repeat;
-  background-size: 60px auto;
-  @include breakpoint($s2){
-    width:33.333%;
-    float:left;
   }
   h3{
     //text-align: center;

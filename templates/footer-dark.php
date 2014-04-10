@@ -2,8 +2,7 @@
   <div class="row">
     <section class="aboutus">
       <h3>Kik vagyunk</h3>
-        <p>A SomnoCenter Alvászavar Központokban valamennyi, mintegy 90 féle alvászavart diagnosztizáljuk és kezeljük.
-        Budapesten, Pécsen és Szegeden várjuk mindazokat, akik szeretnének újra kipihenten ébredni.</p>
+        <p>A központjainkban mintegy 90 féle alvászavart diagnosztizálunk és kezelünk. Budapesten, Pécsen és Szegeden várjuk mindazokat, akik szeretnének újra kipihenten ébredni.</p>
     </section>
     <section class="naplo-block">
       <h3>Vezessen alvásnaplót</h3>
