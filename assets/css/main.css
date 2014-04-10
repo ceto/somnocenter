@@ -3258,6 +3258,17 @@ body {
   @media only screen and (min-height: 1024px) {
     .page-headerfigure {
       min-height: 600px; } }
+  .page-headerfigure.ralog {
+    min-height: 380px;
+    margin-bottom: -3.075em; }
+    .page-headerfigure.ralog .hero-block {
+      bottom: 3.075em; }
+    @media only screen and (min-height: 768px) {
+      .page-headerfigure.ralog {
+        min-height: 460px; } }
+    @media only screen and (min-height: 1024px) { }
+    .page-headerfigure.ralog .telfej {
+      margin: 2em auto 4em auto; }
   @media only screen and (min-width: 768px) {
     .page-headerfigure .hero-text {
       max-width: 500px; } }
@@ -3612,7 +3623,7 @@ body {
 /********* Gyogyitas, szolgáltatások nagytab *********/
 .gyogystartblokk {
   *zoom: 1;
-  margin: 2em auto 4em auto;
+  margin: 0 auto 4em auto;
   max-width: 1140px; }
   .gyogystartblokk:before, .gyogystartblokk:after {
     content: " ";
@@ -3689,7 +3700,7 @@ body {
 
 .arstartblokk {
   *zoom: 1;
-  margin: 2em auto 4em auto; }
+  margin: 0 auto 4em auto; }
   .arstartblokk:before, .arstartblokk:after {
     content: " ";
     display: table; }
@@ -4981,7 +4992,9 @@ body {
   *zoom: 1;
   margin: 2em 0;
   padding: 1em 1em;
-  border: 2px solid #5b7eb7; }
+  border: 1px solid #5b7eb7;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5); }
   .contact-wrap:before, .contact-wrap:after {
     content: " ";
     display: table; }
@@ -5573,6 +5586,8 @@ img.mfp-img {
     clear: both; }
 
 
+.landcont-wrap {
+  margin: 2em 0; }
 
 .landing-title {
   margin-bottom: 2em; }
@@ -5789,6 +5804,8 @@ img.mfp-img {
   background-repeat: no-repeat;
   background-position: 90% 100%;
   background-size: 33% auto; }
+.page.page-template-page-survey-php .surveycont-wrap {
+  margin: 2em 0; }
 .page.page-template-page-survey-php .vizsgalatokhoz {
   margin-top: -3em; }
 
@@ -5799,6 +5816,8 @@ img.mfp-img {
   padding: 1em;
   border: 1px solid #5b7eb7;
   margin: 2em 0;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   /* Hide questions on load, show first question. */
   /* Next and Previous Buttons */ }
   .wpss .wpss-hidden {

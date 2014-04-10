@@ -2,7 +2,9 @@
   @include clearfix();
   margin:2em 0;
   padding:1em 1em;
-  border:2px solid $blue;
+  border:1px solid $blue;
+  background-color: #fff;
+  background-color: rgba(#fff,0.5);
 
 
 }

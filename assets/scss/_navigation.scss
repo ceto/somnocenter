@@ -343,7 +343,7 @@
 
 .gyogystartblokk {
   @include clearfix();
-  margin:2em auto 4em auto;
+  margin:0 auto 4em auto;
   max-width:$maximum;
 }
 
@@ -456,7 +456,7 @@
 
 .arstartblokk {
   @include clearfix();
-  margin:2em auto 4em auto;
+  margin:0 auto 4em auto;
   //max-width:$maximum;
   .tab-content {
     //background: transparent;

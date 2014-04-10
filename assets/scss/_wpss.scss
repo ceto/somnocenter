@@ -10,6 +10,9 @@
     background-position: 90% 100%;
     background-size: 33% auto;
   }
+  .surveycont-wrap {
+    margin:2em 0;
+  }
   .vizsgalatokhoz {
     margin-top:-3em;
   }
@@ -27,6 +30,8 @@
   padding:1em;
   border:1px solid $blue;
   margin:2em 0;
+  background-color: #fff;
+  background-color: rgba(#fff,0.5);
 
   .wpss-form {
   }

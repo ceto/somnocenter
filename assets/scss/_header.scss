@@ -382,6 +382,26 @@
   @include vbreakpoint($s3) {
     min-height: 600px;
   }
+  
+  &.ralog {
+    min-height: 380px;
+    margin-bottom:-3.075em;
+    .hero-block{
+      bottom:3.075em;
+    }
+    
+    @include vbreakpoint($s2) {
+      min-height: 460px;
+      
+    }
+    @include vbreakpoint($s3) {
+      //min-height: 660px;
+    }
+
+    .telfej {
+      margin:2em auto 4em auto;
+    }
+  }
 
   .hero-text {
     //max-width: $s2;
