@@ -3352,7 +3352,7 @@ body {
       clear: both; }
     .ernyomarkak ul li {
       list-style-type: none;
-      padding: 1em 0.5em;
+      padding: 1em 0;
       width: 50%;
       float: left;
       text-align: center; }
@@ -3369,7 +3369,9 @@ body {
     display: block;
     text-align: center;
     margin: 2em auto;
-    width: 80%; }
+    width: 70%; }
+    .partnerek a.cpaplink {
+      width: 40%; }
 
 .penztar {
   text-align: center;

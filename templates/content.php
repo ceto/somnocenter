@@ -6,8 +6,10 @@
       <a <?php echo (get_post_format()=='video')?'class="player popup-video"':''; ?> href="<?php echo ( get_post_format()=='video' )?get_post_meta( $post->ID, '_cmb_video', true ):get_permalink(); ?>">
         <?php if (has_post_thumbnail()) : ?>
           <?php the_post_thumbnail('small43'); ?>
+        <?php elseif ( get_post_type($post->ID)=='page' ): ?>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/dummy-center.jpg" alt="<?php the_title(); ?>">
         <?php else: ?>
-          <img src="http://lorempixel.com/480/320" alt="<?php the_title(); ?>">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/dummy-life.jpg" alt="<?php the_title(); ?>">
         <?php endif; ?>
       </a>
     </figure>

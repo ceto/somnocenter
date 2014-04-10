@@ -11,8 +11,8 @@
     </section>
     <section class="partnerek">
       <h3>Partnerek</h3>
-      <a href="http://www.fenyplusz.hu/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/fenypluszlogo.png" alt=""></a>
-      <a href="http://www.cpap.hu/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cpaplogo.jpg" alt=""></a>
+      <a href="http://www.fenyplusz.hu/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/fenypluszlogo.png" alt="Fényplusz - Fényterápia"></a>
+      <a class="cpaplink" href="http://www.cpap.hu/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cpaplogo.png" alt="CPAP"></a>
     </section>
     <section class="penztar">
       <h3>Egészségkártyát elfogadunk</h3>
