@@ -270,7 +270,7 @@
 
 .telfej {
   @include clearfix();
-  background: rgba($blue,0.90);
+  background: rgba($red,0.90);
   color:#fff;
  
   border-radius: 50%;
@@ -296,20 +296,21 @@
     @include clearfix();
     position: relative;
     padding:0 10px;
-    margin-top:55%;
+    margin-top:50%;
     transform:translateY(-50%);
     font-size: 18px;
     line-height: 18px;
   }
 
   .head{
-    color:$orange;
+    //color:$orange;
     display:block;
-    //text-transform: uppercase;
-    font-style: italic;
+    text-transform: uppercase;
+    //font-style: italic;
     font-weight: 400;
     font-size: 22px;
-    line-height: 22px;
+    line-height: 28px;
+    margin-bottom: 8px;
 
   }
   .telcsi {
@@ -322,11 +323,12 @@
   }
   .click {
     //display: inline-block;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 18px;
+    line-height: 18px;
     font-weight: 600;
+    font-style: italic;
     color:$blue-90;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     font-family: $sans-serif;
     &:hover, &:focus {
       //color: $orange;

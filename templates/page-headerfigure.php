@@ -28,8 +28,8 @@
     <aside class="telfej">
       <div class="tart">
       <span class="head">Szeretne kipihenten ébredni?</span>  
-      <a href="tel:+36707705653" class="telcsi"><span class="ion-ios7-telephone"></span> +36 1 789 6532</a>
-      <a class="click" href="<?php echo get_permalink(520);?>"><span class="ion-laptop"></span> Jelentkezzen konzultációra</a>
+      <a href="tel:+36707705653" class="telcsi">+36 1 789 6532</a>
+      <a class="click" href="<?php echo get_permalink(520);?>">vagy<br>jelentkezzen online</a>
       </div>
     </aside>
 

@@ -13,6 +13,8 @@
 .footer-dark{
   @include clearfix();
   background-color: $blue-30;
+  font-size:0.875em;
+  line-height:1.4em;
   .row{
     
   }
@@ -74,6 +76,7 @@
 }
 
 .aboutus {
+  text-align:center;
   padding:80px 1em 1em;
   background-image: url('../img/ikon-sc.png');
   background-position: 50% 20px;
@@ -85,10 +88,11 @@
 
   }
   h3{
-    text-align: center;
+    //text-align: center;
   }
 }
 .newsletter-block{
+	text-align:center;
   padding:80px 1em 1em;
   background-image: url('../img/ikon-hirlevel.png');
   background-position: 50% 20px;
@@ -101,10 +105,11 @@
 
   }
   h3{
-    text-align: center;
+    //text-align: center;
   }
 }
 .naplo-block{
+	text-align:center;
   padding:80px 1em 1em;
   background-image: url('../img/ikon-naplo.png');
   background-position: 50% 20px;
@@ -115,6 +120,6 @@
     float:left;
   }
   h3{
-    text-align: center;
+    //text-align: center;
   }
 }

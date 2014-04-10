@@ -3168,7 +3168,7 @@ body {
 
 .telfej {
   *zoom: 1;
-  background: rgba(91, 126, 183, 0.9);
+  background: rgba(230, 83, 62, 0.9);
   color: #fff;
   border-radius: 50%;
   text-align: center;
@@ -3190,7 +3190,7 @@ body {
     *zoom: 1;
     position: relative;
     padding: 0 10px;
-    margin-top: 55%;
+    margin-top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -3202,12 +3202,12 @@ body {
     .telfej .tart:after {
       clear: both; }
   .telfej .head {
-    color: #f7941e;
     display: block;
-    font-style: italic;
+    text-transform: uppercase;
     font-weight: 400;
     font-size: 22px;
-    line-height: 22px; }
+    line-height: 28px;
+    margin-bottom: 8px; }
   .telfej .telcsi {
     margin: 4px 0 12px;
     display: block;
@@ -3216,11 +3216,11 @@ body {
     line-height: 25px;
     color: #fff; }
   .telfej .click {
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 18px;
+    line-height: 18px;
     font-weight: 600;
+    font-style: italic;
     color: #f3f6fa;
-    text-transform: uppercase;
     font-family: 'Titillium Web', sans-serif; }
 
 .home-top {
@@ -3308,7 +3308,9 @@ body {
 
 .footer-dark {
   *zoom: 1;
-  background-color: #c5d2e6; }
+  background-color: #c5d2e6;
+  font-size: 0.875em;
+  line-height: 1.4em; }
   .footer-dark:before, .footer-dark:after {
     content: " ";
     display: table; }
@@ -3370,6 +3372,7 @@ body {
       float: left; } }
 
 .aboutus {
+  text-align: center;
   padding: 80px 1em 1em;
   background-image: url('../img/ikon-sc.png');
   background-position: 50% 20px;
@@ -3380,10 +3383,9 @@ body {
     .aboutus {
       width: 33.333%;
       float: left; } }
-  .aboutus h3 {
-    text-align: center; }
 
 .newsletter-block {
+  text-align: center;
   padding: 80px 1em 1em;
   background-image: url('../img/ikon-hirlevel.png');
   background-position: 50% 20px;
@@ -3394,10 +3396,9 @@ body {
     .newsletter-block {
       width: 33.333%;
       float: left; } }
-  .newsletter-block h3 {
-    text-align: center; }
 
 .naplo-block {
+  text-align: center;
   padding: 80px 1em 1em;
   background-image: url('../img/ikon-naplo.png');
   background-position: 50% 20px;
@@ -3408,8 +3409,6 @@ body {
     .naplo-block {
       width: 33.333%;
       float: left; } }
-  .naplo-block h3 {
-    text-align: center; }
 
 .nav-main {
   background: #5b7eb7; }
@@ -3632,8 +3631,7 @@ body {
 /********* Gyogyitas, szolgáltatások nagytab *********/
 .gyogystartblokk {
   *zoom: 1;
-  margin: 0 auto 4em auto;
-  max-width: 1140px; }
+  margin: 0 auto 4em auto; }
   .gyogystartblokk:before, .gyogystartblokk:after {
     content: " ";
     display: table; }
@@ -3664,7 +3662,8 @@ body {
 .gyogyelem-block {
   *zoom: 1;
   position: relative;
-  background-color: white; }
+  max-width: 1024px;
+  margin: 0 auto; }
   .gyogyelem-block:before, .gyogyelem-block:after {
     content: " ";
     display: table; }
@@ -3682,14 +3681,14 @@ body {
         position: absolute;
         top: 2em;
         bottom: 2em;
-        left: 1.5em;
-        right: 60%; } }
+        left: 0;
+        right: 55%; } }
   .gyogyelem-block .szoveg {
     padding: 1em 1em; }
     @media only screen and (min-width: 768px) {
       .gyogyelem-block .szoveg {
-        margin-left: 40%;
-        width: 50%; } }
+        margin-left: 45%;
+        width: 55%; } }
     .gyogyelem-block .szoveg h3 {
       position: relative;
       z-index: 2; }

@@ -344,7 +344,7 @@
 .gyogystartblokk {
   @include clearfix();
   margin:0 auto 4em auto;
-  max-width:$maximum;
+  //max-width:$maximum;
 }
 
 .gyogyTab {
@@ -402,7 +402,9 @@
 .gyogyelem-block {
   @include clearfix;
   position: relative;
-  background-color: white;
+  //background-color: white;
+  max-width:$s3;
+  margin:0 auto;
   
   .ill {
     
@@ -414,7 +416,7 @@
       height:auto;
       position: absolute;
       top:2em;bottom:2em;
-      left:1.5em;right:60%;
+      left:0;right:55%;
     }
   }
   &:hover,&:focus{
@@ -425,8 +427,8 @@
 
     padding:1em 1em;
     @include breakpoint($s2){
-      margin-left: 40%;
-      width:50%;
+      margin-left: 45%;
+      width:55%;
     }
     h3 {
       position: relative;

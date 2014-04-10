@@ -1,6 +1,11 @@
 /* MailChimp Form Embed Code - Classic - 08/17/2011 */
 #mc_embed_signup {
-  form {display:block; position:relative; text-align:left;}
+  form {
+    display:block; position:relative; text-align:left;
+    p {
+      //text-align:center;
+    }
+  }
   input {border:1px solid #999; -webkit-appearance:none;}
   input[type=checkbox]{-webkit-appearance:checkbox;}
   input[type=radio]{-webkit-appearance:radio;}
