@@ -2,8 +2,11 @@
 #mc_embed_signup {
   form {
     display:block; position:relative; text-align:left;
+    h3 {
+      text-align: center;
+    }
     p {
-      //text-align:center;
+      text-align:center;
     }
   }
   input {border:1px solid #999; -webkit-appearance:none;}

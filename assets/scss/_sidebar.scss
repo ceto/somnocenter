@@ -162,7 +162,7 @@
 
 .sidebar-footer {
   background-color: $blue-120;
-  background-image: url('../img/zzz.png');
+  //background-image: url('../img/zzz.png');
   background-position: 100% bottom;
   background-repeat: no-repeat;
   background-size: 33% auto;
@@ -194,12 +194,13 @@
     margin-top:1em;
   }
   .sidebar {
-    margin:2em auto;
+    margin:1em auto;
   }
 
 
   .widget {
     font-size: 0.875em;
+    margin:2em auto;
 
     @include breakpoint($s1) {
     }

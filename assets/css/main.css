@@ -3307,9 +3307,13 @@ body {
 
 .footer-dark {
   *zoom: 1;
-  background-color: #c5d2e6;
   font-size: 0.875em;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+  background-color: #c5d2e6;
+  background-image: url('../img/barany.png');
+  background-position: 1em 95%;
+  background-repeat: no-repeat;
+  background-size: 120px auto; }
   .footer-dark:before, .footer-dark:after {
     content: " ";
     display: table; }
@@ -3390,10 +3394,10 @@ body {
 
 .aboutus {
   text-align: center;
-  padding: 80px 1em 1em;
-  margin: 1em 0;
+  padding: 70px 1em 1em;
+  margin: 2em 0;
   background-image: url('../img/ikon-sc.png');
-  background-position: 50% 20px;
+  background-position: 50% 10px;
   background-repeat: no-repeat;
   background-size: 60px auto; }
   @media only screen and (min-width: 768px) {
@@ -3403,29 +3407,33 @@ body {
 
 .naplo-block {
   text-align: center;
-  padding: 80px 1em 1em;
-  margin: 1em 0;
+  padding: 70px 1em 1em;
+  margin: 2em 0;
   background-image: url('../img/ikon-naplo.png');
-  background-position: 50% 20px;
+  background-position: 50% 10px;
   background-repeat: no-repeat;
   background-size: 60px auto; }
   @media only screen and (min-width: 768px) {
     .naplo-block {
       width: 33.333%;
       float: left; } }
+  .naplo-block .btn {
+    margin-top: 1em; }
 
 .newsletter-block {
   text-align: center;
-  padding: 80px 1em 1em;
-  margin: 1em 0;
+  padding: 70px 1em 1em;
+  margin: 2em 0;
   background-image: url('../img/ikon-hirlevel.png');
-  background-position: 50% 20px;
+  background-position: 50% 10px;
   background-repeat: no-repeat;
   background-size: 60px auto; }
   @media only screen and (min-width: 768px) {
     .newsletter-block {
       width: 33.333%;
       float: left; } }
+  .newsletter-block h3 {
+    text-align: center; }
 
 .nav-main {
   background: #5b7eb7; }
@@ -3920,7 +3928,6 @@ body {
 /*********** Footer Sidebar **********/
 .sidebar-footer {
   background-color: #4c6ba2;
-  background-image: url('../img/zzz.png');
   background-position: 100% bottom;
   background-repeat: no-repeat;
   background-size: 33% auto;
@@ -3944,9 +3951,10 @@ body {
     text-align: right;
     margin-top: 1em; }
   .sidebar-footer .sidebar {
-    margin: 2em auto; }
+    margin: 1em auto; }
   .sidebar-footer .widget {
-    font-size: 0.875em; }
+    font-size: 0.875em;
+    margin: 2em auto; }
     @media only screen and (min-width: 480px) { }
     @media only screen and (min-width: 768px) {
       .sidebar-footer .widget {
@@ -5702,6 +5710,10 @@ img.mfp-img {
   display: block;
   position: relative;
   text-align: left; }
+  #mc_embed_signup form h3 {
+    text-align: center; }
+  #mc_embed_signup form p {
+    text-align: center; }
 #mc_embed_signup input {
   border: 1px solid #999;
   -webkit-appearance: none; }
@@ -5908,12 +5920,16 @@ img.mfp-img {
   min-height: 120px; }
 .wpss .answers .answer_text {
   margin: 0.5em 0; }
-.wpss .answers label img {
-  margin: 5px 0; }
-.wpss .answers label img.aligncenter {
-  margin: 5px auto; }
-.wpss .answers label img.alignnone {
-  display: block; }
+.wpss .answers label {
+  cursor: pointer; }
+  .wpss .answers label:hover, .wpss .answers label:focus {
+    color: #e6533e; }
+  .wpss .answers label img {
+    margin: 5px 0; }
+  .wpss .answers label img.aligncenter {
+    margin: 5px auto; }
+  .wpss .answers label img.alignnone {
+    display: block; }
 
 /*------------------------------------------------*/
 /* Custom Field Styling                           */

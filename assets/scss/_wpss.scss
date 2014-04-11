@@ -85,23 +85,25 @@
 /* Question Field Styling                         */
 /*------------------------------------------------*/
 .wpss {
-  .wpss-question img{
-    margin: 5px 0;  
-  }
+  .wpss-question {
+    img{
+      margin: 5px 0;  
+    }
 
-  .wpss-question img.alignright{
-    margin: 5px 0;
-  }
-  .wpss-question img.aligncenter{
-    margin: 5px auto;  
-  }
+    img.alignright{
+      margin: 5px 0;
+    }
+    img.aligncenter{
+      margin: 5px auto;  
+    }
 
-  .wpss-question img.alignnone{
-    display: block;
-  }
+    img.alignnone{
+      display: block;
+    }
 
-  .wpss-question .wp-caption.alignright{
-    margin: 5px 0;
+    .wp-caption.alignright{
+      margin: 5px 0;
+    }
   }
 }
 
@@ -120,17 +122,25 @@
     .answer_text {
       margin:0.5em 0;
     }
-    label img{
-      margin: 5px 0;  
-    }
+    label {
+      cursor: pointer;
+      &:hover, &:focus{
+        color: $red;
+      }
+      img{
+        margin: 5px 0;  
+      }
 
-    label img.aligncenter{
-      margin: 5px auto;  
-    }
+      img.aligncenter{
+        margin: 5px auto;  
+      }
 
-    label img.alignnone{
-      display: block;
+      img.alignnone{
+        display: block;
+      }
+
     }
+    
 
   }
   

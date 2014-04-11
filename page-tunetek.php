@@ -54,6 +54,7 @@ Template Name: Tünetek lista
   $the_beteg=new WP_Query(array(
     'post_type' => 'page;',
     'posts_per_page' => -1,
+    'orderby' => 'menu_order',
     'post_parent' => 49,
   ));
   $i=0;

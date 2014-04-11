@@ -149,4 +149,8 @@ jQuery(document).ready(function($) {
       }
     });
 
+    $('.wpss_next').html('Következő <i class="ion-ios7-arrow-thin-right"></i>');
+    $('.wpss_back').html('<i class="ion-ios7-arrow-thin-left"></i> Előző');
+
+
 });
