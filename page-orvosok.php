@@ -6,7 +6,7 @@ Template Name: Orvosok Lista
 <?php get_template_part('templates/page', 'headerfigure'); ?>
 
 <?php
-$allUsers = get_users('orderby=post_count&order=DESC');
+$allUsers = get_users('orderby=display_name&order=ASC');
 $users = array();
 
 // Remove subscribers from the list as they won't write any articles

@@ -539,7 +539,7 @@
 .orvoslista-blokk {
   @include clearfix();
   margin:0 auto;
-  max-width: $s4;
+  max-width: $s3;
   .orvoskocka{
     text-align: center;
     
@@ -565,16 +565,16 @@
       }
     }
 
-    @include breakpoint($s3){
-      width:25%;
-      float:left;
-      &:nth-child(3n+1) {
-        clear:none;
-      }
-      &:nth-child(4n+1) {
-        clear:left;
-      }
-    }
+    // @include breakpoint($s3){
+    //   width:25%;
+    //   float:left;
+    //   &:nth-child(3n+1) {
+    //     clear:none;
+    //   }
+    //   &:nth-child(4n+1) {
+    //     clear:left;
+    //   }
+    // }
     .orvos-figure {
       position: relative;
       display: block;

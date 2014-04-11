@@ -3432,8 +3432,6 @@ body {
     .newsletter-block {
       width: 33.333%;
       float: left; } }
-  .newsletter-block h3 {
-    text-align: center; }
 
 .nav-main {
   background: #5b7eb7; }
@@ -4850,7 +4848,7 @@ body {
 .orvoslista-blokk {
   *zoom: 1;
   margin: 0 auto;
-  max-width: 1280px; }
+  max-width: 1024px; }
   .orvoslista-blokk:before, .orvoslista-blokk:after {
     content: " ";
     display: table; }
@@ -4872,14 +4870,6 @@ body {
         .orvoslista-blokk .orvoskocka:nth-child(2n+1) {
           clear: none; }
         .orvoslista-blokk .orvoskocka:nth-child(3n+1) {
-          clear: left; } }
-    @media only screen and (min-width: 1024px) {
-      .orvoslista-blokk .orvoskocka {
-        width: 25%;
-        float: left; }
-        .orvoslista-blokk .orvoskocka:nth-child(3n+1) {
-          clear: none; }
-        .orvoslista-blokk .orvoskocka:nth-child(4n+1) {
           clear: left; } }
     .orvoslista-blokk .orvoskocka .orvos-figure {
       position: relative;
