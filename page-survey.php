@@ -26,7 +26,7 @@ Template Name: Kérdőív Sablon
   </div>
   <div class="jobbfel">
     <div class="surveycont-wrap">
-            <?php if (has_post_thumbnail() ): ?>
+      <?php if (has_post_thumbnail() ): ?>
         <figure class="survey-fig">
           <?php the_post_thumbnail('medium21'); ?>
         </figure>
