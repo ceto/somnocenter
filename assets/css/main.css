@@ -3815,6 +3815,26 @@ body {
 .active-nav .minden {
   margin-right: -100%; }
 
+.post-nav {
+  margin: 2em auto; }
+  .post-nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+  .post-nav li {
+    list-style-type: none;
+    display: inline-block;
+    max-width: 48%;
+    margin: 0 1%; }
+    .post-nav li a {
+      display: inline-block;
+      padding: 0.25em 0.5em;
+      background-color: #e6533e;
+      color: #fefefe; }
+      .post-nav li a:hover, .post-nav li a:focus {
+        text-decoration: none;
+        background-color: #7c0040; }
+
 /* ==========================================================================
    Inner Sidebar
    ========================================================================== */

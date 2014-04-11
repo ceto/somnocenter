@@ -578,3 +578,33 @@ body {
   margin-right: -100%;
 }
 
+
+.post-nav {
+  margin:2em auto;
+  ul {
+    margin:0;
+    padding:0;
+    text-align: center;
+  }
+  li{
+    list-style-type: none;
+    display: inline-block;
+    max-width: 48%;
+    margin:0 1%;
+    a{
+      display: inline-block;
+      padding:0.25em 0.5em;
+      background-color: $red;
+      color:$white;
+      i{
+        //font-size: 2em;
+        //line-height: 0.25em;
+      }
+      &:hover, &:focus{
+        text-decoration: none;
+        background-color: $eggplant;
+      }
+    }
+  }
+
+}
