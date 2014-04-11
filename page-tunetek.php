@@ -55,6 +55,7 @@ Template Name: Tünetek lista
     'post_type' => 'page;',
     'posts_per_page' => -1,
     'orderby' => 'menu_order',
+    'order' => 'ASC',
     'post_parent' => 49,
   ));
   $i=0;
