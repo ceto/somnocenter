@@ -84,9 +84,14 @@
         position: absolute;
         content: '';
         left:0;right:0;top:0;bottom:0;
-        background: url(../img/hold.png) no-repeat 50% 30px, url(../img/nap.png) no-repeat 50% 30px transparent;
+        background: url(../img/hold.png) no-repeat 50% 60%, url(../img/nap.png) no-repeat 50% 30px transparent;
         background-size: 130px auto;
         z-index:0;
+        opacity: 0.75;
+        @include breakpoint($s2) {
+          background: url(../img/hold.png) no-repeat 50% 30px, url(../img/nap.png) no-repeat 50% 30px transparent;
+          opacity:1;
+        }  
       }
     }
   }
@@ -140,8 +145,10 @@
       padding:2em 0 2em 2em;
     }
     h2 {
-      text-align: right;
-      //color:$blue-90;
+      
+      @include breakpoint($s3) {
+        text-align: right;
+      };
 
       
     }

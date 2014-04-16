@@ -3009,113 +3009,64 @@ body {
    Header
    ========================================================================== */
 .banner {
-  border-top: 3px solid #7c0040;
+  border-top: 1px solid #7c0040;
   background-color: #5b7eb7; }
   @media only screen and (min-width: 768px) {
     .banner {
-      background: url('../img/watermark.png') no-repeat center -220px #c5d2e6; } }
+      background: url('../img/watermarka.png') no-repeat center -220px #c5d2e6; } }
 
 .brand {
   display: none;
   position: absolute;
-  top: 0em;
+  top: 0;
   z-index: 1;
   background: #5b7eb7;
-  max-height: 171px;
+  max-height: 125px;
   overflow: hidden;
-  display: block; }
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 24px; }
   .brand:hover, .brand:focus {
     background-color: #4c6ba2; }
   @media only screen and (min-width: 768px) { }
   @media only screen and (min-width: 1024px) {
     .brand {
-      width: 286px; } }
+      width: 240px; } }
   .brand img {
     display: none; }
     @media only screen and (min-width: 768px) { }
     @media only screen and (min-width: 1024px) {
       .brand img {
-        display: block; } }
+        display: inline-block; } }
 
 .hs {
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  font-size: 33px;
-  line-height: 50px;
+  padding: 0.5em 0.75em;
+  margin: 7px 0 0;
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  font-weight: 600;
+  line-height: 1.4em;
   text-align: center;
-  background-color: #5b7eb7;
-  margin: 0 -6px 0 0;
+  background-color: #e6533e;
   float: right;
-  color: #f3f6fa; }
+  color: #fff; }
   .hs:hover, .hs:focus {
-    background-color: #7c0040;
+    background-color: #f7941e;
     color: #f3f6fa;
     text-decoration: none; }
   @media only screen and (min-width: 768px) {
     .hs {
-      display: block;
-      margin: 0;
-      width: 72px;
-      height: 72px;
-      font-size: 48px;
-      line-height: 72px; } }
-
-.info {
-  *zoom: 1;
-  display: none;
-  color: #4c6ba2;
-  font-weight: bold;
-  height: 2em;
-  font-size: 1.25em;
-  line-height: 2em; }
-  .info:before, .info:after {
-    content: " ";
-    display: table; }
-  .info:after {
-    clear: both; }
-  @media only screen and (min-width: 768px) {
-    .info {
-      display: block;
+      padding: 0.125em 0.75em;
+      margin-top: 4px;
       position: absolute;
-      left: 1.25em;
-      top: 40px; } }
+      right: 1.25em;
+      min-width: 150px; } }
   @media only screen and (min-width: 1024px) {
-    .info {
-      left: 30%; } }
-  @media only screen and (min-width: 1280px) {
-    .info {
-      left: 38%; } }
-  .info .smart {
-    *zoom: 1;
-    position: relative;
-    height: 2em;
-    display: inline-block;
-    text-align: center;
-    color: #5b7eb7;
-    font-variant: small-caps; }
-    .info .smart:before, .info .smart:after {
-      content: " ";
-      display: table; }
-    .info .smart:after {
-      clear: both; }
-    .info .smart:after {
-      content: "|";
-      padding: 0 0.5em;
-      display: inline; }
-    .info .smart:last-child:after {
-      content: "";
-      padding: 0 0; }
-    .info .smart:hover, .info .smart:focus {
-      color: #4c6ba2;
-      text-decoration: none; }
-      .info .smart:hover .tel, .info .smart:focus .tel {
-        opacity: 1; }
-  .info .varos {
-    display: inline-block; }
-  .info .tel {
-    display: block;
-    opacity: 0; }
+    .hs {
+      right: 6px; } }
 
 .hero-block {
   *zoom: 1;
@@ -3191,7 +3142,7 @@ body {
   .telfej .tart {
     *zoom: 1;
     position: relative;
-    padding: 0 10px;
+    padding: 0 20px;
     margin-top: 50%;
     transform: translateY(-50%);
     font-size: 18px;
@@ -3420,6 +3371,13 @@ body {
   .naplo-block .btn {
     margin-top: 1em; }
 
+.catmore {
+  color: #f7941e;
+  font-style: italic;
+  display: block;
+  text-align: right;
+  margin-top: 1em; }
+
 .newsletter-block {
   text-align: center;
   padding: 70px 1em 1em;
@@ -3463,7 +3421,7 @@ body {
     border-left: 6px solid #c5d2e6; }
     @media only screen and (min-width: 1024px) {
       .nav-main ul {
-        padding-left: 285px; } }
+        padding-left: 240px; } }
   .nav-main.mobile ul {
     border: none;
     margin: 0 0; }
@@ -3543,30 +3501,38 @@ body {
     .nav-sub.desktop {
       display: block; } }
 .nav-sub ul {
-  background: #e9eef5;
-  float: right;
   margin: 0;
   padding: 0; }
+  @media only screen and (min-width: 1024px) {
+    .nav-sub ul {
+      float: none;
+      margin-left: 246px; } }
 .nav-sub.mobile ul {
   float: none;
-  background: #5b7eb7; }
+  background-color: #5b7eb7; }
 .nav-sub li {
   list-style-type: none;
-  float: right; }
-.nav-sub.mobile li {
-  float: none; }
+  display: block; }
+  @media only screen and (min-width: 768px) {
+    .nav-sub li {
+      display: inline-block; }
+      .nav-sub li:after {
+        content: '|'; } }
 .nav-sub a {
   font-family: 'Titillium Web', sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   display: block;
-  padding: 0.25em 0.75em;
+  padding: 0.25em 0.75em 0;
   text-align: center;
-  color: #14467c;
+  color: #4c6ba2;
+  font-variant: small-caps;
   font-size: 0.875em; }
   .nav-sub a:hover, .nav-sub a:focus {
-    background: #e6533e;
     text-decoration: none;
-    color: white; }
+    color: #e6533e; }
+  @media only screen and (min-width: 768px) {
+    .nav-sub a {
+      display: inline-block; } }
 .nav-sub.mobile a {
   padding: 0.75em 1em;
   font-size: 1em;
@@ -3574,9 +3540,10 @@ body {
   border-top: 1px solid #c5d2e6;
   color: #f3f6fa;
   text-align: left; }
+  .nav-sub.mobile a:hover, .nav-sub.mobile a:focus {
+    background-color: #4c6ba2; }
 .nav-sub li.active a {
-  background: #e6533e;
-  color: white; }
+  color: #fff; }
 
 .nav-inner ul {
   margin: 1em 0 0;
@@ -4136,22 +4103,25 @@ body {
   clear: both;
   max-width: 1140px; }
   .ugyerzi h3 {
-    max-width: 66.66667%;
-    float: left;
-    margin: 0 0 0.125em 0;
+    margin: 0 0 1em 0;
     font-size: 1.5em;
     line-height: 1.25em; }
     .ugyerzi h3 small {
       display: block; }
+    @media only screen and (min-width: 768px) {
+      .ugyerzi h3 {
+        max-width: 66.66667%;
+        float: left;
+        margin-bottom: 0.125em; } }
   .ugyerzi .discl {
-    max-width: 66.66667%;
-    float: left;
     font-size: 0.875em;
     font-style: italic;
     margin: 0; }
+    @media only screen and (min-width: 768px) {
+      .ugyerzi .discl {
+        max-width: 66.66667%;
+        float: left; } }
   .ugyerzi .btn {
-    max-width: 33.33333%;
-    float: right;
     min-height: 4.25em;
     background: #f3f6fa;
     color: #4c6ba2;
@@ -4170,6 +4140,10 @@ body {
       font-weight: 400;
       font-family: 'Times New Roman', serif;
       margin-top: 0.25em; }
+    @media only screen and (min-width: 768px) {
+      .ugyerzi .btn {
+        max-width: 33.33333%;
+        float: right; } }
 
 
 .vizsgalathoz-block {
@@ -4607,9 +4581,14 @@ body {
       right: 0;
       top: 0;
       bottom: 0;
-      background: url(../img/hold.png) no-repeat 50% 30px, url(../img/nap.png) no-repeat 50% 30px transparent;
+      background: url(../img/hold.png) no-repeat 50% 60%, url(../img/nap.png) no-repeat 50% 30px transparent;
       background-size: 130px auto;
-      z-index: 0; }
+      z-index: 0;
+      opacity: 0.75; }
+      @media only screen and (min-width: 768px) {
+        .page-template-page-felezett-php .felezett .inner:after, .page-template-page-tunetek-php .felezett .inner:after, .page-template-page-gyogyitasstart-php .felezett .inner:after {
+          background: url(../img/hold.png) no-repeat 50% 30px, url(../img/nap.png) no-repeat 50% 30px transparent;
+          opacity: 1; } }
 .page-template-page-felezett-php .feles, .page-template-page-tunetek-php .feles, .page-template-page-gyogyitasstart-php .feles {
   position: relative;
   z-index: 1;
@@ -4648,8 +4627,9 @@ body {
   @media only screen and (min-width: 1024px) {
     .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 {
       padding: 2em 0 2em 2em; } }
-  .page-template-page-felezett-php .feles2 h2, .page-template-page-tunetek-php .feles2 h2, .page-template-page-gyogyitasstart-php .feles2 h2 {
-    text-align: right; }
+  @media only screen and (min-width: 1024px) {
+    .page-template-page-felezett-php .feles2 h2, .page-template-page-tunetek-php .feles2 h2, .page-template-page-gyogyitasstart-php .feles2 h2 {
+      text-align: right; } }
 .page-template-page-felezett-php .tuncike, .page-template-page-tunetek-php .tuncike, .page-template-page-gyogyitasstart-php .tuncike {
   *zoom: 1;
   margin-bottom: 0.5em; }
@@ -4922,19 +4902,26 @@ body {
 
 .home-banner {
   background: white;
-  padding: 2em 4em;
+  padding: 1em 1em;
   margin: 2em 0; }
+  @media only screen and (min-width: 768px) {
+    .home-banner {
+      padding: 2em 4em; } }
   .home-banner h3 {
     font-size: 1.5em;
     line-height: 1.4em;
-    margin: 0;
-    float: left;
-    max-width: 66.66667%; }
+    margin: 0 0 1em 0; }
     .home-banner h3 small {
       display: block; }
-  .home-banner .btn {
-    max-width: 33.33333%;
-    float: right; }
+    @media only screen and (min-width: 768px) {
+      .home-banner h3 {
+        max-width: 66.66667%;
+        float: left;
+        margin-bottom: 0; } }
+  @media only screen and (min-width: 768px) {
+    .home-banner .btn {
+      max-width: 33.33333%;
+      float: right; } }
 
 .home-bottom {
   background-color: #fff; }
@@ -5628,7 +5615,8 @@ img.mfp-img {
 
 
 .landcont-wrap {
-  margin: 2em 0; }
+  margin: 2em 0;
+  text-shadow: 1px 1px 1px rgba(254, 254, 254, 0.5); }
 
 .landing-title {
   margin-bottom: 2em; }

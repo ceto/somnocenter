@@ -469,26 +469,32 @@
   max-width: $maximum;
   
   h3{
-    max-width:66.6666666%;
-    float:left;
-    margin:0 0 0.125em 0;
+    
+    margin:0 0 1em 0;
     font-size: 1.5em;
     line-height: 1.25em;
     small {
       display:block;
       //text-transform: none;
     }
+
+    @include breakpoint($s2){
+      max-width:66.6666666%;
+      float:left;
+      margin-bottom: 0.125em;
+    }
   }
   .discl{
-    max-width:66.6666666%;
-    float:left;
     font-size: 0.875em;
     font-style: italic;
     margin:0;
+    @include breakpoint($s2){
+      max-width:66.6666666%;
+      float:left;
+    }
   }
   .btn {
-    max-width:33.333333%;
-    float:right;
+
     min-height: 4.25em;
     background: $blue-90;
     color:$blue-120;
@@ -502,7 +508,6 @@
       color:$blue-90;
     }
     small {
-
       display: block;
       text-transform: none;
       font-size: 0.875em;
@@ -510,8 +515,12 @@
       font-weight: 400;
       font-family: $serif;
       margin-top: 0.25em;
-
     } 
+
+    @include breakpoint($s2){
+      max-width:33.333333%;
+      float:right;
+    }
   }
 
 }

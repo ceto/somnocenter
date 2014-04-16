@@ -2,22 +2,33 @@
   background:white;
   //color:$blue-90;
   
-  padding:2em 4em;
+  padding:1em 1em;
   margin:2em 0;
+  
+  @include breakpoint($s2){
+      padding:2em 4em;
+  }
 
   h3 {
     font-size: 1.5em;
     line-height: 1.4em;
-    margin:0;
-    float:left;
-    max-width:66.6666666%;
+    margin:0 0 1em 0;
     small {
       display:block;
     }
+
+    @include breakpoint($s2){
+      max-width:66.6666666%;
+      float:left;
+      margin-bottom: 0;
+    }
   }
   .btn {
-    max-width: 33.33333%;
-    float: right;
+    @include breakpoint($s2){
+      max-width: 33.33333%;
+      float: right;
+    }
+
   }
 }
 

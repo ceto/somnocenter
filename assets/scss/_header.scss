@@ -55,12 +55,12 @@
 
 .banner {
   
-  border-top: 3px solid $eggplant;
+  border-top: 1px solid $eggplant;
   
   background-color: $blue;
   
   @include breakpoint ($s2) {
-    background: url('../img/watermark.png') no-repeat center -220px $blue-30;
+    background: url('../img/watermarka.png') no-repeat center -220px $blue-30;
   }
   
 
@@ -69,12 +69,15 @@
 .brand {
   display:none;
 	position: absolute;
-  top:0em;
+  top:0;
 	z-index:1;
   background: $blue;
-  max-height:171px;
+  max-height:125px;
   overflow: hidden;
   display: block;
+  text-align: center;
+  padding-top:10px;
+  padding-bottom: 24px;
   
 
   &:hover, &:focus {
@@ -86,7 +89,7 @@
   }
 
   @include breakpoint ($s3) {
-    width:286px;
+    width:240px;
 
   }
 
@@ -100,7 +103,7 @@
 
 
     @include breakpoint ($s3) {
-      display: block;
+      display: inline-block;
       //margin:1.5em 0.75em 1.875em;
       //max-width: 285px;
 
@@ -115,97 +118,42 @@
 
 .hs {
   display:inline-block;
-  width:50px;
-  height:50px;
-  font-size: 33px;
-  line-height: 50px;
+  
+  //height:1.4em;
+  padding:0.5em 0.75em;
+  margin:7px 0 0 ;
+  font-family: $sans-serif;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  font-weight: 600;
+  //font-style: italic;
+  line-height: 1.4em;
   text-align: center;
-  background-color: $blue;
-  margin: 0 -6px 0 0;
+  background-color: $red;
   float:right;
-  color:$blue-90;
+  color:#fff;
+  
   
   &:hover, &:focus{
-    background-color: $eggplant;
+    background-color: $orange;
     color:$blue-90;
     text-decoration: none;
     
   }
   @include breakpoint ($s2) {
-    display:block;
-    margin:0;
-    //float:right;
-    width:72px;
-    height:72px;
-    font-size: 48px;
-    line-height: 72px;
-  }
-
-
-}
-
-.info {
-  @include clearfix();
-
-  display:none;
-  color:$blue-120;
-  font-weight: bold;
-  height:2em;
-  font-size: 1.25em;
-  line-height: 2em;
-  @include breakpoint($s2) {
-    display:block;
-    position:absolute;
-    left:1.25em;
-    top:40px;
+    padding:0.125em 0.75em;
+    margin-top:4px;
+    position: absolute;
+    right:1.25em;
+    min-width:150px;
   }
   @include breakpoint ($s3) {
-    left:30%;
+    right:6px;
   }
-  @include breakpoint ($s4) {
-    left:38%;
-  }
+  
 
-  .smart {
-    @include clearfix();
-    position: relative;
-    height:2em;
-    display:inline-block;
-    text-align: center;
-    color:$blue;
-    //text-transform: uppercase;
-    font-variant: small-caps;
-    &:after {
-      content:"|";
-      padding:0 0.5em;
-      display: inline;
-    }
-    &:last-child:after {
-      content:"";
-      padding:0 0;
-    }
-    &:hover, &:focus{
-      color:$blue-120;
-      text-decoration: none;
-      .varos {
-        //opacity:0;
-      }
-      .tel{
-        opacity: 1;
-      }
-    
-    }
-  }
-  .varos {
-    display: inline-block;
-    //position: absolute;
-    //left:0; right:0;
-  }
-  .tel {
-    display:block;
-    opacity:0;
-  }
 }
+
 
 
 
@@ -295,7 +243,7 @@
   .tart {
     @include clearfix();
     position: relative;
-    padding:0 10px;
+    padding:0 20px;
     margin-top:50%;
     transform:translateY(-50%);
     font-size: 18px;

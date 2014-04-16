@@ -9,7 +9,7 @@
       <p>
         Az alvásnapló adatainak elemzésével állapítható meg, hogy okozhatják-e alvászavarok a kellemetlen tüneteket.
       </p>
-      <a href="<?php echo get_permalink(1182); ?>" class="btn">Hogyan juthat hozzá</a>
+      <a class="catmore" href="<?php echo get_permalink(1182); ?>">Hogyan juthat hozzá</a>
     </section>
     <section class="newsletter-block">
       <!-- Begin MailChimp Signup Form -->
