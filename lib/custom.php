@@ -193,10 +193,13 @@ function somno_remove_wpss_styles() {
 add_action( 'wp_print_styles', 'somno_remove_wpss_styles', 100 );
 
 # Deregister scripts file
-function somno_remove_wpss_scripts () {
+function somno_remove_scripts () {
   if(!is_admin()){ 
     wp_deregister_script('jquery-wp-simple-survey');
     wp_deregister_script('wpss');
+    wp_deregister_script('bootstrap-shortcodes-tooltip');
+    wp_deregister_script('bootstrap-shortcodes-popover');
+
   }
 }
-add_action('wp_print_scripts', 'somno_remove_wpss_scripts', 11);
+add_action('wp_print_scripts', 'somno_remove_scripts', 11);

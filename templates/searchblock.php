@@ -1,7 +1,7 @@
 <div class="container searchcont">
 	<div class="row clearfix">
 		<div class="searchblock">
-			<h3 class="question">Többet szeretne tudni az alvászavarokról?<small>Használja keresőnket, vagy böngésszen a <a href="?page_id=22">Somno Life</a> alvásmagazinban.</small></h3>
+			<h3 class="question">Többet szeretne tudni az alvászavarokról?<small>Használja keresőnket, vagy böngésszen a <a href="?cat=7">Somno Life</a> alvásmagazinban.</small></h3>
 			<?php get_template_part( 'templates/searchform'); ?>
 		</div>
 		<div class="past">

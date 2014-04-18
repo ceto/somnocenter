@@ -21,11 +21,11 @@
       <br><br>
       <h3>Találkozhat velünk még</h3>
       <p class="socials">
-        <a href="https://www.facebook.com/pages/SomnoCenter-Alv%C3%A1sdiagnosztika-%C3%A9s-Ter%C3%A1pia/146636515377208">
+        <a href="https://www.facebook.com/somnocenter" target="_blank">
           <i class="ion-social-facebook"></i><br>
           Facebook
         </a>
-        <a href="https://www.youtube.com/channel/UCz0w5HaMy7z7p2F8xH6Ry6Q">
+        <a href="https://www.youtube.com/channel/UCz0w5HaMy7z7p2F8xH6Ry6Q" target="_blank">
           <i class="ion-social-youtube"></i><br>
           Youtube        
         </a>

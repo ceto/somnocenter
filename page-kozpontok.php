@@ -59,6 +59,7 @@ Template Name: Központok Sablon
        
     }
     google.maps.event.addDomListener(window, 'load', initialize);
+   
 </script>
 <div class="clearfix felteke">
 <div class="jobbfel">
