@@ -3014,17 +3014,33 @@ body {
     line-height: 1.5em;
     display: block;
     max-width: 12em;
-    text-align: center; }
+    text-align: center;
+    background-color: #fefefe;
+    color: #e6533e; }
+    .toptel .btn:hover, .toptel .btn:focus {
+      color: #fefefe;
+      background-color: #f7941e; }
 
 /* ==========================================================================
    Header
    ========================================================================== */
 .banner {
   border-top: 1px solid #7c0040;
-  background-color: #5b7eb7; }
+  background-color: #5b7eb7;
+  background-image: url('../img/somnocenter_felirat.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: 160px auto;
+  background-size: 160px auto;
+  background-position: 50px center; }
+  @media only screen and (min-width: 480px) {
+    .banner {
+      -webkit-background-size: auto 20px;
+      background-size: auto 20px;
+      background-position: 60px 14px; } }
   @media only screen and (min-width: 768px) {
     .banner {
-      background: url('../img/watermarka.png') no-repeat center -220px #c5d2e6; } }
+      background-image: none;
+      background-color: #c5d2e6; } }
 
 .brand {
   display: none;

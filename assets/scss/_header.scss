@@ -60,6 +60,12 @@
     display: block;
     max-width: 12em;
     text-align: center;
+    background-color: $white;
+    color:$red;
+    &:hover, &:focus {
+      color: $white;
+      background-color: $orange;
+    }
   }
 }
 
@@ -72,9 +78,20 @@
   border-top: 1px solid $eggplant;
   
   background-color: $blue;
+  background-image: url('../img/somnocenter_felirat.png');
+  background-repeat: no-repeat;
+  background-size: 160px auto;
+  background-position: 50px center;
+  @include breakpoint ($s1) {
+    background-size: auto 20px;
+    background-position: 60px 14px;
+  }
   
   @include breakpoint ($s2) {
-    background: url('../img/watermarka.png') no-repeat center -220px $blue-30;
+    background-image: none;
+    background-color: $blue-30;
+    
+    //background: url('../img/watermarka.png') no-repeat center -220px $blue-30;
   }
   
 
