@@ -1,15 +1,18 @@
 <section id="toptel" class="container toptel panel-collapse collapse">
   <div class="row">
-    <div class="cell cellcim"><h3>Jelentkezés<small>alvásvizsgálatra</small> </h3></div>
+    <div class="cell cellcim"><h3>Jelentkezzen<small>alvásvizsgálatra</small></h3></div>
     <div class="cell"><h3><a href="#"><small>Budapest</small>+36 1 998 6363</a></h3></div>
     <div class="cell"><h3><a href="#"><small>Szeged</small>+36 24 411 571</a></h3></div>
     <div class="cell"><h3><a href="#"><small>Pécs</small>+36 75 354 943</a></h3></div>
+    <a href="<?php echo get_permalink(520 );?>" class="btn">Online jelentkezés</a>
+    
   </div>
+
 </section>
 <header class="banner container" role="banner">
   <div class="row">
     <a href="#" class="menu-button"><span class="ion-navicon"></span></a>
-    <a href="#toptel" data-toggle="collapse" class="hs"><!--span class="ion-ios7-telephone"></span--> Időpontfoglalás</a>
+    <a href="#toptel" data-toggle="collapse" class="hs">Időpontfoglalás</a>
   	<nav class="nav-sub desktop" role="navigation">
 	  <?php
 	    if (has_nav_menu('secondary_navigation')) :

@@ -40,6 +40,6 @@ Template Name: Árlista
 </section>
 <?php wp_reset_query(); ?>
 <div class="row">
-<?php the_content(); ?>
+  <div class="disclaimer"><?php the_content(); ?></div>
 <?php get_template_part('templates/gyogyithato'); ?>
 </div>

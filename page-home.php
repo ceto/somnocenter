@@ -55,7 +55,8 @@ Template Name: Homepage Template
 <?php 
   $arti=new WP_Query(array(
     'post_type' => 'post',
-    'posts_per_page' => 4,
+    'posts_per_page' => 6,
+    'ignore_sticky_posts' => 1,
     'tax_query' => array(
         array(                
             'taxonomy' => 'post_format',

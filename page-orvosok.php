@@ -25,7 +25,7 @@ foreach($allUsers as $currentUser)
         <div id="orvos-<?php echo $user->ID; ?>" class="orvoskocka">
           <div class="authorAvatar">
             <?php // print_r($user); ?>
-            <a class="orvos-figure" data-toggle="modal" data-target="#orvosmodal-<?php echo $user->ID; ?>">
+            <a class="orvos-figure" href="<?php echo get_author_posts_url( $user->ID ); ?>">
               <?php
                 $ima = get_user_meta( $user->ID, '_cmb_portre_id', true );
                 $imci = wp_get_attachment_image_src( $ima, 'small34');
@@ -34,14 +34,10 @@ foreach($allUsers as $currentUser)
             </a>
           </div>
           <div class="authorInfo">
-            <h3><?php echo $user->display_name; ?></h3>
+            <h3><a href="<?php echo get_author_posts_url( $user->ID ); ?>"><?php echo $user->display_name; ?></a></h3>
             <p class="titulus"><?php echo get_user_meta($user->ID, '_cmb_titulus', true); ?></p>
             <p class="city"><?php echo get_user_meta($user->ID, '_cmb_city', true); ?></p>
             <!--p class="authorLinks"><a href="<?php echo get_author_posts_url( $user->ID ); ?>">View Author Links</a></p -->
-          </div>
-
-          <div id="orvosmodal-<?php echo $user->ID; ?>" class="authorCv modal fade">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, laborum, dolorum, eaque, qui aliquid ex at deserunt ut ea nihil quis voluptate ratione voluptatibus molestias rerum vitae expedita nemo optio.</p>
           </div>
         </div>
       <?php endif; ?>

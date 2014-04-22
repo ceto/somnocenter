@@ -2999,11 +2999,23 @@ body {
     text-align: left; }
   .toptel h3 {
     font-size: 1.333em;
-    margin: 0.5em 0; }
+    margin: 0.5em 0;
+    text-align: right; }
+    @media only screen and (min-width: 768px) {
+      .toptel h3 {
+        text-align: left; } }
     .toptel h3 small {
       display: block;
       font-size: 0.875em;
       font-weight: 700; }
+  .toptel .btn {
+    float: right;
+    margin: 0 auto 1em;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    display: block;
+    max-width: 12em;
+    text-align: center; }
 
 /* ==========================================================================
    Header
@@ -3697,7 +3709,7 @@ body {
 
 .arstartblokk {
   *zoom: 1;
-  margin: 0 auto 4em auto; }
+  margin: 0 auto 2em auto; }
   .arstartblokk:before, .arstartblokk:after {
     content: " ";
     display: table; }
@@ -4899,6 +4911,10 @@ body {
       margin: 0;
       font-style: italic;
       font-size: 0.875em; }
+
+.disclaimer {
+  max-width: 768px;
+  margin: 0 auto; }
 
 .home-banner {
   background: white;
