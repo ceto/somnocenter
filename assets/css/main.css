@@ -3130,10 +3130,6 @@ body {
     line-height: 1.25em; }
     @media only screen and (min-width: 480px) {
       .hero-text .nagy {
-        font-size: 2.5em;
-        line-height: 1.25em; } }
-    @media only screen and (min-width: 768px) {
-      .hero-text .nagy {
         font-size: 3em;
         line-height: 1.25em; } }
     .hero-text .nagy span {
@@ -3276,10 +3272,6 @@ body {
     font-size: 1.5em;
     line-height: 1.25em; }
     @media only screen and (min-width: 480px) {
-      .page-headerfigure .hero-text .nagy {
-        font-size: 1.75em;
-        line-height: 1.25em; } }
-    @media only screen and (min-width: 768px) {
       .page-headerfigure .hero-text .nagy {
         font-size: 2.5em;
         line-height: 1.25em; } }
