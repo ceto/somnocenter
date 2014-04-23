@@ -320,22 +320,24 @@
 .home-top {
   background: $blue-30;
   border-bottom: 6px solid white;
-  background: url(../img/parocska.jpg) no-repeat center bottom $blue-30;
+  //background-image: url(../img/parocska.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: $blue-30;
   background-size:cover;
   overflow:hidden;
   position: relative;
   
   min-height: 320px;
   @include breakpoint($s1) {
-
   }
+
   @include vbreakpoint($s2) {
     min-height: 400px;
   }
   @include vbreakpoint($s2) {
-    min-height: 500px;
+    //min-height: 500px;
   }
-
   @include vbreakpoint($s3) {
     min-height: 600px;
   }

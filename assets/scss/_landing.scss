@@ -1,9 +1,18 @@
 .page.page-template-page-landing-php {
   .main.wide {
     padding:2em 0 5em;
+    background-color:$blue-120;
+    color:#fff;
+    // ul.pipas {
+    //   li {
+    //     &:before {
+    //       color:$orange;
+    //     }
+    //   }
+    // }
   }
   .vizsgalatokhoz {
-    margin-top:-3em;
+    margin-top:-3.025em;
   }
   .vizsgalathoz-block{
     .conti {
@@ -15,6 +24,9 @@
 
 .landinghead{
   @include clearfix();
+  background-image: url('../img/menu_2_bg.png');
+  background-repeat:  no-repeat;
+  background-position: 20% 95%;
 }
 .landingbott{
   @include clearfix();
@@ -26,7 +38,7 @@
 }
 .landcont-wrap{
   margin:2em 0;
-  text-shadow: 1px 1px 1px rgba($white,0.5);
+  text-shadow: 1px 1px 1px rgba(#000,0.5);
 
 }
 .landing-title{
@@ -40,7 +52,7 @@
     font-weight: 700;
     li {
       &:before {
-        color:$eggplant;
+        color:$orange;
       }
     }
   }

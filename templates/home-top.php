@@ -1,3 +1,37 @@
+<?php 
+  if (has_post_thumbnail()) {
+    $imcismall = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'small43' ); 
+    $imcimedium = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium31' ); 
+    $imcigreat = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large31' );
+    $imcigiant = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'giant31' );  
+  } else {
+    $imcismall = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'small43' ); 
+    $imcimedium = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'medium31' ); 
+    $imcigreat = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'large31' );
+    $imcigiant = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'giant31' ); 
+  }
+?>
+
+<style type="text/css">
+  .home-top {
+    background-image:url('<?php echo $imcismall['0']; ?>');
+  }
+  @media only screen and (min-width: 768px) {
+    .home-top {
+      background-image:url('<?php echo $imcimedium['0']; ?>');
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    .home-top {
+      background-image:url('<?php echo $imcigreat['0']; ?>');
+    }
+  }
+  @media only screen and (min-width: 1600px) {
+    .home-top {
+      background-image:url('<?php echo $imcigiant['0']; ?>');
+    }
+  }
+</style>
 <div class="container home-top">  
   <div class="row">
     <aside class="hero-block" role="complementary">

@@ -2,7 +2,7 @@
   @include clearfix();
   margin:2em 0;
   padding:1em 1em;
-  border:1px solid $blue;
+  border:1px solid $blue-90;
   background-color: #fff;
   background-color: rgba(#fff,0.5);
 
@@ -43,7 +43,7 @@
     margin:0.5em 0;
     float:right;
     border:none;
-    background: $blue;
+    background: $red;
     color:$white;
     font-weight: 700;
     display: inline-block;
@@ -51,7 +51,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     &:hover,  &:focus {
-      background: $blue-text;
+      background: $orange;
     }
   } 
 
