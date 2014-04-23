@@ -40,7 +40,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
   }
 }
-
+h1 {
+  font-size:1.666em;
+  @include breakpoint($s1){
+    font-size:2em;
+  }
+}
 em {
 }
 

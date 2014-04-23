@@ -34,7 +34,7 @@ $eggplant-30:lighten($eggplant,30%);
 
 
 $sans-serif:'Titillium Web', sans-serif;
-$serif: 'Times New Roman', serif;
+$serif: 'Times New Roman', Times, serif;
 
 /****************** breakpoints definition ***********/
 
@@ -44,8 +44,6 @@ $s2:768px;
 $s3:1024px;
 $s4:1280px;
 $maximum:1140px;
-
-$experimental-support-for-svg: true;
 
 
 

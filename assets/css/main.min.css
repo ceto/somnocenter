@@ -2561,7 +2561,7 @@ table {
   content: "\f30c"; }
 
 body {
-  font-family: 'Times New Roman', serif;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 400;
   color: #4c6ba2;
   font-size: 16px;
@@ -2585,6 +2585,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.875em;
     font-weight: normal;
     line-height: 1; }
+
+h1 {
+  font-size: 1.666em; }
+  @media only screen and (min-width: 480px) {
+    h1 {
+      font-size: 2em; } }
 
 
 a {
@@ -2874,13 +2880,17 @@ body {
     clear: both; }
 .yarpp-related .related-item {
   list-style: none;
-  width: 50%;
-  float: left;
-  padding-left: 2em; }
-  .yarpp-related .related-item:nth-child(2n+1) {
-    clear: left;
-    padding-left: 0;
-    padding-right: 2em; }
+  margin: 0 0 4em; }
+  @media only screen and (min-width: 768px) {
+    .yarpp-related .related-item {
+      margin: 0 0 1em 0;
+      width: 50%;
+      float: left;
+      padding-left: 2em; }
+      .yarpp-related .related-item:nth-child(2n+1) {
+        clear: left;
+        padding-left: 0;
+        padding-right: 2em; } }
   .yarpp-related .related-item h3 {
     margin-bottom: 0; }
   .yarpp-related .related-item .read-more {
@@ -3114,11 +3124,19 @@ body {
 .hero-text {
   margin: 2em auto 0 auto; }
   .hero-text .nagy {
-    font-size: 3em;
-    line-height: 1.25em;
     font-weight: 400;
     margin: 0 0;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 1.666em;
+    line-height: 1.25em; }
+    @media only screen and (min-width: 480px) {
+      .hero-text .nagy {
+        font-size: 2.5em;
+        line-height: 1.25em; } }
+    @media only screen and (min-width: 768px) {
+      .hero-text .nagy {
+        font-size: 3em;
+        line-height: 1.25em; } }
     .hero-text .nagy span {
       display: inline;
       color: white;
@@ -3262,8 +3280,16 @@ body {
     .page-headerfigure .hero-text {
       max-width: 768px; } }
   .page-headerfigure .hero-text .nagy {
-    font-size: 2.5em;
+    font-size: 1.5em;
     line-height: 1.25em; }
+    @media only screen and (min-width: 480px) {
+      .page-headerfigure .hero-text .nagy {
+        font-size: 1.75em;
+        line-height: 1.25em; } }
+    @media only screen and (min-width: 768px) {
+      .page-headerfigure .hero-text .nagy {
+        font-size: 2.5em;
+        line-height: 1.25em; } }
     .page-headerfigure .hero-text .nagy span {
       background: rgba(124, 0, 64, 0.85);
       -webkit-box-shadow: 0.125em 0 0 rgba(124, 0, 64, 0.85), -0.125em 0 0 rgba(124, 0, 64, 0.85);
@@ -3523,7 +3549,7 @@ body {
     .nav-main a small {
       text-transform: none;
       display: block;
-      font-family: 'Times New Roman', serif;
+      font-family: 'Times New Roman', Times, serif;
       font-size: 1em;
       font-weight: 400; }
       @media only screen and (min-width: 768px) { }
@@ -3678,7 +3704,7 @@ body {
       background-image: url(../img/menu_2_bg.png);
       padding: 0.75em 1em; }
       .gyogyTab > li > a strong {
-        font-family: 'Times New Roman', serif;
+        font-family: 'Times New Roman', Times, serif;
         text-transform: uppercase;
         font-size: 1.25em;
         line-height: 1em; }
@@ -4071,8 +4097,11 @@ body {
     color: white;
     position: relative;
     margin: 0 0 0.5em;
-    font-size: 2em;
+    font-size: 1.75em;
     font-weight: 400; }
+    @media only screen and (min-width: 480px) {
+      .searchblock h3 {
+        font-size: 2em; } }
     .searchblock h3 small {
       font-size: 0.5em;
       display: block;
@@ -4190,7 +4219,7 @@ body {
       font-size: 0.875em;
       line-height: 1.125em;
       font-weight: 400;
-      font-family: 'Times New Roman', serif;
+      font-family: 'Times New Roman', Times, serif;
       margin-top: 0.25em; }
     @media only screen and (min-width: 768px) {
       .ugyerzi .btn {
@@ -4701,7 +4730,7 @@ body {
       font-size: 1em;
       line-height: 1.125em;
       display: block;
-      font-family: 'Times New Roman', serif;
+      font-family: 'Times New Roman', Times, serif;
       padding: 0.75em 2.5em 0.5em 0.75em;
       color: #4c6ba2;
       background-color: white; }
@@ -5701,7 +5730,11 @@ img.mfp-img {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
 
 .landing-title {
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  font-size: 1.5em; }
+  @media only screen and (min-width: 480px) {
+    .landing-title {
+      font-size: 2em; } }
 
 .landing-content {
   font-size: 1.25em; }
