@@ -3,6 +3,7 @@
 Template Name: Központok Sablon
 */
 ?>
+<?php get_template_part('templates/page', 'headerfigure'); ?>
 <script>
   var map1, map2, map3;
   var myLatlng1 = new google.maps.LatLng(47.494550, 19.021211);
