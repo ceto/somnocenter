@@ -46,7 +46,7 @@
     <aside class="telfej hometopi">
     <div class="tart">
       <span class="head">Szeretne kipihenten ébredni?</span>  
-      <a href="tel:+36707705653" class="telcsi">+36 1 789 6532</a>
+      <a href="tel:0036205007993" class="telcsi">+36 20 500 7993</a>
       <a class="click" href="<?php echo get_permalink(520);?>">jelentkezzen vizsgálatra online</a>
     </div>
   </aside>
