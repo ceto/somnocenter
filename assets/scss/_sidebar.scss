@@ -34,9 +34,13 @@
       padding:0.5em 1em;
       border-bottom: 2px solid $orange;
     }
-    .textwidget, ul {
+    ul {
       padding:1em;
     }
+    .textwidget {
+      padding:0 1em 0.5em;
+    }
+    
   }
 
   .widget_test {

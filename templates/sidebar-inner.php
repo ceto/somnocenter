@@ -11,4 +11,5 @@
     <h3>Van e önnek alvászavara? <small>Tünetei alapján kiderítheti</small></h3>
     <a href="<?php echo get_permalink(1197); ?>" class="btn">1 perces alvásteszt</a>
 </section>
+<?php dynamic_sidebar('sidebar-featured'); ?>
 <?php dynamic_sidebar('sidebar-inner'); ?>

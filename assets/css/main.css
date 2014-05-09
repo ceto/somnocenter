@@ -3871,8 +3871,10 @@ body {
       background: #e9eef5;
       padding: 0.5em 1em;
       border-bottom: 2px solid #f7941e; }
-    .inner-side .widget .textwidget, .inner-side .widget ul {
+    .inner-side .widget ul {
       padding: 1em; }
+    .inner-side .widget .textwidget {
+      padding: 0 1em 0.5em; }
   .inner-side .widget_test {
     background: #e9eef5;
     color: #14467c;
@@ -4950,26 +4952,42 @@ body {
 
 .home-banner {
   background: white;
-  padding: 1em 1em;
+  padding: 2em 1em;
   margin: 2em 0; }
   @media only screen and (min-width: 768px) {
     .home-banner {
-      padding: 2em 4em; } }
+      width: 49.5%;
+      float: right; } }
   .home-banner h3 {
     font-size: 1.5em;
-    line-height: 1.4em;
+    line-height: 1.125em;
     margin: 0 0 1em 0; }
     .home-banner h3 small {
       display: block; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 480px) {
       .home-banner h3 {
-        max-width: 66.66667%;
+        max-width: 55%;
         float: left;
         margin-bottom: 0; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 480px) {
     .home-banner .btn {
-      max-width: 33.33333%;
+      max-width: 42%;
       float: right; } }
+
+.home-featured {
+  background: white;
+  margin: 2em 0;
+  padding: 1em 1em 1em 1em; }
+  @media only screen and (min-width: 768px) {
+    .home-featured {
+      width: 49.5%;
+      float: left; } }
+  .home-featured h3 {
+    margin: 0 0 0.25em; }
+  .home-featured p {
+    margin: 0 0 0.5em; }
+  .home-featured *:last-child {
+    margin-bottom: 0; }
 
 .home-bottom {
   background-color: #fff; }

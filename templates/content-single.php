@@ -19,6 +19,7 @@
    </header>
     <div class="entry-content">
       <?php the_content(); ?>
+      <div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
     </div>
     <footer>
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>

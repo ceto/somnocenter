@@ -55,8 +55,11 @@
 <div class="container document" role="document">
 <div class="content row">
   <aside class="home-banner clearfix">
-      <h3>Van e önnek alvászavara? <small>Tünetei alapján kiderítheti</small></h3>
-      <a href="<?php echo get_permalink(1197); ?>" class="btn">1 perces alvászavar teszt indítása</a>
+      <h3>Van e önnek alvászavara?</h3>
+      <a href="<?php echo get_permalink(1197); ?>" class="btn">1 perces alvászavar teszt</a>
+  </aside>
+  <aside class="home-featured clearfix">
+      <?php dynamic_sidebar('sidebar-featured'); ?>
   </aside>
 
 </div><!-- /.content -->
