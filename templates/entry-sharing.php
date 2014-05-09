@@ -19,4 +19,7 @@
     </li>
 
 	</ul>
+    <div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-width="182" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
+
 </div>
+
