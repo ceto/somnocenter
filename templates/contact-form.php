@@ -7,22 +7,22 @@
     
     global $response;
 
-    if($type == "success") $response = "<div class='success'>{$message}</div>";
-    else $response = "<div class='error'>{$message}</div>";
+    if($type == "success") {$response = '<div class="success">'.$message.'</div>';}
+    else {$response = '<div class="error">'.$message.'</div>';}
     
   }
 
   //response messages
-  $not_human       = "Human verification incorrect.";
-  $missing_content = "Please supply all information.";
-  $email_invalid   = "Email Address Invalid.";
-  $message_unsent  = "Message was not sent. Try Again.";
-  $message_sent    = "Thanks! Your message has been sent.";
+  $not_human       = "Ellenőrzés sikertelen. Próbálkozzon újra!";
+  $missing_content = "A *-al jelölt mezők kitöltése kötelező.";
+  $email_invalid   = "Érvénytelen e-mail cím";
+  $message_unsent  = "Üzenet küldése nem sikerült. Próbálkozzon újra!";
+  $message_sent    = "Köszönjük! Üzenetét elküldtük.";
 
   //user posted variables
   $name = $_POST['message_name'];
   $email = $_POST['message_email'];
-  $betreff = $_POST['message_betreff'];
+  $center = $_POST['message_center'];
   $tel = $_POST['message_tel'];
   $message = $_POST['message_text'];
   $human = $_POST['message_human'];
@@ -53,7 +53,7 @@ if(!$human == 0){
         }
         else //ready to go!
         {
-          $message='Name: '.$name.'<br/>'.'Tel: '.$tel.'<br />'.'Subject: '.$betreff.'<br />'.$message;
+          $message='Name: '.$name.'<br/>'.'Tel: '.$tel.'<br />'.'Központ: '.$center.'<br />'.$message;
           $sent = wp_mail($to, $subject, $message, $headers);
             if($sent) generate_response("success", $message_sent); //message sent!
             else generate_response("error", $message_unsent); //message wasn't sent
@@ -79,7 +79,7 @@ if(!$human == 0){
 
     <div class="controls">
         <label for="message_tel">Telefon</label>
-        <input type="text" required placeholder="Adja meg telefonszámát" id="message_tel" name="message_tel" value="<?php echo $_POST['message_tel']; ?>">
+        <input type="text" placeholder="Adja meg telefonszámát" id="message_tel" name="message_tel" value="<?php echo $_POST['message_tel']; ?>">
     </div>
 
     <div class="controls">
@@ -98,7 +98,8 @@ if(!$human == 0){
 
     <div class="controls">
         <label for="message_text">Üzenet*</label>
-        <textarea required placeholder="Ha kérdése van itt felteheti ..." rows="7" id="message_text" name="message_text" value="<?php echo $_POST['message_text']; ?>"></textarea>
+        <textarea placeholder="Ha kérdése van itt felteheti ..." rows="7" id="message_text" name="message_text"><?php if ($_POST['message_text']!='') {
+            echo $_POST['message_text']; }?></textarea>
     </div>
 
     <div class="actions">
