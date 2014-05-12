@@ -14,6 +14,21 @@
 
 
 #respond {
+  .error{
+    border:1px solid $red;
+    font-size: 1.25em;
+    font-weight: 700;
+    display: block;
+    padding:0.25em;
+  }
+  .success{
+    //color:$orange;
+    border:1px solid $blue-120;
+    font-weight: 700;
+    font-size: 1.25em;
+    display: block;
+    padding:0.25em;
+  }
   .controls {
     margin:1em 0;
   }

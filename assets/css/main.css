@@ -5095,6 +5095,18 @@ body {
   .contact-wrap:after {
     clear: both; }
 
+#respond .error {
+  border: 1px solid #e6533e;
+  font-size: 1.25em;
+  font-weight: 700;
+  display: block;
+  padding: 0.25em; }
+#respond .success {
+  border: 1px solid #4c6ba2;
+  font-weight: 700;
+  font-size: 1.25em;
+  display: block;
+  padding: 0.25em; }
 #respond .controls {
   margin: 1em 0; }
 #respond label {
