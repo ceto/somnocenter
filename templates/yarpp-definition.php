@@ -1,8 +1,6 @@
 <?php 
 
-//related_entries();
 $reference_ID=get_the_id();
-echo get_the_id();
 
 yarpp_related(array(
   // Pool options: these determine the "pool" of entities which are considered
