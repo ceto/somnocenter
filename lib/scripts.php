@@ -22,9 +22,9 @@ function roots_scripts() {
     add_filter('script_loader_src', 'roots_jquery_local_fallback', 10, 2);
   }
 
-  if (is_single() && comments_open() && get_option('thread_comments')) {
-    wp_enqueue_script('comment-reply');
-  }
+  // if (is_single() && comments_open() && get_option('thread_comments')) {
+  //   wp_enqueue_script('comment-reply');
+  // }
 
   if (is_page_template('page-kozpontok.php') ) {
      wp_register_script('gmap_v3', 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false', false, 'null', false);

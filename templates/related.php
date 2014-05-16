@@ -17,7 +17,7 @@
       	<div class="row clearfix">
       		<div class="vizsgalathoz-block">
         			<div class="conti">
-        				<?php related_entries(); ?>
+        				<?php get_template_part('templates/yarpp', 'definition' ); ?>
         			</div>
       		</div>
       	</div>

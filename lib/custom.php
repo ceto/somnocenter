@@ -156,34 +156,17 @@ function somno_tags_support_query($wp_query) {
 add_action('init', 'somno_tags_support_all');
 add_action('pre_get_posts', 'somno_tags_support_query');
 
-/*------------------------------------------------*/
-/* Register JS and CSS                            */
-/*------------------------------------------------*/
-// function wpss_register_javascripts(){
-//   if(!is_admin()){ 
-//     $util = new WPSS_Util();
-  
-//     wp_enqueue_script('jquery-wp-simple-survey', $util->get_js('jquery.wp-simple-survey.js'), array('jquery'), '3.0.0');
-//     wp_enqueue_script('wpss', $util->get_js('wpss.js'), array('jquery-wp-simple-survey'), '3.0.0');
-//   }
-// }add_action('wp_print_scripts', 'wpss_register_javascripts');
+
+# Deregister style files
+function somno_DequeueYarppStyle()
+{
+  wp_dequeue_style('yarppRelatedCss');
+  wp_deregister_style('yarppRelatedCss');
+}
+add_action('wp_footer', somno_DequeueYarppStyle);
 
 
-// function wpss_register_stylesheets() {
-//   if(!is_admin()){
-//     $util = new WPSS_Util();
-//     wp_enqueue_style('wpss-style', $util->get_css('wpss.css'));
-//     wp_enqueue_style('wpss-custom-db-style', get_bloginfo('url').'/?wpss-routing=custom-css');
-//   } 
-// }add_action('wp_print_styles', 'wpss_register_stylesheets');
-
-
-// function wpss_register_admin_stylesheets(){
-//   wp_enqueue_style('wpss-admin-style', WPSS_URL.'assets/css/wpss-admin.css');
-// }add_action('admin_init', 'wpss_register_admin_stylesheets');
-
-
-# Deregister style file
+# WPSS Styles Remove
 function somno_remove_wpss_styles() {
   if(!is_admin()){ 
     wp_deregister_style( 'wpss-style' );

@@ -15,5 +15,5 @@ Description: A simple YARPP template for Somnocenter.
 	<?php endwhile; ?>
 </ol>
 <?php else: ?>
-<p>No related posts.</p>
+<p><?php _e('Nincsenek kapcsolódó írások','root') ?></p>
 <?php endif; ?>
