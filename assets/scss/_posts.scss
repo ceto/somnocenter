@@ -331,7 +331,14 @@
   padding:1em;
   background-color: $blue-70;
   transition: all .3s linear;
-
+  &.category-aktualis {
+    color:$blue-90;
+    background-color:$red;
+    a, .published {
+      color:$blue-90;
+    }
+    
+  }
   &:hover, &:focus {
     background-color: $blue;
     color: $blue-90;

@@ -4454,6 +4454,11 @@ body {
     display: table; }
   .hentry.kiskocka:after {
     clear: both; }
+  .hentry.kiskocka.category-aktualis {
+    color: #f3f6fa;
+    background-color: #e6533e; }
+    .hentry.kiskocka.category-aktualis a, .hentry.kiskocka.category-aktualis .published {
+      color: #f3f6fa; }
   .hentry.kiskocka:hover, .hentry.kiskocka:focus {
     background-color: #5b7eb7;
     color: #f3f6fa; }
