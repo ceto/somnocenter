@@ -5139,12 +5139,14 @@ body {
     clear: both; }
 
 #respond .error {
+  background-color: #f7941e;
   border: 1px solid #e6533e;
   font-size: 1.25em;
   font-weight: 700;
   display: block;
   padding: 0.25em; }
 #respond .success {
+  background-color: #7c0040;
   border: 1px solid #4c6ba2;
   font-weight: 700;
   font-size: 1.25em;
