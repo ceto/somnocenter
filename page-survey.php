@@ -17,13 +17,8 @@ Template Name: Kérdőív Sablon
   }
 </style>
 <div class="surveyhead szigorow" >
-  <div class="balfel">
-    <?php if (get_post_meta( $post->ID, '_cmb_addcont', true )!='' ): ?>
-      <?php echo do_shortcode(get_post_meta( $post->ID, '_cmb_addcont', true ) ); ?>
-    <?php else: ?>
-      <?php get_template_part('templates/contact','form'); ?>
-    <?php endif; ?> 
-  </div>
+
+  
   <div class="jobbfel">
     <div class="surveycont-wrap">
       <?php if (has_post_thumbnail() ): ?>
@@ -41,4 +36,13 @@ Template Name: Kérdőív Sablon
       </div>
     </div>
   </div>
+
+  <div class="balfel">
+    <?php if (get_post_meta( $post->ID, '_cmb_addcont', true )!='' ): ?>
+      <?php echo do_shortcode(get_post_meta( $post->ID, '_cmb_addcont', true ) ); ?>
+    <?php else: ?>
+      <?php get_template_part('templates/contact','form'); ?>
+    <?php endif; ?> 
+  </div>
+
 </div>

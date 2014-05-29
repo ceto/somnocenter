@@ -3138,7 +3138,18 @@ body {
       color: white;
       background: rgba(76, 107, 162, 0.75);
       -webkit-box-shadow: 0.125em 0 0 rgba(76, 107, 162, 0.75), -0.125em 0 0 rgba(76, 107, 162, 0.75);
-      box-shadow: 0.125em 0 0 rgba(76, 107, 162, 0.75), -0.125em 0 0 rgba(76, 107, 162, 0.75); }
+      box-shadow: 0.125em 0 0 rgba(76, 107, 162, 0.75), -0.125em 0 0 rgba(76, 107, 162, 0.75);
+      position: absolute;
+      opacity: 0;
+      -webkit-transition: opacity 0.4s ease;
+      transition: opacity 0.4s ease;
+      height: 0;
+      overflow: hidden; }
+      .hero-text .nagy span.active {
+        opacity: 1;
+        position: static;
+        display: inline;
+        height: auto; }
   .hero-text .kicsi {
     font-size: 1em;
     line-height: 1.25em;

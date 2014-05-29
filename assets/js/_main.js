@@ -125,7 +125,29 @@ jQuery(window).resize(function(){
     }
 });
 
+var hanyadik=1;
+
+
+var toggleNagy = function(h) {
+  $('.nagy span').removeClass("active");
+  $('.nagy span:nth-child('+(h)+')').addClass("active");
+  setTimeout(function() {
+    if (hanyadik<5) {
+      hanyadik=hanyadik+1;
+    } else {
+      hanyadik=1;
+    }
+    toggleNagy(hanyadik);
+  }, 4000);
+};
+
+setTimeout(function() {
+    toggleNagy(hanyadik);
+  }, 1500);
+
 jQuery(document).ready(function($) {
+
+
     // Toggle for nav menu
     $('.menu-button').click(function(e) {
       e.preventDefault();
