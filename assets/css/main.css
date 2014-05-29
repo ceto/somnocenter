@@ -3139,7 +3139,7 @@ body {
       box-shadow: 0.125em 0 0 rgba(76, 107, 162, 0.75), -0.125em 0 0 rgba(76, 107, 162, 0.75);
       position: absolute;
       opacity: 0;
-      transition: opacity 0.4s ease;
+      transition: opacity 1.25s ease;
       height: 0;
       overflow: hidden; }
       .hero-text .nagy span.active {
