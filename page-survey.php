@@ -21,15 +21,17 @@ Template Name: Kérdőív Sablon
   
   <div class="jobbfel">
     <div class="surveycont-wrap">
+
       <?php if (has_post_thumbnail() ): ?>
         <figure class="survey-fig">
           <?php the_post_thumbnail('medium21'); ?>
         </figure>
       <?php endif; ?>
-      <h1 class="survey-title"><?php the_title(); ?></h1>
       <?php if (get_post_meta( $post->ID, '_cmb_subtitle', true )!='' ): ?>
         <h2><?php echo do_shortcode(get_post_meta( $post->ID, '_cmb_subtitle', true ) ); ?></h2>
       <?php endif; ?>
+      <h1 class="survey-title"><?php the_title(); ?></h1>
+
 
       <div class="survey-content">
         <?php the_content(); ?>

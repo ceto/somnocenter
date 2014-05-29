@@ -3141,8 +3141,8 @@ body {
       box-shadow: 0.125em 0 0 rgba(76, 107, 162, 0.75), -0.125em 0 0 rgba(76, 107, 162, 0.75);
       position: absolute;
       opacity: 0;
-      -webkit-transition: opacity 1.25s ease;
-      transition: opacity 1.25s ease;
+      -webkit-transition: opacity 1s ease;
+      transition: opacity 1s ease;
       height: 0;
       overflow: hidden; }
       .hero-text .nagy span.active {
@@ -6001,8 +6001,16 @@ img.mfp-img {
   background-size: 33% auto; }
 .page.page-template-page-survey-php .surveycont-wrap {
   margin: 2em 0; }
+  .page.page-template-page-survey-php .surveycont-wrap h2 {
+    background-color: #e6533e;
+    color: #f3f6fa;
+    padding: 0.5em;
+    text-align: center; }
 .page.page-template-page-survey-php .vizsgalatokhoz {
   margin-top: -3em; }
+
+.page-id-1202.page.page-template-page-survey-php .surveycont-wrap h2 {
+  background-color: #5b7eb7; }
 
 /*------------------------------------------------*/
 /* Minimal Quiz Style                             */

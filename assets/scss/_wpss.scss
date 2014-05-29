@@ -12,7 +12,18 @@
   }
   .surveycont-wrap {
     margin:2em 0;
+
+
+    h2{
+      background-color: $red;
+      color:$blue-90;
+      padding:0.5em;
+      text-align: center;
+    }
   }
+
+  
+
   .vizsgalatokhoz {
     margin-top:-3em;
   }
@@ -20,6 +31,12 @@
    
   }
 }
+
+.page-id-1202.page.page-template-page-survey-php {
+    .surveycont-wrap h2{
+      background-color: $blue;
+    }
+  }
 
 
 
