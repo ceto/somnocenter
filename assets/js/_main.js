@@ -129,8 +129,8 @@ var hanyadik=1;
 
 
 var toggleNagy = function(h) {
-  $('.nagy span').removeClass("active");
-  $('.nagy span:nth-child('+(h)+')').addClass("active");
+  $('.home-top .nagy span').removeClass("active");
+  $('.home-top .nagy span:nth-child('+(h)+')').addClass("active");
   setTimeout(function() {
     if (hanyadik<5) {
       hanyadik=hanyadik+1;

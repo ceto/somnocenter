@@ -46,7 +46,7 @@
     <aside class="hero-block" role="complementary">
         <div class="hero-text">
           <h1 class="nagy">
-            <span><?php echo roots_title(); ?></span>
+            <span class="active"><?php echo roots_title(); ?></span>
           </h1>
           <?php if (is_page(116) ): ?>
             <h4 class="kicsi"><span>Szolgáltatások árai &mdash; Frissítve: <time class="published" datetime="<?php echo get_the_time('c'); ?>"><?php echo get_the_date(); ?></time></span></h4>
