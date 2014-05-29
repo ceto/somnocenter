@@ -138,12 +138,12 @@ var toggleNagy = function(h) {
       hanyadik=1;
     }
     toggleNagy(hanyadik);
-  }, 4000);
+  }, 7000);
 };
 
 setTimeout(function() {
     toggleNagy(hanyadik);
-  }, 1500);
+  }, 7000);
 
 jQuery(document).ready(function($) {
 
