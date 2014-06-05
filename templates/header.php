@@ -1,9 +1,9 @@
 <section id="toptel" class="container toptel panel-collapse collapse">
   <div class="row">
     <div class="cell cellcim"><h3>Jelentkezzen<small>alvásvizsgálatra</small></h3></div>
-    <div class="cell"><h3><a href="#"><small>Budapest</small>+36 20 500 7993</a></h3></div>
-    <div class="cell"><h3><a href="#"><small>Szeged</small>+36 62 540 799</a></h3></div>
-    <div class="cell"><h3><a href="#"><small>Pécs</small>+36 30 476 1400</a></h3></div>
+    <div class="cell"><h3><a href="tel:+36205007993"><small>Budapest</small>+36 20 500 7993</a></h3></div>
+    <div class="cell"><h3><a href="tel:+36203688580"><small>Szeged</small>+36 20 368 8580</a></h3></div>
+    <div class="cell"><h3><a href="tel:+36304761400"><small>Pécs</small>+36 30 476 1400</a></h3></div>
     <a href="<?php echo get_permalink(520 );?>" class="btn">Online jelentkezés</a>
     
   </div>
