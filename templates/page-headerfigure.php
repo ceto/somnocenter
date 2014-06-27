@@ -49,7 +49,7 @@
             <span class="active"><?php echo roots_title(); ?></span>
           </h1>
           <?php if (is_page(116) ): ?>
-            <h4 class="kicsi"><span>Szolgáltatások árai &mdash; Frissítve: <time class="published" datetime="<?php echo get_the_time('c'); ?>"><?php echo get_the_date(); ?></time></span></h4>
+            <h4 class="kicsi"><span><?php _e('Szolgáltatások árai &mdash; Frissítve:','roots'); ?> <time class="published" datetime="<?php echo get_the_time('c'); ?>"><?php echo get_the_date(); ?></time></span></h4>
           <?php elseif (get_post_meta( $post->ID, '_cmb_subtitle', true )!='' ): ?>
             <h4 class="kicsi"><span><?php echo get_post_meta( $post->ID, '_cmb_subtitle', true ); ?></span></h4>
           <?php endif; ?>
@@ -59,9 +59,9 @@
 
     <aside class="telfej">
       <div class="tart">
-      <span class="head">Szeretne kipihenten ébredni?</span>  
+      <span class="head"><?php _e('Szeretne kipihenten ébredni?','roots'); ?></span>  
       <a href="tel:0036205007993" class="telcsi">+36 20 500 7993</a>
-      <a class="click" href="<?php echo get_permalink(520);?>">jelentkezzen vizsgálatra online</a>
+      <a class="click" href="<?php echo get_permalink(520);?>"><?php _e('jelentkezzen vizsgálatra online','roots'); ?></a>
       </div>
     </aside>
 

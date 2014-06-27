@@ -1,10 +1,10 @@
 <section id="toptel" class="container toptel panel-collapse collapse">
   <div class="row">
-    <div class="cell cellcim"><h3>Jelentkezzen<small>alvásvizsgálatra</small></h3></div>
+    <div class="cell cellcim"><h3><?php _e('Jelentkezzen<small>alvásvizsgálatra</small>','roots'); ?></h3></div>
     <div class="cell"><h3><a href="tel:+36205007993"><small>Budapest</small>+36 20 500 7993</a></h3></div>
     <div class="cell"><h3><a href="tel:+36203688580"><small>Szeged</small>+36 20 368 8580</a></h3></div>
     <div class="cell"><h3><a href="tel:+36304761400"><small>Pécs</small>+36 30 476 1400</a></h3></div>
-    <a href="<?php echo get_permalink(520 );?>" class="btn">Online jelentkezés</a>
+    <a href="<?php echo get_permalink(520 );?>" class="btn"><?php _e('Online jelentkezés','roots'); ?></a>
     
   </div>
 
@@ -12,7 +12,7 @@
 <header class="banner container" role="banner">
   <div class="row">
     <a href="#" class="menu-button"><span class="ion-navicon"></span></a>
-    <a href="#toptel" data-toggle="collapse" class="hs">Időpontfoglalás</a>
+    <a href="#toptel" data-toggle="collapse" class="hs"><?php _e('Időpontfoglalás','roots'); ?></a>
   	<nav class="nav-sub desktop" role="navigation">
 	  <?php
 	    if (has_nav_menu('secondary_navigation')) :

@@ -1,5 +1,5 @@
 <div class="entry-sharing">
-	<h3>Hasznosnak találta?<small>Ossza meg ismerőseivel</small></h3>
+	<h3><?php _e('Hasznosnak találta?<small>Ossza meg ismerőseivel</small>','roots'); ?></h3>
 	<ul>
 
 		<li>

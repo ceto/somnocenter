@@ -13,11 +13,11 @@
   // }
 
   //response messages
-  $not_human       = "Ellenőrzés sikertelen. Próbálkozzon újra!";
-  $missing_content = "Név és Email megadása kötelező.";
-  $email_invalid   = "Érvénytelen e-mail cím";
-  $message_unsent  = "Üzenet küldése nem sikerült. Próbálkozzon újra!";
-  $message_sent    = "Köszönjük! Üzenetét elküldtük.";
+  $not_human       = __('Ellenőrzés sikertelen. Próbálkozzon újra!','roots');
+  $missing_content = __('Név és Email megadása kötelező.','roots');
+  $email_invalid   = __('Érvénytelen e-mail cím','roots');
+  $message_unsent  = __('Üzenet küldése nem sikerült. Próbálkozzon újra!','roots');
+  $message_sent    = __('Köszönjük! Üzenetét elküldtük.','roots');
 
   //user posted variables
   $name = $_POST['message_name'];
@@ -75,29 +75,29 @@ if(!$human == 0){
 ?>
 <div id="respond" class="contact-wrap white-popup-block szaggat amfp-hide">
   <div id="infopan"><?php echo $response; ?></div>
-  <h2 class="block-title">Jelentkezzen online</h2>
+  <h2 class="block-title"><?php _e('Jelentkezzen online','roots'); ?></h2>
 
   <?php wp_reset_query(); the_post(); ?>
   <form class="form-horizontal" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post">
 
     <div class="controls">
-        <label for="message_name">Név*</label>
-        <input type="text" placeholder="Adja meg nevét*" id="message_name" name="message_name" value="<?php echo $_POST['message_name']; ?>">
+        <label for="message_name"><?php _e('Név','roots'); ?>*</label>
+        <input type="text" placeholder="<?php _e('Adja meg nevét','roots'); ?>*" id="message_name" name="message_name" value="<?php echo $_POST['message_name']; ?>">
     </div>
 
     <div class="controls">
-        <label for="message_tel">Telefon</label>
-        <input type="text" placeholder="Adja meg telefonszámát" id="message_tel" name="message_tel" value="<?php echo $_POST['message_tel']; ?>">
+        <label for="message_tel"><?php _e('Telefon','roots'); ?></label>
+        <input type="text" placeholder="<?php _e('Adja meg telefonszámát','roots'); ?>" id="message_tel" name="message_tel" value="<?php echo $_POST['message_tel']; ?>">
     </div>
 
     <div class="controls">
-      <label for="message_email">E-Mail cím*</label>
-      <input type="email" placeholder="E-mail címe*" id="message_email" name="message_email" value="<?php echo $_POST['message_email']; ?>">
+      <label for="message_email"><?php _e('E-Mail cím','roots'); ?>*</label>
+      <input type="email" placeholder="<?php _e('E-mail címe','roots'); ?>*" id="message_email" name="message_email" value="<?php echo $_POST['message_email']; ?>">
     </div>
 
     <div class="controls">
       <select id="message_center" name="message_center">
-        <option value="0">Válasszon központot</option>
+        <option value="0"><?php _e('Válasszon központot','roots'); ?></option>
         <option value="Budapest">Budapest</option>
         <option value="Pécs">Pécs</option>
         <option value="Szeged">Szeged</option>
@@ -105,8 +105,8 @@ if(!$human == 0){
     </div>
 
     <div class="controls">
-        <label for="message_text">Üzenet*</label>
-        <textarea placeholder="Ha kérdése van itt felteheti ..." rows="7" id="message_text" name="message_text"><?php if ($_POST['message_text']!='') {
+        <label for="message_text"><?php _e('Üzenet','roots'); ?>*</label>
+        <textarea placeholder="<?php _e('Ha kérdése van itt felteheti ...','roots'); ?>" rows="7" id="message_text" name="message_text"><?php if ($_POST['message_text']!='') {
             echo $_POST['message_text']; }?></textarea>
     </div>
 
@@ -115,7 +115,7 @@ if(!$human == 0){
       <input type="hidden" name="message_human" value="2">
       <input type="hidden" name="submitted" value="1">
       <input type="submit" class="btn submitbtn" value="<?php _e('Jelentkezem','roots'); ?>"></p>
-      <div class="oki">* Online jelentkezés esetén telefonon felvesszük Önnel a kapcsolatot és szolgáltatásainkról részletes információkkal szolgálunk.</div>
+      <div class="oki">* <?php _e('Online jelentkezés esetén telefonon felvesszük Önnel a kapcsolatot és szolgáltatásainkról részletes információkkal szolgálunk.','roots'); ?></div>
     </div>
   </form>
 </div><!-- /.contact-wrap -->

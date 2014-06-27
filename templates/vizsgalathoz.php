@@ -17,12 +17,12 @@ $i=0;
     <?php endwhile; ?>
       <li>
         <a href="#vizsgalathoz-<?php echo ++$i; ?>" data-toggle="tab">
-          Kapcsolódó írások
+         <?php _e('Kapcsolódó írások','roots'); ?>
         </a>
       </li>
       <li>
         <a href="#vizsgalathoz-<?php echo ++$i; ?>" data-toggle="tab">
-          Kérdezzen, szóljon hozzá
+          <?php _e('Kérdezzen, szóljon hozzá','roots'); ?>
         </a>
       </li>
   </ul>

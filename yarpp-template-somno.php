@@ -15,5 +15,5 @@ Description: A simple YARPP template for Somnocenter.
 	<?php endwhile; ?>
 </ol>
 <?php else: ?>
-<p><?php _e('Nincsenek kapcsolódó írások','root') ?></p>
+<p><?php _e('Nincsenek kapcsolódó írások','roots') ?></p>
 <?php endif; ?>

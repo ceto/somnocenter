@@ -8,7 +8,7 @@
 ?>
 <section class="widget widget_illness dupla">
   <div class="widget-inner">
-    <h3 class="widget-title">Leggyakoribb alvászavar betegésgek</h3>
+    <h3 class="widget-title"><?php _e('Leggyakoribb alvászavar betegségek','roots'); ?></h3>
     <ul lass="ill-list">
       <?php while ($the_ill->have_posts()) : $the_ill->the_post(); ?>
         <li>
@@ -22,7 +22,7 @@
 
 <section class="widget widget_qa">
   <div class="widget-inner">
-    <h3 class="widget-title">Páciensek kérdezik</h3>
+    <h3 class="widget-title"><?php _e('Páciensek kérdezik','roots'); ?></h3>
     <?php 
     $qaf=new WP_Query(array(
       'post_type' => 'post',
@@ -45,7 +45,7 @@
       <li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
     <?php endwhile; ?>
     </ul>
-    <a class="catmore" href="<?php echo esc_url(get_category_link(5)); ?>">További kérdések ...</a>
+    <a class="catmore" href="<?php echo esc_url(get_category_link(5)); ?>"><?php _e('További kérdések ...','roots'); ?></a>
   </div>
 </section>
 <?php //dynamic_sidebar('sidebar-footer'); ?>

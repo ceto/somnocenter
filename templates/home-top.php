@@ -37,23 +37,23 @@
     <aside class="hero-block" role="complementary">
       <div class="hero-text">
         <h3 class="nagy">
-          <span class="active">Napközben álmos és fáradt?</span>
-          <span>Éjszaka többször felébred?</span>
-          <span>Hangosan horkol?</span>
-          <span>Magas a vérnyomása?</span>
-          <span>Nem tud elaludni?</span>
+          <span class="active"><?php _e('Napközben álmos és fáradt?','roots'); ?></span>
+          <span><?php _e('Éjszaka többször felébred?','roots'); ?></span>
+          <span><?php _e('Hangosan horkol?','roots'); ?></span>
+          <span><?php _e('Magas a vérnyomása?','roots'); ?></span>
+          <span><?php _e('Nem tud elaludni?','roots'); ?></span>
         </h3>
-        <h4 class="kicsi"><span>A tünetek hátterében alvászavarok állhatnak</span></h4>
+        <h4 class="kicsi"><span><?php _e('A tünetek hátterében alvászavarok állhatnak','roots'); ?></span></h4>
       </div>
       <div class="hero-action">
-        <a href="<?php echo get_permalink(43); ?>" class="btn">Ismerje meg a tüneteket</a>
+        <a href="<?php echo get_permalink(43); ?>" class="btn"><?php _e('Ismerje meg a tüneteket','roots'); ?></a>
       </div>
     </aside><!-- /.home-blokk -->
     <aside class="telfej hometopi">
     <div class="tart">
-      <span class="head">Szeretne kipihenten ébredni?</span>  
+      <span class="head"><?php _e('Szeretne kipihenten ébredni?','roots'); ?></span>  
       <a href="tel:0036205007993" class="telcsi">+36 20 500 7993</a>
-      <a class="click" href="<?php echo get_permalink(520);?>">jelentkezzen vizsgálatra online</a>
+      <a class="click" href="<?php echo get_permalink(520);?>"><?php _e('jelentkezzen vizsgálatra online','roots'); ?></a>
     </div>
   </aside>
   </div>
@@ -61,8 +61,8 @@
 <div class="container document" role="document">
 <div class="content row">
   <aside class="home-banner clearfix">
-      <h3>Van e önnek alvászavara?</h3>
-      <a href="<?php echo get_permalink(1197); ?>" class="btn">1 perces alvászavar teszt</a>
+      <h3><?php _e('Van e önnek alvászavara?','roots'); ?></h3>
+      <a href="<?php echo get_permalink(1197); ?>" class="btn"><?php _e(' perces alvászavar teszt','roots'); ?></a>
   </aside>
   <aside class="home-featured clearfix">
       <?php dynamic_sidebar('sidebar-featured'); ?>
