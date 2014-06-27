@@ -58,7 +58,7 @@ if(!$human == 0){
           $message='Név: '.$name.'<br/>'.'Tel: '.$tel.'<br />'.'Központ: '.$center.'<br />'.$message;
           $sent = wp_mail($to, $subject, $message, $headers);
             if($sent) {
-              wp_mail('fulop.monika@somnocenter.hu', $subject, $message, $headers);
+              wp_mail('budapest@somnocenter.hu', $subject, $message, $headers);
               wp_mail($email, $subject, $message, $headers);
 
               $response = '<div class="success">'.$message_sent.'</div>';

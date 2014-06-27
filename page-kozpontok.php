@@ -4,6 +4,10 @@ Template Name: Központok Sablon
 */
 ?>
 <?php get_template_part('templates/page', 'headerfigure'); ?>
+<style>
+  .gm-style img { max-width: none; }
+  .gm-style label { width: auto; display: inline; }
+</style>
 <script>
   var map1, map2, map3;
   var myLatlng1 = new google.maps.LatLng(47.494550, 19.021211);
@@ -13,15 +17,31 @@ Template Name: Központok Sablon
   function initialize() {
       var mapOptions1 = {
         zoom: 14,
-        center: myLatlng1
+        center: myLatlng1,
+        zoomControl: true,
+        scaleControl: true,
+
+        // mapTypeControl: true,
+        // mapTypeControlOptions: {
+        //   style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+        // },
+        // zoomControlOptions: {
+        //   style: google.maps.ZoomControlStyle.SMALL
+        // }
       };
       var mapOptions2 = {
         zoom: 14,
-        center: myLatlng2
+        center: myLatlng2,
+        zoomControl: true,
+        scaleControl: true,
+        
       };
       var mapOptions3 = {
         zoom: 14,
-        center: myLatlng3
+        center: myLatlng3,
+        zoomControl: true,
+        scaleControl: true,
+        
       };
       map1 = new google.maps.Map(document.getElementById('map-canvas-1'), mapOptions1);
       map2 = new google.maps.Map(document.getElementById('map-canvas-2'), mapOptions2);
@@ -75,7 +95,7 @@ Template Name: Központok Sablon
 <ul class="nav nav-tabs clearfix" id="centerTab">
   <?php while ($the_center->have_posts()) : $the_center->the_post(); ?>
     <li <?php echo (++$i==1)?'class="active"':'' ?>>
-      <a href="#center-<?php echo $i; ?>" data-toggle="tab">
+      <a id="fuge<?php echo $i; ?>" href="#center-<?php echo $i; ?>" data-toggle="tab">
         <?php the_title() ?>
       </a>
     </li>
@@ -96,7 +116,18 @@ Template Name: Központok Sablon
     </section>
   <?php endwhile; ?>
 </div>
-</div><!-- /.balfel -->
+<script>
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+      initialize();
+    })
+</script>
+
+</div><!-- /.jobbfel -->
+
+
+
+
+
 <?php wp_reset_query(); ?>
 <div class="balfel">
   <?php // get_template_part('templates/page', 'header'); ?>
