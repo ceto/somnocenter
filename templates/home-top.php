@@ -62,7 +62,7 @@
 <div class="content row">
   <aside class="home-banner clearfix">
       <h3><?php _e('Van e önnek alvászavara?','roots'); ?></h3>
-      <a href="<?php echo get_permalink(1197); ?>" class="btn"><?php _e(' perces alvászavar teszt','roots'); ?></a>
+      <a href="<?php echo get_permalink(1197); ?>" class="btn"><?php _e('1 perces alvászavar teszt','roots'); ?></a>
   </aside>
   <aside class="home-featured clearfix">
       <?php dynamic_sidebar('sidebar-featured'); ?>
