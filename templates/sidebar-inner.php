@@ -4,7 +4,7 @@
 
 <h3 class="rovatfej">Rovatok</h3>
 <ul class="rovatlista">
-  <li class="cat-sl cat-item <?php echo (is_home())?'current-cat':''; ?>"><a href="<?php echo get_permalink( 22 ); ?>">Somo Life</a></li>
+  <li class="cat-sl cat-item <?php echo (is_home())?'current-cat':''; ?>"><a href="<?php echo get_permalink( 22 ); ?>">Somno Life</a></li>
 <?php wp_list_categories('orderby=name&use_desc_for_title=0&child_of=7&depth=1&title_li='); ?> 
 </ul>
 <section class="widget widget_test">
