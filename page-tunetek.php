@@ -49,7 +49,7 @@ Template Name: Tünetek lista
 </div><!-- /.felezett -->
 <section class="betegsegek">
   <div class="inner">
-  <h2><?php _e('A leggyakoribb alvászavarbetegségek','roots'); ?></h2>
+  <h2><?php _e('A leggyakoribb alvászavar betegségek','roots'); ?></h2>
   <?php
   $the_beteg=new WP_Query(array(
     'post_type' => 'page;',
