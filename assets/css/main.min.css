@@ -2786,7 +2786,10 @@ html *, html *:before, html *:after {
   box-sizing: border-box; }
 
 body {
-  background-color: #5b7eb7; }
+  background-color: #5b7eb7;
+ text-rendering: optimizeLegibility;
+-webkit-font-smoothing: antialiased; 
+}
 
 .minden {
   position: relative;
