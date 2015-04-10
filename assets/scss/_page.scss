@@ -85,12 +85,13 @@
         content: '';
         left:0;right:0;top:0;bottom:0;
         background: url(../img/hold.png) no-repeat 50% 60%, url(../img/nap.png) no-repeat 50% 30px transparent;
-        background-size: 130px auto;
+        background-size: 100px auto;
         z-index:0;
         opacity: 0.75;
         @include breakpoint($s2) {
-          background: url(../img/hold.png) no-repeat 50% 30px, url(../img/nap.png) no-repeat 50% 30px transparent;
+          background: url(../img/hold.png) no-repeat 50% 60px, url(../img/nap.png) no-repeat 50% 60px transparent;
           opacity:1;
+          background-size: 110px auto;
         }  
       }
     }

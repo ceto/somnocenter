@@ -1,112 +1,199 @@
-.gallerywrap{
-    margin:2em 0 2em 0;
-    //height:81px;
-    overflow:hidden;
-    -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 1%,rgba(0,0,0,1) 10%,rgba(0,0,0,1) 90%,rgba(0,0,0,0) 99%);
-    mask-image: linear-gradient(left, rgba(0,0,0,0) 1%,rgba(0,0,0,1) 10%,rgba(0,0,0,1) 90%,rgba(0,0,0,0) 99%);
-}
+// .gallerywrap{
+//     margin:2em 0 2em 0;
+//     //height:81px;
+//     overflow:hidden;
+//     -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 1%,rgba(0,0,0,1) 10%,rgba(0,0,0,1) 90%,rgba(0,0,0,0) 99%);
+//     mask-image: linear-gradient(left, rgba(0,0,0,0) 1%,rgba(0,0,0,1) 10%,rgba(0,0,0,1) 90%,rgba(0,0,0,0) 99%);
+// }
 
-.gallery  {
+// .gallery  {
 
-    width:9999px;
-    margin:0;
-    padding:0;
-    list-style-type: none;
+//     width:9999px;
+//     margin:0;
+//     padding:0;
+//     list-style-type: none;
     
 
-    .row {
-    }
+//     .row {
+//     }
 
-    [class^="col-"]{
-        float:left;
-    }
-    .caption {
-        display:none;
-    }
-    a {
-        display: block;
-        float:left;
-        padding:3px;
-        border:1px solid transparent;
-        margin-right:1em;
-        transition: border-color 200ms ease-in;
+//     [class^="col-"]{
+//         float:left;
+//     }
+//     .caption {
+//         display:none;
+//     }
+//     a {
+//         display: block;
+//         float:left;
+//         padding:3px;
+//         border:1px solid transparent;
+//         margin-right:1em;
+//         transition: border-color 200ms ease-in;
 
-        &:hover, &:focus {
-            border-color: $blue-text;
-            text-decoration: none;
-        }
-    }
-}
+//         &:hover, &:focus {
+//             border-color: $blue-text;
+//             text-decoration: none;
+//         }
+//     }
+// }
 
 
-.gallery-great  {
-    margin:0 -1%;
+// .gallery-great  {
+//     margin:0 -1%;
 
-    a {
-        display: block;
-        background: $white;
-        width:48%;
-        float:left;
-        padding:1px;
-        margin:1%;
-        border:1px solid $white;
-        transition: all 200ms ease-in;
-        //text-align: center;
-        box-shadow: 0 0 5px 0 $blue;
+//     a {
+//         display: block;
+//         background: $white;
+//         width:48%;
+//         float:left;
+//         padding:1px;
+//         margin:1%;
+//         border:1px solid $white;
+//         transition: all 200ms ease-in;
+//         //text-align: center;
+//         box-shadow: 0 0 5px 0 $blue;
         
-        @include breakpoint($s0) {
-            margin:1%;
-            width:31.33333%;
-        }
+//         @include breakpoint($s0) {
+//             margin:1%;
+//             width:31.33333%;
+//         }
 
-        @include breakpoint($s1) {
-            margin:1%;
-            width:23%;
-        }
+//         @include breakpoint($s1) {
+//             margin:1%;
+//             width:23%;
+//         }
 
-        @include breakpoint($s2) {
-            margin:1%;
-            width:18%;
-        }
+//         @include breakpoint($s2) {
+//             margin:1%;
+//             width:18%;
+//         }
 
-        @include breakpoint($s3) {
-            margin:1%;
-            width:14.5%;
-        }
+//         @include breakpoint($s3) {
+//             margin:1%;
+//             width:14.5%;
+//         }
 
-        img {
-            opacity:0.85;
-            transition: opacity 200ms ease-in;
-            display: block;
-        }
+//         img {
+//             opacity:0.85;
+//             transition: opacity 200ms ease-in;
+//             display: block;
+//         }
     
 
-        h4 {
-            font-size:0.875em;
-            font-weight: 400;
-            text-transform: none;
-            //background-color: $blue-linea;
-            color:$blue-text;
-            margin:0;
-            padding:0.125em 0.5em;
-            //width:100%;
-            height:3em;
-            display: table-cell;
-            vertical-align: middle;
+//         h4 {
+//             font-size:0.875em;
+//             font-weight: 400;
+//             text-transform: none;
+//             //background-color: $blue-linea;
+//             color:$blue-text;
+//             margin:0;
+//             padding:0.125em 0.5em;
+//             //width:100%;
+//             height:3em;
+//             display: table-cell;
+//             vertical-align: middle;
 
-        }
+//         }
 
 
-        &:hover, &:focus {
-            border-color: $blue;
-            text-decoration: none;
-            box-shadow: 0 0 7px 0px $blue;
-            img {
-                opacity:1;
-            }
-        }
+//         &:hover, &:focus {
+//             border-color: $blue;
+//             text-decoration: none;
+//             box-shadow: 0 0 7px 0px $blue;
+//             img {
+//                 opacity:1;
+//             }
+//         }
         
 
 
-    }
+//     }
+// }
+
+
+
+
+.gallery {
+    @include clearfix();
+    clear:both;
+  margin:1em -0.5em;
+  //border:1px solid $purple-light;
+  //background-color: $white;
 }
+
+.gallery-item{
+
+  padding:0.5em 0.5em;
+  width:50%;
+  float:left;
+  &:nth-child(2n+1){
+    clear:left
+  }
+  @include breakpoint($s2){
+    width:33.333%;
+    &:nth-child(2n+1){
+      clear:none;
+    }
+    &:nth-child(3n+1){
+      clear:left;
+    }
+
+  }
+  
+  .thumbnail{
+    overflow: hidden;
+    backface-visibility: hidden;
+    background-color: $blue-70;
+    display: inline-block;
+    position: relative;
+    transition: all .4s ease;
+    border: 1px solid $blue-30;
+    padding:3px;
+    
+    &:hover, &:focus{
+    border: 1px solid $eggplant;    
+     &:after{
+      opacity: 1;
+     }
+     img {
+      filter:grayscale(1);
+      transform:scale(1.1);
+
+     }
+    }
+    
+    &:after{
+      transition: all .4s ease;
+      display: block;
+      position: absolute;
+      content: "+";
+      font-size: 2em;
+      line-height: 0;
+      font-weight: 600;
+      color:#fff;
+      text-align: center;
+      padding-top:33.333%;
+      left:0;right:0;top:0;bottom:0;
+      background-color: rgba($blue,0.75);
+      opacity: 0;
+      border: 3px solid $blue-70;
+    }
+
+    img{
+      transition: all .4s ease;
+    }
+
+  }
+  .caption{
+    font-size: .75em;
+    line-height: 1;
+    font-style: italic;
+    font-family: $sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-top: .25em;
+    //color: $orange;
+  }
+}
+

@@ -15,11 +15,6 @@ $i=0;
         </a>
       </li>
     <?php endwhile; ?>
-      <li>
-        <a href="#vizsgalathoz-<?php echo ++$i; ?>" data-toggle="tab">
-          <?php _e('Kérdezzen, szóljon hozzá','roots'); ?>
-        </a>
-      </li>
   </ul>
   <?php 
     wp_reset_query();
@@ -37,15 +32,6 @@ $i=0;
       	</div>
       </section><!-- /.vizsgalathoz-# -->
     <?php endwhile; ?>
-      <section id="vizsgalathoz-<?php echo ++$i; ?>" class="fade tab-pane container vizsgalathoz-<?php echo $i; ?>">
-        <div class="row clearfix">
-          <div class="vizsgalathoz-block">
-              <div class="conti">
-                <?php get_template_part('templates/comments','fb' ); ?>
-              </div>
-          </div>
-        </div>
-      </section><!-- /.vizsgalathoz-# -->
   </div><!-- /.tab-content -->
 </aside>
 <?php wp_reset_query(); ?>

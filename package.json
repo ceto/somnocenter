@@ -1,6 +1,6 @@
 {
   "name": "somnocenter",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Gabor Szabo <szabogabi@gmail.com>",
   "homepage": "http://hydrogene.hu",
   "repository": {
@@ -15,16 +15,16 @@
     "url": "http://opensource.org/licenses/MIT"
   }],
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 0.12.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-uglify": "~0.2.7",
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-jshint": "~0.11.1",
+    "grunt-contrib-uglify": "~0.9.1",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-wp-version": "~0.1.0",
-    "grunt-sass": "~0.12.1",
-    "grunt-autoprefixer": "~0.6.5"
+    "grunt-sass": "~0.18.1",
+    "grunt-autoprefixer": "~3.0.0"
   }
 }

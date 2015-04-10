@@ -20,11 +20,6 @@ $i=0;
          <?php _e('Kapcsolódó írások','roots'); ?>
         </a>
       </li>
-      <li>
-        <a href="#vizsgalathoz-<?php echo ++$i; ?>" data-toggle="tab">
-          <?php _e('Kérdezzen, szóljon hozzá','roots'); ?>
-        </a>
-      </li>
   </ul>
   <?php 
     $the_mitort->rewind_posts();
@@ -48,15 +43,6 @@ $i=0;
           <div class="vizsgalathoz-block">
               <div class="conti">
                 <?php get_template_part('templates/yarpp', 'definition' ); ?>
-              </div>
-          </div>
-        </div>
-      </section><!-- /.vizsgalathoz-# -->
-      <section id="vizsgalathoz-<?php echo ++$i; ?>" class="fade tab-pane container vizsgalathoz-<?php echo $i; ?>">
-        <div class="row clearfix">
-          <div class="vizsgalathoz-block">
-              <div class="conti">
-                <?php get_template_part('templates/comments','fb' ); ?>
               </div>
           </div>
         </div>

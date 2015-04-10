@@ -164,6 +164,25 @@ jQuery(document).ready(function($) {
       fixedContentPos: false
     });
 
+
+    $('.gallery').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      tLoading: 'Képek betöltése #%curr%...',
+      mainClass: 'mfp-img-mobile',
+      gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+      },
+      image: {
+        tError: 'Hiba a(z) <a href="%url%">#%curr%</a> kép betöltésekor',
+        titleSrc: function(item) {
+          return item.el.children().attr('alt'); 
+        }
+      }
+    });
+
     $('.wpss-field input').prop({
       placeholder: function(){
         return $(this).prev().text();

@@ -31,7 +31,7 @@
 // 1. Default Settings
 ////////////////////////
 
-$overlay-color:                   #0b0b0b !default;
+$overlay-color:                   darken($blue,47%) !default;
 $overlay-opacity:                 0.8 !default;
 $shadow:                          0 0 8px rgba(0, 0, 0, 0.6) !default; // shadow on image or iframe
 $popup-padding-left:              8px !default; // Padding from left and from right side
@@ -494,10 +494,14 @@ button {
   }
   .mfp-title {
     text-align: left;
-    line-height: 18px;
     color: $caption-title-color;
     word-wrap: break-word;
     padding-right: 36px; // leave some space for counter at right side
+    font-size: .75em;
+    line-height: 1;
+    font-style: italic;
+    font-family: $sans-serif;
+    font-weight: 600;
   }
 
   .mfp-image-holder {

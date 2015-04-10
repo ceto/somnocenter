@@ -191,11 +191,12 @@
   }
   
   .catmore{
-    color:$orange;
+    color:$red-30;
     font-style:italic;
     display:block;
-    text-align:right;
+    text-align:left;
     margin-top:1em;
+    padding-left: 1em;
   }
   .sidebar {
     margin:1em auto;
@@ -225,10 +226,10 @@
       } 
     }
     &.widget_qa{
-      background-image:url('../img/kerdojel.png');
-      background-position:95% 3px;
-      background-size:auto 60px;
-      background-repeat:no-repeat;
+      // background-image:url('../img/kerdojel.png');
+      // background-position:95% 3px;
+      // background-size:auto 60px;
+      // background-repeat:no-repeat;
     }
 
 
@@ -503,15 +504,15 @@
   .btn {
 
     min-height: 4.25em;
-    background: $blue-90;
-    color:$blue-120;
+    background: $blue-120;
+    color:$blue-90;
     font-weight: 600;
     font-size: 1.125em;
     line-height: 1.125em;
     padding:1em;
 
     &:hover, &:focus {
-      background: $green;
+      background: $red;
       color:$blue-90;
     }
     small {

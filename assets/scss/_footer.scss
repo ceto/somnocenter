@@ -21,10 +21,10 @@
   font-size:0.875em;
   line-height:1.4em;
   background-color: $blue-30;
-  background-image: url('../img/barany.png');
-  background-position: 1em 95%;
-  background-repeat: no-repeat;
-  background-size: 120px auto;
+  // background-image: url('../img/barany.png');
+  // background-position: 1em 95%;
+  // background-repeat: no-repeat;
+  // background-size: 120px auto;
   .row{
     
   }
@@ -148,8 +148,10 @@
     color:$orange;
     font-style:italic;
     display:block;
-    text-align:right;
+    //text-align:right;
     margin-top:1em;
+    color:$red;
+
   }
 
 .newsletter-block{
