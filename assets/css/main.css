@@ -6419,7 +6419,7 @@ body {
     overflow: hidden;
     backface-visibility: hidden;
     background-color: #e9eef5;
-    display: inline-block;
+    display: block;
     position: relative;
     transition: all .4s ease;
     border: 1px solid #c5d2e6;
