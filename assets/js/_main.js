@@ -125,27 +125,47 @@ jQuery(window).resize(function(){
     }
 });
 
-var hanyadik=1;
+// var hanyadik=1;
 
 
-var toggleNagy = function(h) {
-  $('.home-top .nagy span').removeClass("active");
-  $('.home-top .nagy span:nth-child('+(h)+')').addClass("active");
-  setTimeout(function() {
-    if (hanyadik<5) {
-      hanyadik=hanyadik+1;
-    } else {
-      hanyadik=1;
-    }
-    toggleNagy(hanyadik);
-  }, 4000);
-};
+// var toggleNagy = function(h) {
+//   $('.home-top .nagy span').removeClass("active");
+//   $('.home-top .nagy span:nth-child('+(h)+')').addClass("active");
+//   setTimeout(function() {
+//     if (hanyadik<5) {
+//       hanyadik=hanyadik+1;
+//     } else {
+//       hanyadik=1;
+//     }
+//     toggleNagy(hanyadik);
+//   }, 4000);
+// };
 
-setTimeout(function() {
-    toggleNagy(hanyadik);
-  }, 4000);
+// setTimeout(function() {
+//     toggleNagy(hanyadik);
+//   }, 4000);
 
 jQuery(document).ready(function($) {
+
+
+
+    $("#owl-home").owlCarousel({
+ 
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+      autoHeight : true,
+
+      //transitionStyle: 'fade'
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
 
 
     // Toggle for nav menu

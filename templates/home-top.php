@@ -12,7 +12,7 @@
   }
 ?>
 
-<style type="text/css">
+<!--style type="text/css">
   .home-top {
     background-image:url('<?php echo $imcismall['0']; ?>');
   }
@@ -31,33 +31,75 @@
       background-image:url('<?php echo $imcigiant['0']; ?>');
     }
   }
-</style>
+</style-->
 <div class="container home-top">  
-  <div class="row">
-    <aside class="hero-block" role="complementary">
-      <div class="hero-text">
-        <h3 class="nagy">
-          <span class="active"><?php _e('Napközben álmos és fáradt?','roots'); ?></span>
-          <span><?php _e('Éjszaka többször felébred?','roots'); ?></span>
-          <span><?php _e('Hangosan horkol?','roots'); ?></span>
-          <span><?php _e('Magas a vérnyomása?','roots'); ?></span>
-          <span><?php _e('Nem tud elaludni?','roots'); ?></span>
-        </h3>
-        <h4 class="kicsi"><span><?php _e('A tünetek hátterében alvászavarok állhatnak','roots'); ?></span></h4>
-      </div>
-      <div class="hero-action">
-        <a href="<?php echo get_permalink(43); ?>" class="btn"><?php _e('Ismerje meg a tüneteket','roots'); ?></a>
-      </div>
-    </aside><!-- /.home-blokk -->
-    <aside class="telfej hometopi">
-    <div class="tart">
-      <span class="head"><?php _e('Szeretne kipihenten ébredni?','roots'); ?></span>  
-      <a href="tel:0036205007993" class="telcsi">+36 20 500 7993</a>
-      <a class="click" href="<?php echo get_permalink(520);?>"><?php _e('jelentkezzen vizsgálatra online','roots'); ?></a>
+
+
+<div id="owl-home" class="owl-carousel owl-theme">
+
+    <div class="item item-1" style="background-image:url('http://lorempixel.com/1600/800')">
+        <div class="row">
+          <div class="hero-text">
+            <h3 class="nagy"><span class="active"><?php _e('Napközben álmos és fáradt?','roots'); ?></span></h3>
+            <h4 class="kicsi"><span><?php _e('A tünetek hátterében alvászavarok állhatnak','roots'); ?></span></h4>
+          </div>
+          <div class="hero-action">
+            <a href="<?php echo get_permalink(43); ?>" class="btn"><?php _e('Ismerje meg a tüneteket','roots'); ?></a>
+          </div>
+        </div>
+    </div><!-- /.item-->
+
+    
+    <div class="item item-2" style="background-image:url('http://lorempixel.com/1280/600')">
+       <div class="row">
+          <div class="hero-text">
+            <h1 class="nagy">
+              <span class="active">Az alvászavarok felismerhetők</span>
+            </h1>
+            <h4 class="kicsi"><span>Éjszakai és nappali tünetek alapján</span></h4>
+            
+          </div>
+          <div class="hero-action">
+            <a href="<?php echo get_permalink(43); ?>" class="btn"><?php _e('Ismerje meg a tüneteket','roots'); ?></a>
+          </div>
+        </div>
     </div>
-  </aside>
-  </div>
+    <div class="item item-3" style="background-image:url('http://lorempixel.com/1284/601')">
+       <div class="row">
+          <div class="hero-text">
+            <h1 class="nagy">
+              <span class="active">Teljeskörű szűrés és terápia</span>
+            </h1>
+            <h4 class="kicsi"><span>Ismerje meg a SomnoCenter szolgáltatásait</span></h4>
+            
+          </div>
+          <div class="hero-action">
+            <a href="<?php echo get_permalink(2); ?>" class="btn"><?php _e('Szolgáltatások','roots'); ?></a>
+          </div>
+        </div>
+    </div>
+
+</div>
+
+    <aside class="telfej hometopi">
+      <div class="tart">
+        <span class="head"><?php _e('Szeretne kipihenten ébredni?','roots'); ?></span>  
+        <a href="tel:0036205007993" class="telcsi">+36 20 500 7993</a>
+        <a class="click" href="<?php echo get_permalink(520);?>"><?php _e('jelentkezzen vizsgálatra online','roots'); ?></a>
+      </div>
+    </aside>
+
+
 </div><!-- /.home-top -->
+
+
+
+
+
+
+
+
+
 <div class="container document" role="document">
 <div class="content row">
   <aside class="home-banner clearfix">
