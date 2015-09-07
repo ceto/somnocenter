@@ -37,7 +37,7 @@
 
 <div id="owl-home" class="owl-carousel owl-theme">
 
-    <div class="item item-1" style="background-image:url('http://lorempixel.com/1600/800')">
+    <div class="item item-1" style="background-image:url('<?= get_stylesheet_directory_uri();?>/assets/img/pizsama.jpg')">
         <div class="row">
           <div class="hero-text">
             <h3 class="nagy"><span class="active"><?php _e('Napközben álmos és fáradt?','roots'); ?></span></h3>
@@ -50,7 +50,7 @@
     </div><!-- /.item-->
 
     
-    <div class="item item-2" style="background-image:url('http://lorempixel.com/1280/600')">
+    <div class="item item-2" style="background-image:url('<?= get_stylesheet_directory_uri();?>/assets/img/parocska.jpg')">
        <div class="row">
           <div class="hero-text">
             <h1 class="nagy">
@@ -64,7 +64,7 @@
           </div>
         </div>
     </div>
-    <div class="item item-3" style="background-image:url('http://lorempixel.com/1284/601')">
+    <div class="item item-3" style="background-image:url('<?= get_stylesheet_directory_uri();?>/assets/img/parocska.jpg')">
        <div class="row">
           <div class="hero-text">
             <h1 class="nagy">
