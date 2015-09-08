@@ -151,11 +151,16 @@ jQuery(document).ready(function($) {
 
     $("#owl-home").owlCarousel({
  
-      navigation : false, // Show next and prev buttons
-      slideSpeed : 300,
-      paginationSpeed : 400,
+      slideSpeed : 1200,
+      paginationSpeed : 1200,
       singleItem:true,
       autoHeight : true,
+
+      autoPlay : 3200,
+      stopOnHover : true,
+      navigation : false, // Show next and prev buttons
+
+      transitionStyle:"fade"
 
       //transitionStyle: 'fade'
       // "singleItem:true" is a shortcut for:

@@ -3,11 +3,28 @@
  * Custom functions
  */
 
+define('ICL_DONT_LOAD_NAVIGATION_CSS', TRUE);
+define('ICL_DONT_LOAD_LANGUAGE_SELECTOR_CSS', TRUE);
+define('ICL_DONT_LOAD_LANGUAGES_JS', TRUE);
+
+
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
+
+
+if ( file_exists(  __DIR__ . '/CMB2/init.php' ) ) {
+  require_once  __DIR__ . '/CMB2/init.php';
+}
+
+
+
+
 
 /********* Custom MetaBoxes for Regular Pages and Posts ****************/
 
 
-add_filter( 'cmb_meta_boxes', 'cmb_page_metaboxes' );
+add_filter( 'cmb2_meta_boxes', 'cmb_page_metaboxes' );
 function cmb_page_metaboxes( array $meta_boxes ) {
 
   // Start with an underscore to hide fields from custom fields list
@@ -46,6 +63,95 @@ function cmb_page_metaboxes( array $meta_boxes ) {
       ),
 
     ),
+  );
+
+
+  $meta_boxes['home'] = array(
+      'id'         => 'homemeta',
+      'title'      => 'Slide Show',
+      'object_types'  => array( 'page'),
+      'show_on'      => array( 'key' => 'page-template', 'value' => 'page-home.php' ),
+      'context'    => 'normal',
+      'priority'   => 'high',
+      'show_names' => true,
+      'fields'     => array (
+              array (
+                  'id' => 'slides',
+                  'type' => 'group',
+                  'description' => 'Slide show',
+                  'options'     => array (
+                      'group_title'   => 'Slide {#}', 
+                      'add_button'    => 'Új Slide',
+                      'remove_button' => 'Slide törlése',
+                      'sortable'      => true, // beta
+                  ),
+                  'fields'     => array(
+                      array (
+                          'name' => 'Cím',
+                          'id'   => 'title',
+                          'type' => 'text_medium',
+                      ),
+                      array (
+                          'name' => 'Alcím',
+                          'id'   => 'subtitle',
+                          'type' => 'text',
+                      ),
+                      array (
+                          'name' => 'Gomb szöveg',
+                          'id'   => 'button',
+                          'type' => 'text_small',
+                      ),
+                      array (
+                          'name' => 'Gomb link',
+                          'id'   => 'url',
+                          'type' => 'text_url',
+                      ),
+
+                      array (
+                          'name' => 'Kép',
+                          'description' => 'min: 1600×600',
+                          'id'   => 'photo',
+                          'type' => 'file',
+                      ),
+              ) // end of fields
+          ),
+
+          array (
+                  'id' => 'ads',
+                  'type' => 'group',
+                  'description' => 'Kiemelt ajánlatok',
+                  'options'     => array (
+                      'group_title'   => 'Ad {#}', 
+                      'add_button'    => 'Új Ad',
+                      'remove_button' => 'Ad törlése',
+                      'sortable'      => true, // beta
+                  ),
+                  'fields'     => array(
+                      array (
+                          'name' => 'Cím',
+                          'id'   => 'title',
+                          'type' => 'text_medium',
+                      ),
+                      array (
+                          'name' => 'Gomb szöveg',
+                          'id'   => 'button',
+                          'type' => 'text_small',
+                      ),
+                      array (
+                          'name' => 'Link',
+                          'id'   => 'url',
+                          'type' => 'text_url',
+                      ),
+                      array (
+                          'name' => 'Kép',
+                          'description' => 'min: 800×400',
+                          'id'   => 'photo',
+                          'type' => 'file',
+                      ),
+              ) // end of fields
+          )
+
+      ) 
   );
 
   /**
@@ -94,12 +200,13 @@ function cmb_page_metaboxes( array $meta_boxes ) {
 
 
 
-add_action( 'init', 'cmb_initialize_cmb_meta_boxes', 9999 );
-function cmb_initialize_cmb_meta_boxes() {
-  if ( ! class_exists( 'cmb_Meta_Box' ) )
-    require_once 'cmb/init.php';
 
-}
+// add_action( 'init', 'cmb_initialize_cmb_meta_boxes', 9999 );
+// function cmb_initialize_cmb_meta_boxes() {
+//   if ( ! class_exists( 'cmb_Meta_Box' ) )
+//     require_once 'cmb/init.php';
+
+// }
 
 /*--------------------------------------------------------------------------------------
     *
