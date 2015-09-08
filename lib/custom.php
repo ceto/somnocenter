@@ -133,6 +133,11 @@ function cmb_page_metaboxes( array $meta_boxes ) {
                           'type' => 'text_medium',
                       ),
                       array (
+                          'name' => 'Szöveg',
+                          'id'   => 'paragpraph',
+                          'type' => 'text_medium',
+                      ),
+                      array (
                           'name' => 'Gomb szöveg',
                           'id'   => 'button',
                           'type' => 'text_small',

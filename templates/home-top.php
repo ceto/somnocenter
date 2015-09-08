@@ -103,6 +103,7 @@
           </style-->
           <div class="finner">
             <h3><a href="<?= $entry['url'] ?>"><?= $entry['title'] ?></a></h3>
+            <p><?= $entry['paragpraph'] ?></p>
             <a href="<?= $entry['url'] ?>" class="btn"><?= $entry['button'] ?></a>
           </div>
         </aside>

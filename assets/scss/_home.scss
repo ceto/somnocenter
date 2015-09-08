@@ -45,11 +45,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  padding-bottom: 1em;
 
   @include breakpoint($s2){
     width:49.5%;
     float:left;
     margin:1% .5% 1% 0;
+    height:7.5em;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
     &:nth-child(2n) {
       margin-left: .5%;
       margin-right: 0;
@@ -72,17 +78,18 @@
     position: relative;
     z-index: 1;
     padding:1em;
+    padding-bottom: 2em;
   }
   h3 {
-    margin:0 0 .5em;
+    margin:0 0 .25em;
     max-width: $s1;
     color:$blue-120;
     text-transform: none;
+
     //text-shadow: 1px 1px 1px #fff;
-    height:2.5em;
+    
     font-size: 1.333em;
-    overflow: hidden;
-    text-overflow: ellipsis; 
+    
 
     a {
       color:inherit;
@@ -95,9 +102,13 @@
   .btn {
     //float:right;
     //background-color: $eggplant;
+    position: absolute;
+    bottom:.5em;
+    left:1em;
   }
   p{
-    margin:0 0 0.5em;
+    margin:0 0 1em;
+
   }
   *:last-child{
     margin-bottom:0;
