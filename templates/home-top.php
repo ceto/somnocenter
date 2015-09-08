@@ -85,13 +85,13 @@
       $i=0;
       foreach ( (array) $ads as $key => $entry ) { ?>
         <aside class="home-featured home-featured-<?= ++$i; ?> clearfix">
-          <?php
+          <?php /*
             if ($entry['photo']!='') {
               $imcismall = wp_get_attachment_image_src( $entry['photo_id'] , 'small43' ); 
               $imcimedium = wp_get_attachment_image_src( $entry['photo_id'] , 'medium31' ); 
             } 
-          ?>
-          <style type="text/css">
+          */?>
+          <!--style type="text/css">
               .home-featured-<?= $i; ?> {
                 background-image:url('<?php echo $imcismall['0']; ?>');
               }
@@ -100,7 +100,7 @@
                   background-image:url('<?php echo $imcimedium['0']; ?>');
                 }
               }
-          </style>
+          </style-->
           <div class="finner">
             <h3><a href="<?= $entry['url'] ?>"><?= $entry['title'] ?></a></h3>
             <a href="<?= $entry['url'] ?>" class="btn"><?= $entry['button'] ?></a>
