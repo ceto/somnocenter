@@ -5,7 +5,7 @@
     <div class="cell"><h3><a href="tel:+36203688580"><small>Szeged</small>+36 20 368 8580</a></h3></div>
     <div class="cell"><h3><a href="tel:+36304761400"><small>Pécs</small>+36 30 476 1400</a></h3></div>
     <a href="<?php echo get_permalink(2237);?>" class="btn"><?php _e('Apnoé szűrés','roots'); ?></a>
-    <a href="<?php echo get_permalink(520);?>" class="btn"><?php _e('Álvásvizsgálat','roots'); ?></a>
+    <a href="<?php echo get_permalink(520);?>" class="btn"><?php _e('Alvásvizsgálat','roots'); ?></a>
     
   </div>
 
