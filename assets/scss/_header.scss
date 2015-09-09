@@ -1,5 +1,5 @@
 .toptel{
-  background-color: $eggplant;
+  background-color: $blue-120;
   color:$blue-90;
   background-image: url('../img/hattter-05.png'), url('../img/hattter-01.png'), url('../img/hattter-04.png');
   background-repeat: repeat;
@@ -48,24 +48,30 @@
       font-weight: 700;
     }
     a{
-
+      //color:$red;
     }
   }
   
   .btn {
     float:right;
+    display: inline-block;
     margin:0 auto 1em;
-    font-size: 1.25em;
-    line-height: 1.5em;
+    font-size: 1em;
+    line-height: 1.5;
     display: block;
     max-width: 12em;
     text-align: center;
-    background-color: $white;
-    color:$red;
+    background-color: $red;
+    color:$white;
+    margin-left: .5em;
     &:hover, &:focus {
       color: $white;
       background-color: $orange;
     }
+
+    @include breakpoint ($s2) {
+      float:left;
+    } 
   }
 }
 
