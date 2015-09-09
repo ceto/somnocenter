@@ -156,57 +156,53 @@ body {
   text-align: center;
 }
 
-.tab-pane.post-158 .conti{
-  //font-size: 0.875em;
-  //background: url('../img/vert_dots.png') repeat-y center top transparent;
-  ol {
-    counter-reset: my-counter;
-    margin:0;
-    padding:0;
-    li {
-      list-style: none;
-      counter-increment: my-counter;
-      position: relative;
-      margin:1em 0; 
-      &:before {
-        //position:absolute;
-        display:block;
-        margin:0 auto;
-        text-align:center;
-        font-size: 2em;
-        line-height: 1.5em;
-        width:1.5em;
-        height:1.5em;
-        border-radius:50%;
-        background-color:$eggplant;
-        color:$blue-90;
-        
-        
-        
-        text-align: center;
-        font-weight: 700;
-        margin-bottom: 0.25em;
-        content: counter(my-counter)'.';
-      }
-    
-      @include breakpoint($s2) {
-        width:50%;
-        float:left;
-        clear:both;
-        padding-right: 2em;
-        &:nth-child(2n) {
-          float:right;
-          clear:right;
-          //margin-top:10em;
-          padding-right: 0;
-          padding-left: 2em;
-        }
+
+ol.golyos {
+  counter-reset: my-counter;
+  margin:0;
+  padding:0;
+  li {
+    list-style: none;
+    counter-increment: my-counter;
+    position: relative;
+    margin:1em 0; 
+    &:before {
+      //position:absolute;
+      display:block;
+      margin:0 auto;
+      text-align:center;
+      font-size: 2em;
+      line-height: 1.5em;
+      width:1.5em;
+      height:1.5em;
+      border-radius:50%;
+      background-color:$eggplant;
+      color:$blue-90;
+      
+      
+      
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 0.25em;
+      content: counter(my-counter)'.';
+    }
+  
+    @include breakpoint($s2) {
+      width:50%;
+      float:left;
+      clear:both;
+      padding-right: 2em;
+      &:nth-child(2n) {
+        float:right;
+        clear:right;
+        //margin-top:10em;
+        padding-right: 0;
+        padding-left: 2em;
       }
     }
-
-
   }
 }
+
   
 .tab-pane.post-213 {
   .vizsgalathoz-block{

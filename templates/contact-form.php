@@ -25,13 +25,14 @@
   $center = $_POST['message_center'];
   $tel = $_POST['message_tel'];
   $message = $_POST['message_text'];
+  $page = $_POST['message_page'];
   $human = $_POST['message_human'];
   $subjecto = $_REQUEST['ap_id'];
 
   //php mailer variables
   //$to = get_option('admin_email');
   $to = 'szabogabi@gmail.com';
-  $subject = "Message from ".get_bloginfo('name');
+  $subject = $page." ".get_bloginfo('name');
 
   $headers = "From: " . strip_tags($email) . "\r\n";
   $headers .= "Reply-To: ". strip_tags($email) . "\r\n";
@@ -112,6 +113,7 @@ if(!$human == 0){
 
     <div class="actions">
       <input type="hidden" name="ap_id" value="<?php echo $subjecto; ?>">
+      <input type="hidden" name="message_page" value="<?php the_title(); ?>">
       <input type="hidden" name="message_human" value="2">
       <input type="hidden" name="submitted" value="1">
       <input type="submit" class="btn submitbtn" value="<?php _e('Jelentkezem','roots'); ?>"></p>

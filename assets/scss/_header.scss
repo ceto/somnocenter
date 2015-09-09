@@ -192,9 +192,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     @include breakpoint($s2) {
+      padding-top:6em;
+      padding-bottom: 4em;
+    }
+    @include breakpoint($s4) {
       padding-top:8em;
       padding-bottom: 4em;
-    }   
+    }
+    @include breakpoint($s5) {
+      padding-top:12em;
+      padding-bottom: 6em;
+    }    
   }
 }
 
@@ -309,6 +317,7 @@
   @include clearfix();
   background: rgba($red,0.90);
   color:#fff;
+  font-size: 1.125rem;
  
   border-radius: 50%;
   text-align: center;
@@ -341,38 +350,46 @@
     padding:0 20px;
     margin-top:50%;
     transform:translateY(-50%);
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 1em;
+    line-height: 1;
+    padding-top: .875em;
   }
 
   .head{
     //color:$orange;
     display:block;
-    text-transform: uppercase;
+    //text-transform: uppercase;
+    font-family: $sans-serif;
     //font-style: italic;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 24px;
-    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: .875em;
+    line-height: 1;
+    margin-bottom: .125em;
 
   }
   .telcsi {
     margin:4px 0 8px;
     display: block;
     font-weight: 700;
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 1.333em;
+    line-height: 1;
     color:#fff;
+    margin-bottom: .25em;
+  }
+  .or {
+    display: block;
+    margin-bottom: .5em;
   }
   .click {
-    //display: inline-block;
-    font-size: 18px;
-    line-height: 18px;
+    display: block;
+    font-size: 1em;
+    line-height: 1.2;
     font-weight: 600;
-    font-style: italic;
+    margin-top: .25em;
+    //font-style: italic;
     color:$blue-90;
-    //text-transform: uppercase;
-    font-family: $sans-serif;
+    text-transform: uppercase;
+    //font-family: $sans-serif;
     &:hover, &:focus {
       //color: $orange;
       //text-decoration:none;

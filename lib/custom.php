@@ -68,7 +68,7 @@ function cmb_page_metaboxes( array $meta_boxes ) {
 
   $meta_boxes['home'] = array(
       'id'         => 'homemeta',
-      'title'      => 'Slide Show',
+      'title'      => 'Slider & Adblock',
       'object_types'  => array( 'page'),
       'show_on'      => array( 'key' => 'page-template', 'value' => 'page-home.php' ),
       'context'    => 'normal',
@@ -158,6 +158,53 @@ function cmb_page_metaboxes( array $meta_boxes ) {
 
       ) 
   );
+
+
+
+  $meta_boxes['landing'] = array(
+    'id'         => 'landingmeta',
+    'title'      => 'Kísérő információk',
+    'object_types'  => array( 'page'),
+    'show_on'      => array( 'key' => 'page-template', 'value' => array('page-landing.php', 'page-kozpontok.php') ),
+    'context'    => 'normal',
+    'priority'   => 'high',
+    'show_names' => true,
+    'fields'     => array (
+      array (
+        'id' => 'tabs',
+        'type' => 'group',
+        'description' => 'Fülek',
+        'options'     => array (
+            'group_title'   => 'Fül {#}', 
+            'add_button'    => 'Új Fül',
+            'remove_button' => 'Fül törlése',
+            'sortable'      => true // beta
+        ),
+        'fields'     => array(
+          array (
+            'name' => 'Fül címe',
+            'description' => 'Légyszi nagyon rövid',
+            'id'   => 'tabtitle',
+            'type' => 'text_small'
+          ),
+          array (
+              'name' => 'Fül tartalma',
+              'id'   => 'tabcontent',
+              'type'    => 'wysiwyg',
+              'options' => array(
+                  'wpautop' => true, // use wpautop?
+                  'media_buttons' => false, // show insert/upload button(s)
+                  'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
+                  'teeny' => true
+              )
+          )
+               
+       ) // end of group fields
+     )
+
+    ) 
+  );
+
 
   /**
    * Metabox for the user profile screen

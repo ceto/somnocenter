@@ -59,9 +59,11 @@
 
     <aside class="telfej">
       <div class="tart">
-      <span class="head"><?php _e('Szeretne kipihenten ébredni?','roots'); ?></span>  
-      <a href="tel:0036205007993" class="telcsi">+36 20 500 7993</a>
-      <a class="click" href="<?php echo get_permalink(520);?>"><?php _e('jelentkezzen vizsgálatra online','roots'); ?></a>
+        <span class="head"><?php _e('Jelentkezés vizsgálatra','roots'); ?></span>  
+        <a href="tel:0036205007993" class="telcsi">+36 20 500 7993</a>
+        <span class="or">vagy online</span>
+        <a class="click" href="<?php echo get_permalink(520);?>"><?php _e('Álvásvizsgálat','roots'); ?></a>
+        <a class="click" href="<?php echo get_permalink(2237);?>"><?php _e('Apnoé szűrés','roots'); ?></a>
       </div>
     </aside>
 
