@@ -358,7 +358,7 @@
     transform:translateY(-50%);
     font-size: 1em;
     line-height: 1;
-    padding-top: .875em;
+    padding-top: .25em;
   }
 
   .head{
@@ -380,15 +380,16 @@
     font-size: 1.333em;
     line-height: 1;
     color:#fff;
-    margin-bottom: .25em;
+    margin-bottom: .5em;
   }
   .or {
     display: block;
-    margin-bottom: .5em;
+    //margin-bottom: .5em;
+    font-size: .75em;
   }
   .click {
     display: block;
-    font-size: 1em;
+    font-size: .925em;
     line-height: 1.2;
     font-weight: 600;
     margin-top: .25em;
