@@ -1,6 +1,5 @@
 <div class="container home-top">  
 
-
 <div id="owl-home" class="owl-carousel owl-theme">
 
     <?php if ( get_post_meta( get_the_ID(), 'slides', true ) ) {
