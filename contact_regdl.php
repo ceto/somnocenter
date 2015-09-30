@@ -77,7 +77,7 @@ if($_POST)
 
     $resp_text="Tisztelt ".$user_Name."\r\n\n".
     "Köszönjük érdeklődését"."\r\n\n".
-    "A kért dokumentumot az alábbi linken töltheti le: ".$user_Dlfile."\r\n\n".
+    "A kért dokumentumot az alábbi linken töltheti le:"."\r\n".$user_Dlfile."\r\n\n".
     "Üdvözlettel"."\r\n"."SomnoCenter - Budapest"."\r\n"."Tel: +36 20 500 7993";
 
     @mail($user_Email, $subject, $resp_text, $resp_headers);
