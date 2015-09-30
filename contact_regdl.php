@@ -29,6 +29,7 @@ if($_POST)
   $user_Code = filter_var($_POST["userCode"], FILTER_SANITIZE_STRING);
   $user_Dlfilename = filter_var($_POST["userDlfilename"], FILTER_SANITIZE_STRING);
   $user_Dlfile = filter_var($_POST["userDlfile"], FILTER_SANITIZE_STRING);
+  $user_Msg = filter_var($_POST["userMsg"], FILTER_SANITIZE_STRING);
 
 
 
@@ -61,7 +62,7 @@ if($_POST)
   'Reply-To: '.$user_Email.'' . "\r\n" .
   'X-Mailer: PHP/' . phpversion();
 
-  $sentMail = @mail($to_Email, $subject, $user_Name . "\r\n\n"  .'-- '.$user_Email. "\r\n" .'-- '.$user_Code, $headers);
+  $sentMail = @mail($to_Email, $subject, $user_Name . "\r\n\n" . $user_Email . "\r\n" .$user_Code. "\r\n\n" . $user_Msg, $headers);
 
   if(!$sentMail)
   {
@@ -82,7 +83,7 @@ if($_POST)
     @mail($user_Email, $subject, $resp_text, $resp_headers);
 
 
-    $output = json_encode(array('type'=>'message', 'text' => 'Tisztelt '.$user_Dlfile.'! A kért dokumentum letöltési linkjét emailben megküldtük. '));
+    $output = json_encode(array('type'=>'message', 'text' => 'Tisztelt '.$user_Name.'! A kért dokumentum letöltési linkjét emailben megküldtük. '));
     die($output);
   }
 }

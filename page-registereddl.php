@@ -58,7 +58,7 @@ Template Name: Letöltés Sablon Orvosoknak
       </div>
 
       <div class="controls">
-        <textarea name="text" id="text" pattern=".{5,100}" rows="5" placeholder="Ha kérdése van itt felteheti..." maxlength="400"></textarea>
+        <textarea name="msg" id="msg" pattern=".{5,100}" rows="5" placeholder="Ha kérdése van itt felteheti..." maxlength="400"></textarea>
       </div>
 
       <div id="result"></div>
