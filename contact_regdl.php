@@ -51,7 +51,7 @@ if($_POST)
     $output = json_encode(array('type'=>'error', 'text' => 'Érvénytelen email cím!'));
     die($output);
   }
-  if( (strlen($user_Code)!==5) && !ctype_digit($user_Code) ) //check emtpy message
+  if( (strlen($user_Code)!==5) || !ctype_digit($user_Code) ) //check emtpy message
   {
     $output = json_encode(array('type'=>'error', 'text' => 'Pecsétszám érvénytelen!'));
     die($output);
