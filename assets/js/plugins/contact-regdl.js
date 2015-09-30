@@ -8,7 +8,7 @@ jQuery(document).ready(function(){
         var user_name = jQuery('input[name=name]').val();
         var user_email = jQuery('input[name=email]').val();
         var user_code = jQuery('input[name=code]').val();
-        var user_msg = jQuery('input[name=msg]').val();
+        var user_msg = jQuery('textarea[name=msg]').val();
         var user_dlfile = jQuery('input[name=dlfile]').val();
         var user_dlfilename = jQuery('input[name=dlfilename]').val();
 
