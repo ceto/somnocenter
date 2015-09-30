@@ -31,6 +31,7 @@ if($_POST)
   $user_Dlfile = filter_var($_POST["userDlfile"], FILTER_SANITIZE_STRING);
 
 
+
   $to_Email = "szabogabi@gmail.com"; //Replace with recipient email address
   $subject = $user_Dlfilename." - SomnoCenter"; //Subject line for emails
 
@@ -81,7 +82,7 @@ if($_POST)
     @mail($user_Email, $subject, $resp_text, $resp_headers);
 
 
-    $output = json_encode(array('type'=>'message', 'text' => 'Tisztelt '.$user_Name .'! A kért dokumentum letöltési linkjét emailben megküldtük. '));
+    $output = json_encode(array('type'=>'message', 'text' => 'Tisztelt '.$user_Dlfile.'! A kért dokumentum letöltési linkjét emailben megküldtük. '));
     die($output);
   }
 }
