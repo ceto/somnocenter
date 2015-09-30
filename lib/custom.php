@@ -33,7 +33,7 @@ function cmb_page_metaboxes( array $meta_boxes ) {
   $meta_boxes['page_metabox'] = array(
     'id'         => 'page_metabox',
     'title'      => __( 'Additional Content', 'root' ),
-    'pages'      => array( 'page', 'post'), // Post type
+    'object_types'      => array( 'page', 'post'), // Post type
     'context'    => 'normal',
     'priority'   => 'high',
     'show_names' => true, // Show field names on the left
@@ -80,7 +80,7 @@ function cmb_page_metaboxes( array $meta_boxes ) {
                   'type' => 'group',
                   'description' => 'Slide show',
                   'options'     => array (
-                      'group_title'   => 'Slide {#}', 
+                      'group_title'   => 'Slide {#}',
                       'add_button'    => 'Új Slide',
                       'remove_button' => 'Slide törlése',
                       'sortable'      => true, // beta
@@ -121,7 +121,7 @@ function cmb_page_metaboxes( array $meta_boxes ) {
                   'type' => 'group',
                   'description' => 'Kiemelt ajánlatok',
                   'options'     => array (
-                      'group_title'   => 'Ad {#}', 
+                      'group_title'   => 'Ad {#}',
                       'add_button'    => 'Új Ad',
                       'remove_button' => 'Ad törlése',
                       'sortable'      => true, // beta
@@ -156,10 +156,35 @@ function cmb_page_metaboxes( array $meta_boxes ) {
               ) // end of fields
           )
 
-      ) 
+      )
   );
 
 
+  $meta_boxes['regdl'] = array(
+    'id'         => 'regdl_meta',
+    'title'      => __( 'Letöltéshez ...', 'root' ),
+    'object_types' => array( 'page'), // Post type
+    'show_on'      => array( 'key' => 'page-template', 'value' => 'page-registereddl.php' ),
+    'context'    => 'normal',
+    'priority'   => 'high',
+    'show_names' => true, // Show field names on the left
+    //'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
+    'fields'     => array(
+      array(
+        'name' => __( 'Letölthető fájl megnevezése', 'root' ),
+        'desc' => __( 'Ez jelenik meg a kapott emailben', 'root' ),
+        'id'   => $prefix . 'dlfilename',
+        'type' => 'text_medium',
+      ),
+      array(
+        'name' => __( 'Letölthető fájl', 'root' ),
+        'desc' => __( 'Letölthető fájl csatolása', 'root' ),
+        'id'   => $prefix . 'dlfile',
+        'type' => 'file',
+      ),
+
+    ),
+  );
 
   $meta_boxes['landing'] = array(
     'id'         => 'landingmeta',
@@ -175,7 +200,7 @@ function cmb_page_metaboxes( array $meta_boxes ) {
         'type' => 'group',
         'description' => 'Fülek',
         'options'     => array (
-            'group_title'   => 'Fül {#}', 
+            'group_title'   => 'Fül {#}',
             'add_button'    => 'Új Fül',
             'remove_button' => 'Fül törlése',
             'sortable'      => true // beta
@@ -198,11 +223,11 @@ function cmb_page_metaboxes( array $meta_boxes ) {
                   'teeny' => true
               )
           )
-               
+
        ) // end of group fields
      )
 
-    ) 
+    )
   );
 
 
@@ -293,7 +318,7 @@ function cmb_page_metaboxes( array $meta_boxes ) {
     return $return;
   }
 
-  
+
   add_action( 'init', 'somno_theme_setup' );
   function somno_theme_setup() {
     remove_shortcode( 'collapse' );
@@ -327,7 +352,7 @@ add_action('wp_footer', somno_DequeueYarppStyle);
 
 # WPSS Styles Remove
 function somno_remove_wpss_styles() {
-  if(!is_admin()){ 
+  if(!is_admin()){
     wp_deregister_style( 'wpss-style' );
     wp_deregister_style( 'wpss-custom-db-style' );
   }
@@ -336,7 +361,7 @@ add_action( 'wp_print_styles', 'somno_remove_wpss_styles', 100 );
 
 # Deregister scripts file
 function somno_remove_scripts () {
-  if(!is_admin()){ 
+  if(!is_admin()){
     wp_deregister_script('jquery-wp-simple-survey');
     wp_deregister_script('wpss');
     wp_deregister_script('bootstrap-shortcodes-tooltip');

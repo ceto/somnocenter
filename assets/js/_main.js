@@ -99,7 +99,7 @@ jQuery(document).ready(function() {
   //lazyAttr: null,
   //lazyPlaceholder: 'someImage.jpg'
   });
-  
+
 });
 
 
@@ -150,7 +150,7 @@ jQuery(document).ready(function($) {
 
 
     $("#owl-home").owlCarousel({
- 
+
       slideSpeed : 1200,
       paginationSpeed : 1200,
       singleItem:true,
@@ -164,12 +164,12 @@ jQuery(document).ready(function($) {
 
       //transitionStyle: 'fade'
       // "singleItem:true" is a shortcut for:
-      // items : 1, 
+      // items : 1,
       // itemsDesktop : false,
       // itemsDesktopSmall : false,
       // itemsTablet: false,
       // itemsMobile : false
- 
+
   });
 
 
@@ -203,7 +203,7 @@ jQuery(document).ready(function($) {
       image: {
         tError: 'Hiba a(z) <a href="%url%">#%curr%</a> kép betöltésekor',
         titleSrc: function(item) {
-          return item.el.children().attr('alt'); 
+          return item.el.children().attr('alt');
         }
       }
     });
