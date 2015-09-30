@@ -9,6 +9,8 @@ jQuery(document).ready(function(){
         var user_email = jQuery('input[name=email]').val();
         var user_code = jQuery('input[name=code]').val();
         var user_msg = jQuery('input[name=msg]').val();
+        var user_dlfile = jQuery('input[name=dlfile]').val();
+        var user_dlfilename = jQuery('input[name=dlfilename]').val();
 
         //simple validation at client's end
         //we simply change border color to red if empty field using .css()
@@ -34,7 +36,9 @@ jQuery(document).ready(function(){
                 'userName': user_name,
                 'userEmail': user_email,
                 'userCode': user_code,
-                'userMsg': user_msg
+                'userMsg': user_msg,
+                'userDlfile': user_dlfile,
+                'userDlfilename': user_dlfilename
             };
 
             //Ajax post data to server

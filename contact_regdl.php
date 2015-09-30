@@ -27,12 +27,12 @@ if($_POST)
   $user_Name = filter_var($_POST["userName"], FILTER_SANITIZE_STRING);
   $user_Email = filter_var($_POST["userEmail"], FILTER_SANITIZE_EMAIL);
   $user_Code = filter_var($_POST["userCode"], FILTER_SANITIZE_STRING);
-  $user_Subject = filter_var($_POST["userSubject"], FILTER_SANITIZE_STRING);
-  $user_Url = filter_var($_POST["userUrl"], FILTER_SANITIZE_STRING);
+  $user_Dlfilename = filter_var($_POST["userDlfilename"], FILTER_SANITIZE_STRING);
+  $user_Dlfile = filter_var($_POST["userDlfile"], FILTER_SANITIZE_STRING);
 
 
   $to_Email = "szabogabi@gmail.com"; //Replace with recipient email address
-  $subject = $user_Subject." - SomnoCenter"; //Subject line for emails
+  $subject = $user_Dlfilename." - SomnoCenter"; //Subject line for emails
 
 
   //$user_Message = str_replace("\&#39;", "'", $user_Message);
@@ -75,7 +75,7 @@ if($_POST)
 
     $resp_text="Tisztelt ".$user_Name."\r\n\n".
     "Köszönjük érdeklődését"."\r\n\n".
-    "A kért dokumentumot az alábbi linken töltheti le: ".$user_Url."\r\n\n".
+    "A kért dokumentumot az alábbi linken töltheti le: ".$user_Dlfile."\r\n\n".
     "Üdvözlettel"."\r\n"."SomnoCenter - Budapest"."\r\n"."Tel: +36 20 500 7993";
 
     @mail($user_Email, $subject, $resp_text, $resp_headers);
