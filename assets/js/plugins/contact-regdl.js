@@ -29,6 +29,7 @@ jQuery(document).ready(function(){
             proceed = false;
         }
 
+
         //everything looks good! proceed...
         if (proceed) {
             //data to be sent to server
