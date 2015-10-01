@@ -3,6 +3,7 @@
 Template Name: Letöltés Sablon Orvosoknak
 */
 ?>
+
 <?php
   //$imci = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'banner169');
   //$tn=has_post_thumbnail()?$imci[0]:get_stylesheet_directory_uri().'/assets/img/parocska.jpg';
