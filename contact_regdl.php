@@ -62,7 +62,7 @@ if($_POST)
   'Reply-To: '.$user_Email.'' . "\r\n" .
   'X-Mailer: PHP/' . phpversion();
 
-  $sentMail = @mail($to_Email, $subject, $user_Name . "\r\n\n" . $user_Email . "\r\n" .$user_Code. "\r\n\n" . $user_Msg, $headers);
+  $sentMail = @wp_mail($to_Email, $subject, $user_Name . "\r\n\n" . $user_Email . "\r\n" .$user_Code. "\r\n\n" . $user_Msg, $headers);
 
   if(!$sentMail)
   {
@@ -76,11 +76,10 @@ if($_POST)
     'X-Mailer: PHP/' . phpversion();
 
     $resp_text="Tisztelt ".$user_Name."\r\n\n".
-    "Köszönjük érdeklődését"."\r\n\n".
-    "A kért dokumentumot az alábbi linken töltheti le:"."\r\n".$user_Dlfile."\r\n\n".
+    "Az obstruktív alvási apnoé szindróma kockázatának felmérése szolgáló segédletet az alábbi linken töltheti le:"."\r\n".$user_Dlfile."\r\n\n".
     "Üdvözlettel"."\r\n"."SomnoCenter - Budapest"."\r\n"."Tel: +36 20 500 7993";
 
-    @mail($user_Email, $subject, $resp_text, $resp_headers);
+    @wp_mail($user_Email, $subject, $resp_text, $resp_headers);
 
 
     $output = json_encode(array('type'=>'message', 'text' => 'Tisztelt '.$user_Name.'! A kért dokumentum letöltési linkjét emailben megküldtük. '));
