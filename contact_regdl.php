@@ -80,10 +80,10 @@ if($_POST)
     'Content-Transfer-Encoding: 8bit'. "\n\r\n";
     //'X-Mailer: PHP/' . phpversion();
 
-    $resp_text="Tisztelt ".$user_Name."\r\n\n".
+    $resp_text="Tisztelt ".$user_Name."!"."\r\n\n".
 
     "Köszönjük regisztrációját."."\r\n".
-    "Az obstruktív alvási apnoé szindróma kockázatának felmérése szolgáló segédletet az alábbi linken töltheti le:"."\r\n".$user_Dlfile."\r\n\n".
+    "Az obstruktív alvási apnoé szindróma kockázatának felmérésére szolgáló segédletet az alábbi linken töltheti le:"."\r\n".$user_Dlfile."\r\n\n".
     "További kérdés esetén, forduljon munkatársainkhoz a segédleten megtalálható elérhetőségeken."."\r\n\n".
     "Üdvözlettel:"."\r\n"."SomnoCenter Alvászavar Központ";
     @mail($user_Email, $subject, $resp_text, $resp_headers);
