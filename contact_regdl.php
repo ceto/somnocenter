@@ -60,6 +60,9 @@ if($_POST)
   //proceed with PHP email.
   $headers = 'From: '.$user_Email.'' . "\r\n" .
   'Reply-To: '.$user_Email.'' . "\r\n" .
+  'MIME-Version: 1.0' ."\r\n".
+  'Content-Type: text/HTML; charset=ISO-8859-1' . "\r\n".
+  'Content-Transfer-Encoding: 8bit'. "\n\r\n".
   'X-Mailer: PHP/' . phpversion();
   $sentMail = @mail($to_Email, $subject, $user_Name . "\r\n\n" . $user_Email . "\r\n" .$user_Code. "\r\n\n" . $user_Msg, $headers);
 
@@ -72,6 +75,9 @@ if($_POST)
     //response email to the user, added by ceto
     $resp_headers = 'From: '.$to_Email.'' . "\r\n" .
     'Reply-To: '.$to_Email.'' . "\r\n" .
+    'MIME-Version: 1.0' ."\r\n".
+    'Content-Type: text/HTML; charset=ISO-8859-1' . "\r\n".
+    'Content-Transfer-Encoding: 8bit'. "\n\r\n".
     'X-Mailer: PHP/' . phpversion();
 
     $resp_text="Tisztelt ".$user_Name."\r\n\n".
