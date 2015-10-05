@@ -81,7 +81,6 @@ if($_POST)
 
     wp_mail($user_Email, $subject, $resp_text, $resp_headers);
 
-
     $output = json_encode(array('type'=>'message', 'text' => 'Tisztelt '.$user_Name.'! A kért dokumentum letöltési linkjét emailben megküldtük. '));
     die($output);
   }
