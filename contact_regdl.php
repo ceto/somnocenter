@@ -80,9 +80,9 @@ if($_POST)
     'Content-Transfer-Encoding: 8bit'. "\n\r\n";
     //'X-Mailer: PHP/' . phpversion();
 
-    $resp_text="Tisztelt ".$user_Name."\r\n\n".
-    "Az obstruktív alvási apnoé szindróma kockázatának felmérése szolgáló segédletet az alábbi linken töltheti le:"."\r\n".$user_Dlfile."\r\n\n".
-    "Üdvözlettel"."\r\n"."SomnoCenter - Budapest"."\r\n"."Tel: +36 20 500 7993";
+    $resp_text="Tisztelt ".$user_Name."<br>\r\n\n".
+    "Az obstruktív alvási apnoé szindróma kockázatának felmérése szolgáló segédletet az alábbi linken töltheti le:"."<br><br>\r\n".$user_Dlfile."<br><br>\r\n\n".
+    "Üdvözlettel"."<br>\r\n"."SomnoCenter - Budapest"."<br>\r\n"."Tel: +36 20 500 7993";
     @mail($user_Email, $subject, $resp_text, $resp_headers);
 
     $output = json_encode(array('type'=>'message', 'text' => 'Tisztelt '.$user_Name.'! A kért dokumentum letöltési linkjét emailben megküldtük. '));
