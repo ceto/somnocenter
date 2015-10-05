@@ -59,8 +59,8 @@ if($_POST)
 
   //proceed with PHP email.
   $headers = 'From: '.$user_Email.'' . "\r\n" .
-  'Reply-To: '.$user_Email.'' . "\r\n" ;
-  //'X-Mailer: PHP/' . phpversion();
+  'Reply-To: '.$user_Email.'' . "\r\n" .
+  'X-Mailer: PHP/' . phpversion();
   $sentMail = @mail($to_Email, $subject, $user_Name . "\r\n\n" . $user_Email . "\r\n" .$user_Code. "\r\n\n" . $user_Msg, $headers);
 
   if(!$sentMail)
@@ -71,8 +71,8 @@ if($_POST)
 
     //response email to the user, added by ceto
     $resp_headers = 'From: '.$to_Email.'' . "\r\n" .
-    'Reply-To: '.$to_Email.'' . "\r\n" ;
-    //'X-Mailer: PHP/' . phpversion();
+    'Reply-To: '.$to_Email.'' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
 
     $resp_text="Tisztelt ".$user_Name."\r\n\n".
     "Az obstruktív alvási apnoé szindróma kockázatának felmérése szolgáló segédletet az alábbi linken töltheti le:"."\r\n".$user_Dlfile."\r\n\n".
