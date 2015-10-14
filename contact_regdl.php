@@ -105,7 +105,7 @@ if($_POST)
     /*** save data to txt ****/
       $txt = "../../uploads/emails/data.txt";
       $fh = fopen($txt, 'a');
-      $txt=date("Y. F j, g:i a").' | '.$user_Name.' | '.$user_Email.' | '.$user_Code.' | '.$user_Int.' | '.$user_Addr.' | '.str_replace(array("\r","\n"),array(" "," "),$message).PHP_EOL;
+      $txt=date("Y. F j, g:i a").' | '.$user_Name.' | '.$user_Email.' | '.$user_Code.' | '.$user_Int.' | '.$user_Addr.' | '.str_replace(array("\r","\n"),array(" "," "),$user_Msg).PHP_EOL;
       fwrite($fh,$txt);
       fclose($fh);
 
