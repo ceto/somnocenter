@@ -100,6 +100,15 @@ if($_POST)
     "Üdvözlettel:"."\r\n"."SomnoCenter Alvászavar Központ";
     @mail($user_Email, $subject, $resp_text, $resp_headers);
 
+
+
+    /*** save data to txt ****/
+      $txt = "../../uploads/emails/data.txt";
+      $fh = fopen($txt, 'a');
+      $txt=date("Y. F j, g:i a").' | '.$user_Name.' | '.$user_Email.' | '.$user_Code.' | '.$user_Int.' | '.$user_Addr.' | '.str_replace(array("\r","\n"),array(" "," "),$message).PHP_EOL;
+      fwrite($fh,$txt);
+      fclose($fh);
+
     $output = json_encode(array('type'=>'message', 'text' => 'Tisztelt '.$user_Name.'! A kért dokumentum letöltési linkjét emailben megküldtük. '));
     die($output);
   }
