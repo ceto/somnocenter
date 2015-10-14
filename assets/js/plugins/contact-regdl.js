@@ -11,6 +11,8 @@ jQuery(document).ready(function(){
         var user_msg = jQuery('textarea[name=msg]').val();
         var user_dlfile = jQuery('input[name=dlfile]').val();
         var user_dlfilename = jQuery('input[name=dlfilename]').val();
+        var user_int = jQuery('input[name=int]').val();
+        var user_addr = jQuery('input[name=addr]').val();
 
         //simple validation at client's end
         //we simply change border color to red if empty field using .css()
@@ -21,6 +23,14 @@ jQuery(document).ready(function(){
         }
         if (user_email === "") {
             jQuery('input[name=email]').css('border-color', '#e6533e');
+            proceed = false;
+        }
+        if (user_int === "") {
+            jQuery('input[name=int]').css('border-color', '#e6533e');
+            proceed = false;
+        }
+        if (user_addr === "") {
+            jQuery('input[name=addr]').css('border-color', '#e6533e');
             proceed = false;
         }
 
@@ -39,7 +49,9 @@ jQuery(document).ready(function(){
                 'userCode': user_code,
                 'userMsg': user_msg,
                 'userDlfile': user_dlfile,
-                'userDlfilename': user_dlfilename
+                'userDlfilename': user_dlfilename,
+                'userInt': user_int,
+                'userAddr': user_addr
             };
 
             //Ajax post data to server

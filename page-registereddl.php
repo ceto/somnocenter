@@ -58,6 +58,14 @@ Template Name: Letöltés Sablon Orvosoknak
       </div>
 
       <div class="controls">
+        <input type="text" name="int" id="int" placeholder="Intézmény neve" pattern=".{5,5}" required>
+      </div>
+
+      <div class="controls">
+        <input type="text" name="addr" id="addr" placeholder="Intézmény címe" pattern=".{5,5}" required>
+      </div>
+
+      <div class="controls">
         <textarea name="msg" id="msg" pattern=".{5,100}" rows="5" placeholder="Ha kérdése van itt felteheti..." maxlength="400"></textarea>
       </div>
 
