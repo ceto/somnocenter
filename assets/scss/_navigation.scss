@@ -3,7 +3,7 @@
 
 
 
-  &.desktop {  
+  &.desktop {
     display:none;
     @include breakpoint($s2) {
       display: block;
@@ -17,7 +17,7 @@
     top:0;
     left:0; right:0;
     z-index:3;
- 
+
     a {
       min-height:3em;
       text-align: center;
@@ -58,7 +58,7 @@
 
     @include breakpoint($s3){
       width:33.33333333%;
-    } 
+    }
 
     &:first-child {
 
@@ -67,10 +67,10 @@
       }
       @include breakpoint($s3){
        display: none;
-      } 
+      }
     }
 
-    
+
     &:first-child {
       a {
 
@@ -87,59 +87,59 @@
 
         @include breakpoint($s3){
           display:none;
-        } 
+        }
       }
     }
     &:nth-child(2) {
       a {
-        background: url('../img/menu_1_bg.png') no-repeat -70px -20px; 
+        background: url('../img/menu_1_bg.png') no-repeat -70px -20px;
       }
     }
     &:nth-child(3) {
       a{
-        background: url('../img/menu_2_bg.png') no-repeat -70px -20px; 
+        background: url('../img/menu_2_bg.png') no-repeat -70px -20px;
       }
     }
 
     &:last-child {
       a{
-        background: url('../img/menu_3_bg.png') no-repeat -70px -20px; 
+        background: url('../img/menu_3_bg.png') no-repeat -70px -20px;
       }
     }
   }
 
 
 
-  
+
   a {
     display:block;
     padding:1em 1em;
     font-family: $sans-serif;
-    font-weight: 600; 
+    font-weight: 600;
     font-size: 0.875em;
     line-height: 1.25em;
     color:white;
     text-transform: uppercase;
     border-left:6px solid $blue-30;
 
-    
+
     &:hover, &:focus {
       background-color: $blue-120 !important;
       text-decoration: none;
       color:white;
     }
-    
-    @include breakpoint($s2) {
-      min-height: 5.75em;
-    } 
 
     @include breakpoint($s2) {
       min-height: 5.75em;
-    } 
+    }
+
+    @include breakpoint($s2) {
+      min-height: 5.75em;
+    }
     @include breakpoint($s3) {
       min-height: 5.75em;
-    } 
-     
+    }
+
     small{
       text-transform: none;
       display: block;
@@ -149,7 +149,7 @@
       //display: none;
       @include breakpoint($s2) {
         //display:block;
-      } 
+      }
     }
   }
 
@@ -182,7 +182,7 @@
     margin:0;
     padding:0;
 
-    
+
     @include breakpoint($s3) {
       float:none;
       margin-left:246px;
@@ -191,14 +191,14 @@
   &.mobile ul {
     float:none;
     background-color: $blue;
-    
+
   }
 
-  
+
   li {
     list-style-type: none;
     display: block;
-    
+
     @include breakpoint($s2) {
       display:inline-block;
       &:after {
@@ -212,7 +212,7 @@
   &.mobile li {
     //float:none;
   }
-  
+
 
   a {
     font-family: $sans-serif;
@@ -227,12 +227,12 @@
     font-size: 0.875em;
 
 
-    
+
     &:hover, &:focus {
       //background: $red;
       text-decoration: none;
       color:$red;
-    } 
+    }
 
     @include breakpoint($s2) {
       display:inline-block;
@@ -251,9 +251,9 @@
     text-align: left;
     &:hover, &:focus {
       background-color:$blue-120;
-    } 
+    }
   }
-  
+
 
   li.active a {
     //background: $blue;
@@ -279,7 +279,7 @@
       }
     }
   }
-  
+
   a {
 
     display: block;
@@ -297,7 +297,7 @@
       background: $green;
       color:white;
       text-decoration: none;
-    }   
+    }
 
   }
 }
@@ -321,7 +321,7 @@
     float: left;
     // Make the list-items overlay the bottom border
     margin-bottom: -1px;
-    
+
     // Actual tabs (as links)
     > a {
       position: relative;
@@ -376,10 +376,11 @@
 
 .gyogyTab {
   counter-reset: my-awesome-counter;
+  padding-left: .5em;
   > li {
     //width:33%;
     counter-increment: my-awesome-counter;
-    
+
 
     > a {
       //font-weight: 600;
@@ -388,11 +389,11 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url(../img/menu_2_bg.png);
-      padding:0.75em 1em;
+      padding:0.5em .75em;
       strong {
         font-family: $serif;
         text-transform: uppercase;
-        font-size: 1.25em;
+        font-size: .666em;
         line-height: 1em;
         //font-weight: 400;
 
@@ -406,7 +407,7 @@
       //   font-family: $serif;
       // }
     }
-    
+
     &:first-child {
       > a {
         background-image: url(../img/menu_1_bg.png);
@@ -419,7 +420,7 @@
 
       }
     }
-  
+
   }
 }
 
@@ -432,9 +433,9 @@
   //background-color: white;
   max-width:$s3;
   margin:0 auto;
-  
+
   .ill {
-    
+
     background-color: white;
     background-size: cover;
     background-position: center center;
@@ -463,7 +464,7 @@
     }
 
   }
-  
+
   .read-more {
     position: absolute;
     left:0;right:0;
@@ -503,7 +504,7 @@
 }
 
 
-  
+
 
 
 
@@ -517,9 +518,14 @@
 
 // Clear any floats
 .tabbable {
- 
+
 }
 
+
+.tab-content {
+  > .tab-pane {
+  }
+}
 // Show/hide tabbable areas
 .tab-content > .tab-pane,
 .pill-content > .pill-pane {
@@ -583,12 +589,12 @@ body {
 
 
 .mobilcol, .minden{
-  transition: all .2s ease;     
+  transition: all .2s ease;
   width: 100%;
   //padding: 5%;
 }
 
-.js .mobilcol { 
+.js .mobilcol {
   margin-left: -100%;
   float: left;
 }
@@ -597,8 +603,8 @@ body {
   float: left;
 }
 
-.active-nav .mobilcol { 
-  margin-left: 0; 
+.active-nav .mobilcol {
+  margin-left: 0;
   width: 80%;
 }
 .active-nav .minden{

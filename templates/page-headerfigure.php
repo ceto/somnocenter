@@ -1,19 +1,19 @@
-<?php 
+<?php
   $localclass='';
   if ( is_page_template('page-arlista.php') || is_page_template('page-gyogyitasstart.php') ) {
     $localclass="ralog";
   }
-  
+
   if (has_post_thumbnail()) {
-    $imcismall = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'small43' ); 
-    $imcimedium = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium31' ); 
+    $imcismall = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'small43' );
+    $imcimedium = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium31' );
     $imcigreat = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large31' );
-    $imcigiant = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'giant31' );  
+    $imcigiant = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'giant31' );
   } else {
-    $imcismall = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'small43' ); 
-    $imcimedium = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'medium31' ); 
+    $imcismall = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'small43' );
+    $imcimedium = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'medium31' );
     $imcigreat = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'large31' );
-    $imcigiant = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'giant31' ); 
+    $imcigiant = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'giant31' );
   }
 ?>
 
@@ -36,7 +36,7 @@
       background-image:url('<?php echo $imcigiant['0']; ?>');
     }
   }
-</style> 
+</style>
 
 <div class="page-headerfigure <?php echo $localclass;  ?>">
   <?php /* if ( function_exists('yoast_breadcrumb') ) {
@@ -57,15 +57,7 @@
         </div>
     </aside>
 
-    <aside class="telfej">
-      <div class="tart">
-        <span class="head"><?php _e('Jelentkezés vizsgálatra','roots'); ?></span>  
-        <a href="tel:0036205007993" class="telcsi">+36 20 500 7993</a>
-        <a class="click" href="<?php echo get_permalink(2237);?>"><?php _e('Alvási apnoé szűrés jogosítványhoz','roots'); ?></a>
-        <span class="or">vagy</span>
-        <a class="click" href="<?php echo get_permalink(520);?>"><?php _e('Alvásvizsgálat','roots'); ?></a>
-      </div>
-    </aside>
+    <?php get_template_part('templates/narancs'); ?>
 
   </div>
 </div>
