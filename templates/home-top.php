@@ -1,4 +1,4 @@
-<div class="container home-top">  
+<div class="container home-top">
 
 <div id="owl-home" class="owl-carousel owl-theme">
 
@@ -6,18 +6,18 @@
       $slides = get_post_meta( get_the_ID(), 'slides', true );
       $i=0;
       foreach ( (array) $slides as $key => $entry ) { ?>
-        
+
         <?php
           if ($entry['photo']!='') {
-            $imcismall = wp_get_attachment_image_src( $entry['photo_id'] , 'small43' ); 
-            $imcimedium = wp_get_attachment_image_src( $entry['photo_id'] , 'medium31' ); 
+            $imcismall = wp_get_attachment_image_src( $entry['photo_id'] , 'small43' );
+            $imcimedium = wp_get_attachment_image_src( $entry['photo_id'] , 'medium31' );
             $imcigreat = wp_get_attachment_image_src( $entry['photo_id'] , 'large31' );
-            $imcigiant = wp_get_attachment_image_src( $entry['photo_id'] , 'giant31' );  
+            $imcigiant = wp_get_attachment_image_src( $entry['photo_id'] , 'giant31' );
           } else {
-            $imcismall = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'small43' ); 
-            $imcimedium = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'medium31' ); 
+            $imcismall = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'small43' );
+            $imcimedium = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'medium31' );
             $imcigreat = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'large31' );
-            $imcigiant = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'giant31' ); 
+            $imcigiant = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'giant31' );
           }
         ?>
 
@@ -57,15 +57,7 @@
     <?php } } ?>
 </div>
 
-    <aside class="telfej hometopi">
-      <div class="tart">
-        <span class="head"><?php _e('Jelentkezés vizsgálatra','roots'); ?></span>  
-        <a href="tel:0036205007993" class="telcsi">+36 20 500 7993</a>
-        <a class="click" href="<?php echo get_permalink(2237);?>"><?php _e('Alvási apnoé szűrés jogosítványhoz','roots'); ?></a>
-        <span class="or">vagy</span>
-        <a class="click" href="<?php echo get_permalink(520);?>"><?php _e('Alvásvizsgálat','roots'); ?></a>
-      </div>
-    </aside>
+  <?php get_template_part('templates/narancs'); ?>
 
 
 </div><!-- /.home-top -->
@@ -88,9 +80,9 @@
         <aside class="home-featured home-featured-<?= ++$i; ?> clearfix">
           <?php /*
             if ($entry['photo']!='') {
-              $imcismall = wp_get_attachment_image_src( $entry['photo_id'] , 'small43' ); 
-              $imcimedium = wp_get_attachment_image_src( $entry['photo_id'] , 'medium31' ); 
-            } 
+              $imcismall = wp_get_attachment_image_src( $entry['photo_id'] , 'small43' );
+              $imcimedium = wp_get_attachment_image_src( $entry['photo_id'] , 'medium31' );
+            }
           */?>
           <!--style type="text/css">
               .home-featured-<?= $i; ?> {
@@ -111,7 +103,7 @@
     <?php } } ?>
     </style>
 
-  
+
 
 </div><!-- /.content -->
 </div><!-- /.container .document -->
