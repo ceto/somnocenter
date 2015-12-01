@@ -100,7 +100,7 @@ if(!$human == 0){
       <select id="message_center" name="message_center">
         <option value="0"><?php _e('Válasszon központot','roots'); ?></option>
         <option value="Budapest">Budapest</option>
-        <?php if ($page->ID!=2426) :?>
+        <?php if (get_the_id()!=2426) :?>
         <option value="Pécs" disabled="disabled">Pécs - Csak telefonon (+36 30 476 1400)</option>
         <option value="Szeged">Szeged</option>
         <?php endif; ?>
