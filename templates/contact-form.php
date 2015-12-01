@@ -4,12 +4,12 @@
 
   //function to generate response
   // function generate_response($type, $message){
-    
+
   //   global $response;
 
   //   if($type == "success") {$response = '<div class="success">'.$message.'</div>';}
   //   else {$response = '<div class="error">'.$message.'</div>';}
-    
+
   // }
 
   //response messages
@@ -38,13 +38,13 @@
   $headers .= "Reply-To: ". strip_tags($email) . "\r\n";
   $headers .= "MIME-Version: 1.0\r\n";
   $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-  
+
 if(!$human == 0){
     if($human != 2) {
       $response = '<div class="error">'.$not_human.'</div>';
     }
     else {
-      
+
       //validate email
       if(!filter_var($email, FILTER_VALIDATE_EMAIL))
         $response = '<div class="error">'.$email_invalid.'</div>';
@@ -69,8 +69,8 @@ if(!$human == 0){
         }
       }
     }
-  } 
-  else 
+  }
+  else
     if ($_POST['submitted']) generate_response("error", $missing_content);
 
 ?>
@@ -100,8 +100,10 @@ if(!$human == 0){
       <select id="message_center" name="message_center">
         <option value="0"><?php _e('Válasszon központot','roots'); ?></option>
         <option value="Budapest">Budapest</option>
+        <?php if ($page->ID!=2426) :?>
         <option value="Pécs" disabled="disabled">Pécs - Csak telefonon (+36 30 476 1400)</option>
         <option value="Szeged">Szeged</option>
+        <?php endif; ?>
       </select>
     </div>
 
