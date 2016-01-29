@@ -74,7 +74,7 @@ if($_POST)
   'Reply-To: '.$user_Email.'' . "\r\n" .
   'MIME-Version: 1.0' ."\r\n".
   'Content-Type: text/plain;charset=utf-8' . "\r\n".
-  'Content-Transfer-Encoding: 8bit'. "\n\r\n";
+  //'Content-Transfer-Encoding: 8bit'. "\n\r\n";
   //'X-Mailer: PHP/' . phpversion();
   $sentMail = @mail($to_Email, $subject, $user_Name . "\r\n\n" . $user_Email . "\r\n" . $user_Email . "\r\n" . $user_Int . "\r\n" .$user_Addr .  "\r\n" .$user_Code . "\r\n\n" . $user_Msg, $headers);
 
