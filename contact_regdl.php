@@ -88,7 +88,7 @@ if($_POST)
     $resp_headers = 'From: '.$to_Email.'' . "\r\n" .
     'Reply-To: '.$to_Email.'' . "\r\n" .
     'MIME-Version: 1.0' ."\r\n".
-    'Content-Type: text/plain;charset=utf-8' . "\r\n".
+    'Content-Type: text/html;charset=utf-8' . "\r\n".
     'Content-Transfer-Encoding: 8bit'. "\n\r\n";
     //'X-Mailer: PHP/' . phpversion();
 
