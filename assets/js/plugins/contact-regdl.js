@@ -67,7 +67,9 @@ jQuery(document).ready(function(){
                     output = '<div class="success">' + response.text + '</div>';
 
                     //reset values in all input fields
-                    jQuery('#contact_regdl_form input').val('');
+                    jQuery('#contact_regdl_form input[type="text"]').val('');
+                    jQuery('#contact_regdl_form input[type="email"]').val('');
+                    jQuery('#contact_regdl_form input[type="tel"]').val('');
                     jQuery('#contact_regdl_form textarea').val('');
                 }
 
