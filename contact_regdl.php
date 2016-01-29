@@ -85,19 +85,19 @@ if($_POST)
   }else{
 
     //response email to the user, added by ceto
-    $resp_headers = 'From: '.$to_Email.'' . "\r\n" .
-    'Reply-To: '.$to_Email.'' . "\r\n" .
+    $resp_headers = 'From: '. $to_Email . "\r\n" .
+    'Reply-To: '.$to_Email . "\r\n" .
     'MIME-Version: 1.0' ."\r\n".
-    'Content-Type: text/html;charset=utf-8' . "\r\n".
-    'Content-Transfer-Encoding: 8bit'. "\n\r\n";
-    //'X-Mailer: PHP/' . phpversion();
+    'Content-Type: text/html; charset=utf-8' . "\r\n".
+    //'Content-Transfer-Encoding: 8bit'. "\n\r\n";
+    'X-Mailer: PHP/' . phpversion();
 
-    $resp_text="Tisztelt ".$user_Name."!"."\r\n\n".
+    $resp_text="<html><p>Tisztelt ".$user_Name."!</p>"."\r\n\n".
 
-    "Köszönjük regisztrációját."."\r\n".
-    "Az obstruktív alvási apnoé szindróma kockázatának felmérésére szolgáló segédletet az alábbi linken töltheti le:"."\r\n\n".$user_Dlfile."\r\n\n".
-    "További kérdés esetén, forduljon munkatársainkhoz a segédleten megtalálható elérhetőségeken."."\r\n\n".
-    "Üdvözlettel:"."\r\n"."SomnoCenter Alvászavar Központ";
+    "<p>Köszönjük regisztrációját."."\r\n".
+    "Az obstruktív alvási apnoé szindróma kockázatának felmérésére szolgáló segédletet az alábbi linken töltheti le:"."\r\n\n".$user_Dlfile."</p>\r\n\n".
+    "<p>További kérdés esetén, forduljon munkatársainkhoz a segédleten megtalálható elérhetőségeken."."\r\n\n".
+    "Üdvözlettel:"."\r\n"."SomnoCenter Alvászavar Központ</p></html>";
     @mail($user_Email, $subject, $resp_text, $resp_headers);
 
 
