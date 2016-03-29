@@ -3,6 +3,7 @@
 Template Name: Központok Sablon
 */
 ?>
+
 <?php get_template_part('templates/page', 'headerfigure'); ?>
 <style>
   .gm-style img { max-width: none; }
