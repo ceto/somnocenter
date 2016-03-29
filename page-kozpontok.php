@@ -10,10 +10,10 @@ Template Name: Központok Sablon
 </style>
 <script>
   var map1, map2, map3;
-  var myLatlng1 = new google.maps.LatLng(47.494550, 19.021211);
+  var myLatlng1 = new google.maps.LatLng(47.495749, 19.024179);
   var myLatlng2 = new google.maps.LatLng(46.253847, 20.126910);
   var myLatlng3 = new google.maps.LatLng(46.080191, 18.250496);
-  
+
   function initialize() {
       var mapOptions1 = {
         zoom: 14,
@@ -34,14 +34,14 @@ Template Name: Központok Sablon
         center: myLatlng2,
         zoomControl: true,
         scaleControl: true,
-        
+
       };
       var mapOptions3 = {
         zoom: 14,
         center: myLatlng3,
         zoomControl: true,
         scaleControl: true,
-        
+
       };
       map1 = new google.maps.Map(document.getElementById('map-canvas-1'), mapOptions1);
       map2 = new google.maps.Map(document.getElementById('map-canvas-2'), mapOptions2);
@@ -54,7 +54,7 @@ Template Name: Központok Sablon
       //     pitch: 0
       //   },
       //   zoom: 1
-      // }; 
+      // };
       // var myPano1 = new google.maps.StreetViewPanorama(document.getElementById('map-canvas-1'),panoramaOptions1);
       // myPano1.setVisible(true);
 
@@ -77,10 +77,10 @@ Template Name: Központok Sablon
           title: 'Somnocenter'
           //icon: image
       });
-       
+
     }
     google.maps.event.addDomListener(window, 'load', initialize);
-   
+
 </script>
 <div class="clearfix felteke">
 <div class="jobbfel">
@@ -89,7 +89,7 @@ Template Name: Központok Sablon
     'post_type' => 'page;',
     'posts_per_page' => -1,
     'post_parent' => get_the_ID()
-    
+
   ));
 ?>
 <ul class="nav nav-tabs clearfix" id="centerTab">
@@ -101,7 +101,7 @@ Template Name: Központok Sablon
     </li>
   <?php endwhile; ?>
 </ul>
-<?php 
+<?php
   wp_reset_query();
   $i=0;
 ?>
