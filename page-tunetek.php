@@ -34,7 +34,7 @@ Template Name: Tünetek lista
               <?php the_title(); ?><span class="icon"></span>
             </a>
           </h3>
-        	<div class="conti collapse clearfix" id="t<?php echo get_the_ID(); ?>">
+        	<div class="conti acollapse clearfix" id="t<?php echo get_the_ID(); ?>">
         	 <div class="belso">
              <?php the_content(); ?>
             </div><!-- /.belso -->

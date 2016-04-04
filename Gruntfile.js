@@ -36,17 +36,6 @@ module.exports = function(grunt) {
         jsHandle: 'roots_scripts'
       }
     },
-    // sass: {
-    //   dist: {
-    //     options: {
-    //      style: 'nested',
-    //      sourcemap: true
-    //     },
-    //     files: {
-    //       'assets/css/main.css': 'assets/scss/styles.scss'
-    //     }
-    //   }
-    // },
     sass: {
       dist: {
         options: {

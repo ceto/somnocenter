@@ -17,6 +17,98 @@ if ( file_exists(  __DIR__ . '/CMB2/init.php' ) ) {
   require_once  __DIR__ . '/CMB2/init.php';
 }
 
+add_action( 'cmb2_admin_init', 'sc_metaboxes' );
+function sc_metaboxes() {
+  // Start with an underscore to hide fields from custom fields list
+  $prefix = '_cmb_';
+
+  // Tünetek sablon szekciókezelése
+  $cmb_tunetpage_1 = new_cmb2_box( array(
+    'id'            => 'tunetlista_1_metabox',
+    'title'         => __( 'Nappali tünetek listája', 'cmb2' ),
+    'object_types'  => array( 'page' ), // Post type
+    'show_on'      => array( 'key' => 'page-template', 'value' => 'tmpl-tunetlista.php' ),
+    'context'       => 'normal',
+    'priority'      => 'core',
+    'show_names'    => true, // Show field names on the left
+    // 'cmb_styles' => false, // false to disable the CMB stylesheet
+    'closed'     => false, // Keep the metabox closed by default
+  ) );
+  $cmb_tunetpage_2 = new_cmb2_box( array(
+    'id'            => 'tunetlista_2_metabox',
+    'title'         => __( 'Éjszakai tünetek listája', 'cmb2' ),
+    'object_types'  => array( 'page' ), // Post type
+    'show_on'      => array( 'key' => 'page-template', 'value' => 'tmpl-tunetlista.php' ),
+    'context'       => 'normal',
+    'priority'      => 'core',
+    'show_names'    => true, // Show field names on the left
+    // 'cmb_styles' => false, // false to disable the CMB stylesheet
+    'closed'     => false, // Keep the metabox closed by default
+  ) );
+
+  $prg = array(
+    'id'          => 'page_repeat_group',
+    'type'        => 'group',
+    'options'     => array(
+        'group_title'   => __( 'Nappali tünet {#}', 'cmb2' ),
+        'add_button'    => __( 'Új nappali tünet hozzáadása', 'cmb2' ),
+        'remove_button' => __( 'Tünet törlése', 'cmb2' ),
+        'sortable'      => true, // beta
+    ),
+  );
+
+  $prg_2 = array(
+    'id'          => 'page_repeat_group_2',
+    'type'        => 'group',
+    'options'     => array(
+        'group_title'   => __( 'Éjszakai tünet {#}', 'cmb2' ),
+        'add_button'    => __( 'Új éjszakai tünet hozzáadása', 'cmb2' ),
+        'remove_button' => __( 'Tünet törlése', 'cmb2' ),
+        'sortable'      => true, // beta
+    ),
+  );
+
+  $group_field_id_1 = $cmb_tunetpage_1->add_field( $prg );
+  $group_field_id_2 = $cmb_tunetpage_2->add_field( $prg_2 );
+
+  $gfname = array(
+    'name' => 'Tünet megnevezése',
+    'id'   => 'name',
+    'type' => 'text',
+  );
+  $gfname_2 = array(
+    'name' => 'Tünet megnevezése',
+    'id'   => 'name_2',
+    'type' => 'text',
+  );
+
+  $cmb_tunetpage_1->add_group_field( $group_field_id_1, $gfname );
+  $cmb_tunetpage_2->add_group_field( $group_field_id_2, $gfname_2 );
+
+  $gfcont = array(
+    'name' => 'Tünet leírása',
+    'description' => 'Szöveges leírás',
+    'id'   => 'content',
+    'type' => 'wysiwyg',
+    'options' => array (
+      'textarea_rows' => get_option('default_post_edit_rows', 8)
+    )
+  );
+  $gfcont_2 = array(
+    'name' => 'Tünet leírása',
+    'description' => 'Szöveges leírás',
+    'id'   => 'content',
+    'type' => 'wysiwyg',
+    'options' => array (
+      'textarea_rows' => get_option('default_post_edit_rows', 8)
+    )
+  );
+
+  $cmb_tunetpage_1->add_group_field( $group_field_id_1, $gfcont );
+  $cmb_tunetpage_2->add_group_field( $group_field_id_2, $gfcont_2 );
+
+};
+
 
 
 
@@ -29,6 +121,8 @@ function cmb_page_metaboxes( array $meta_boxes ) {
 
   // Start with an underscore to hide fields from custom fields list
   $prefix = '_cmb_';
+
+
 
   $meta_boxes['page_metabox'] = array(
     'id'         => 'page_metabox',
@@ -64,6 +158,9 @@ function cmb_page_metaboxes( array $meta_boxes ) {
 
     ),
   );
+
+
+
 
 
   $meta_boxes['home'] = array(
