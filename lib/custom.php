@@ -46,6 +46,23 @@ function sc_metaboxes() {
     'closed'     => false, // Keep the metabox closed by default
   ) );
 
+  $cmb_tunetpage_1->add_field( array (
+    'name' => 'Nappali tünetek lead',
+    'id'   => 'lead',
+    'type' => 'wysiwyg',
+    'options' => array (
+      'textarea_rows' => get_option('default_post_edit_rows', 8)
+    )
+  ));
+  $cmb_tunetpage_2->add_field( array (
+    'name' => 'Éjszakai tünetek lead',
+    'id'   => 'lead',
+    'type' => 'wysiwyg',
+    'options' => array (
+      'textarea_rows' => get_option('default_post_edit_rows', 8)
+    )
+  ));
+
   $prg = array(
     'id'          => 'page_repeat_group',
     'type'        => 'group',
@@ -78,7 +95,7 @@ function sc_metaboxes() {
   );
   $gfname_2 = array(
     'name' => 'Tünet megnevezése',
-    'id'   => 'name_2',
+    'id'   => 'name',
     'type' => 'text',
   );
 

@@ -29,7 +29,7 @@ body {
   }
   @include breakpoint($s2) {
     padding:0 1em;
-  }  
+  }
 }
 
 
@@ -38,7 +38,7 @@ body {
   //background: url('../img/watermark.png') no-repeat 97% 97% transparent;
   //background-attachment:fixed;
   //background-size: 120px auto;
-  
+
   //padding:0 2em;
 }
 
@@ -78,7 +78,7 @@ body {
   }
 }
 
-.jobbfel {  
+.jobbfel {
   @include breakpoint($s2) {
     width:48%;
     float:right;
@@ -86,7 +86,7 @@ body {
 }
 
 .main {
-  
+
   &.wide {
     margin:0 auto;
     padding:2em 0;
@@ -96,7 +96,7 @@ body {
 
     }
   }
-  
+
   &.narrow {
     padding:2em 0;
     @include breakpoint($s2) {
@@ -165,7 +165,7 @@ ol.golyos {
     list-style: none;
     counter-increment: my-counter;
     position: relative;
-    margin:1em 0; 
+    margin:1em 0;
     &:before {
       //position:absolute;
       display:block;
@@ -178,15 +178,15 @@ ol.golyos {
       border-radius:50%;
       background-color:$eggplant;
       color:$blue-90;
-      
-      
-      
+
+
+
       text-align: center;
       font-weight: 700;
       margin-bottom: 0.25em;
       content: counter(my-counter)'.';
     }
-  
+
     @include breakpoint($s2) {
       width:50%;
       float:left;
@@ -203,7 +203,7 @@ ol.golyos {
   }
 }
 
-  
+
 .tab-pane.post-213 {
   .vizsgalathoz-block{
     background: url('../img/kerdojel.png') no-repeat left top transparent;
@@ -257,4 +257,20 @@ ol.golyos {
 
 
 
+.ps {
+  @include clearfix();
+  padding-left:1rem;
+  padding-right: 1rem;
 
+  @include breakpoint($s4) {
+   padding-left: calc(50% - 554px);
+   padding-right: calc(50% - 554px);
+  }
+}
+
+.ps--narrow {
+  @include breakpoint($s4) {
+   padding-left: calc(50% - 420px);
+   padding-right: calc(50% - 420px);
+  }
+}

@@ -1,0 +1,39 @@
+.tunetfej {
+  .lead {
+    font-size: 112.5%;
+    line-height: 1.5;
+  }
+}
+.tunetnav {
+  @include clearfix();
+  @include breakpoint($s2) {
+    width:50%;
+    float:left;
+  }
+}
+
+.tunet {
+  padding-top:2rem;
+  padding-bottom: 2rem;
+  &:nth-of-type(2n+1) {
+    background-color: #fff;
+  }
+}
+
+// .tunet__name {
+//   text-transform: none;
+//   @include breakpoint($s3) {
+//     //font-size: 2.25rem;
+//     width:33.333%;
+//     float:left;
+//     padding-right: 1rem;
+//     margin-top: 1.5rem;
+//   }
+// }
+
+// .tunet__cont {
+//   @include breakpoint($s3) {
+//     width:66.666%;
+//     float:right;
+//   }
+// }

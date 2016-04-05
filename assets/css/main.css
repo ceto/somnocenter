@@ -4402,6 +4402,31 @@ ol.golyos {
   .player img {
     filter: brightness(0.3); }
 
+/* line 260, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_layout.scss */
+.ps {
+  *zoom: 1;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  /* line 13, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_mixins.scss */
+  .ps:before,
+  .ps:after {
+    content: " ";
+    display: table; }
+  /* line 18, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_mixins.scss */
+  .ps:after {
+    clear: both; }
+  @media only screen and (min-width: 1280px) {
+    /* line 260, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_layout.scss */
+    .ps {
+      padding-left: calc(50% - 554px);
+      padding-right: calc(50% - 554px); } }
+
+@media only screen and (min-width: 1280px) {
+  /* line 271, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_layout.scss */
+  .ps--narrow {
+    padding-left: calc(50% - 420px);
+    padding-right: calc(50% - 420px); } }
+
 /* line 1, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_header.scss */
 .toptel {
   background-color: #4c6ba2;
@@ -8930,3 +8955,266 @@ img.mfp-img {
   to {
     opacity: 0;
     transform: scale(1.5); } }
+
+/* line 2, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.page.page-template-page-survey-php .main.wide {
+  padding: 2em 0 5em;
+  background-color: #f3f6fa; }
+
+/* line 7, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.page.page-template-page-survey-php .surveyhead {
+  background-image: url("../img/barany_light.png");
+  background-repeat: no-repeat;
+  background-position: 90% 100%;
+  background-size: 33% auto; }
+
+/* line 13, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.page.page-template-page-survey-php .surveycont-wrap {
+  margin: 2em 0; }
+  /* line 17, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+  .page.page-template-page-survey-php .surveycont-wrap h2 {
+    background-color: #e6533e;
+    color: #f3f6fa;
+    padding: 0.5em;
+    text-align: center; }
+
+/* line 27, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.page.page-template-page-survey-php .vizsgalatokhoz {
+  margin-top: -3em; }
+
+/* line 36, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.page-id-1202.page.page-template-page-survey-php .surveycont-wrap h2 {
+  background-color: #5b7eb7; }
+
+/*------------------------------------------------*/
+/* Minimal Quiz Style                             */
+/*------------------------------------------------*/
+/* line 46, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss {
+  padding: 1em;
+  border: 1px solid #5b7eb7;
+  margin: 2em 0;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Hide questions on load, show first question. */
+  /* Next and Previous Buttons */ }
+  /* line 57, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+  .wpss .wpss-hidden {
+    display: none; }
+  /* line 58, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+  .wpss .wpss_panel_1 {
+    display: block; }
+  /* line 61, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+  .wpss .wpss_prev_next {
+    text-align: center;
+    margin-top: 0; }
+    /* line 64, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+    .wpss .wpss_prev_next a {
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 600;
+      background-color: #e6533e;
+      padding: 0.25em 0.75em;
+      display: inline-block;
+      color: #f3f6fa;
+      border: 1px solid #e6533e; }
+      /* line 72, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+      .wpss .wpss_prev_next a:hover, .wpss .wpss_prev_next a:focus {
+        background-color: #f7941e;
+        text-decoration: none; }
+      /* line 76, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+      .wpss .wpss_prev_next a.wpss_disabled, .wpss .wpss_prev_next a.wpss_disabled:hover {
+        cursor: default;
+        text-decoration: none;
+        color: #c5d2e6;
+        border: 1px solid #c5d2e6;
+        background-color: transparent; }
+
+/* line 88, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss-clear {
+  float: none;
+  clear: both; }
+
+/* line 90, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss fieldset {
+  *zoom: 1;
+  border: 0 solid #c0c0c0;
+  margin: 0 0;
+  padding: 0 0 1em; }
+  /* line 13, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_mixins.scss */
+  .wpss fieldset:before,
+  .wpss fieldset:after {
+    content: " ";
+    display: table; }
+  /* line 18, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_mixins.scss */
+  .wpss fieldset:after {
+    clear: both; }
+
+/* line 99, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss_prev_next a {
+  margin: 0 15px; }
+
+/*------------------------------------------------*/
+/* Question Field Styling                         */
+/*------------------------------------------------*/
+/* line 106, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss .wpss-question img {
+  margin: 5px 0; }
+
+/* line 110, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss .wpss-question img.alignright {
+  margin: 5px 0; }
+
+/* line 113, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss .wpss-question img.aligncenter {
+  margin: 5px auto; }
+
+/* line 117, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss .wpss-question img.alignnone {
+  display: block; }
+
+/* line 121, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss .wpss-question .wp-caption.alignright {
+  margin: 5px 0; }
+
+/*------------------------------------------------*/
+/* Answer Field Styling                           */
+/*------------------------------------------------*/
+/* line 133, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss textarea {
+  width: 100%;
+  min-height: 120px; }
+
+/* line 139, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss .answers .answer_text {
+  margin: 0.5em 0; }
+
+/* line 142, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss .answers label {
+  cursor: pointer; }
+  /* line 144, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+  .wpss .answers label:hover, .wpss .answers label:focus {
+    color: #e6533e; }
+  /* line 147, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+  .wpss .answers label img {
+    margin: 5px 0; }
+  /* line 151, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+  .wpss .answers label img.aligncenter {
+    margin: 5px auto; }
+  /* line 155, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+  .wpss .answers label img.alignnone {
+    display: block; }
+
+/*------------------------------------------------*/
+/* Custom Field Styling                           */
+/*------------------------------------------------*/
+/* line 170, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss .wpss-submit-message {
+  margin-bottom: 10px; }
+
+/* line 172, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss .wpss-fields {
+  margin-bottom: 15px;
+  /* Uncomment to float fields to the right of their labels. */
+  /*
+      label{ display: inline; }
+      
+    */ }
+  /* line 175, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+  .wpss .wpss-fields .wpss-field {
+    margin-bottom: 5px; }
+  /* line 179, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+  .wpss .wpss-fields label {
+    display: none; }
+  /* line 180, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+  .wpss .wpss-fields input[type='text'], .wpss .wpss-fields input[type='email'] {
+    width: 100%;
+    display: block;
+    border: 1px solid #5b7eb7;
+    background: #fefefe;
+    margin: 0.5em 0;
+    padding: 0.5em 0.5em;
+    color: #14467c; }
+    /* line 189, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+    .wpss .wpss-fields input[type='text']:hover, .wpss .wpss-fields input[type='text']:focus, .wpss .wpss-fields input[type='email']:hover, .wpss .wpss-fields input[type='email']:focus {
+      outline: 1px solid white; }
+  /* line 194, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+  .wpss .wpss-fields select {
+    float: right; }
+
+/* line 204, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss input[type='submit'] {
+  display: block;
+  background-color: #5b7eb7;
+  color: #f3f6fa;
+  border: 0;
+  padding: 0.5em 1em;
+  width: 100%;
+  font-size: 1.5em;
+  line-height: 1em;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase; }
+  /* line 216, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+  .wpss input[type='submit']:hover, .wpss input[type='submit']:focus {
+    background-color: #14467c; }
+
+/*------------------------------------------------*/
+/* Progress Bar                                   */
+/*------------------------------------------------*/
+/* line 230, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss .wpss-progress-bar {
+  display: block;
+  border: 1px solid #c5d2e6;
+  margin: 0 0;
+  padding: 0.25em;
+  height: 1.5em; }
+
+/* line 241, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss .wpss-progress-bar span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background-color: #77c04a; }
+
+/*------------------------------------------------*/
+/* Routed to page styling for results             */
+/*------------------------------------------------*/
+/* Score */
+/* line 253, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss_results_score {
+  margin-bottom: 15px; }
+
+/* Full Results */
+/* line 259, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_wpss.scss */
+.wpss_results_qa .wpss_results_answer {
+  margin-bottom: 15px; }
+
+/* line 2, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
+.tunetfej .lead {
+  font-size: 112.5%;
+  line-height: 1.5; }
+
+/* line 7, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
+.tunetnav {
+  *zoom: 1; }
+  /* line 13, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_mixins.scss */
+  .tunetnav:before,
+  .tunetnav:after {
+    content: " ";
+    display: table; }
+  /* line 18, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_mixins.scss */
+  .tunetnav:after {
+    clear: both; }
+  @media only screen and (min-width: 768px) {
+    /* line 7, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
+    .tunetnav {
+      width: 50%;
+      float: left; } }
+
+/* line 15, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
+.tunet {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  /* line 18, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
+  .tunet:nth-of-type(2n+1) {
+    background-color: #fff; }
