@@ -6,9 +6,32 @@
 }
 .tunetnav {
   @include clearfix();
+  margin-bottom: 1rem;
   @include breakpoint($s2) {
     width:50%;
     float:left;
+  }
+  h3 {
+    font-size: 1.5rem;
+    text-transform: none;
+    margin-bottom: .5rem;
+  }
+}
+
+.tunetlist {
+ margin:0;
+ padding:0;
+  li {
+    display: inline-block;
+    font-size: 87.5%;
+    font-style: italic;
+    &:not(:last-child):after {
+      content:'·';
+      display: inline;
+    }
+    a {
+      color:inherit;
+    }
   }
 }
 
