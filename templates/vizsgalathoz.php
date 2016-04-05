@@ -21,7 +21,7 @@ $i=0;
         </a>
       </li>
   </ul>
-  <?php 
+  <?php
     $the_mitort->rewind_posts();
     $i=0;
   ?>

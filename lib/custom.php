@@ -8,8 +8,24 @@ define('ICL_DONT_LOAD_LANGUAGE_SELECTOR_CSS', TRUE);
 define('ICL_DONT_LOAD_LANGUAGES_JS', TRUE);
 
 
+
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
+
+
+/***** Create list of nav menus ******/
+function sc_show_navs() {
+  $menus = get_terms( 'nav_menu', array( 'hide_empty' => true ) );
+  $menulist = array();
+  $menulist[0] = 'Nincs csatolt belső menü';
+  foreach ( $menus as $menu ):
+    $menulist[$menu->term_id] = $menu->name;
+  endforeach;
+  return $menulist;
+}
+
+
 
 
 
@@ -157,20 +173,25 @@ function cmb_page_metaboxes( array $meta_boxes ) {
         'type' => 'text',
       ),
       array(
+          'name'             => 'Belső menü',
+          'desc'             => 'Ez fog megjelenni a hero alatt',
+          'id'               => $prefix . 'innermenu',
+          'type'             => 'select',
+          'show_option_none' => false,
+          'default'          => '0',
+          'options'          =>  'sc_show_navs'
+      ),
+      array(
         'name' => __( 'Video url', 'root' ),
         'desc' => __( 'Beágyazandó videó url-je', 'root' ),
         'id'   => $prefix . 'video',
         'type' => 'text',
-        // 'repeatable' => true,
-        // 'on_front' => false, // Optionally designate a field to wp-admin only
       ),
       array(
         'name' => __( 'Kiegészítő tartalom', 'root' ),
         'desc' => __( 'Pl. Galléria vagy Kérdő0v shortcode', 'root' ),
         'id'   => $prefix . 'addcont',
         'type' => 'text',
-        // 'repeatable' => true,
-        // 'on_front' => false, // Optionally designate a field to wp-admin only
       ),
 
     ),

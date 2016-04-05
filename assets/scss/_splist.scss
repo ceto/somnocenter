@@ -1,0 +1,91 @@
+.page-template-tmpl-subpagelist .subpagetoc {
+  max-width: 50rem;
+   li {
+    font-size: 100%;
+  }
+}
+.spwrap {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  background-color: #fff;
+}
+
+.spblock {
+  @include clearfix();
+
+}
+
+.spblock__inner {
+  @include clearfix();
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+.spblock__ill {
+  display: block;
+  height: 80px;
+  background-color: white;
+  background-position: center center;
+  background-size: cover;
+
+  @include breakpoint($s2) {
+    position: absolute;
+    top: 1.666rem;
+    left:0;
+    width:33.333%;
+    bottom: 4.125rem;
+    height: auto;
+  }
+}
+
+.spblock__szoveg {
+
+  @include breakpoint($s2) {
+    width:63.333%;
+    float:right;
+  }
+  p {
+    margin:.5rem 0;
+    //font-size: 87.5%;
+
+  }
+
+
+  .btn {
+    margin-top: .5rem;
+  }
+  .more-link {
+    font-family: $sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 1;
+    font-size: .875rem;
+    padding:.666em 1em;
+    background-color: $blue;
+    color:#fff;
+    text-transform: uppercase;
+    margin-top: .5rem;
+
+  }
+}
+
+.spblock__title {
+  margin-bottom: .5rem;
+  //font-size: 1.25rem;
+  small {
+    text-transform: none;
+    font-size: 100%;
+    font-weight: 700;
+    //color:$blue-120;
+    &:before {
+      content:'- '
+    }
+  }
+}
+
+
+.promoblock {
+  @include clearfix();
+  background-color: #fff;
+}

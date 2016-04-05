@@ -1,7 +1,13 @@
-.tunetfej {
+.pagefej {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #fff;
   .lead {
     font-size: 112.5%;
     line-height: 1.5;
+  }
+  h2, h3 {
+    text-transform: none;
   }
 }
 .tunetnav {
@@ -18,7 +24,7 @@
   }
 }
 
-.tunetlist {
+.subpagetoc {
  margin:0;
  padding:0;
   li {
@@ -35,16 +41,39 @@
   }
 }
 
-.tunet {
-  padding-top:2rem;
-  padding-bottom: 2rem;
-  &:nth-of-type(2n+1) {
-    background-color: #fff;
-  }
+.tunetlistawrap {
+  background-color: #fff;
 }
 
-// .tunet__name {
-//   text-transform: none;
+.tunetek--ejszakai {
+  //background-color: #fff;
+}
+
+.tunetek {
+  header {
+    padding-top: 3rem;
+    p {
+      // font-size:112.5%;
+      // line-height: 1.5;
+    }
+  }
+}
+.tunet {
+  // padding-top:2rem;
+  // padding-bottom: 2rem;
+  // &:nth-of-type(2n+1) {
+  //   background-color: #fff;
+  // }
+}
+
+.tunet__wrap {
+  // padding:1rem;
+  // background-color: #fff;
+  // //margin-bottom: 1rem;
+}
+
+.tunet__name {
+  text-transform: none;
 //   @include breakpoint($s3) {
 //     //font-size: 2.25rem;
 //     width:33.333%;
@@ -52,7 +81,7 @@
 //     padding-right: 1rem;
 //     margin-top: 1.5rem;
 //   }
-// }
+}
 
 // .tunet__cont {
 //   @include breakpoint($s3) {
