@@ -17,7 +17,7 @@ Template Name: Képes aloldal listázó (NEW)
 <section class="ps pagefej">
   <div class="lead"><?php the_content(); ?></div>
   <nav class="subpagetoc">
-    <h3><?php _e('Tartalomjegyzék','sc') ?></h3>
+    <!-- <h3><?php _e('Tartalomjegyzék','sc') ?></h3> -->
     <ul class="subpagetoc">
       <?php while ($the_service->have_posts()) : $the_service->the_post(); ?>
         <li>

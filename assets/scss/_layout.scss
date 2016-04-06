@@ -270,7 +270,13 @@ ol.golyos {
 
 .ps--narrow {
   @include breakpoint($s4) {
-   padding-left: calc(50% - 420px);
-   padding-right: calc(50% - 420px);
+   padding-left: calc(50% - 400px);
+   padding-right: calc(50% - 400px);
   }
+}
+
+.pagecopy {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  //background-color: $blue-90;
 }

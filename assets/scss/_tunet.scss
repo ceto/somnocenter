@@ -1,15 +1,3 @@
-.pagefej {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  background-color: #fff;
-  .lead {
-    font-size: 112.5%;
-    line-height: 1.5;
-  }
-  h2, h3 {
-    text-transform: none;
-  }
-}
 .tunetnav {
   @include clearfix();
   margin-bottom: 1rem;
@@ -42,7 +30,7 @@
 }
 
 .tunetlistawrap {
-  background-color: #fff;
+  background-color: $blue-90;
 }
 
 .tunetek--ejszakai {

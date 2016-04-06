@@ -12,7 +12,12 @@ define('ICL_DONT_LOAD_LANGUAGES_JS', TRUE);
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
-
+function the_real_excerpt() {
+  global $post;
+  $content = get_extended( $post->post_content );
+  $excerpt = $content['main'];
+  echo apply_filters('the_content', $content['main']);
+}
 
 /***** Create list of nav menus ******/
 function sc_show_navs() {

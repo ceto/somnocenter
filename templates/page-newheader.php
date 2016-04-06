@@ -1,6 +1,6 @@
 <?php
   $localclass='';
-  if ( get_post_meta( $post->ID, '_cmb_innermenu', true ) !== 0) {
+  if ( get_post_meta( $post->ID, '_cmb_innermenu', true ) != 0) {
     $localclass="ralog";
   }
 
@@ -61,7 +61,7 @@
 </div>
 
 
-<?php if ( get_post_meta( $post->ID, '_cmb_innermenu', true ) !== 0) : ?>
+<?php if ( get_post_meta( $post->ID, '_cmb_innermenu', true ) != 0) : ?>
   <nav class="innernav">
     <?php wp_nav_menu( array(
       'menu'=>get_post_meta( $post->ID, '_cmb_innermenu', true ),
