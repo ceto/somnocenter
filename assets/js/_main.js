@@ -189,6 +189,20 @@ jQuery(document).ready(function($) {
       fixedContentPos: false
     });
 
+    $('.ajax-popup').magnificPopup({
+      type: 'ajax',
+      mainClass: 'my-mfp-zoom-in',
+      removalDelay: 300,
+      callbacks: {
+        parseAjax: function(mfpResponse) {
+          mfpResponse.data = $(mfpResponse.data).find('.pagecopy').addClass('onlydialog');
+          console.log('Ajax content loaded:', mfpResponse);
+        }
+      }
+    });
+
+
+
 
     $('.gallery').magnificPopup({
       delegate: 'a',

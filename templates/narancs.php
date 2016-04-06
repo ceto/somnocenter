@@ -1,11 +1,4 @@
-<aside class="telfej">
-  <div class="tart">
-    <span class="head"><?php _e('Online jelentkezés','roots'); ?></span>
-    <span class="or">konzultációra és vizsgálatra</span>
-    <a class="click" href="<?php echo get_permalink(2426);?>"><?php _e('Fül-orr-gégészet','roots'); ?></a>
-    <span class="or">&middot;</span>
-    <a class="click" href="<?php echo get_permalink(2237);?>"><?php _e('Apnoé szűrés jogosítványhoz','roots'); ?></a>
-    <span class="or">&middot;</span>
-    <a class="click" href="<?php echo get_permalink(520);?>"><?php _e('Alvásvizsgálat','roots'); ?></a>
-  </div>
-</aside>
+<a href="<?php the_permalink(2649); ?>" class="ajax-popup tart">
+    <span class="head"><?php _e('Jelentkezés','roots'); ?></span>
+    <span class="head">vizsgálatra</span>
+</a>

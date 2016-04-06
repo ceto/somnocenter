@@ -65,7 +65,7 @@ $caption-title-color:             #F3F3F3 !default;
 $caption-subtitle-color:          #BDBDBD !default;
 
 // A11y
-$use-visuallyhidden:              false !default; // Hide content from browsers, but make it available for screen readers 
+$use-visuallyhidden:              false !default; // Hide content from browsers, but make it available for screen readers
 
 
 
@@ -128,7 +128,7 @@ $use-visuallyhidden:              false !default; // Hide content from browsers,
 
 // Remove vertical centering when popup has class `mfp-align-top`
 .mfp-align-top {
-  .mfp-container { 
+  .mfp-container {
     &:before {
       display: none;
     }
@@ -630,3 +630,5 @@ button {
     }
   }
 }
+
+

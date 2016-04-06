@@ -15,10 +15,46 @@
   }
 }
 
-.innernav .nav-tabs > li > a {
-  //text-transform: uppercase;
-  //font-weight: 700;
-  font-size: 1rem;
-  padding: .666em .875em;
-  //border-bottom: none;
+.innernav {
+  border-bottom: none;
+  position: absolute;
+  bottom:0;
+ .nav-tabs {
+    border-bottom: none;
+    > li > a {
+      //text-transform: uppercase;
+      //font-weight: 700;
+      font-size: .75rem;
+      padding: .666em .875em;
+      //border-bottom: none;
+      margin-bottom: 6px;
+      @include breakpoint($s2) {
+        margin-bottom:0;
+      }
+      @include breakpoint($s3) {
+        font-size: 1rem;
+
+      }
+    }
+  }
+}
+
+
+.onlydialog {
+  background: $blue-120;
+  color:#fff;
+  padding: 20px 30px;
+  text-align: left;
+  max-width: 400px;
+  margin: 40px auto;
+  position: relative;
+  .betegseg-list {
+    > li {
+      width: 100%;
+      float:none;
+      clear: both;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
 }

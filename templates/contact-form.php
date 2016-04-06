@@ -76,7 +76,7 @@ if(!$human == 0){
 ?>
 <div id="respond" class="contact-wrap white-popup-block szaggat amfp-hide">
   <div id="infopan"><?php echo $response; ?></div>
-  <h2 class="block-title"><?php _e('Jelentkezzen online','roots'); ?></h2>
+  <h2 class="block-title"><?php _e('Jelentkezéshez töltse ki az alábbi űrlapot','roots'); ?></h2>
 
   <?php wp_reset_query(); the_post(); ?>
   <form class="form-horizontal" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post">

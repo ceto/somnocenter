@@ -39,9 +39,6 @@
 </style>
 
 <div class="page-headerfigure <?php echo $localclass;  ?>">
-  <?php /* if ( function_exists('yoast_breadcrumb') ) {
-    yoast_breadcrumb('<p class="breadcrumbs">','</p>');
-  } */?>
   <div class="fosrow">
     <header class="hero-block" role="complementary">
         <div class="hero-text">
@@ -57,15 +54,18 @@
 
     <?php get_template_part('templates/narancs'); ?>
 
+    <?php if ( get_post_meta( $post->ID, '_cmb_innermenu', true ) != 0) : ?>
+      <nav class="innernav">
+        <?php wp_nav_menu( array(
+          'menu'=>get_post_meta( $post->ID, '_cmb_innermenu', true ),
+          'menu_class'=>'nav nav-tabs'
+         )); ?>
+      </nav>
+    <?php endif; ?>
+
+
   </div>
 </div>
 
 
-<?php if ( get_post_meta( $post->ID, '_cmb_innermenu', true ) != 0) : ?>
-  <nav class="innernav">
-    <?php wp_nav_menu( array(
-      'menu'=>get_post_meta( $post->ID, '_cmb_innermenu', true ),
-      'menu_class'=>'nav nav-tabs gyogyTab'
-     )); ?>
-  </nav>
-<?php endif; ?>
+
