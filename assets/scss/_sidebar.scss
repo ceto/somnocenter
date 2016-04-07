@@ -15,8 +15,8 @@
   @include breakpoint($s3) {
     width:23%;
   }
-  
-  
+
+
 
   .lifelogo {
     margin:1.75em auto 0 auto;
@@ -27,8 +27,26 @@
   .widget {
     background: white;
     color:$blue;
-
     margin-bottom: 2em;
+    @include breakpoint($s1) {
+      width:48%;
+      float:left;
+      margin-left: 2%;
+      &:nth-of-type(2n+1) {
+        clear:left;
+        margin-right: 2%;
+        margin-left: 0;
+      }
+    }
+    @include breakpoint($s2) {
+      width:100%;
+      float:none;
+      clear:both;
+      margin-left:0 !important;
+      margin-right:0 !important;
+
+    }
+
     .widget-title {
       background: $blue-70;
       padding:0.5em 1em;
@@ -40,7 +58,7 @@
     .textwidget {
       padding:0 1em 0.5em;
     }
-    
+
   }
 
   .widget_test {
@@ -61,15 +79,15 @@
     .btn {
       padding-right:20%;
       background: $red;
-     
+
       //width:100%;
       margin:0 0.75em 0.75em;
     text-transform: uppercase;
     //background: $blue;
     &:hover, &:focus {
-      background: $orange;  
+      background: $orange;
     }
-      
+
     }
   }
 
@@ -95,9 +113,9 @@
       margin-bottom: 2%;
     }
   }
-  
-  
-  
+
+
+
 }
 
 .rovatlista {
@@ -124,7 +142,7 @@
     line-height:1em;
     padding:0.5em 0 0.5em 2.5em;
     display:block;
-    margin:0.25em 0; 
+    margin:0.25em 0;
     //background-color: $blue-30;
     color:$blue;
     &:hover, &:focus  {
@@ -179,7 +197,7 @@
     background-size: auto auto;
   }
   @include breakpoint($s4){
-   
+
   }
   @include breakpoint(1600px){
     background-position: 10% bottom;
@@ -189,7 +207,7 @@
   .row {
 
   }
-  
+
   .catmore{
     color:$red-30;
     font-style:italic;
@@ -214,7 +232,7 @@
       float:left;
       width:33.33333%;
       padding:1em;
-    }  
+    }
 
     &.dupla {
 
@@ -223,7 +241,7 @@
 
       @include breakpoint($s2) {
         width:66.66666666%;
-      } 
+      }
     }
     &.widget_qa{
       // background-image:url('../img/kerdojel.png');
@@ -248,7 +266,7 @@
     }
 
     &.widget_recent_entries, &.widget_categories, &.widget_qa, &.widget_archive, &.widget_illness {
-      
+
 
       ul{
         @include clearfix();
@@ -311,7 +329,7 @@
   @include breakpoint(1600px){
     background-position: 90% bottom;
   }
-  //background: 
+  //background:
     //url('../img/hattter-05.png') no-repeat right bottom,
     //url('../img/hattter-05.png') no-repeat left top,
   //  url('../img/bagoly.png') no-repeat 98% bottom $blue;
@@ -331,7 +349,7 @@
     //background: $blue;
     //margin:4em auto;
     //width:50%;
-    
+
   }
 }
 
@@ -343,7 +361,7 @@
   @include breakpoint($s3) {
     width:62%;
   }
-   
+
   h3 {
     color:white;
     position: relative;
@@ -353,7 +371,7 @@
     font-size: 1.75em;
     font-weight: 400;
     @include breakpoint($s1){
-      font-size: 2em;      
+      font-size: 2em;
     }
     small{
       font-size: 0.5em;
@@ -368,14 +386,14 @@
 
   .hide{
     display:none;
-  } 
-  
+  }
+
   .input-group{
     width:100%;
 
     //display: inline-block;
     //border:6px solid white;
-   
+
   }
 
   input[type="search"]{
@@ -387,7 +405,7 @@
     color:$blue-text;
     display: block;
     border:6px solid white;
-    border-right: none;  
+    border-right: none;
     float:left;
     padding:0.33333333em 0.333333em 0.125em;
     outline:0;
@@ -396,10 +414,10 @@
     &:hover, &:focus {
       box-shadow: inset 0 0 6px 0 $blue;
     }
-  
+
   }
   button.btn {
-    
+
     background: $blue-120;
     font-size: 1.5em;
     line-height:1em;
@@ -407,9 +425,9 @@
     float:left;
     display: block;
     border:6px solid white;
-    border-left: none; 
+    border-left: none;
 
-  
+
     padding:0.33333333em 0.5em 0.3333333em;
     max-width: 33.333333%;
     height: 60px;
@@ -441,7 +459,7 @@
     padding:0;
     max-width: 28em;
   }
-  
+
   li {
     list-style-type: none;
     display:inline;
@@ -475,9 +493,9 @@
   margin:4em auto;
   clear:both;
   max-width: $maximum;
-  
+
   h3{
-    
+
     margin:0 0 1em 0;
     font-size: 1.5em;
     line-height: 1.25em;
@@ -523,7 +541,7 @@
       font-weight: 400;
       font-family: $serif;
       margin-top: 0.25em;
-    } 
+    }
 
     @include breakpoint($s2){
       max-width:33.333333%;

@@ -33,6 +33,12 @@
       }
       @include breakpoint($s3) {
         font-size: 1rem;
+      }
+    }
+    >li.active {
+      > a:hover,  > a:focus {
+        text-decoration: underline;
+        cursor: pointer;
 
       }
     }
@@ -40,7 +46,7 @@
 }
 
 
-.onlydialog {
+.onlydialog.pagecopy {
   background: $blue-120;
   color:#fff;
   padding: 20px 30px;
@@ -48,6 +54,7 @@
   max-width: 400px;
   margin: 40px auto;
   position: relative;
+  float:none;
   .betegseg-list {
     > li {
       width: 100%;

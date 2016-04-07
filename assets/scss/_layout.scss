@@ -278,5 +278,31 @@ ol.golyos {
 .pagecopy {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  //background-color: $blue-90;
+
+  @include breakpoint($s2) {
+   width:68%;
+   float:left;
+   //padding-right: 2rem;
+  }
+  @include breakpoint($s3) {
+    width: 75%;
+    padding-right: 2%;
+  }
+}
+
+.pagesidebar.inner-side {
+
+
+  .rovatfej, .rovatlista {
+    display:none;
+  }
+
+  .widget {
+    padding-bottom: 2rem;
+    @include breakpoint($s2) {
+     &:nth-of-type(n+4) {
+      display: none;
+     }
+    }
+  }
 }
