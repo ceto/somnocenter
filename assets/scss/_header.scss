@@ -194,21 +194,21 @@
 #owl-home {
   .item {
     padding-top: 2em;
-    padding-bottom: 4em;
+    padding-bottom: 1em;
     background-repeat: no-repeat;
     background-size: cover;
     @include breakpoint($s2) {
       padding-top:6em;
-      padding-bottom: 4em;
+      padding-bottom: 3em;
     }
     @include breakpoint($s4) {
-      padding-top:8em;
-      padding-bottom: 4em;
+      padding-top:13em;
+      padding-bottom: 3em;
     }
-    @include breakpoint($s5) {
-      padding-top:12em;
-      padding-bottom: 6em;
-    }
+    // @include breakpoint($s5) {
+    //   padding-top:12em;
+    //   padding-bottom: 6em;
+    // }
   }
 }
 
@@ -263,10 +263,10 @@
 
 
     @include breakpoint($s2) {
-      max-width: 500px;
+      max-width: 600px;
     }
     @include breakpoint($s3) {
-      max-width: $s2;
+      max-width: $s3;
     }
 
     span{
@@ -310,7 +310,7 @@
 }
 
 .hero-action {
-  margin:2em auto 0 auto;
+  margin:1em auto 0 auto;
   a{
     margin-top: 0.25em;
     font-size:1.25em;

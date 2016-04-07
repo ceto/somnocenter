@@ -2,7 +2,7 @@
 
 
   .container[role="document"]{
-    
+
     .row {
       max-width:none;
       padding:0 0;
@@ -11,7 +11,7 @@
       }
       @include breakpoint($s2) {
         padding:0 0;
-      }  
+      }
 
     }
 
@@ -41,7 +41,7 @@
 
   .container[role="document"]{
     background-image:none;
-    
+
     .row {
       max-width:none;
       padding:0 0;
@@ -50,14 +50,14 @@
       }
       @include breakpoint($s2) {
         padding:0 0;
-      }  
+      }
 
     }
 
   }
 
 
-  
+
   .main.wide {
     padding:0 0;
     width:auto;
@@ -72,14 +72,14 @@
     }
     @include breakpoint($s2) {
       //background: linear-gradient(to right, $blue-70, $blue-70 50%, $blue-120 50%, $blue-120);
-    }  
+    }
 
     .inner {
       max-width: $maximum;
       margin:0 auto;
       @include breakpoint($s2) {
         padding:0 1em;
-      }  
+      }
       &:after {
         position: absolute;
         content: '';
@@ -92,7 +92,7 @@
           background: url(../img/hold.png) no-repeat 50% 60px, url(../img/nap.png) no-repeat 50% 60px transparent;
           opacity:1;
           background-size: 110px auto;
-        }  
+        }
       }
     }
   }
@@ -100,11 +100,11 @@
   .feles {
     position: relative;
     z-index: 1;
-    
-    
+
+
     font-size: 16px;
     line-height:22px;
-    
+
     @include breakpoint($s2) {
       width:50%;
       float:left;
@@ -146,137 +146,20 @@
       padding:2em 0 2em 2em;
     }
     h2 {
-      
+
       @include breakpoint($s3) {
         text-align: right;
       };
 
-      
+
     }
-    
+
     a{
       //color:$blue-30;
     }
   }
 
-
-
-
-  
-  .tuncike {
-    @include clearfix;
-    margin-bottom:0.5em;
-    &:nth-child(2n) {
-      //margin-right:0;
-      //float:right;
-    }
-
-
-    h3 {
-      margin: 0;
-      padding:0;
-      text-transform: none;
-      //font-variant: small-caps;
-      a {
-        position: relative;
-        font-size: 1em;
-        line-height: 1.125em;
-        display: block;
-        font-family: $serif;
-        padding:0.75em 2.5em 0.5em 0.75em;
-        color:$blue-120;
-        background-color: white;
-        //border-bottom: 1px solid $blue-90;
-
-        &:hover, &:focus {
-          text-decoration: none;
-          color:$eggplant;
-          .icon:before {
-            background-color: $eggplant;
-          }
-        }
-        &.collapsed {
-          .icon:before {
-            content: "\f1c9";
-            //content: "\f27e";
-          }
-          
-
-        }
-      
-        .icon:before {
-          position:absolute;
-          right:0; top:0;bottom:0;
-          background-color: $blue-120;
-          color:white;
-          width:44px;
-          text-align:center;
-          content: "\f2bd";
-          font-size: 2em;
-          display: inline-block;
-          font-family: "Ionicons";
-          speak: none;
-          font-style: normal;
-          font-weight: normal;
-          font-variant: normal;
-          text-transform: none;
-          text-rendering: auto;
-          line-height: 1.25em;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-
-        }
-
-
-      }
-    }
-
-
-    .conti {
-     .belso {
-        @include clearfix;
-        padding:0 1em 1em 1em;
-        background-color: white;
-      }
-      
-      p {
-      }
-    }
-
-    .read-more {
-      margin:0.75em 0 0 0;  
-    }
-  }
-  
-  // .feles2 .tuncike{
-  //   h3 {
-  //     a {
-  //       background-color:$blue-90;
-  //       &:hover, &:focus {
-  //         //color:$eggplant;
-  //         .icon:before {
-  //           background-color: $eggplant;
-  //           color:white;
-  //         }
-  //       }
-  //       .icon:before {
-  //         background-color: $blue-30;
-  //         color:$blue-120;
-  //       }
-  //     }
-  //   }
-  //   .conti {
-  //    .belso {
-  //       background-color: $blue-90;
-  //     }
-      
-  //   }
-
-    
-  // }
-
 }
-
 
 .betegsegek {
   //background: url('../img/watermark.png') no-repeat center center white;
@@ -288,10 +171,10 @@
     padding:0 6px;
     @include breakpoint($s1) {
       padding:0 12px;
-    } 
+    }
     @include breakpoint($s2) {
       padding:0 1em;
-    }  
+    }
   }
 }
 
@@ -304,7 +187,7 @@
 
     padding-right:0.5em;
     padding-bottom:0.25em;
-    @include breakpoint($s2) {  
+    @include breakpoint($s2) {
       float:left;
       width:50%;
       &:nth-child(2n) {
@@ -363,12 +246,12 @@
       //max-width: 100%;
       //margin:0 auto;
     }
-    
+
     aside {
       //max-width: $maximum;
       //margin-left:auto;
       //margin-right:auto;
-    }  
+    }
   }
 
 
@@ -403,23 +286,23 @@
             opacity: 1;
             transform: translate(0,0);
           }
-        } 
+        }
       }
 
       &:first-child{
         background: url('../img/hattter-05.png') no-repeat center bottom $blue-120 !important;
-        background-size: 100% 100% !important; 
+        background-size: 100% 100% !important;
         color:$blue-90 !important;
         a {
           color:$red;
-        } 
+        }
       }
       // &:last-child{
-      //   background: $blue-70 !important; 
+      //   background: $blue-70 !important;
       //   color:$blue-120;
       //   a {
       //     color:$orange;
-      //   } 
+      //   }
       // }
 
       &:nth-child(2n){
@@ -431,28 +314,28 @@
         color:$blue-90;
         a {
           color:$red;
-        } 
+        }
       }
       &:nth-child(3n){
         background: $blue-70;
         color:$blue-120;
         a {
           color:$orange;
-        } 
+        }
       }
       // &:nth-child(3n+1){
       //   background: $eggplant;
       //   color:$blue-90;
       //   a {
       //     color:white;
-      //   } 
+      //   }
       // }
       &:nth-child(3n+1){
         background: white;
         color:$blue-120;
         a {
           //color:white;
-        } 
+        }
       }
 
       .read-more {
@@ -499,7 +382,7 @@
 
 
 .page-template-page-kozpontok-php{
-  
+
   // .container[role="document"]{
   //   .row {
   //     max-width: $maximum;
@@ -510,7 +393,7 @@
   //     }
   //     @include breakpoint($s2) {
   //       padding:0 1em;
-  //     }  
+  //     }
   //   }
   // }
   .felteke {
@@ -522,7 +405,7 @@
     }
     @include breakpoint($s2) {
       padding:0 1em;
-    }  
+    }
 
   }
 
@@ -554,7 +437,7 @@
     border: 1px solid $blue-70;
   }
 
-} 
+}
 
 
 .orvoslista-blokk {
@@ -563,7 +446,7 @@
   max-width: $s3;
   .orvoskocka{
     text-align: center;
-    
+
     padding:1em;
 
     @include breakpoint($s1){
@@ -574,7 +457,7 @@
       }
 
     }
-    
+
     @include breakpoint($s2){
       width:33.333%;
       float:left;

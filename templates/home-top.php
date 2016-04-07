@@ -1,6 +1,6 @@
 <div class="container home-top">
 
-<div id="owl-home" class="owl-carousel owl-theme">
+  <div id="owl-home" class="owl-carousel owl-theme">
 
     <?php if ( get_post_meta( get_the_ID(), 'slides', true ) ) {
       $slides = get_post_meta( get_the_ID(), 'slides', true );
@@ -20,8 +20,6 @@
             $imcigiant = wp_get_attachment_image_src( get_post_thumbnail_id( 10 ), 'giant31' );
           }
         ?>
-
-
 
         <div class="item item-<?= ++$i; ?>">
           <style type="text/css">
@@ -54,56 +52,11 @@
             </div>
           </div>
         </div><!-- /.item-->
-    <?php } } ?>
-</div>
+      <?php } } ?>
+  </div>
 
   <?php get_template_part('templates/narancs'); ?>
 
-
-</div><!-- /.home-top -->
-
+</div>
 
 
-
-
-
-
-
-
-<div class="container document" role="document">
-<div class="content row">
-    <div class="home-ads">
-    <?php if ( get_post_meta( get_the_ID(), 'ads', true ) ) {
-      $ads = get_post_meta( get_the_ID(), 'ads', true );
-      $i=0;
-      foreach ( (array) $ads as $key => $entry ) { ?>
-        <aside class="home-featured home-featured-<?= ++$i; ?> clearfix">
-          <?php /*
-            if ($entry['photo']!='') {
-              $imcismall = wp_get_attachment_image_src( $entry['photo_id'] , 'small43' );
-              $imcimedium = wp_get_attachment_image_src( $entry['photo_id'] , 'medium31' );
-            }
-          */?>
-          <!--style type="text/css">
-              .home-featured-<?= $i; ?> {
-                background-image:url('<?php echo $imcismall['0']; ?>');
-              }
-              @media only screen and (min-width: 768px) {
-                .home-featured-<?= $i; ?> {
-                  background-image:url('<?php echo $imcimedium['0']; ?>');
-                }
-              }
-          </style-->
-          <div class="finner">
-            <h3><a href="<?= $entry['url'] ?>"><?= $entry['title'] ?></a></h3>
-            <p><?= $entry['paragpraph'] ?></p>
-            <a href="<?= $entry['url'] ?>" class="btn"><?= $entry['button'] ?></a>
-          </div>
-        </aside>
-    <?php } } ?>
-    </style>
-
-
-
-</div><!-- /.content -->
-</div><!-- /.container .document -->

@@ -29,7 +29,91 @@
   }
 }
 
+
+.tuncike {
+  @include clearfix;
+  margin-bottom:0.5em;
+
+  h3 {
+    margin: 0;
+    padding:0;
+    text-transform: none;
+    //font-variant: small-caps;
+    a {
+      position: relative;
+      font-size: 1em;
+      line-height: 1.125em;
+      display: block;
+      font-family: $serif;
+      padding:0.75em 2.5em 0.5em 0.75em;
+      color:$blue-120;
+      background-color: white;
+      //border-bottom: 1px solid $blue-90;
+
+      &:hover, &:focus {
+        text-decoration: none;
+        color:$eggplant;
+        .icon:before {
+          background-color: $eggplant;
+        }
+      }
+      &.collapsed {
+        .icon:before {
+          content: "\f1c9";
+          //content: "\f27e";
+        }
+
+
+      }
+
+      .icon:before {
+        position:absolute;
+        right:0; top:0;bottom:0;
+        background-color: $blue-120;
+        color:white;
+        width:44px;
+        text-align:center;
+        content: "\f2bd";
+        font-size: 2em;
+        display: inline-block;
+        font-family: "Ionicons";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        text-rendering: auto;
+        line-height: 1.25em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+      }
+
+
+    }
+  }
+
+
+  .conti {
+   .belso {
+      @include clearfix;
+      padding:0 1em 1em 1em;
+      background-color: white;
+    }
+
+    p {
+    }
+  }
+
+  .read-more {
+    margin:0.75em 0 0 0;
+  }
+}
+
+
+
 .tunetlistawrap {
+  @include clearfix();
   background-color: $blue-90;
 }
 
@@ -39,41 +123,37 @@
 
 .tunetek {
   header {
-    padding-top: 3rem;
-    p {
-      // font-size:112.5%;
-      // line-height: 1.5;
-    }
+    margin-bottom: 2rem;
+  }
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+
+  @include breakpoint($s2) {
+    width:50%;
+    float:left;
+    padding-right: 2%;
+  }
+}
+
+.tunetek--ejszakai {
+  @include breakpoint($s2) {
+    padding-left: 2%;
+    padding-right: 0;
+    width:50%;
+    float:right;
   }
 }
 .tunet {
-  // padding-top:2rem;
-  // padding-bottom: 2rem;
-  // &:nth-of-type(2n+1) {
-  //   background-color: #fff;
-  // }
+
 }
 
 .tunet__wrap {
-  // padding:1rem;
-  // background-color: #fff;
-  // //margin-bottom: 1rem;
+
 }
 
 .tunet__name {
   text-transform: none;
-//   @include breakpoint($s3) {
-//     //font-size: 2.25rem;
-//     width:33.333%;
-//     float:left;
-//     padding-right: 1rem;
-//     margin-top: 1.5rem;
-//   }
 }
 
-// .tunet__cont {
-//   @include breakpoint($s3) {
-//     width:66.666%;
-//     float:right;
-//   }
-// }
+
+
