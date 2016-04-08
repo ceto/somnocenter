@@ -114,19 +114,36 @@
 
 .tunetlistawrap {
   @include clearfix();
-  background-color: $blue-90;
-}
-
-.tunetek--ejszakai {
-  //background-color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
 }
 
 .tunetek {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center .5rem;
+  background-image: url(../img/clouds.png);
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+
+  &:before {
+    opacity: .1;
+    content:'';
+    position: absolute;
+    right:4%;
+    top:1.25rem;
+    display: block;
+    width:96%;
+    height:3.5rem;
+    background-image: url(../img/nap.png);
+    background-repeat: no-repeat;
+    background-position: 64% center;
+    background-size: auto 85%;
+  }
+
   header {
     margin-bottom: 2rem;
   }
-  padding-top: 4rem;
-  padding-bottom: 5rem;
 
   @include breakpoint($s2) {
     width:50%;
@@ -136,6 +153,13 @@
 }
 
 .tunetek--ejszakai {
+  background-image: url(../img/stars.png);
+  &:before {
+    right:0;
+    background-image: url(../img/hold.png);
+        background-size: auto 100%;
+    opacity: 1;
+  }
   @include breakpoint($s2) {
     padding-left: 2%;
     padding-right: 0;

@@ -69,7 +69,7 @@ function sc_metaboxes() {
 
   $cmb_tunetpage_1->add_field( array (
     'name' => 'Nappali tünetek lead',
-    'id'   => 'lead',
+    'id'   => 'lead_1',
     'type' => 'wysiwyg',
     'options' => array (
       'textarea_rows' => get_option('default_post_edit_rows', 8)
@@ -77,7 +77,7 @@ function sc_metaboxes() {
   ));
   $cmb_tunetpage_2->add_field( array (
     'name' => 'Éjszakai tünetek lead',
-    'id'   => 'lead',
+    'id'   => 'lead_2',
     'type' => 'wysiwyg',
     'options' => array (
       'textarea_rows' => get_option('default_post_edit_rows', 8)

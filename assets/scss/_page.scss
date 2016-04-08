@@ -18,7 +18,9 @@
   }
 
   .main{
-    padding-top:0em;
+    padding-top:0;
+    padding-bottom: 0;
+
     .page-content {
       margin:0 auto;
       max-width: $s2;

@@ -5615,6 +5615,9 @@ body {
     clear: both;
     padding-left: 0 !important;
     padding-right: 0 !important; }
+  /* line 67, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_components.scss */
+  .onlydialog.pagecopy p a {
+    color: inherit; }
 
 /* ==========================================================================
    Inner Sidebar
@@ -6555,13 +6558,14 @@ body {
 
 /* line 20, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .page .main {
-  padding-top: 0em; }
-  /* line 22, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  padding-top: 0;
+  padding-bottom: 0; }
+  /* line 24, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .page .main .page-content {
     margin: 0 auto;
     max-width: 768px;
     padding: 0 6px; }
-    /* line 26, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 28, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page .main .page-content > p:first-child {
       font-size: 1.125em;
       line-height: 1.4em;
@@ -6570,28 +6574,28 @@ body {
       border-bottom: 1px solid #c5d2e6;
       padding: 1em 0; }
 
-/* line 42, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 44, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .page-template-page-felezett-php .container[role="document"], .page-template-page-tunetek-php .container[role="document"], .page-template-page-gyogyitasstart-php .container[role="document"] {
   background-image: none; }
-  /* line 45, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  /* line 47, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .page-template-page-felezett-php .container[role="document"] .row, .page-template-page-tunetek-php .container[role="document"] .row, .page-template-page-gyogyitasstart-php .container[role="document"] .row {
     max-width: none;
     padding: 0 0; }
     @media only screen and (min-width: 480px) {
-      /* line 45, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+      /* line 47, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
       .page-template-page-felezett-php .container[role="document"] .row, .page-template-page-tunetek-php .container[role="document"] .row, .page-template-page-gyogyitasstart-php .container[role="document"] .row {
         padding: 0 0; } }
     @media only screen and (min-width: 768px) {
-      /* line 45, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+      /* line 47, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
       .page-template-page-felezett-php .container[role="document"] .row, .page-template-page-tunetek-php .container[role="document"] .row, .page-template-page-gyogyitasstart-php .container[role="document"] .row {
         padding: 0 0; } }
 
-/* line 61, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 63, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .page-template-page-felezett-php .main.wide, .page-template-page-tunetek-php .main.wide, .page-template-page-gyogyitasstart-php .main.wide {
   padding: 0 0;
   width: auto; }
 
-/* line 66, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 68, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .page-template-page-felezett-php .felezett, .page-template-page-tunetek-php .felezett, .page-template-page-gyogyitasstart-php .felezett {
   *zoom: 1;
   position: relative;
@@ -6607,18 +6611,18 @@ body {
   .page-template-page-felezett-php .felezett:after, .page-template-page-tunetek-php .felezett:after, .page-template-page-gyogyitasstart-php .felezett:after {
     clear: both; }
   @media only screen and (min-width: 480px) {
-    /* line 66, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 68, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-felezett-php .felezett, .page-template-page-tunetek-php .felezett, .page-template-page-gyogyitasstart-php .felezett {
       padding: 0 0; } }
-  /* line 77, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  /* line 79, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .page-template-page-felezett-php .felezett .inner, .page-template-page-tunetek-php .felezett .inner, .page-template-page-gyogyitasstart-php .felezett .inner {
     max-width: 1140px;
     margin: 0 auto; }
     @media only screen and (min-width: 768px) {
-      /* line 77, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+      /* line 79, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
       .page-template-page-felezett-php .felezett .inner, .page-template-page-tunetek-php .felezett .inner, .page-template-page-gyogyitasstart-php .felezett .inner {
         padding: 0 1em; } }
-    /* line 83, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 85, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-felezett-php .felezett .inner:after, .page-template-page-tunetek-php .felezett .inner:after, .page-template-page-gyogyitasstart-php .felezett .inner:after {
       position: absolute;
       content: '';
@@ -6631,87 +6635,87 @@ body {
       z-index: 0;
       opacity: 0.75; }
       @media only screen and (min-width: 768px) {
-        /* line 83, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+        /* line 85, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
         .page-template-page-felezett-php .felezett .inner:after, .page-template-page-tunetek-php .felezett .inner:after, .page-template-page-gyogyitasstart-php .felezett .inner:after {
           background: url(../img/hold.png) no-repeat 50% 60px, url(../img/nap.png) no-repeat 50% 60px transparent;
           opacity: 1;
           background-size: 110px auto; } }
 
-/* line 100, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 102, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .page-template-page-felezett-php .feles, .page-template-page-tunetek-php .feles, .page-template-page-gyogyitasstart-php .feles {
   position: relative;
   z-index: 1;
   font-size: 16px;
   line-height: 22px; }
   @media only screen and (min-width: 768px) {
-    /* line 100, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 102, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-felezett-php .feles, .page-template-page-tunetek-php .feles, .page-template-page-gyogyitasstart-php .feles {
       width: 50%;
       float: left; } }
-  /* line 113, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  /* line 115, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .page-template-page-felezett-php .feles h2, .page-template-page-tunetek-php .feles h2, .page-template-page-gyogyitasstart-php .feles h2 {
     font-size: 2em;
     margin: 3em 0 2em; }
 
-/* line 118, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 120, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 {
   background: url(../img/clouds.png) no-repeat left 1em transparent;
   padding: 2em 6px; }
   @media only screen and (min-width: 480px) {
-    /* line 118, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 120, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 {
       padding: 2em 12px; } }
   @media only screen and (min-width: 768px) {
-    /* line 118, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 120, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 {
       padding: 2em 1em 2em 0;
       background-color: transparent; } }
   @media only screen and (min-width: 1024px) {
-    /* line 118, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 120, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-felezett-php .feles1, .page-template-page-tunetek-php .feles1, .page-template-page-gyogyitasstart-php .feles1 {
       padding: 2em 2em 2em 0; } }
 
-/* line 133, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 135, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 {
   background: url(../img/stars.png) no-repeat right 1em transparent;
   padding: 2em 6px; }
   @media only screen and (min-width: 480px) {
-    /* line 133, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 135, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 {
       padding: 2em 12px; } }
   @media only screen and (min-width: 768px) {
-    /* line 133, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 135, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 {
       padding: 2em 0 2em 1em;
       background-color: transparent; } }
   @media only screen and (min-width: 1024px) {
-    /* line 133, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 135, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-felezett-php .feles2, .page-template-page-tunetek-php .feles2, .page-template-page-gyogyitasstart-php .feles2 {
       padding: 2em 0 2em 2em; } }
   @media only screen and (min-width: 1024px) {
-    /* line 148, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 150, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-felezett-php .feles2 h2, .page-template-page-tunetek-php .feles2 h2, .page-template-page-gyogyitasstart-php .feles2 h2 {
       text-align: right; } }
 
-/* line 164, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 166, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .betegsegek {
   background-color: white;
   padding: 2em 0; }
-  /* line 168, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  /* line 170, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .betegsegek .inner {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 6px; }
     @media only screen and (min-width: 480px) {
-      /* line 168, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+      /* line 170, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
       .betegsegek .inner {
         padding: 0 12px; } }
     @media only screen and (min-width: 768px) {
-      /* line 168, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+      /* line 170, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
       .betegsegek .inner {
         padding: 0 1em; } }
 
-/* line 181, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 183, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .betegseg-list {
   *zoom: 1;
   margin: 0;
@@ -6724,22 +6728,22 @@ body {
   /* line 18, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_mixins.scss */
   .betegseg-list:after {
     clear: both; }
-  /* line 185, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  /* line 187, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .betegseg-list li {
     list-style: none;
     padding-right: 0.5em;
     padding-bottom: 0.25em; }
     @media only screen and (min-width: 768px) {
-      /* line 185, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+      /* line 187, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
       .betegseg-list li {
         float: left;
         width: 50%; }
-        /* line 193, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+        /* line 195, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
         .betegseg-list li:nth-child(2n) {
           float: right;
           padding-right: 0;
           padding-left: 0.5em; } }
-  /* line 200, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  /* line 202, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .betegseg-list a {
     position: relative;
     display: block;
@@ -6748,15 +6752,15 @@ body {
     font-weight: 700;
     line-height: 1.125em;
     padding: 0.5em 1em; }
-    /* line 208, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 210, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .betegseg-list a:hover, .betegseg-list a:focus {
       text-decoration: none;
       background-color: #4c6ba2;
       color: #f3f6fa; }
-      /* line 212, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+      /* line 214, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
       .betegseg-list a:hover:before, .betegseg-list a:focus:before {
         background-color: #e6533e; }
-    /* line 216, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 218, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .betegseg-list a:before {
       position: absolute;
       top: 0;
@@ -6780,114 +6784,114 @@ body {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
 
-/* line 258, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 260, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .page-template-page-vizsgalatok-php .main.wide, .page-template-page-gyogyitasstart-php .main.wide {
   width: auto; }
 
-/* line 263, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 265, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .page-template-page-vizsgalatok-php .indent, .page-template-page-gyogyitasstart-php .indent {
   max-width: 1140px;
   margin: 0 auto;
   font-size: 1.125em;
   line-height: 1.4em; }
 
-/* line 271, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 273, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .page-template-page-vizsgalatok-php .vizsga-lista, .page-template-page-gyogyitasstart-php .vizsga-lista {
   margin: 5em 0 0; }
-  /* line 277, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  /* line 279, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .page-template-page-vizsgalatok-php .vizsga-lista .exam .inner, .page-template-page-gyogyitasstart-php .vizsga-lista .exam .inner {
     max-width: 1140px;
     margin: 0 auto;
     padding: 6em; }
-    /* line 281, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 283, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .js .page-template-page-vizsgalatok-php .vizsga-lista .exam .inner, .js .page-template-page-gyogyitasstart-php .vizsga-lista .exam .inner {
       opacity: 0;
       transform: translate(-25%, 0);
       transition: all 500ms ease; }
-      /* line 285, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+      /* line 287, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
       .js .page-template-page-vizsgalatok-php .vizsga-lista .exam .inner.onScreen, .js .page-template-page-gyogyitasstart-php .vizsga-lista .exam .inner.onScreen {
         opacity: 1;
         transform: translate(0, 0); }
-  /* line 292, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  /* line 294, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .page-template-page-vizsgalatok-php .vizsga-lista .exam:first-child, .page-template-page-gyogyitasstart-php .vizsga-lista .exam:first-child {
     background: url("../img/hattter-05.png") no-repeat center bottom #4c6ba2 !important;
     background-size: 100% 100% !important;
     color: #f3f6fa !important; }
-    /* line 296, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 298, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-vizsgalatok-php .vizsga-lista .exam:first-child a, .page-template-page-gyogyitasstart-php .vizsga-lista .exam:first-child a {
       color: #e6533e; }
-  /* line 308, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  /* line 310, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .page-template-page-vizsgalatok-php .vizsga-lista .exam:nth-child(2n), .page-template-page-gyogyitasstart-php .vizsga-lista .exam:nth-child(2n) {
     background: #c5d2e6; }
-  /* line 312, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  /* line 314, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .page-template-page-vizsgalatok-php .vizsga-lista .exam:nth-child(2n+1), .page-template-page-gyogyitasstart-php .vizsga-lista .exam:nth-child(2n+1) {
     background: #5b7eb7;
     color: #f3f6fa; }
-    /* line 315, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 317, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-vizsgalatok-php .vizsga-lista .exam:nth-child(2n+1) a, .page-template-page-gyogyitasstart-php .vizsga-lista .exam:nth-child(2n+1) a {
       color: #e6533e; }
-  /* line 319, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  /* line 321, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .page-template-page-vizsgalatok-php .vizsga-lista .exam:nth-child(3n), .page-template-page-gyogyitasstart-php .vizsga-lista .exam:nth-child(3n) {
     background: #e9eef5;
     color: #4c6ba2; }
-    /* line 322, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 324, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-vizsgalatok-php .vizsga-lista .exam:nth-child(3n) a, .page-template-page-gyogyitasstart-php .vizsga-lista .exam:nth-child(3n) a {
       color: #f7941e; }
-  /* line 333, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  /* line 335, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .page-template-page-vizsgalatok-php .vizsga-lista .exam:nth-child(3n+1), .page-template-page-gyogyitasstart-php .vizsga-lista .exam:nth-child(3n+1) {
     background: white;
     color: #4c6ba2; }
-  /* line 341, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  /* line 343, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .page-template-page-vizsgalatok-php .vizsga-lista .exam .read-more, .page-template-page-gyogyitasstart-php .vizsga-lista .exam .read-more {
     margin-top: 1em;
     color: white !important;
     background: #e6533e; }
-    /* line 346, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 348, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-vizsgalatok-php .vizsga-lista .exam .read-more:hover, .page-template-page-vizsgalatok-php .vizsga-lista .exam .read-more:focus, .page-template-page-gyogyitasstart-php .vizsga-lista .exam .read-more:hover, .page-template-page-gyogyitasstart-php .vizsga-lista .exam .read-more:focus {
       background: #f7941e; }
-  /* line 352, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  /* line 354, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .page-template-page-vizsgalatok-php .vizsga-lista .exam figure, .page-template-page-gyogyitasstart-php .vizsga-lista .exam figure {
     float: right;
     padding: 1em 1em 3em;
     width: 30%;
     text-align: center; }
-    /* line 358, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 360, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-vizsgalatok-php .vizsga-lista .exam figure img, .page-template-page-gyogyitasstart-php .vizsga-lista .exam figure img {
       margin: 0.25em 0.25em;
       opacity: 1; }
-  /* line 366, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  /* line 368, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .page-template-page-vizsgalatok-php .vizsga-lista .exam:nth-child(2n) figure, .page-template-page-gyogyitasstart-php .vizsga-lista .exam:nth-child(2n) figure {
     float: left; }
 
-/* line 379, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 381, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .mitortenik {
   background: #c5d2e6; }
 
-/* line 399, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 401, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .page-template-page-kozpontok-php .felteke {
   max-width: 1140px;
   margin: 2em auto 0 auto;
   padding: 0 6px; }
   @media only screen and (min-width: 480px) {
-    /* line 399, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 401, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-kozpontok-php .felteke {
       padding: 0 12px; } }
   @media only screen and (min-width: 768px) {
-    /* line 399, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 401, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .page-template-page-kozpontok-php .felteke {
       padding: 0 1em; } }
 
-/* line 416, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 418, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .page-template-page-kozpontok-php .vizsgalathoz-block .conti {
   max-width: 768px;
   margin: 0 auto; }
 
-/* line 435, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 437, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .page-template-page-kozpontok-php .tab-content {
   padding: 1em;
   border: 1px solid #e9eef5; }
 
-/* line 443, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 445, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .orvoslista-blokk {
   *zoom: 1;
   margin: 0 auto;
@@ -6900,34 +6904,34 @@ body {
   /* line 18, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_mixins.scss */
   .orvoslista-blokk:after {
     clear: both; }
-  /* line 447, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+  /* line 449, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
   .orvoslista-blokk .orvoskocka {
     text-align: center;
     padding: 1em; }
     @media only screen and (min-width: 480px) {
-      /* line 447, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+      /* line 449, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
       .orvoslista-blokk .orvoskocka {
         width: 50%;
         float: left; }
-        /* line 455, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+        /* line 457, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
         .orvoslista-blokk .orvoskocka:nth-child(2n+1) {
           clear: left; } }
     @media only screen and (min-width: 768px) {
-      /* line 447, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+      /* line 449, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
       .orvoslista-blokk .orvoskocka {
         width: 33.333%;
         float: left; }
-        /* line 464, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+        /* line 466, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
         .orvoslista-blokk .orvoskocka:nth-child(2n+1) {
           clear: none; }
-        /* line 467, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+        /* line 469, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
         .orvoslista-blokk .orvoskocka:nth-child(3n+1) {
           clear: left; } }
-    /* line 482, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 484, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .orvoslista-blokk .orvoskocka .orvos-figure {
       position: relative;
       display: block; }
-      /* line 485, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+      /* line 487, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
       .orvoslista-blokk .orvoskocka .orvos-figure:after {
         content: '';
         position: relative;
@@ -6940,26 +6944,26 @@ body {
         background-repeat: no-repeat;
         width: 70px;
         height: 70px; }
-    /* line 502, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 504, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .orvoslista-blokk .orvoskocka img {
       border: 2px solid #5b7eb7; }
-    /* line 505, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 507, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .orvoslista-blokk .orvoskocka h3 {
       margin: 0.5em 0 0;
       text-transform: none; }
-      /* line 508, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+      /* line 510, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
       .orvoslista-blokk .orvoskocka h3 a {
         color: #5b7eb7; }
-    /* line 512, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 514, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .orvoslista-blokk .orvoskocka .titulus {
       margin: 0; }
-    /* line 515, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+    /* line 517, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
     .orvoslista-blokk .orvoskocka .city {
       margin: 0;
       font-style: italic;
       font-size: 0.875em; }
 
-/* line 524, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
+/* line 526, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_page.scss */
 .disclaimer {
   max-width: 768px;
   margin: 0 auto; }
@@ -9324,7 +9328,8 @@ img.mfp-img {
 /* line 115, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
 .tunetlistawrap {
   *zoom: 1;
-  background-color: #f3f6fa; }
+  padding-top: 2rem;
+  padding-bottom: 6rem; }
   /* line 13, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_mixins.scss */
   .tunetlistawrap:before,
   .tunetlistawrap:after {
@@ -9334,29 +9339,56 @@ img.mfp-img {
   .tunetlistawrap:after {
     clear: both; }
 
-/* line 124, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
+/* line 121, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
 .tunetek {
-  padding-top: 4rem;
-  padding-bottom: 5rem; }
-  /* line 125, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center 0.5rem;
+  background-image: url(../img/clouds.png);
+  padding-top: 6rem;
+  padding-bottom: 2rem; }
+  /* line 129, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
+  .tunetek:before {
+    opacity: .1;
+    content: '';
+    position: absolute;
+    right: 4%;
+    top: 1.25rem;
+    display: block;
+    width: 96%;
+    height: 3.5rem;
+    background-image: url(../img/nap.png);
+    background-repeat: no-repeat;
+    background-position: 64% center;
+    background-size: auto 85%; }
+  /* line 144, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
   .tunetek header {
     margin-bottom: 2rem; }
   @media only screen and (min-width: 768px) {
-    /* line 124, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
+    /* line 121, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
     .tunetek {
       width: 50%;
       float: left;
       padding-right: 2%; } }
 
-@media only screen and (min-width: 768px) {
-  /* line 138, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
-  .tunetek--ejszakai {
-    padding-left: 2%;
-    padding-right: 0;
-    width: 50%;
-    float: right; } }
+/* line 155, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
+.tunetek--ejszakai {
+  background-image: url(../img/stars.png); }
+  /* line 157, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
+  .tunetek--ejszakai:before {
+    right: 0;
+    background-image: url(../img/hold.png);
+    background-size: auto 100%;
+    opacity: 1; }
+  @media only screen and (min-width: 768px) {
+    /* line 155, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
+    .tunetek--ejszakai {
+      padding-left: 2%;
+      padding-right: 0;
+      width: 50%;
+      float: right; } }
 
-/* line 154, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
+/* line 178, /Users/ceto/Htdocs/somnocenter/wp-content/themes/somnocenter/assets/scss/_tunet.scss */
 .tunet__name {
   text-transform: none; }
 

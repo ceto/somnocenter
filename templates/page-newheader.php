@@ -1,6 +1,6 @@
 <?php
   $localclass='';
-  if ( get_post_meta( $post->ID, '_cmb_innermenu', true ) != 0) {
+  if (( get_post_meta( $post->ID, '_cmb_innermenu', true ) != 0) || ( is_page_template('page-arlista.php') || is_page_template('page-gyogyitasstart.php')  ) ) {
     $localclass="ralog";
   }
 
@@ -61,8 +61,29 @@
           'menu_class'=>'nav nav-tabs'
          )); ?>
       </nav>
-    <?php endif; ?>
+    <?php elseif ( is_page_template('page-arlista.php') || is_page_template('page-gyogyitasstart.php')  ) : ?>
+      <?php
+        $the_cumo=new WP_Query(array(
+          'post_type' => 'page;',
+          'posts_per_page' => -1,
+          'post_parent' => get_the_ID(),
+          'order' => 'ASC'
 
+        ));
+        $i=0;
+      ?>
+      <nav class="innernav">
+        <ul class="nav nav-tabs" id="arTab">
+          <?php while ($the_cumo->have_posts()) : $the_cumo->the_post(); ?>
+            <li <?php echo (++$i==1)?'class="active"':'' ?>>
+              <a href="#arelem-<?php echo $i; ?>" data-toggle="tab">
+                <strong><?php the_title() ?></strong>
+              </a>
+            </li>
+          <?php endwhile; ?>
+        </ul>
+      </nav>
+    <?php endif; ?>
 
   </div>
 </div>

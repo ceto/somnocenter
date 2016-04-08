@@ -39,9 +39,6 @@
 </style>
 
 <div class="page-headerfigure <?php echo $localclass;  ?>">
-  <?php /* if ( function_exists('yoast_breadcrumb') ) {
-    yoast_breadcrumb('<p class="breadcrumbs">','</p>');
-  } */?>
   <div class="fosrow">
     <aside class="hero-block" role="complementary">
         <div class="hero-text">

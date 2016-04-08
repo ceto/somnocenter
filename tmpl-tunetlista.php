@@ -9,13 +9,16 @@ Template Name: Tünetlista (NEW)
 </section>
   <?php
     $sections = get_post_meta( get_the_ID(), 'page_repeat_group', true );
+    $lead_1 = get_post_meta( get_the_ID(), 'lead_1', true );
     $sections2 = get_post_meta( get_the_ID(), 'page_repeat_group_2', true );
+    $lead_2 = get_post_meta( get_the_ID(), 'lead_2', true );
     $i=0;
   ?>
 <div class="tunetlistawrap ps">
   <section id="nappalitunetek" class="tunetek tunetek--nappali">
     <header>
       <h2>Nappali tünetek</h2>
+      <?= apply_filters( 'the_content', $lead_1  ) ?>
     </header>
     <div id="accordion0">
       <?php foreach ( (array) $sections as $key => $entry ) : ?>
@@ -37,6 +40,7 @@ Template Name: Tünetlista (NEW)
   <section id="ejszakaitunetek" class="tunetek tunetek--ejszakai">
     <header>
       <h2>Éjszakai tünetek</h2>
+      <?= apply_filters( 'the_content', $lead_2  ) ?>
     </header>
     <div id="accordion1">
       <?php foreach ( (array) $sections2 as $key => $entry ) : ?>
