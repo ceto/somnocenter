@@ -4,7 +4,7 @@
       <?php the_real_excerpt(); ?>
     </div>
   </section>
-  <div class="ps">
+  <div class="ps pagecontent">
   <section class="pagecopy">
     <?php the_content('', TRUE); ?>
     <?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>

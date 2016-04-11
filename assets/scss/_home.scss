@@ -242,7 +242,15 @@
 
 
 .homenewstiles {
-  display: none;
+  //display: none;
   @include clearfix();
-  padding:4rem 0 2rem;
+  padding:4rem 0 0;
+
+}
+
+.homeqtiles {
+  //display: none;
+  @include clearfix();
+  padding:2rem 0 6rem;
+
 }
