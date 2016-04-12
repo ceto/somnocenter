@@ -1,7 +1,7 @@
 <header class="banner container" role="banner">
   <div class="row">
     <a href="#" class="menu-button"><span class="ion-navicon"></span></a>
-    <a href="<?php the_permalink(1197); ?>" class="hs"><?php _e('Alvászavar teszt','roots'); ?></a>
+    <a href="<?php the_permalink(2649); ?>" class="ajax-popup hs"><?php _e('Jelentkezés','roots'); ?></a>
   	<nav class="nav-sub desktop" role="navigation">
 	  <?php
 	    if (has_nav_menu('secondary_navigation')) :

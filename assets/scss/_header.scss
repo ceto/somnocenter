@@ -329,17 +329,17 @@
     font-size: 1rem;
     line-height: 1;
     padding: 1em .25em;
-    background: rgba($red,0.90);
+    background: rgba($blue-120, .9);
     color:#fff;
     //border-radius: 50%;
     //box-shadow: 0 0 .25em 0 rgba(#000,.25);
     text-align: center;
-    width:10em;
+    width:12em;
     height:4.25em;
     &:hover, &:focus {
       text-decoration: none;
       color:#fff;
-      background: rgba($orange,0.90);
+      background: rgba($red, .9);
     }
     @include breakpoint($s2) {
       position: absolute;
@@ -354,17 +354,18 @@
     text-transform: uppercase;
     font-family: $sans-serif;
     //font-style: italic;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.125em;
     line-height: 1;
     margin-bottom: .125em;
 
   }
   .telcsi {
+    text-transform: uppercase;
     margin:4px 0 8px;
     display: block;
     font-weight: 700;
-    font-size: 1.333em;
+    font-size: .875em;
     line-height: 1;
     color:#fff;
     margin-bottom: .5em;
