@@ -12,6 +12,15 @@ define('ICL_DONT_LOAD_LANGUAGES_JS', TRUE);
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
+
+# Deregister YARRP files
+add_action('wp_print_styles','somno_dequeue_header_styles');
+function somno_dequeue_header_styles(){wp_dequeue_style('yarppWidgetCss');}
+add_action('get_footer','somno_dequeue_footer_styles');
+function somno_dequeue_footer_styles(){wp_dequeue_style('yarppRelatedCss');}
+
+
+
 function the_real_excerpt() {
   global $post;
   $content = get_extended( $post->post_content );
@@ -481,13 +490,6 @@ add_action('init', 'somno_tags_support_all');
 add_action('pre_get_posts', 'somno_tags_support_query');
 
 
-# Deregister style files
-function somno_DequeueYarppStyle()
-{
-  wp_dequeue_style('yarppRelatedCss');
-  wp_deregister_style('yarppRelatedCss');
-}
-add_action('wp_footer', somno_DequeueYarppStyle);
 
 
 # WPSS Styles Remove

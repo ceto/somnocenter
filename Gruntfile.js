@@ -40,7 +40,6 @@ module.exports = function(grunt) {
       dist: {
         options: {
          outputStyle: 'nested',
-         sourceComments: 'map'
         },
         files: {
           'assets/css/main.css': 'assets/scss/styles.scss'
@@ -50,7 +49,7 @@ module.exports = function(grunt) {
     autoprefixer: {
       dist: {
         options: {
-            map: true
+            //map: true
         },
         src: 'assets/css/main.css',
         dest: 'assets/css/main.min.css'
