@@ -4,6 +4,7 @@ Template Name: Tünetlista (NEW)
 */
 ?>
 <?php get_template_part('templates/page', 'newheader'); ?>
+
 <section class="ps pagefej">
   <div class="lead"><?php the_content(); ?></div>
 </section>
