@@ -386,7 +386,7 @@ function cmb_page_metaboxes( array $meta_boxes ) {
   $meta_boxes['user_edit'] = array(
     'id'            => 'user_edit',
     'title'         => __( 'User Profile Metabox', 'root' ),
-    'pages'         => array( 'user' ), // Tells CMB to use user_meta vs post_meta
+    'object_types'  => array( 'user' ), // Tells CMB to use user_meta vs post_meta
     'show_names'    => true,
     // 'cmb_styles' => true, // Show cmb bundled styles.. not needed on user profile page
     'fields'        => array(
