@@ -7742,3 +7742,49 @@ img.mfp-img {
     display: table; }
   .promoblock:after {
     clear: both; }
+
+.archive.author .felteke {
+  *zoom: 1;
+  max-width: 1140px;
+  margin: 2em auto 4rem auto;
+  padding: 0 6px; }
+  .archive.author .felteke:before,
+  .archive.author .felteke:after {
+    content: " ";
+    display: table; }
+  .archive.author .felteke:after {
+    clear: both; }
+
+.authfig {
+  margin: 0 auto;
+  max-width: 17rem; }
+  @media only screen and (min-width: 768px) {
+    .authfig {
+      max-width: none;
+      width: 25%;
+      float: left; } }
+  .authfig img {
+    border: 2px solid #5b7eb7; }
+
+@media only screen and (min-width: 768px) {
+  .authinf {
+    width: 75%;
+    float: left;
+    padding-left: 3rem; } }
+
+.authinf .lead {
+  font-size: 112.5%;
+  line-height: 1.5; }
+
+.authinf h1 small {
+  margin-top: .25em;
+  display: block;
+  font-size: 75%; }
+
+.authinf .city {
+  font-size: 1.5rem;
+  font-style: italic; }
+
+.archive.author .tab-content {
+  padding: 10% 10%;
+  margin-bottom: 4rem; }

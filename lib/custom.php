@@ -413,7 +413,12 @@ function cmb_page_metaboxes( array $meta_boxes ) {
         'type' => 'text_small',
       ),
       array(
-        'name' => __( 'Orvos önéletrajz', 'root' ),
+        'name' => __( 'Arckép', 'root' ),
+        'id'   => $prefix . 'arckep',
+        'type' => 'wysiwyg',
+      ),
+      array(
+        'name' => __( 'Önéletrajz', 'root' ),
         'id'   => $prefix . 'cv',
         'type' => 'wysiwyg',
       ),
