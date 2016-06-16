@@ -7785,6 +7785,12 @@ img.mfp-img {
   font-size: 1.5rem;
   font-style: italic; }
 
+.archive.author #collapse-authordetails {
+  margin-bottom: 4rem; }
+  .archive.author #collapse-authordetails .panel-body {
+    background-color: transparent;
+    border: none; }
+
 .archive.author .tab-content {
   padding: 10% 10%;
-  margin-bottom: 4rem; }
+  border: 1px solid #e9eef5; }

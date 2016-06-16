@@ -64,8 +64,19 @@
   }
 }
 
+
+.archive.author #collapse-authordetails {
+  margin-bottom: 4rem;
+  .panel-body {
+    background-color: transparent;
+    border:none;
+  }
+}
 .archive.author .tab-content {
   padding:10% 10%;
-  margin-bottom: 4rem;
+
+  border:1px solid #e9eef5;
 }
+
+
 

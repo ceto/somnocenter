@@ -14,22 +14,30 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
     <?= $curauth->display_name; ?><small>&mdash; <?= get_the_author_meta( '_cmb_titulus', $curauth->ID); ?></small>
     </h1>
     <!-- <p class="city"><?= get_the_author_meta('_cmb_city', $curauth->ID ); ?></p> -->
-    <div class="lead"><?php echo get_the_author_meta('description') ?></div>
+    <div class="lead">
+    <?php echo get_the_author_meta('description') ?>
+      <br><br>
+      <a class="accordion-toggle collapsed btn" data-toggle="collapse" href="#collapse-authordetails">Ismerje meg szakértőnket&nbsp;&nbsp;<span class="ion-chevron-down"></span></a>
+    </div>
   </div>
 </section>
-<nav class="">
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#arckep" data-toggle="tab">Arckép</a></li>
-    <li class=""><a href="#cv" data-toggle="tab">Önéletrajz</a></li>
-  </ul>
-</nav>
-<div class="tab-content">
-  <section id="arckep" class="tab-pane fade active in">
-    <?= get_the_author_meta('_cmb_arckep', $curauth->ID ); ?>
-  </section>
-  <section id="cv" class="tab-pane fade">
-    <?= get_the_author_meta('_cmb_cv', $curauth->ID ); ?>
-  </section>
+<div id="collapse-authordetails" class="panel-collapse collapse">
+  <div class="panel-body">
+    <nav class="">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#arckep" data-toggle="tab">Arckép</a></li>
+        <li class=""><a href="#cv" data-toggle="tab">Önéletrajz</a></li>
+      </ul>
+    </nav>
+    <div class="tab-content">
+      <section id="arckep" class="tab-pane fade active in">
+        <?= get_the_author_meta('_cmb_arckep', $curauth->ID ); ?>
+      </section>
+      <section id="cv" class="tab-pane fade">
+        <?= get_the_author_meta('_cmb_cv', $curauth->ID ); ?>
+      </section>
+    </div>
+  </div>
 </div>
 
 
