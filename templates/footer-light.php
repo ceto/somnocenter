@@ -15,7 +15,7 @@
       <a class="cpaplink" href="http://www.cpap.hu/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cpaplogo.png" alt="CPAP"></a>
     </section>
     <section class="penztar">
-      <h3><?php _e('Egészségpénztárra elszámolható','roots'); ?></h3>
+      <h3><?= __('Egészségpénztárra elszámolható','roots'); ?></h3>
       <p><?php _e('Magyarország legtöbb egészségpénztárával együttműködési megállapodással rendelkezünk a pénztártagok ellátására!','roots'); ?></p>
         <a href="<?php echo get_permalink(849); ?>" class="btn"><?php _e('Bővebben','roots'); ?></a>
       <br><br>
