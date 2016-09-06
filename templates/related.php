@@ -1,4 +1,4 @@
-<?php if ( (!is_page_template('tmpl-subpagelist.php')) &&  (!is_page_template('page-landing.php')) && (!is_page_template('page-registereddl.php')) && (!is_page_template('page-orvosok.php')) && ($post->post_parent != '179') && (is_singular()) && (!is_page(2)) && (!is_page(43)) && (!is_page(53)) && (!is_front_page()) ) : ?>
+<?php if ( (!is_page_template('tmpl-subpagelist.php')) &&  (!is_page_template('page-survey.php')) &&  (!is_page_template('page-landing.php')) && (!is_page_template('page-registereddl.php')) && (!is_page_template('page-orvosok.php')) && ($post->post_parent != '179') && (is_singular()) && (!is_page(2)) && (!is_page(43)) && (!is_page(53)) && (!is_front_page()) ) : ?>
 <aside class="vizsgalatokhoz" role="complementary">
   <ul class="nav nav-tabs clearfix" id="myTab">
       <li class="active">
