@@ -25,6 +25,7 @@
   $center = $_POST['message_center'];
   $tel = $_POST['message_tel'];
   $message = $_POST['message_text'];
+  $newsletter = $_POST['message_newsletter'];
   $page = $_POST['message_page'];
   $human = $_POST['message_human'];
   $subjecto = $_REQUEST['ap_id'];
@@ -56,7 +57,7 @@ if(!$human == 0){
         }
         else //ready to go!
         {
-          $message='Név: '.$name.'<br/>'.'Tel: '.$tel.'<br />'.'Központ: '.$center.'<br />'.$message;
+          $message='Név: '.$name.'<br/>'.'Tel: '.$tel.'<br />'.'Központ: '.$center.'<br />'.(($newsletter==1)?'Kér hírlevelet':'Nem kér hírlevelet').'<br />'.$message;
           $sent = wp_mail($to, $subject, $message, $headers);
             if($sent) {
               wp_mail('budapest@somnocenter.hu', $subject, $message, $headers);
@@ -111,6 +112,14 @@ if(!$human == 0){
         <label for="message_text"><?php _e('Üzenet','roots'); ?>*</label>
         <textarea placeholder="<?php _e('Ha kérdése van itt felteheti ...','roots'); ?>" rows="7" id="message_text" name="message_text"><?php if ($_POST['message_text']!='') {
             echo $_POST['message_text']; }?></textarea>
+    </div>
+
+    <div class="controls">
+      <label for="message_newsletter" class="checklabel">
+        <input type="checkbox" value="1" id="message_newsletter" name="message_newsletter" <?= ($_POST['message_newsletter']==1)?'checked="checked"':''; ?>>
+        <?php _e('Feliratkozom hírlevélre','roots'); ?>
+      </label>
+
     </div>
 
     <div class="actions">

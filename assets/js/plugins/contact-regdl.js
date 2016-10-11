@@ -13,6 +13,7 @@ jQuery(document).ready(function(){
         var user_dlfilename = jQuery('input[name=dlfilename]').val();
         var user_int = jQuery('input[name=int]').val();
         var user_addr = jQuery('input[name=addr]').val();
+        var user_Newsletter = jQuery('input[name=message_newsletter]:checked').val();
 
         //simple validation at client's end
         //we simply change border color to red if empty field using .css()

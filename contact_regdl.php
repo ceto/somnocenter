@@ -33,6 +33,9 @@ if($_POST)
   $user_Addr = filter_var($_POST["userAddr"], FILTER_SANITIZE_STRING);
   $user_Int = filter_var($_POST["userInt"], FILTER_SANITIZE_STRING);
 
+  $user_Newsletter = filter_var($_POST['UserNewsletter'], FILTER_SANITIZE_STRING);
+
+
 
 
   $to_Email = "kommunikacio@somnocenter.hu"; //Replace with recipient email address
@@ -76,7 +79,7 @@ if($_POST)
   'Content-Type: text/plain;charset=utf-8' . "\r\n".
   'Content-Transfer-Encoding: 8bit'. "\n\r\n";
   //'X-Mailer: PHP/' . phpversion();
-  $sentMail = @mail($to_Email, $subject, $user_Name . "\r\n\n" . $user_Email . "\r\n" . $user_Email . "\r\n" . $user_Int . "\r\n" .$user_Addr .  "\r\n" .$user_Code . "\r\n\n" . $user_Msg, $headers);
+  $sentMail = @mail($to_Email, $subject, $user_Name . "\r\n\n" . $user_Email . "\r\n" . $user_Email . "\r\n" . $user_Int . "\r\n" .$user_Addr .  "\r\n" .(($user_Newsletter==1)?'Kér hírlevelet':'Nem kér hírlevelet')."\r\n".$user_Code . "\r\n\n" . $user_Msg, $headers);
 
   if(!$sentMail)
   {

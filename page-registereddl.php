@@ -68,6 +68,12 @@ Template Name: Letöltés Sablon Orvosoknak
       <div class="controls">
         <textarea name="msg" id="msg" pattern=".{5,100}" rows="5" placeholder="Ha kérdése van itt felteheti..." maxlength="400"></textarea>
       </div>
+      <div class="controls">
+        <label for="message_newsletter" class="checklabel">
+          <input type="checkbox" value="1" id="message_newsletter" name="message_newsletter" <?= ($_POST['message_newsletter']==1)?'checked="checked"':''; ?>>
+          <?php _e('Feliratkozom hírlevélre','roots'); ?>
+        </label>
+      </div>
 
       <div id="result"></div>
       <div class="actions">
