@@ -71,7 +71,7 @@ Template Name: Letöltés Sablon Orvosoknak
       <div class="controls">
         <label for="message_newsletter" class="checklabel">
           <input type="checkbox" value="1" id="message_newsletter" name="message_newsletter" <?= ($_POST['message_newsletter']==1)?'checked="checked"':''; ?>>
-          <?php _e('Feliratkozom hírlevélre','roots'); ?>
+          <?php _e('Feliratkozom a hírlevélre, melyből értesülhetek az alvási apnoé szűrésével kapcsolatos fontos információkról és jogszabályi módosításokról.','roots'); ?>
         </label>
       </div>
 
