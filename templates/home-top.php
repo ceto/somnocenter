@@ -33,7 +33,7 @@
             }
             @media only screen and (min-width: 1280px) {
               .item-<?= $i; ?> {
-                background-image:url('<?php echo $imcigreat['0']; ?>');
+                background-image:url('<?php echo $imcigiant['0']; ?>');
               }
             }
             @media only screen and (min-width: 1600px) {
