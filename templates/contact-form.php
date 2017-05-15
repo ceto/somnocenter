@@ -1,4 +1,5 @@
 <?php
+  $gtm_eventscript="<script>ga('send', 'event', 'Urlap', 'Jelentkezes', '".get_the_title()."' );</script>";
   //response generation function
   $response = "";
 
@@ -63,7 +64,7 @@ if(!$human == 0){
               wp_mail('budapest@somnocenter.hu', $subject, $message, $headers);
               wp_mail($email, $subject, $message, $headers);
 
-              $response = '<div class="success">'.$message_sent.'</div>';
+              $response = '<div class="success">'.$message_sent.$gtm_eventscrip.'</div>';
             } else {
               $response = '<div class="error">'.$message_unsent.'</div>';
             }

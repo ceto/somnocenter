@@ -84,9 +84,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','<?php echo GOOGLE_TAGMANAGER_ID; ?>');</script>
 <!-- End Google Tag Manager -->
 <?php }
-//if (GOOGLE_TAGMANAGER_ID && !current_user_can('manage_options')) {
+if (GOOGLE_TAGMANAGER_ID && !current_user_can('manage_options')) {
   add_action('wp_head', 'roots_google_tagmanager', 9);
-//}
+}
 
 
 
