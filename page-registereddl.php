@@ -37,7 +37,7 @@ Template Name: Letöltés Sablon Orvosoknak
 
   <div class="jobbfel">
 
-  <h3><?php _e('Regisztrációhoz kérjük, töltse ki az alábbi adatmezőket!', 'somnocenter') ?></h3>
+  <h3><?php _e('A segédlet letöltéséhez kérjük, töltse ki az alábbi adatmezőket!', 'somnocenter') ?></h3>
 
     <!-- Contact Form -->
     <form class="form contact-form" id="contact_regdl_form" method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/contact_regdl.php">
@@ -79,7 +79,8 @@ Template Name: Letöltés Sablon Orvosoknak
       <div class="actions">
         <input type="hidden" name="dlfilename" id="dlfilename" value="<?= get_post_meta( $post->ID, '_cmb_dlfilename', true ) ?>">
         <input type="hidden" name="dlfile" id="dlfile" value="<?= get_post_meta( $post->ID, '_cmb_dlfile', true ) ?>">
-        <button class="btn button" id="submit_btn">Elküld&nbsp;&nbsp;<i class="ion ion-ios7-download"></i></button>
+        <button class="btn button" id="submit_btn">Letöltés&nbsp;&nbsp;<i class="ion ion-ios7-download"></i></button>
+        <p><small>Az Ön által megadott e-mail címre elküldjük a kért dokumentum letöltési linkjét.</small></p>
       </div>
 
     </form>

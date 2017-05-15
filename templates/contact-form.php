@@ -80,7 +80,7 @@ if(!$human == 0){
   <h2 class="block-title"><?php _e('Jelentkezéshez töltse ki az alábbi űrlapot','roots'); ?></h2>
 
   <?php wp_reset_query(); the_post(); ?>
-  <form class="form-horizontal" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post">
+  <form id="form-<?= get_the_id(); ?>" class="form-horizontal" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post">
 
     <div class="controls">
         <label for="message_name"><?php _e('Név','roots'); ?>*</label>
