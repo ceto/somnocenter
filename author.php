@@ -16,12 +16,12 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
     <!-- <p class="city"><?= get_the_author_meta('_cmb_city', $curauth->ID ); ?></p> -->
     <div class="lead">
     <?php echo get_the_author_meta('description') ?>
-      <br><br>
-      <a class="accordion-toggle collapsed btn" data-toggle="collapse" href="#collapse-authordetails">Ismerje meg szakértőnket&nbsp;&nbsp;<span class="ion-chevron-down"></span></a>
+<!--       <br><br>
+      <a class="accordion-toggle collapsed btn" data-toggle="collapse" href="#collapse-authordetails">Ismerje meg szakértőnket&nbsp;&nbsp;<span class="ion-chevron-down"></span></a> -->
     </div>
   </div>
 </section>
-<div id="collapse-authordetails" class="panel-collapse collapse">
+<div id="collapse-authordetails" class="panel-collapse">
   <div class="panel-body">
     <nav class="">
       <ul class="nav nav-tabs">
@@ -40,7 +40,7 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
   </div>
 </div>
 
-
+<!--
 <div class="page-header">
   <h2><?php echo roots_title(); ?></h2>
 </div>
@@ -64,3 +64,4 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
   </ul>
 </nav>
 <?php endif; ?>
+-->

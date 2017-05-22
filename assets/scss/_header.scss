@@ -502,3 +502,40 @@
   }
 
 }
+
+
+.page-headerfigure--nofigure {
+  background-image: none;
+  background-color: $blue;
+  @include breakpoint($s2) {
+    //min-height: 28rem;
+    height:0;
+    padding-bottom: 15rem;
+  }
+  .tart {
+    background-color: $red;
+    &:hover, &:focus {
+      background-color: $orange;
+    }
+  }
+  .hero-text {
+    .nagy {
+        span {
+          background:transparent;
+          box-shadow: none;
+        }
+    }
+    .kicsi {
+
+      span{
+        display: inline;
+        color:$white;
+        background-color:transparent;
+        box-shadow: none;
+        font-size:1.5em;
+        line-height: 1.25em;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

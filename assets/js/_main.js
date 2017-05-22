@@ -157,7 +157,7 @@ jQuery(document).ready(function($) {
       autoHeight : true,
 
       autoPlay : 3200,
-      stopOnHover : true,
+      stopOnHover : false,
       navigation : false, // Show next and prev buttons
 
       transitionStyle:"fade"

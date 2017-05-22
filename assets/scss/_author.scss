@@ -8,14 +8,14 @@
 
 .authfig {
   margin:0 auto;
-  max-width: 17rem;
+  width: 10rem;
   @include breakpoint($s2) {
     max-width: none;
-    width:25%;
+    width:22%;
     float:left;
   }
   @include breakpoint($s3) {
-    //width:50%;
+    width:15%;
   }
 
   img {
@@ -67,9 +67,13 @@
 
 .archive.author #collapse-authordetails {
   margin-bottom: 4rem;
+  h1,h2,h3,h4,h5,h6 {
+    text-transform: none;
+  }
   .panel-body {
     background-color: transparent;
     border:none;
+    padding:0;
   }
 }
 .archive.author .tab-content {

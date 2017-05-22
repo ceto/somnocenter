@@ -3,7 +3,7 @@
 Template Name: Orvosok Lista
 */
 ?>
-<?php get_template_part('templates/page', 'headerfigure'); ?>
+<?php get_template_part('templates/page', 'headernofigure'); ?>
 
 <?php
 $allUsers = get_users('orderby=display_name&order=ASC');

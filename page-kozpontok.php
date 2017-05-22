@@ -4,7 +4,7 @@ Template Name: Központok Sablon
 */
 ?>
 
-<?php get_template_part('templates/page', 'headerfigure'); ?>
+<?php get_template_part('templates/page', 'headernofigure'); ?>
 <style>
   .gm-style img { max-width: none; }
   .gm-style label { width: auto; display: inline; }
