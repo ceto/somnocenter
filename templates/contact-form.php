@@ -81,11 +81,11 @@ if(!$human == 0){
   <h2 class="block-title"><?php _e('Jelentkezéshez töltse ki az alábbi űrlapot','roots'); ?></h2>
 
   <?php wp_reset_query(); the_post(); ?>
-  <form id="form-<?= get_the_id(); ?>" class="form-horizontal" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post">
+  <form id="form-<?= get_the_id(); ?>" class="form-horizontal" action="<?php echo $_SERVER['REQUEST_URI']; ?>?signup=<?= get_the_id(); ?>" method="post">
 
     <div class="controls">
         <label for="message_name"><?php _e('Név','roots'); ?>*</label>
-        <input type="text" placeholder="<?php _e('Adja meg nevét','roots'); ?>*" id="message_name" name="message_name" value="<?php echo $_POST['message_name']; ?>">
+        <input required type="text" placeholder="<?php _e('Adja meg nevét','roots'); ?>*" id="message_name" name="message_name" value="<?php echo $_POST['message_name']; ?>">
     </div>
 
     <div class="controls">
@@ -95,7 +95,7 @@ if(!$human == 0){
 
     <div class="controls">
       <label for="message_email"><?php _e('E-Mail cím','roots'); ?>*</label>
-      <input type="email" placeholder="<?php _e('E-mail címe','roots'); ?>*" id="message_email" name="message_email" value="<?php echo $_POST['message_email']; ?>">
+      <input required type="email" placeholder="<?php _e('E-mail címe','roots'); ?>*" id="message_email" name="message_email" value="<?php echo $_POST['message_email']; ?>">
     </div>
 
     <div class="controls">
