@@ -20,6 +20,7 @@
   $message_unsent  = __('Üzenet küldése nem sikerült. Próbálkozzon újra!','roots');
   $message_sent    = __('Köszönjük! Üzenetét elküldtük.','roots');
 
+  $sourceurl=get_permalink();
   //user posted variables
   $name = $_POST['message_name'];
   $email = $_POST['message_email'];
@@ -58,7 +59,7 @@ if(!$human == 0){
         }
         else //ready to go!
         {
-          $message='Név: '.$name.'<br/>'.'Tel: '.$tel.'<br />'.'Központ: '.$center.'<br />'.(($newsletter==1)?'Kér hírlevelet':'Nem kér hírlevelet').'<br />'.$message;
+          $message='Név: '.$name.'<br/>'.'Tel: '.$tel.'<br />'.'Központ: '.$center.'<br />'.(($newsletter==1)?'Kér hírlevelet':'Nem kér hírlevelet').'<br />'.$message.'<br /><br /><br /><small>'.$sourceurl.'</small>';
           $sent = wp_mail($to, $subject, $message, $headers);
             if($sent) {
               wp_mail('budapest@somnocenter.hu', $subject, $message, $headers);
