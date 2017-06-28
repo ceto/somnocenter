@@ -422,6 +422,11 @@ function cmb_page_metaboxes( array $meta_boxes ) {
         'id'   => $prefix . 'cv',
         'type' => 'wysiwyg',
       ),
+      array(
+        'name' => __( 'Bemutatkozás', 'root' ),
+        'id'   => $prefix . 'introduce',
+        'type' => 'wysiwyg',
+      ),
     )
   );
   // Add other metaboxes as needed

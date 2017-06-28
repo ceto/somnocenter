@@ -27,6 +27,7 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
       <ul class="nav nav-tabs">
         <li class="active"><a href="#arckep" data-toggle="tab">Arckép</a></li>
         <li class=""><a href="#cv" data-toggle="tab">Önéletrajz</a></li>
+        <li class=""><a href="#introduce" data-toggle="tab">Bemutatkozás</a></li>
       </ul>
     </nav>
     <div class="tab-content">
@@ -36,11 +37,12 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
       <section id="cv" class="tab-pane fade">
         <?= get_the_author_meta('_cmb_cv', $curauth->ID ); ?>
       </section>
+      <section id="introduce" class="tab-pane fade">
+        <?= get_the_author_meta('_cmb_introduce', $curauth->ID ); ?>
+      </section>
     </div>
   </div>
 </div>
-
-<!--
 <div class="page-header">
   <h2><?php echo roots_title(); ?></h2>
 </div>
@@ -64,4 +66,3 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
   </ul>
 </nav>
 <?php endif; ?>
--->
