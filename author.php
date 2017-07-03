@@ -5,7 +5,7 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
   <figure class="authfig">
     <?php
     $ima = get_the_author_meta('_cmb_portre_id', $curauth->ID );
-    $imci = wp_get_attachment_image_src( $ima, 'medium34');
+    $imci = wp_get_attachment_image_src( $ima, 'small34');
     ?>
     <img src="<?php echo $imci[0]; ?>" width="<?php echo $imci[1]; ?>" height="<?php echo $imci[2]; ?>" alt="<?= $curauth->display_name; ?>" class="orvos-thumb">
   </figure>
