@@ -25,20 +25,20 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
   <div class="panel-body">
     <nav class="">
       <ul class="nav nav-tabs">
-        <li class="active"><a href="#arckep" data-toggle="tab">Arckép</a></li>
+        <li class="active"><a href="#introduce" data-toggle="tab">Bemutatkozás</a></li>
+        <li class=""><a href="#arckep" data-toggle="tab">Arckép</a></li>
         <li class=""><a href="#cv" data-toggle="tab">Önéletrajz</a></li>
-        <li class=""><a href="#introduce" data-toggle="tab">Bemutatkozás</a></li>
       </ul>
     </nav>
     <div class="tab-content">
-      <section id="arckep" class="tab-pane fade active in">
+      <section id="introduce" class="tab-pane fade active in">
+        <?= get_the_author_meta('_cmb_introduce', $curauth->ID ); ?>
+      </section>
+      <section id="arckep" class="tab-pane fade">
         <?= get_the_author_meta('_cmb_arckep', $curauth->ID ); ?>
       </section>
       <section id="cv" class="tab-pane fade">
         <?= get_the_author_meta('_cmb_cv', $curauth->ID ); ?>
-      </section>
-      <section id="introduce" class="tab-pane fade">
-        <?= get_the_author_meta('_cmb_introduce', $curauth->ID ); ?>
       </section>
     </div>
   </div>
