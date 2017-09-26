@@ -5,11 +5,11 @@
       <p><?php _e('A központjainkban mintegy 90 féle alvászavart diagnosztizálunk és kezelünk. Budapesten, Pécsen és Szegeden várjuk mindazokat, akik szeretnének újra kipihenten ébredni.','roots'); ?></p>
     </section>
     <section class="naplo-block">
-      <h3><?php _e('Vezessen alvásnaplót','roots'); ?></h3>
+      <h3><?php _e('Meghatalmazás','roots'); ?></h3>
       <p>
-        <?php _e('Az alvásnapló adatainak elemzésével állapítható meg, hogy okozhatják-e alvászavarok a kellemetlen tüneteket.','roots'); ?>
+        <?php _e('Ezen meghatalmazással megbízottat feljogosítja, hogy a törvényben foglaltak értelmében az Ön (megbízó) nevében eljárjon, adott betegségével, terápiájával kapcsolatos egészségügyi dokumentációját megismerje, szükség esetén másolatot készítsen róla.','roots'); ?>
       </p>
-      <a class="catmore" href="<?php echo get_permalink(1182); ?>"><?php _e('Hogyan juthat hozzá','roots'); ?></a>
+      <a class="catmore" href="http://somnocenter.hu/wp-content/uploads/2017/09/MEGHATALMAZAS_eg_ugyi_-dokumentacio_megismeresere.pdf"><?php _e('Letöltés','roots'); ?></a>
     </section>
     <?php if (!is_page(1182)): ?>
       <section class="newsletter-block">
