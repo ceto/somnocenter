@@ -2,7 +2,7 @@
    Footer
    ========================================================================== */
 .content-info {
-	background: black;
+	background: $blue-120;
 	color:$blue-90;
   font-size:0.875em;
   line-height:1.4em;
@@ -11,6 +11,27 @@
 
   a {
     color:$red;
+  }
+}
+
+.footer__copy {
+  margin:2rem 0 1.5rem;
+  @include breakpoint($s2){
+    width:calc(100% - 4.5rem);
+    float:left;
+  }
+}
+
+.footer__iso {
+  text-align: center;
+  @include breakpoint($s2){
+    width: 4.5rem;
+    float:right;
+  }
+
+  img {
+    margin: .5rem 0 0;
+    width: 4.5rem;
   }
 }
 

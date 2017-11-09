@@ -3936,12 +3936,29 @@ ol.golyos {
    Footer
    ========================================================================== */
 .content-info {
-  background: black;
+  background: #4c6ba2;
   color: #f3f6fa;
   font-size: 0.875em;
   line-height: 1.4em; }
   .content-info a {
     color: #e6533e; }
+
+.footer__copy {
+  margin: 2rem 0 1.5rem; }
+  @media only screen and (min-width: 768px) {
+    .footer__copy {
+      width: calc(100% - 4.5rem);
+      float: left; } }
+
+.footer__iso {
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .footer__iso {
+      width: 4.5rem;
+      float: right; } }
+  .footer__iso img {
+    margin: .5rem 0 0;
+    width: 4.5rem; }
 
 .footer-dark {
   *zoom: 1;

@@ -3181,7 +3181,6 @@ hr {
     left: 0;
     right: 0;
     height: 1px;
-    background: -webkit-linear-gradient(left, transparent 0%, #476aa2 20%, #476aa2 80%, transparent 100%);
     background: linear-gradient(to right, transparent 0%, #476aa2 20%, #476aa2 80%, transparent 100%); }
   hr:after {
     position: absolute;
@@ -3190,7 +3189,6 @@ hr {
     left: 0;
     right: 0;
     height: 1px;
-    background: -webkit-linear-gradient(left, transparent 0%, #7794c3 20%, #7794c3 80%, transparent 100%);
     background: linear-gradient(to right, transparent 0%, #7794c3 20%, #7794c3 80%, transparent 100%); }
 
 .btn {
@@ -3321,8 +3319,7 @@ img {
 
 .fade {
   opacity: 0;
-  -webkit-transition: opacity .15s linear;
-          transition: opacity .15s linear; }
+  transition: opacity .15s linear; }
   .fade.in {
     opacity: 1; }
 
@@ -3335,8 +3332,7 @@ img {
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition: height .35s ease;
-          transition: height .35s ease; }
+  transition: height .35s ease; }
 
 /* ==========================================================================
    Layout
@@ -3767,8 +3763,7 @@ ol.golyos {
       box-shadow: 0.125em 0 0 rgba(76, 107, 162, 0.75), -0.125em 0 0 rgba(76, 107, 162, 0.75);
       position: absolute;
       opacity: 0;
-      -webkit-transition: opacity 1s ease;
-              transition: opacity 1s ease;
+      transition: opacity 1s ease;
       height: 0;
       overflow: hidden; }
       .hero-text .nagy span.active {
@@ -3922,12 +3917,29 @@ ol.golyos {
    Footer
    ========================================================================== */
 .content-info {
-  background: black;
+  background: #4c6ba2;
   color: #f3f6fa;
   font-size: 0.875em;
   line-height: 1.4em; }
   .content-info a {
     color: #e6533e; }
+
+.footer__copy {
+  margin: 2rem 0 1.5rem; }
+  @media only screen and (min-width: 768px) {
+    .footer__copy {
+      width: calc(100% - 4.5rem);
+      float: left; } }
+
+.footer__iso {
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .footer__iso {
+      width: 4.5rem;
+      float: right; } }
+  .footer__iso img {
+    margin: .5rem 0 0;
+    width: 4.5rem; }
 
 .footer-dark {
   *zoom: 1;
@@ -4442,8 +4454,7 @@ body {
     display: none; } }
 
 .mobilcol, .minden {
-  -webkit-transition: all .2s ease;
-          transition: all .2s ease;
+  transition: all .2s ease;
   width: 100%; }
 
 .js .mobilcol {
@@ -5129,8 +5140,7 @@ body {
   position: relative;
   padding: 1em;
   background-color: #e9eef5;
-  -webkit-transition: all .3s linear;
-          transition: all .3s linear; }
+  transition: all .3s linear; }
   .hentry.kiskocka:before, .hentry.kiskocka:after {
     content: " ";
     display: table; }
@@ -5461,8 +5471,7 @@ body {
       opacity: 0;
       -webkit-transform: translate(-25%, 0);
               transform: translate(-25%, 0);
-      -webkit-transition: all 500ms ease;
-              transition: all 500ms ease; }
+      transition: all 500ms ease; }
       .js .page-template-page-vizsgalatok-php .vizsga-lista .exam .inner.onScreen, .js .page-template-page-gyogyitasstart-php .vizsga-lista .exam .inner.onScreen {
         opacity: 1;
         -webkit-transform: translate(0, 0);
@@ -5923,8 +5932,7 @@ body {
     background-color: #e9eef5;
     display: block;
     position: relative;
-    -webkit-transition: all .4s ease;
-            transition: all .4s ease;
+    transition: all .4s ease;
     border: 1px solid #c5d2e6;
     padding: 3px; }
     .gallery-item .thumbnail:hover, .gallery-item .thumbnail:focus {
@@ -5937,8 +5945,7 @@ body {
         -webkit-transform: scale(1.1);
                 transform: scale(1.1); }
     .gallery-item .thumbnail:after {
-      -webkit-transition: all .4s ease;
-              transition: all .4s ease;
+      transition: all .4s ease;
       display: block;
       position: absolute;
       content: "+";
@@ -5956,8 +5963,7 @@ body {
       opacity: 0;
       border: 3px solid #e9eef5; }
     .gallery-item .thumbnail img {
-      -webkit-transition: all .4s ease;
-              transition: all .4s ease; }
+      transition: all .4s ease; }
   .gallery-item .caption {
     font-size: .75em;
     line-height: 1;
@@ -6493,8 +6499,8 @@ img.mfp-img {
   .modal.fade .modal-dialog {
     -webkit-transform: translate(0, -25%);
             transform: translate(0, -25%);
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-            transition: transform 0.3s ease-out; }
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out; }
   .modal.in .modal-dialog {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
@@ -6928,7 +6934,6 @@ img.mfp-img {
   width: 100%; }
 
 .owl-carousel .owl-wrapper-outer.autoHeight {
-  -webkit-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out; }
 
 .owl-carousel .owl-item {
