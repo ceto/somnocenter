@@ -34,7 +34,7 @@
 
   //php mailer variables
   //$to = get_option('admin_email');
-  $to = 'szabogabi@gmail.com';
+  $to = 'budapest@somnocenter.hu';
   $subject = $page." ".get_bloginfo('name');
 
   $headers = "From: " . strip_tags($email) . "\r\n";
@@ -62,7 +62,7 @@ if(!$human == 0){
           $message='Név: '.$name.'<br/>'.'Tel: '.$tel.'<br />'.'Központ: '.$center.'<br />'.(($newsletter==1)?'Kér hírlevelet':'Nem kér hírlevelet').'<br />'.$message.'<br /><br /><br /><small>'.$sourceurl.'</small>';
           $sent = wp_mail($to, $subject, $message, $headers);
             if($sent) {
-              wp_mail('budapest@somnocenter.hu', $subject, $message, $headers);
+
               wp_mail($email, $subject, $message, $headers);
 
               $response = '<div class="success">'.$message_sent.$gtm_eventscrip.'</div>';
