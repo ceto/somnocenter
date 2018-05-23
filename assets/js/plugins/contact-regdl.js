@@ -2,6 +2,16 @@
  Contact form
  --------------------------------------------- */
 jQuery(document).ready(function(){
+    var aszf = 0;
+    jQuery('input[name=message_aszf]').click(function() {
+        if (jQuery('input[name=message_aszf]').is(':checked') == true) {
+            aszf=1;
+            jQuery('input[name=message_aszf]').parent().css('border', 'none');
+        }  else {
+            aszf=0;
+        }
+    });  
+
     jQuery("#contact_regdl_form #submit_btn").click(function(){
 
         //get input field values
@@ -14,6 +24,8 @@ jQuery(document).ready(function(){
         var user_int = jQuery('input[name=int]').val();
         var user_addr = jQuery('input[name=addr]').val();
         var user_Newsletter = jQuery('input[name=message_newsletter]:checked').val();
+
+      
 
         //simple validation at client's end
         //we simply change border color to red if empty field using .css()
@@ -40,6 +52,10 @@ jQuery(document).ready(function(){
             proceed = false;
         }
 
+        if (aszf == 0) {
+            jQuery('input[name=message_aszf]').parent().css('border', '1px solid #e6533e');
+            proceed = false;
+        }
 
         //everything looks good! proceed...
         if (proceed) {
@@ -52,7 +68,8 @@ jQuery(document).ready(function(){
                 'userDlfile': user_dlfile,
                 'userDlfilename': user_dlfilename,
                 'userInt': user_int,
-                'userAddr': user_addr
+                'userAddr': user_addr,
+                'userAszf': aszf
             };
 
             //Ajax post data to server

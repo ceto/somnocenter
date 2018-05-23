@@ -23,6 +23,7 @@ var ExampleSite = {
   }
 };
 
+
 var UTIL = {
   fire: function(func, funcname, args) {
     var namespace = ExampleSite;
@@ -44,6 +45,9 @@ var UTIL = {
 };
 
 $(document).ready(UTIL.loadEvents);
+
+
+
 
 
 function share_click(mi, width, height) {

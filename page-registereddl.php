@@ -69,6 +69,13 @@ Template Name: Letöltés Sablon Orvosoknak
         <textarea name="msg" id="msg" pattern=".{5,100}" rows="5" placeholder="Ha kérdése van itt felteheti..." maxlength="400"></textarea>
       </div>
       <div class="controls">
+        <label for="message_aszf" class="checklabel">
+            <input type="checkbox" value="1" id="message_aszf" required name="message_aszf" <?= ($_POST['message_aszf']==1)?'checked="checked"':''; ?>>
+            <?php _e('Elfogadom az <a href="../../adatvedelmi-tajekoztato/" target="_blank">adatkezelési irányelveket</a>','roots'); ?>
+        </label>
+        </div>
+
+      <div class="controls">
         <label for="message_newsletter" class="checklabel">
           <input type="checkbox" value="1" id="message_newsletter" name="message_newsletter" <?= ($_POST['message_newsletter']==1)?'checked="checked"':''; ?>>
           <?php _e('Feliratkozom a hírlevélre, melyből értesülhetek az alvási apnoé szűrésével kapcsolatos fontos információkról és jogszabályi módosításokról.','roots'); ?>

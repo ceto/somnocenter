@@ -1517,25 +1517,15 @@ table {
 .ion-looping,
 .ion-refreshing,
 .ion-ios7-reloading {
-  -webkit-animation: spin 1s infinite linear;
   animation: spin 1s infinite linear; }
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(359deg); } }
 
 @keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
+    transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg); } }
+    transform: rotate(359deg); } }
 
 .ion-loading-a {
-  -webkit-animation-timing-function: steps(8, start);
   animation-timing-function: steps(8, start); }
 
 .ion-alert:before {
@@ -3235,8 +3225,7 @@ ul.pipas {
     list-style-type: none;
     margin: 1.125em 0; }
     ul.pipas li:before {
-      -webkit-transform: translateY(-0.25em);
-              transform: translateY(-0.25em);
+      transform: translateY(-0.25em);
       position: absolute;
       left: 0;
       font-size: 2em;
@@ -5469,13 +5458,11 @@ body {
     padding: 6em; }
     .js .page-template-page-vizsgalatok-php .vizsga-lista .exam .inner, .js .page-template-page-gyogyitasstart-php .vizsga-lista .exam .inner {
       opacity: 0;
-      -webkit-transform: translate(-25%, 0);
-              transform: translate(-25%, 0);
+      transform: translate(-25%, 0);
       transition: all 500ms ease; }
       .js .page-template-page-vizsgalatok-php .vizsga-lista .exam .inner.onScreen, .js .page-template-page-gyogyitasstart-php .vizsga-lista .exam .inner.onScreen {
         opacity: 1;
-        -webkit-transform: translate(0, 0);
-                transform: translate(0, 0); }
+        transform: translate(0, 0); }
   .page-template-page-vizsgalatok-php .vizsga-lista .exam:first-child, .page-template-page-gyogyitasstart-php .vizsga-lista .exam:first-child {
     background: url("../img/hattter-05.png") no-repeat center bottom #4c6ba2 !important;
     background-size: 100% 100% !important;
@@ -5927,8 +5914,7 @@ body {
         clear: left; } }
   .gallery-item .thumbnail {
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
     background-color: #e9eef5;
     display: block;
     position: relative;
@@ -5942,8 +5928,7 @@ body {
       .gallery-item .thumbnail:hover img, .gallery-item .thumbnail:focus img {
         -webkit-filter: grayscale(1);
                 filter: grayscale(1);
-        -webkit-transform: scale(1.1);
-                transform: scale(1.1); }
+        transform: scale(1.1); }
     .gallery-item .thumbnail:after {
       transition: all .4s ease;
       display: block;
@@ -6316,13 +6301,10 @@ img.mfp-img {
 
 @media all and (max-width: 900px) {
   .mfp-arrow {
-    -webkit-transform: scale(0.75);
     transform: scale(0.75); }
   .mfp-arrow-left {
-    -webkit-transform-origin: 0;
     transform-origin: 0; }
   .mfp-arrow-right {
-    -webkit-transform-origin: 100%;
     transform-origin: 100%; }
   .mfp-container {
     padding-left: 6px;
@@ -6497,13 +6479,10 @@ img.mfp-img {
   -webkit-overflow-scrolling: touch;
   outline: 0; }
   .modal.fade .modal-dialog {
-    -webkit-transform: translate(0, -25%);
-            transform: translate(0, -25%);
-    transition: -webkit-transform 0.3s ease-out;
+    transform: translate(0, -25%);
     transition: transform 0.3s ease-out; }
   .modal.in .modal-dialog {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); }
+    transform: translate(0, 0); }
 
 .modal-dialog {
   position: relative;
@@ -7046,60 +7025,42 @@ img.mfp-img {
   -moz-perspective: 1200px;
   -moz-perspective-origin-x: 50%;
   -moz-perspective-origin-y: 50%;
-  -webkit-perspective: 1200px;
-          perspective: 1200px; }
+  perspective: 1200px; }
 
 /* fade */
 .owl-fade-out {
   z-index: 10;
-  -webkit-animation: fadeOut .7s both ease;
   animation: fadeOut .7s both ease; }
 
 .owl-fade-in {
-  -webkit-animation: fadeIn .7s both ease;
   animation: fadeIn .7s both ease; }
 
 /* backSlide */
 .owl-backSlide-out {
-  -webkit-animation: backSlideOut 1s both ease;
   animation: backSlideOut 1s both ease; }
 
 .owl-backSlide-in {
-  -webkit-animation: backSlideIn 1s both ease;
   animation: backSlideIn 1s both ease; }
 
 /* goDown */
 .owl-goDown-out {
-  -webkit-animation: scaleToFade .7s ease both;
   animation: scaleToFade .7s ease both; }
 
 .owl-goDown-in {
-  -webkit-animation: goDown .6s ease both;
   animation: goDown .6s ease both; }
 
 /* scaleUp */
 .owl-fadeUp-in {
-  -webkit-animation: scaleUpFrom .5s ease both;
   animation: scaleUpFrom .5s ease both; }
 
 .owl-fadeUp-out {
-  -webkit-animation: scaleUpTo .5s ease both;
   animation: scaleUpTo .5s ease both; }
 
 /* Keyframes */
 /*empty*/
-@-webkit-keyframes empty {
-  0% {
-    opacity: 1; } }
 
 @keyframes empty {
   0% {
-    opacity: 1; } }
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
     opacity: 1; } }
 
 @keyframes fadeIn {
@@ -7108,109 +7069,52 @@ img.mfp-img {
   100% {
     opacity: 1; } }
 
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
 @keyframes fadeOut {
   0% {
     opacity: 1; }
   100% {
     opacity: 0; } }
 
-@-webkit-keyframes backSlideOut {
-  25% {
-    opacity: .5;
-    -webkit-transform: translateZ(-500px); }
-  75% {
-    opacity: .5;
-    -webkit-transform: translateZ(-500px) translateX(-200%); }
-  100% {
-    opacity: .5;
-    -webkit-transform: translateZ(-500px) translateX(-200%); } }
-
 @keyframes backSlideOut {
   25% {
     opacity: .5;
-    -webkit-transform: translateZ(-500px);
-            transform: translateZ(-500px); }
+    transform: translateZ(-500px); }
   75% {
     opacity: .5;
-    -webkit-transform: translateZ(-500px) translateX(-200%);
-            transform: translateZ(-500px) translateX(-200%); }
+    transform: translateZ(-500px) translateX(-200%); }
   100% {
     opacity: .5;
-    -webkit-transform: translateZ(-500px) translateX(-200%);
-            transform: translateZ(-500px) translateX(-200%); } }
-
-@-webkit-keyframes backSlideIn {
-  0%, 25% {
-    opacity: .5;
-    -webkit-transform: translateZ(-500px) translateX(200%); }
-  75% {
-    opacity: .5;
-    -webkit-transform: translateZ(-500px); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateZ(0) translateX(0); } }
+    transform: translateZ(-500px) translateX(-200%); } }
 
 @keyframes backSlideIn {
   0%, 25% {
     opacity: .5;
-    -webkit-transform: translateZ(-500px) translateX(200%);
-            transform: translateZ(-500px) translateX(200%); }
+    transform: translateZ(-500px) translateX(200%); }
   75% {
     opacity: .5;
-    -webkit-transform: translateZ(-500px);
-            transform: translateZ(-500px); }
+    transform: translateZ(-500px); }
   100% {
     opacity: 1;
-    -webkit-transform: translateZ(0) translateX(0);
-            transform: translateZ(0) translateX(0); } }
-
-@-webkit-keyframes scaleToFade {
-  to {
-    opacity: 0;
-    -webkit-transform: scale(0.8); } }
+    transform: translateZ(0) translateX(0); } }
 
 @keyframes scaleToFade {
   to {
     opacity: 0;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8); } }
-
-@-webkit-keyframes goDown {
-  from {
-    -webkit-transform: translateY(-100%); } }
+    transform: scale(0.8); } }
 
 @keyframes goDown {
   from {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%); } }
-
-@-webkit-keyframes scaleUpFrom {
-  from {
-    opacity: 0;
-    -webkit-transform: scale(1.5); } }
+    transform: translateY(-100%); } }
 
 @keyframes scaleUpFrom {
   from {
     opacity: 0;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5); } }
-
-@-webkit-keyframes scaleUpTo {
-  to {
-    opacity: 0;
-    -webkit-transform: scale(1.5); } }
+    transform: scale(1.5); } }
 
 @keyframes scaleUpTo {
   to {
     opacity: 0;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5); } }
+    transform: scale(1.5); } }
 
 .page.page-template-page-survey-php .main.wide {
   padding: 2em 0 5em;

@@ -34,8 +34,8 @@ if($_POST)
   $user_Int = filter_var($_POST["userInt"], FILTER_SANITIZE_STRING);
 
   $user_Newsletter = filter_var($_POST['UserNewsletter'], FILTER_SANITIZE_STRING);
-
-
+  
+  $user_Aszf = filter_var($_POST['userAszf'], FILTER_SANITIZE_STRING);
 
 
   $to_Email = "kommunikacio@somnocenter.hu"; //Replace with recipient email address
@@ -71,6 +71,7 @@ if($_POST)
     $output = json_encode(array('type'=>'error', 'text' => 'Pecsétszám érvénytelen!'));
     die($output);
   }
+
 
   //proceed with PHP email.
   $headers = 'From: '.$user_Email.'' . "\r\n" .

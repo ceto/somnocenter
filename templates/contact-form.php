@@ -117,11 +117,17 @@ if(!$human == 0){
     </div>
 
     <div class="controls">
+      <label for="message_aszf" class="checklabel">
+        <input type="checkbox" value="1" id="message_aszf" required name="message_aszf" <?= ($_POST['message_aszf']==1)?'checked="checked"':''; ?>>
+        <?php _e('Elfogadom az <a href="../../adatvedelmi-tajekoztato/" target="_blank">adatkezelési irányelveket</a>','roots'); ?>
+      </label>
+    </div>
+
+    <div class="controls">
       <label for="message_newsletter" class="checklabel">
         <input type="checkbox" value="1" id="message_newsletter" name="message_newsletter" <?= ($_POST['message_newsletter']==1)?'checked="checked"':''; ?>>
         <?php _e('Feliratkozom hírlevélre','roots'); ?>
       </label>
-
     </div>
 
     <div class="actions">
